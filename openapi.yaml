@@ -1,0 +1,1193 @@
+openapi: 3.1.0
+info:
+  title: AI B-roll Studio
+  description: Automated narration, B-roll matching, captioning, and video synthesis
+    engine.
+  version: 1.0.0
+paths:
+  /api/v1/health:
+    get:
+      tags:
+      - System Health
+      summary: Liveness check
+      description: Returns service liveness status.
+      operationId: get_health_api_v1_health_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HealthResponse'
+  /api/v1/ready:
+    get:
+      tags:
+      - System Health
+      summary: Readiness check
+      description: Accurately verifies availability of external dependencies (Redis,
+        Storage).
+      operationId: get_readiness_api_v1_ready_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ReadinessResponse'
+  /api/v1/scripts/ingest:
+    post:
+      tags:
+      - Script Ingestion & Segmentation
+      summary: Ingest and segment a narration script
+      description: Validates script input, divides narration into ordered scenes,
+        calculates duration, and generates B-roll search queries.
+      operationId: ingest_script_api_v1_scripts_ingest_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ScriptInput'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ScriptIngestionResponse'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/broll/match:
+    post:
+      tags:
+      - B-roll Asset Matching
+      summary: Match scenes with suitable B-roll footage
+      description: Accepts pre-segmented scenes or a raw script and selects suitable
+        footage from the configured provider.
+      operationId: match_broll_api_v1_broll_match_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BrollMatchRequest'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BrollMatchResponse'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/broll/jobs:
+    post:
+      tags:
+      - B-roll Asset Matching
+      summary: Create a script/voiceover to B-roll video job (background, returns
+        202)
+      operationId: create_broll_job_api_v1_broll_jobs_post
+      parameters:
+      - name: x-api-key
+        in: header
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: X-Api-Key
+      responses:
+        '202':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/audio/narrate:
+    post:
+      tags:
+      - Narration & Audio Synchronization
+      summary: Generate narration plan and synchronize scene timings
+      description: Segments a script, synthesizes narration through the selected provider,
+        and creates a continuous scene timeline.
+      operationId: narrate_script_api_v1_audio_narrate_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NarrationRequest'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NarrationResponse'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/captions/generate:
+    post:
+      tags:
+      - Caption Generation & Subtitles
+      summary: Generate timed captions and SRT/VTT subtitle text
+      operationId: generate_captions_api_v1_captions_generate_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CaptionRequest'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CaptionResponse'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/video/render:
+    post:
+      tags:
+      - Video Rendering (FFmpeg)
+      summary: Render local video clips into an MP4
+      description: Render video clips that are already stored locally.
+      operationId: render_video_api_v1_video_render_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RenderRequest'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RenderResponse'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/video/render-from-broll:
+    post:
+      tags:
+      - Video Rendering (FFmpeg)
+      summary: Download matched Pixabay clips and render a video
+      description: 'Match script scenes, download selected Pixabay clips, and render
+
+        them in scene order with optional narration and subtitles.'
+      operationId: render_from_broll_api_v1_video_render_from_broll_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BrollRenderRequest'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RenderResponse'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/jobs/voices:
+    get:
+      tags:
+      - One-call Video Generation (script or audio -> MP4)
+      summary: Narration voice presets (any Edge TTS voice short name also works)
+      operationId: list_voices_api_v1_jobs_voices_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+  /api/v1/jobs/config:
+    get:
+      tags:
+      - One-call Video Generation (script or audio -> MP4)
+      summary: Non-secret pipeline configuration summary
+      operationId: pipeline_config_api_v1_jobs_config_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+  /api/v1/jobs:
+    post:
+      tags:
+      - One-call Video Generation (script or audio -> MP4)
+      summary: Generate a video from a script and/or uploaded audio
+      operationId: create_job_api_v1_jobs_post
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Body_create_job_api_v1_jobs_post'
+      responses:
+        '202':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/jobs/{job_id}:
+    get:
+      tags:
+      - One-call Video Generation (script or audio -> MP4)
+      summary: Job status, progress and (when finished) output links
+      operationId: get_job_api_v1_jobs__job_id__get
+      parameters:
+      - name: job_id
+        in: path
+        required: true
+        schema:
+          type: string
+          title: Job Id
+      - name: x-api-key
+        in: header
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: X-Api-Key
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/jobs/{job_id}/files/{name}:
+    get:
+      tags:
+      - One-call Video Generation (script or audio -> MP4)
+      summary: Download a job output (video, narration, captions, timeline, manifest)
+      operationId: get_job_file_api_v1_jobs__job_id__files__name__get
+      parameters:
+      - name: job_id
+        in: path
+        required: true
+        schema:
+          type: string
+          title: Job Id
+      - name: name
+        in: path
+        required: true
+        schema:
+          type: string
+          title: Name
+      - name: x-api-key
+        in: header
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: X-Api-Key
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /health:
+    get:
+      tags:
+      - System Health
+      summary: Liveness check
+      description: Returns service liveness status.
+      operationId: get_health_health_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HealthResponse'
+  /ready:
+    get:
+      tags:
+      - System Health
+      summary: Readiness check
+      description: Accurately verifies availability of external dependencies (Redis,
+        Storage).
+      operationId: get_readiness_ready_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ReadinessResponse'
+components:
+  schemas:
+    Body_create_job_api_v1_jobs_post:
+      properties:
+        script:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Script
+        audio:
+          anyOf:
+          - type: string
+            format: binary
+          - type: 'null'
+          title: Audio
+        aspect_ratio:
+          type: string
+          title: Aspect Ratio
+          default: '16:9'
+        voice:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Voice
+        language:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Language
+        captions:
+          type: boolean
+          title: Captions
+          default: true
+        burn_captions:
+          type: boolean
+          title: Burn Captions
+          default: true
+        footage_provider:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Footage Provider
+      type: object
+      title: Body_create_job_api_v1_jobs_post
+    BrollAsset:
+      properties:
+        id:
+          type: string
+          title: Id
+        source:
+          type: string
+          title: Source
+          default: mock
+        title:
+          type: string
+          title: Title
+        download_url:
+          type: string
+          title: Download Url
+        preview_url:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Preview Url
+        aspect_ratio:
+          type: string
+          title: Aspect Ratio
+          default: '16:9'
+        duration:
+          type: number
+          title: Duration
+        width:
+          anyOf:
+          - type: integer
+          - type: 'null'
+          title: Width
+        height:
+          anyOf:
+          - type: integer
+          - type: 'null'
+          title: Height
+        commercial_use_allowed:
+          type: boolean
+          title: Commercial Use Allowed
+          default: true
+        license_type:
+          type: string
+          title: License Type
+          default: CC0-Commercial-Safe
+        attribution_required:
+          type: boolean
+          title: Attribution Required
+          default: false
+        author_name:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Author Name
+        author_url:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Author Url
+        page_url:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Page Url
+        tags:
+          items:
+            type: string
+          type: array
+          title: Tags
+        ai_generated:
+          anyOf:
+          - type: boolean
+          - type: 'null'
+          title: Ai Generated
+      type: object
+      required:
+      - id
+      - title
+      - download_url
+      - duration
+      title: BrollAsset
+    BrollMatchRequest:
+      properties:
+        scenes:
+          anyOf:
+          - items:
+              $ref: '#/components/schemas/SceneSegment'
+            type: array
+          - type: 'null'
+          title: Scenes
+          description: Pre-segmented scenes to match
+        script:
+          anyOf:
+          - $ref: '#/components/schemas/ScriptInput'
+          - type: 'null'
+          description: Raw script to segment and match
+        target_aspect_ratio:
+          type: string
+          title: Target Aspect Ratio
+          description: 'Target aspect ratio: 16:9, 9:16, or 1:1'
+          default: '16:9'
+        provider:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Provider
+          description: 'Optional provider override: mock or pexels'
+      type: object
+      title: BrollMatchRequest
+    BrollMatchResponse:
+      properties:
+        target_aspect_ratio:
+          type: string
+          title: Target Aspect Ratio
+        provider_used:
+          type: string
+          title: Provider Used
+        total_scenes:
+          type: integer
+          title: Total Scenes
+        matched_scenes:
+          type: integer
+          title: Matched Scenes
+        unmatched_scenes:
+          type: integer
+          title: Unmatched Scenes
+        results:
+          items:
+            $ref: '#/components/schemas/SceneMatchResult'
+          type: array
+          title: Results
+        scenes:
+          items:
+            $ref: '#/components/schemas/SceneSegment'
+          type: array
+          title: Scenes
+        warnings:
+          items:
+            type: string
+          type: array
+          title: Warnings
+      type: object
+      required:
+      - target_aspect_ratio
+      - provider_used
+      - total_scenes
+      - matched_scenes
+      - unmatched_scenes
+      - results
+      - scenes
+      title: BrollMatchResponse
+    BrollRenderRequest:
+      properties:
+        scenes:
+          anyOf:
+          - items:
+              $ref: '#/components/schemas/SceneSegment'
+            type: array
+          - type: 'null'
+          title: Scenes
+          description: Pre-segmented scenes to match
+        script:
+          anyOf:
+          - $ref: '#/components/schemas/ScriptInput'
+          - type: 'null'
+          description: Raw script to segment and match
+        target_aspect_ratio:
+          type: string
+          title: Target Aspect Ratio
+          description: 'Target aspect ratio: 16:9, 9:16, or 1:1'
+          default: '16:9'
+        provider:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Provider
+          description: 'Optional provider override: mock or pexels'
+        output_filename:
+          type: string
+          maxLength: 100
+          minLength: 5
+          title: Output Filename
+          default: pixabay_ocean_video.mp4
+        audio_filename:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Audio Filename
+        subtitle_text:
+          anyOf:
+          - type: string
+            maxLength: 200000
+          - type: 'null'
+          title: Subtitle Text
+      type: object
+      title: BrollRenderRequest
+      description: Match footage, download selected clips, and render the final video.
+    CaptionRequest:
+      properties:
+        scenes:
+          items:
+            $ref: '#/components/schemas/CaptionSceneInput'
+          type: array
+          maxItems: 500
+          minItems: 1
+          title: Scenes
+        format:
+          type: string
+          enum:
+          - srt
+          - vtt
+          title: Format
+          default: srt
+        max_words_per_caption:
+          type: integer
+          maximum: 20.0
+          minimum: 1.0
+          title: Max Words Per Caption
+          default: 8
+      type: object
+      required:
+      - scenes
+      title: CaptionRequest
+    CaptionResponse:
+      properties:
+        format:
+          type: string
+          enum:
+          - srt
+          - vtt
+          title: Format
+        total_captions:
+          type: integer
+          title: Total Captions
+        total_duration_seconds:
+          type: number
+          title: Total Duration Seconds
+        captions:
+          items:
+            $ref: '#/components/schemas/CaptionSegmentOutput'
+          type: array
+          title: Captions
+        subtitle_text:
+          type: string
+          title: Subtitle Text
+        warning:
+          type: string
+          title: Warning
+          default: Caption timings are estimated from scene durations; verify against
+            real audio before publishing.
+      type: object
+      required:
+      - format
+      - total_captions
+      - total_duration_seconds
+      - captions
+      - subtitle_text
+      title: CaptionResponse
+    CaptionSceneInput:
+      properties:
+        scene_id:
+          type: string
+          minLength: 1
+          title: Scene Id
+        start_time:
+          type: number
+          minimum: 0.0
+          title: Start Time
+        end_time:
+          type: number
+          exclusiveMinimum: 0.0
+          title: End Time
+        narration_text:
+          type: string
+          maxLength: 10000
+          minLength: 1
+          title: Narration Text
+      type: object
+      required:
+      - scene_id
+      - start_time
+      - end_time
+      - narration_text
+      title: CaptionSceneInput
+    CaptionSegmentOutput:
+      properties:
+        index:
+          type: integer
+          minimum: 1.0
+          title: Index
+        start_time:
+          type: number
+          minimum: 0.0
+          title: Start Time
+        end_time:
+          type: number
+          exclusiveMinimum: 0.0
+          title: End Time
+        text:
+          type: string
+          title: Text
+      type: object
+      required:
+      - index
+      - start_time
+      - end_time
+      - text
+      title: CaptionSegmentOutput
+    DependencyStatus:
+      properties:
+        status:
+          type: string
+          enum:
+          - up
+          - down
+          - not_configured
+          title: Status
+        details:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Details
+      type: object
+      required:
+      - status
+      title: DependencyStatus
+    HTTPValidationError:
+      properties:
+        detail:
+          items:
+            $ref: '#/components/schemas/ValidationError'
+          type: array
+          title: Detail
+      type: object
+      title: HTTPValidationError
+    HealthResponse:
+      properties:
+        status:
+          type: string
+          enum:
+          - healthy
+          - degraded
+          - unhealthy
+          title: Status
+        timestamp:
+          type: string
+          title: Timestamp
+        version:
+          type: string
+          title: Version
+      type: object
+      required:
+      - status
+      - timestamp
+      - version
+      title: HealthResponse
+    NarrationRequest:
+      properties:
+        script:
+          type: string
+          maxLength: 10000
+          minLength: 1
+          title: Script
+          description: Script to convert into narration
+        provider:
+          type: string
+          title: Provider
+          description: 'TTS provider: ''mock'' (no audio file) or ''edge'' (real narration
+            audio via edge-tts)'
+          default: mock
+        voice_id:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Voice Id
+          description: Optional provider-specific voice identifier
+        target_aspect_ratio:
+          type: string
+          title: Target Aspect Ratio
+          default: '16:9'
+        scene_hints:
+          items:
+            $ref: '#/components/schemas/SceneHintInput'
+          type: array
+          title: Scene Hints
+      type: object
+      required:
+      - script
+      title: NarrationRequest
+    NarrationResponse:
+      properties:
+        provider_used:
+          type: string
+          title: Provider Used
+        target_aspect_ratio:
+          type: string
+          title: Target Aspect Ratio
+        total_scenes:
+          type: integer
+          title: Total Scenes
+        total_duration_seconds:
+          type: number
+          title: Total Duration Seconds
+        audio_is_placeholder:
+          type: boolean
+          title: Audio Is Placeholder
+          description: True when mock audio references are used instead of real audio
+            files
+        audio_file:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Audio File
+          description: Path of the combined narration file when a real provider was
+            used
+        scenes:
+          items:
+            $ref: '#/components/schemas/NarrationSceneResult'
+          type: array
+          title: Scenes
+        warnings:
+          items:
+            type: string
+          type: array
+          title: Warnings
+      type: object
+      required:
+      - provider_used
+      - target_aspect_ratio
+      - total_scenes
+      - total_duration_seconds
+      - audio_is_placeholder
+      - scenes
+      title: NarrationResponse
+    NarrationSceneResult:
+      properties:
+        scene_id:
+          type: string
+          title: Scene Id
+        scene_index:
+          type: integer
+          title: Scene Index
+        narration_text:
+          type: string
+          title: Narration Text
+        audio_path_or_url:
+          type: string
+          title: Audio Path Or Url
+        start_time:
+          type: number
+          minimum: 0.0
+          title: Start Time
+        end_time:
+          type: number
+          exclusiveMinimum: 0.0
+          title: End Time
+        duration_seconds:
+          type: number
+          exclusiveMinimum: 0.0
+          title: Duration Seconds
+      type: object
+      required:
+      - scene_id
+      - scene_index
+      - narration_text
+      - audio_path_or_url
+      - start_time
+      - end_time
+      - duration_seconds
+      title: NarrationSceneResult
+    ReadinessResponse:
+      properties:
+        ready:
+          type: boolean
+          title: Ready
+        status:
+          type: string
+          enum:
+          - ready
+          - not_ready
+          title: Status
+        timestamp:
+          type: string
+          title: Timestamp
+        dependencies:
+          additionalProperties:
+            $ref: '#/components/schemas/DependencyStatus'
+          type: object
+          title: Dependencies
+      type: object
+      required:
+      - ready
+      - status
+      - timestamp
+      - dependencies
+      title: ReadinessResponse
+    RenderRequest:
+      properties:
+        clips:
+          items:
+            type: string
+          type: array
+          maxItems: 30
+          minItems: 1
+          title: Clips
+          description: Video filenames located in backend/storage/source_videos
+        target_aspect_ratio:
+          type: string
+          enum:
+          - '16:9'
+          - '9:16'
+          - '1:1'
+          title: Target Aspect Ratio
+          default: '16:9'
+        clip_durations:
+          anyOf:
+          - items:
+              type: number
+            type: array
+          - type: 'null'
+          title: Clip Durations
+          description: Optional duration in seconds for each clip
+        output_filename:
+          type: string
+          maxLength: 100
+          minLength: 5
+          title: Output Filename
+          default: rendered_video.mp4
+        audio_filename:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Audio Filename
+          description: Optional audio filename in backend/storage/source_audio
+        include_audio_from_clips:
+          type: boolean
+          title: Include Audio From Clips
+          default: false
+        subtitle_text:
+          anyOf:
+          - type: string
+            maxLength: 200000
+          - type: 'null'
+          title: Subtitle Text
+          description: Optional SRT text to burn into the MP4
+      type: object
+      required:
+      - clips
+      title: RenderRequest
+    RenderResponse:
+      properties:
+        status:
+          type: string
+          const: completed
+          title: Status
+          default: completed
+        output_filename:
+          type: string
+          title: Output Filename
+        output_path:
+          type: string
+          title: Output Path
+        target_aspect_ratio:
+          type: string
+          enum:
+          - '16:9'
+          - '9:16'
+          - '1:1'
+          title: Target Aspect Ratio
+        clip_count:
+          type: integer
+          title: Clip Count
+        duration_seconds:
+          type: number
+          title: Duration Seconds
+        width:
+          type: integer
+          title: Width
+        height:
+          type: integer
+          title: Height
+        file_size_bytes:
+          type: integer
+          title: File Size Bytes
+        message:
+          type: string
+          title: Message
+      type: object
+      required:
+      - output_filename
+      - output_path
+      - target_aspect_ratio
+      - clip_count
+      - duration_seconds
+      - width
+      - height
+      - file_size_bytes
+      - message
+      title: RenderResponse
+    SceneHintInput:
+      properties:
+        text:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Text
+          description: Optional scene narrative text
+        visual_hint:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Visual Hint
+          description: Keywords or visual description for B-roll matching
+      type: object
+      title: SceneHintInput
+    SceneMatchResult:
+      properties:
+        scene:
+          $ref: '#/components/schemas/SceneSegment'
+        match_status:
+          type: string
+          enum:
+          - matched
+          - no_candidates
+          - provider_error
+          title: Match Status
+        candidates_found:
+          type: integer
+          minimum: 0.0
+          title: Candidates Found
+          default: 0
+        warning:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Warning
+      type: object
+      required:
+      - scene
+      - match_status
+      title: SceneMatchResult
+    SceneSegment:
+      properties:
+        scene_id:
+          type: string
+          title: Scene Id
+          description: Unique scene identifier
+        scene_index:
+          type: integer
+          minimum: 0.0
+          title: Scene Index
+          description: 1-based sequential order index of the scene
+          default: 0
+        start_time:
+          type: number
+          minimum: 0.0
+          title: Start Time
+          description: Scene start time in seconds
+        end_time:
+          type: number
+          exclusiveMinimum: 0.0
+          title: End Time
+          description: Scene end time in seconds
+        duration_seconds:
+          type: number
+          minimum: 0.0
+          title: Duration Seconds
+          description: Estimated duration in seconds
+          default: 0.0
+        narration_text:
+          type: string
+          title: Narration Text
+          description: Narration transcript for this scene segment
+        broll_query:
+          type: string
+          title: Broll Query
+          description: Derived search query for B-roll retrieval
+        visual_hint:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Visual Hint
+          description: Optional visual hint provided by user
+        selected_asset:
+          anyOf:
+          - $ref: '#/components/schemas/BrollAsset'
+          - type: 'null'
+          description: Selected footage asset for this scene
+      type: object
+      required:
+      - start_time
+      - end_time
+      - narration_text
+      - broll_query
+      title: SceneSegment
+    ScriptIngestionResponse:
+      properties:
+        script_text:
+          type: string
+          title: Script Text
+          description: Sanitized original narration script
+        target_aspect_ratio:
+          type: string
+          title: Target Aspect Ratio
+          description: Target aspect ratio for B-roll sourcing
+        estimated_total_duration:
+          type: number
+          minimum: 0.0
+          title: Estimated Total Duration
+          description: Estimated total narration duration in seconds
+        total_scenes:
+          type: integer
+          minimum: 1.0
+          title: Total Scenes
+          description: Number of segmented scenes
+        scenes:
+          items:
+            $ref: '#/components/schemas/SceneSegment'
+          type: array
+          title: Scenes
+          description: List of segmented scenes with timing and queries
+      type: object
+      required:
+      - script_text
+      - target_aspect_ratio
+      - estimated_total_duration
+      - total_scenes
+      - scenes
+      title: ScriptIngestionResponse
+    ScriptInput:
+      properties:
+        text:
+          type: string
+          title: Text
+          description: Written script text for voiceover narration
+        target_aspect_ratio:
+          type: string
+          title: Target Aspect Ratio
+          description: Target video aspect ratio (16:9, 9:16, 1:1)
+          default: '16:9'
+        voice_id:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Voice Id
+          description: Optional voice identifier for TTS
+        scene_hints:
+          items:
+            $ref: '#/components/schemas/SceneHintInput'
+          type: array
+          title: Scene Hints
+          description: Optional list of scene hints
+      type: object
+      required:
+      - text
+      title: ScriptInput
+    ValidationError:
+      properties:
+        loc:
+          items:
+            anyOf:
+            - type: string
+            - type: integer
+          type: array
+          title: Location
+        msg:
+          type: string
+          title: Message
+        type:
+          type: string
+          title: Error Type
+      type: object
+      required:
+      - loc
+      - msg
+      - type
+      title: ValidationError
