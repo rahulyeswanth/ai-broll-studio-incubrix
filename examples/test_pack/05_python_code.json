@@ -1,0 +1,7 @@
+{
+  "script": "Python is a popular programming language. Developers write scripts to automate tasks.",
+  "voice": "en-US-AriaNeural",
+  "aspect_ratios": [
+    "16:9"
+  ]
+}

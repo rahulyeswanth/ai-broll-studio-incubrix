@@ -1,0 +1,4 @@
+# Optional: real visual verification of footage (VISUAL_VERIFIER=clip). Large downloads (PyTorch).
+open_clip_torch>=2.24.0
+torch>=2.2.0
+pillow>=10.0.0

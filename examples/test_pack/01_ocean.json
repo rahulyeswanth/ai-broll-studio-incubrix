@@ -1,0 +1,12 @@
+{
+  "script": "The ocean covers most of our planet. Plastic waste threatens marine life. Volunteers clean beaches every weekend.",
+  "voice": "en-US-AriaNeural",
+  "aspect_ratios": [
+    "16:9",
+    "9:16",
+    "1:1"
+  ],
+  "avoid": [
+    "people"
+  ]
+}

@@ -1,0 +1,322 @@
+{
+  "schema_version": "1.0",
+  "job_id": "example000001",
+  "aspect_ratio": "9:16",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "audio": {
+    "file": "narration.mp3",
+    "source": "generated:edge-tts"
+  },
+  "total_duration": 9.143,
+  "scenes": [
+    {
+      "scene_id": "scene-001",
+      "index": 1,
+      "start": 0.0,
+      "end": 3.187,
+      "duration": 3.187,
+      "narration_text": "A farmer inspects damaged crops after a pest infestation.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Farmer examining pest-damaged crop leaves in agricultural field.",
+      "visual_analysis": {
+        "subject": "farmer",
+        "action": "examining",
+        "setting": "agricultural field",
+        "objects": [
+          "pest-damaged crop leaves"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "Object refined using context clause ('pest').",
+          "Setting 'agricultural field' is inferred from the subject, not stated in the narration."
+        ]
+      },
+      "search_queries": [
+        "farmer examining pest-damaged crop leaves in agricultural field"
+      ],
+      "queries_detail": [
+        {
+          "query": "farmer examining pest-damaged crop leaves in agricultural field",
+          "returned": 1,
+          "kept": 1,
+          "rejected": [],
+          "best_score": 0.493,
+          "error": null
+        }
+      ],
+      "candidate_count": 1,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "farm",
+        "title": "farmer, crops, field, pest, leaves",
+        "tags": [
+          "farmer",
+          "crops",
+          "field",
+          "pest",
+          "leaves"
+        ],
+        "source_page_url": null,
+        "download_url": "http://127.0.0.1:38401/farm.mp4",
+        "local_file": "clips/pixabay_farm.mp4",
+        "duration_seconds": 4.0,
+        "width": 640,
+        "height": 360,
+        "creator": "tester",
+        "creator_url": null,
+        "ai_generated": null,
+        "retrieved_at": "2026-10-17T13:11:08+00:00",
+        "looped": false,
+        "framing_method": "edge_energy_centroid",
+        "reused_from_earlier_scene": false
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by tester via Pixabay"
+      },
+      "relevance": {
+        "score": 0.493,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.553,
+        "visual_score": null
+      },
+      "selection_reason": "highest-scoring unused candidate (0.49 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "alternatives": [],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ]
+    },
+    {
+      "scene_id": "scene-002",
+      "index": 2,
+      "start": 3.187,
+      "end": 5.329,
+      "duration": 2.142,
+      "narration_text": "Sea turtles swim through the ocean.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Sea turtles swimming through ocean.",
+      "visual_analysis": {
+        "subject": "sea turtles",
+        "action": "swimming",
+        "setting": "ocean",
+        "objects": [],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": []
+      },
+      "search_queries": [
+        "sea turtles swimming through ocean"
+      ],
+      "queries_detail": [
+        {
+          "query": "sea turtles swimming through ocean",
+          "returned": 1,
+          "kept": 1,
+          "rejected": [],
+          "best_score": 0.746,
+          "error": null
+        }
+      ],
+      "candidate_count": 1,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "turtle",
+        "title": "sea, turtle, turtles, ocean, swimming",
+        "tags": [
+          "sea",
+          "turtle",
+          "turtles",
+          "ocean",
+          "swimming"
+        ],
+        "source_page_url": null,
+        "download_url": "http://127.0.0.1:38401/turtle.mp4",
+        "local_file": "clips/pixabay_turtle.mp4",
+        "duration_seconds": 4.0,
+        "width": 640,
+        "height": 360,
+        "creator": "tester",
+        "creator_url": null,
+        "ai_generated": null,
+        "retrieved_at": "2026-10-17T13:11:08+00:00",
+        "looped": false,
+        "framing_method": "edge_energy_centroid",
+        "reused_from_earlier_scene": false
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by tester via Pixabay"
+      },
+      "relevance": {
+        "score": 0.746,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.862,
+        "visual_score": null
+      },
+      "selection_reason": "highest-scoring unused candidate (0.75 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "alternatives": [],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ]
+    },
+    {
+      "scene_id": "scene-003",
+      "index": 3,
+      "start": 5.329,
+      "end": 9.143,
+      "duration": 3.814,
+      "narration_text": "Coral reefs are home to colorful marine life and countless fish.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Life and countless fishing.",
+      "visual_analysis": {
+        "subject": "life and countless",
+        "action": "fishing",
+        "setting": null,
+        "objects": [],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": []
+      },
+      "search_queries": [
+        "life and countless fishing"
+      ],
+      "queries_detail": [
+        {
+          "query": "life and countless fishing",
+          "returned": 1,
+          "kept": 1,
+          "rejected": [],
+          "best_score": 0.614,
+          "error": null
+        }
+      ],
+      "candidate_count": 1,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "reef",
+        "title": "coral, reef, marine, life, fish, colorful",
+        "tags": [
+          "coral",
+          "reef",
+          "marine",
+          "life",
+          "fish",
+          "colorful"
+        ],
+        "source_page_url": null,
+        "download_url": "http://127.0.0.1:38401/reef.mp4",
+        "local_file": "clips/pixabay_reef.mp4",
+        "duration_seconds": 4.0,
+        "width": 640,
+        "height": 360,
+        "creator": "tester",
+        "creator_url": null,
+        "ai_generated": null,
+        "retrieved_at": "2026-10-17T13:11:08+00:00",
+        "looped": false,
+        "framing_method": "edge_energy_centroid",
+        "reused_from_earlier_scene": false
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by tester via Pixabay"
+      },
+      "relevance": {
+        "score": 0.614,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.7,
+        "visual_score": null
+      },
+      "selection_reason": "highest-scoring unused candidate (0.61 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "alternatives": [],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ]
+    }
+  ],
+  "warnings": [
+    "Relevance based on clip title/tags only (no visual verification of frames).",
+    "Footage relevance was estimated from provider titles/tags and scene analysis only. No vision-language model inspected the video frames."
+  ]
+}

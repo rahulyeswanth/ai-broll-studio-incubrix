@@ -1,0 +1,34 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+.venv/
+env/
+venv/
+ENV/
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+storage_data/
+minio_data/
+.idea/
+.vscode/
+*.swp
+
+# Rendered/media files (keep placeholder directories)
+backend/storage/source_videos/*
+!backend/storage/source_videos/.gitkeep
+backend/storage/source_audio/*
+!backend/storage/source_audio/.gitkeep
+backend/storage/rendered_videos/*
+!backend/storage/rendered_videos/.gitkeep
+
+# pipeline job outputs
+backend/storage/jobs/
+backend/storage/audio/
+backend/test_storage_data/
+test_storage_data/

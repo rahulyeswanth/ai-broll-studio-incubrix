@@ -1,0 +1,7 @@
+{
+  "script": "The bank approved the loan this morning. Customers queue at the counter to sign documents.",
+  "voice": "en-US-AriaNeural",
+  "aspect_ratios": [
+    "16:9"
+  ]
+}

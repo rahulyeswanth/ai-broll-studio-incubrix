@@ -1,0 +1,13 @@
+1
+00:00:00,100 --> 00:00:03,017
+A farmer inspects damaged
+crops after a pest infestation.
+
+2
+00:00:03,287 --> 00:00:05,155
+Sea turtles swim through the ocean.
+
+3
+00:00:05,429 --> 00:00:09,046
+Coral reefs are home to colorful
+marine life and countless fish.

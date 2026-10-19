@@ -1,0 +1,266 @@
+{
+  "schema_version": "1.0",
+  "job_id": "example000001",
+  "status": "completed",
+  "created_at": "2026-10-17T13:11:07+00:00",
+  "input_type": "script_only",
+  "input": {
+    "script_characters": 158,
+    "script_words": 26,
+    "script_sha256": "f314bdf599e082dc97c022df564b0413596ae6dd4d0c612ac299245d522e37a3",
+    "scene_count": 3,
+    "voice": "en-US-AriaNeural",
+    "language": "en"
+  },
+  "requested_aspect_ratio": "9:16",
+  "outputs": {
+    "video": {
+      "file": "video.mp4",
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "duration_seconds": 9.167,
+      "size_bytes": 2075410
+    },
+    "audio": {
+      "file": "narration.mp3",
+      "duration_seconds": 9.143,
+      "source": "generated:edge-tts"
+    },
+    "captions": "captions.srt",
+    "timeline": "timeline.json",
+    "manifest": "manifest.json"
+  },
+  "providers": {
+    "tts": {
+      "name": "edge-tts",
+      "model": "Microsoft Edge online neural voices (service-side; no model version exposed)",
+      "version": null,
+      "is_real": true,
+      "voice": "en-US-AriaNeural",
+      "language": "en"
+    },
+    "transcription": {
+      "name": null
+    },
+    "footage": {
+      "name": "pixabay"
+    },
+    "visual_verifier": {
+      "name": "none",
+      "version": null,
+      "performs_visual_analysis": false
+    },
+    "scene_analyzer": {
+      "name": "rule_based_v1"
+    }
+  },
+  "matching": {
+    "strategy": "analyse scene -> multi-query search -> filter -> score -> threshold -> retry -> disclosed fallback",
+    "scoring_methods_used": [
+      "metadata_text_fallback"
+    ],
+    "threshold": 0.45,
+    "weights": {
+      "visual": 0.55,
+      "text": 0.35,
+      "technical": 0.1
+    },
+    "visual_ai_verification_performed": false,
+    "scenes_total": 3,
+    "scenes_matched": 3,
+    "scenes_low_confidence_fallback": 0,
+    "fallback_policy": "best_available"
+  },
+  "captions": {
+    "enabled": true,
+    "file": "captions.srt",
+    "burned_in": true,
+    "cue_count": 3,
+    "timing_method": "tts_word_boundaries",
+    "alignment_precision": "word-level (TTS engine boundaries)"
+  },
+  "processing": {
+    "jobs_subdir": "jobs",
+    "tts_provider": "edge",
+    "transcription_provider": "whisper",
+    "footage_provider": "pixabay",
+    "allow_mock_providers": true,
+    "default_voice": "en-US-AriaNeural",
+    "default_language": "en",
+    "whisper_model_size": "base",
+    "whisper_device": "cpu",
+    "whisper_compute_type": "int8",
+    "tts_timeout_seconds": 60.0,
+    "max_script_chars": 10000,
+    "max_audio_mb": 50,
+    "max_audio_seconds": 900.0,
+    "min_audio_seconds": 1.0,
+    "allowed_audio_extensions": [
+      ".mp3",
+      ".wav",
+      ".m4a",
+      ".aac",
+      ".ogg",
+      ".flac"
+    ],
+    "silence_max_volume_db": -55.0,
+    "min_scene_seconds": 1.0,
+    "max_scene_seconds": 12.0,
+    "candidates_per_query": 12,
+    "max_query_attempts": 6,
+    "match_threshold": 0.45,
+    "weight_visual": 0.55,
+    "weight_text": 0.35,
+    "weight_technical": 0.1,
+    "visual_verifier": "metadata",
+    "clip_model_name": "ViT-B-32",
+    "clip_pretrained": "laion2b_s34b_b79k",
+    "fallback_policy": "best_available",
+    "allow_clip_reuse": true,
+    "min_clip_seconds": 1.5,
+    "max_download_mb": 100,
+    "download_timeout_seconds": 60.0,
+    "allowed_download_hosts": [],
+    "require_https": false,
+    "fps": 30,
+    "crf": 21,
+    "preset": "veryfast",
+    "render_timeout_seconds": 1800,
+    "caption_max_chars_per_line": 38,
+    "caption_max_lines": 2,
+    "caption_max_seconds": 6.0,
+    "caption_min_seconds": 0.5
+  },
+  "processing_durations_seconds": {
+    "narration": 0.698,
+    "validate_input": 0.0,
+    "matching": 0.001,
+    "download": 0.645,
+    "captions": 0.001,
+    "render": 13.939,
+    "validation": 1.456,
+    "total": 16.74
+  },
+  "cost_estimate": {
+    "amount_usd": 0.0,
+    "currency": "USD",
+    "basis": "All configured providers are free to call (Edge TTS endpoint, local Whisper, free-tier footage APIs). Local compute, bandwidth and any provider rate limits are not priced."
+  },
+  "licensing": {
+    "clips": [
+      {
+        "scene_id": "scene-001",
+        "provider": "pixabay",
+        "clip_id": "farm",
+        "license": {
+          "license_name": "Pixabay Content License",
+          "license_url": "https://pixabay.com/service/license-summary/",
+          "commercial_use": true,
+          "commercial_use_basis": "provider_policy_documented",
+          "attribution_required": false,
+          "restrictions": [
+            "Content must not be sold or distributed unaltered as stand-alone content.",
+            "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+            "No implication of endorsement by depicted people or brands."
+          ],
+          "verified_per_clip": false,
+          "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+        },
+        "creator": "tester",
+        "source_page_url": null,
+        "ai_generated": null,
+        "retrieved_at": "2026-10-17T13:11:08+00:00"
+      },
+      {
+        "scene_id": "scene-002",
+        "provider": "pixabay",
+        "clip_id": "turtle",
+        "license": {
+          "license_name": "Pixabay Content License",
+          "license_url": "https://pixabay.com/service/license-summary/",
+          "commercial_use": true,
+          "commercial_use_basis": "provider_policy_documented",
+          "attribution_required": false,
+          "restrictions": [
+            "Content must not be sold or distributed unaltered as stand-alone content.",
+            "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+            "No implication of endorsement by depicted people or brands."
+          ],
+          "verified_per_clip": false,
+          "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+        },
+        "creator": "tester",
+        "source_page_url": null,
+        "ai_generated": null,
+        "retrieved_at": "2026-10-17T13:11:08+00:00"
+      },
+      {
+        "scene_id": "scene-003",
+        "provider": "pixabay",
+        "clip_id": "reef",
+        "license": {
+          "license_name": "Pixabay Content License",
+          "license_url": "https://pixabay.com/service/license-summary/",
+          "commercial_use": true,
+          "commercial_use_basis": "provider_policy_documented",
+          "attribution_required": false,
+          "restrictions": [
+            "Content must not be sold or distributed unaltered as stand-alone content.",
+            "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+            "No implication of endorsement by depicted people or brands."
+          ],
+          "verified_per_clip": false,
+          "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+        },
+        "creator": "tester",
+        "source_page_url": null,
+        "ai_generated": null,
+        "retrieved_at": "2026-10-17T13:11:08+00:00"
+      }
+    ],
+    "all_commercial_use_per_provider_policy": true,
+    "attribution_required_for_any": null,
+    "disclaimer": "Licence data reflects provider-level published policy; per-clip rights are not verified."
+  },
+  "warnings": [
+    "Relevance based on clip title/tags only (no visual verification of frames).",
+    "Footage relevance was estimated from provider titles/tags and scene analysis only. No vision-language model inspected the video frames.",
+    "Commercial-use status is based on the provider's published licence policy only; per-clip rights (identifiable people, trademarks) are not verified."
+  ],
+  "fallback_events": [
+    {
+      "type": "metadata_only_matching",
+      "message": "Footage relevance was estimated from provider titles/tags and scene analysis only. No vision-language model inspected the video frames."
+    }
+  ],
+  "validation": {
+    "video": {
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "file_size_bytes": 2075410,
+        "duration_seconds": 9.167,
+        "video_codec": "h264",
+        "pix_fmt": "yuv420p",
+        "width": 1080,
+        "height": 1920,
+        "r_frame_rate": "30/1",
+        "profile": "High",
+        "audio_codec": "aac",
+        "audio_sample_rate": "48000",
+        "audio_channels": 2,
+        "audio_duration_seconds": 9.1,
+        "black_intervals": [],
+        "freeze_intervals_seconds": []
+      }
+    },
+    "srt_problems": [],
+    "srt_valid": true,
+    "timeline_problems": [],
+    "timeline_valid": true,
+    "duplicate_clips_in_video": [],
+    "narration_covers_video": true
+  }
+}

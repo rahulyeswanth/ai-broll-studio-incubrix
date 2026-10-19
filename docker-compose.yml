@@ -1,0 +1,76 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: ai_broll_backend
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - APP_ENV=development
+      - DEBUG=true
+      - STORAGE_TYPE=minio
+      - MINIO_ENDPOINT=minio:9000
+      - MINIO_ACCESS_KEY=${MINIO_ACCESS_KEY:?set in .env}
+      - MINIO_SECRET_KEY=${MINIO_SECRET_KEY:?set in .env}
+      - MINIO_BUCKET_NAME=broll-assets
+      - REDIS_URL=redis://redis:6379/0
+      - TTS_PROVIDER=edge
+      - TRANSCRIPTION_PROVIDER=whisper
+      - FOOTAGE_PROVIDER=pixabay
+      - PIXABAY_API_KEY=${PIXABAY_API_KEY:-}
+      - PEXELS_API_KEY=${PEXELS_API_KEY:-}
+      - API_KEYS=${API_KEYS:-}
+      - CALLBACK_SECRET=${CALLBACK_SECRET:-}
+      - MINIO_PUBLIC_ENDPOINT=${MINIO_PUBLIC_ENDPOINT:-localhost:9000}
+      - STORAGE_ROOT=/app/storage
+    volumes:
+      - broll_storage:/app/storage
+    depends_on:
+      redis:
+        condition: service_healthy
+      minio:
+        condition: service_healthy
+
+  redis:
+    image: redis:7-alpine
+    container_name: ai_broll_redis
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  minio:
+    image: minio/minio:RELEASE.2024-05-10T01-41-38Z
+    container_name: ai_broll_minio
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ACCESS_KEY:?set in .env}
+      MINIO_ROOT_PASSWORD: ${MINIO_SECRET_KEY:?set in .env}
+    command: server /data --console-address ":9001"
+    volumes:
+      - minio_data:/data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  test:
+    profiles: ["test"]
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    command: python -m pytest -q -p no:cacheprovider
+    environment:
+      - STORAGE_TYPE=local
+
+volumes:
+  minio_data:
+  broll_storage:
