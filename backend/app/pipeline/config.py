@@ -79,6 +79,7 @@ class PipelineSettings:
     fallback_policy: str = "review"          # review | best_available | fail   (see README "Relevance thresholds")
     review_floor: float = 0.30               # below this a scene is UNMATCHED (never filled with a clearly wrong clip)
     high_confidence: float = 0.70            # label "High" needs a passing score >= this AND action/object evidence
+    min_grounded_terms: int = 2              # a scene with >= 5 content words needs a clip whose metadata covers at least this many
     early_stop_score: float = 0.62           # stop trying alternate queries once a fresh clip scores this well
     # evidence weights inside the text/metadata score (only elements present in the scene count)
     evidence_weight_subject: float = 0.30
@@ -168,6 +169,7 @@ def load_settings(env: Optional[Dict[str, str]] = None, dotenv_path: Optional[Pa
     s.visual_verifier = (g("VISUAL_VERIFIER") or s.visual_verifier).lower()
     s.fallback_policy = (g("MATCH_FALLBACK_POLICY") or s.fallback_policy).lower()
     s.review_floor = float(g("MATCH_REVIEW_FLOOR") or s.review_floor)
+    s.min_grounded_terms = int(g("MATCH_MIN_GROUNDED_TERMS") or s.min_grounded_terms)
     s.high_confidence = float(g("MATCH_HIGH_CONFIDENCE") or s.high_confidence)
     s.max_download_alternates = int(g("MAX_DOWNLOAD_ALTERNATES") or s.max_download_alternates)
     s.duplicate_hash_distance = int(g("DUPLICATE_HASH_DISTANCE") or s.duplicate_hash_distance)

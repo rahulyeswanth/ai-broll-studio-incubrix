@@ -58,6 +58,10 @@ class SceneAnalysis:
     negative_terms: List[str] = field(default_factory=list)  # terms that make a clip wrong for this scene
     sense_good_terms: List[str] = field(default_factory=list)  # metadata words that confirm the resolved word sense
     sense_bad_terms: List[str] = field(default_factory=list)   # metadata words that indicate a different sense of the same word
+    content_words: List[str] = field(default_factory=list)     # narration words a clip should reflect (proper names excluded)
+    grounding_terms: List[str] = field(default_factory=list)   # content words + brand stand-in words, used by the grounding gate
+    strict_grounding: bool = False                             # named brand/product in the scene: clip must cover >= 2 scene terms
+    sensitive: bool = False                                    # sad/serious story: sombre queries, upbeat clips rejected
 
     def to_dict(self) -> Dict[str, Any]:
         return asdict(self)

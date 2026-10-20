@@ -15,6 +15,7 @@ from abc import ABC, abstractmethod
 from typing import Callable, Dict, List, Optional, Tuple
 
 from app.services.query_extractor import COMMON_STOP_WORDS
+from .safety import content_words as _content_words, entity_standins, sensitive_profile
 from .lexicon import match_frames, subject_synonyms
 from .models import SceneAnalysis
 
@@ -431,6 +432,13 @@ class RuleBasedSceneAnalyzer(SceneAnalyzer):
             rest_q = queries[len(head):]
             queries = head + frame_queries[:2] + rest_q[:2] + frame_queries[2:] + rest_q[2:]
             notes.append("Alternative search phrasings added from activity frame(s): " + ", ".join(fr.id for fr in frames) + ".")
+        ent_queries, ent_words = entity_standins(text)
+        sensitive, sens_queries, sens_words = sensitive_profile(f"{text} {hint}")
+        queries = ent_queries + sens_queries + queries
+        if ent_queries:
+            notes.append("Named brand/product shown through a generic stand-in (no logos or real people): " + ", ".join(ent_queries) + ".")
+        if sensitive:
+            notes.append("Sensitive story detected: sombre queries used and upbeat clips are rejected.")
         uniq: List[str] = []
         for q in queries:
             q = " ".join(re.sub(r"\s+", " ", q).strip().split()[: self.MAX_QUERY_WORDS])
@@ -489,9 +497,13 @@ class RuleBasedSceneAnalyzer(SceneAnalyzer):
             visual_description=description, queries=uniq, avoid_terms=list(dict.fromkeys(avoid + negative_terms)),
             search_terms=sorted(weights, key=lambda k: -weights[k]), term_weights=weights, notes=notes,
             context=context_np, scene_type=scene_type, frame_ids=[fr.id for fr in frames], gated_frame=bool(primary and primary.gate),
-            subject_terms=subject_synonyms(subject or ""), action_terms=action_terms, object_terms=object_terms,
+            subject_terms=list(dict.fromkeys(subject_synonyms(subject or "") + ent_words + sens_words)), action_terms=action_terms, object_terms=object_terms,
             target_terms=target_terms, setting_terms=setting_terms, foil_terms=list(dict.fromkeys(foil_terms)),
             negative_terms=negative_terms, sense_good_terms=sorted(sense_good), sense_bad_terms=sorted(sense_bad),
+            content_words=_content_words(text, COMMON_STOP_WORDS),
+            grounding_terms=list(dict.fromkeys(_content_words(text, COMMON_STOP_WORDS) + ent_words + sens_words
+                                               + (re.findall(r"[a-z]+", concept_hit) if concept_hit else []))),
+            sensitive=sensitive, strict_grounding=bool(ent_words),
         )
 
 
@@ -528,6 +540,8 @@ class LLMSceneAnalyzer(SceneAnalyzer):
                 notes=base.notes, context=base.context, scene_type=base.scene_type, frame_ids=base.frame_ids, gated_frame=base.gated_frame,
                 subject_terms=base.subject_terms, action_terms=base.action_terms, object_terms=base.object_terms,
                 target_terms=base.target_terms, setting_terms=base.setting_terms, foil_terms=base.foil_terms, negative_terms=base.negative_terms,
+                content_words=base.content_words, grounding_terms=base.grounding_terms, sensitive=base.sensitive,
+                strict_grounding=base.strict_grounding,
             )
         except Exception as exc:  # noqa: BLE001 - any LLM/JSON failure must degrade gracefully
             base.notes.append(f"LLM analysis failed ({type(exc).__name__}); rule-based analysis used instead.")

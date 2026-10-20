@@ -13,6 +13,7 @@ from urllib.parse import urlparse
 
 from .config import PipelineSettings
 from .models import Candidate, SceneAnalysis, ScoredCandidate
+from .safety import UPBEAT_TERMS, term_matches
 
 _WORD = re.compile(r"[a-z]+")
 TARGET_RATIO = {"16:9": 16 / 9, "9:16": 9 / 16, "1:1": 1.0}
@@ -214,6 +215,28 @@ def apply_gates(ev: Evidence, a: SceneAnalysis) -> Optional[str]:
     return None
 
 
+def grounding_gate(c: Candidate, a: SceneAnalysis, settings: PipelineSettings) -> Optional[str]:
+    """Metadata-only anti-nonsense rules. Returns a reason when the clip must be treated as unmatched (below the review floor).
+
+    1. Sensitive story: a clip whose title/tags are upbeat (smile, party, students ...) is never used.
+    2. Grounding: a scene with >= 4 content words needs a clip whose title/tags cover at least ``min_grounded_terms``
+       distinct scene terms; one accidental word (e.g. 'quantum' in 'Zorblax quantum flibbertigibbet ...') is not enough.
+    """
+    cterms = candidate_terms(c)
+    if a.sensitive:
+        upbeat = sorted({_stem(w) for w in UPBEAT_TERMS if _stem(w) in cterms} | {w for w in UPBEAT_TERMS if w in cterms})
+        if upbeat:
+            return f"sensitive story but clip metadata is upbeat ({', '.join(upbeat[:3])})"
+    terms = a.grounding_terms
+    if len(a.content_words) >= 5 or a.strict_grounding or (a.sensitive and len(a.content_words) >= 3):
+        hit = {_stem(w) for w in terms if term_matches(w, _stem, cterms)}
+        subject = {_stem(w) for w in _WORD.findall((a.subject or "").lower())}
+        if len(hit) < settings.min_grounded_terms and not (len(hit) == 1 and subject and subject <= hit):
+            return (f"clip metadata covers only {len(hit)} of the scene's key words "
+                    f"(needs {settings.min_grounded_terms}); too weak to trust")
+    return None
+
+
 # --------------------------------------------------------------------------- scoring
 def text_relevance(c: Candidate, analysis: SceneAnalysis) -> Tuple[float, List[str], List[str]]:
     """Weighted coverage of the scene's terms by the candidate's title/tags (0..1) minus avoid-term penalty."""
@@ -340,6 +363,10 @@ def score_candidates(cands: Sequence[Candidate], analysis: SceneAnalysis, aspect
             gated = "frame analysis found a different activity more likely than the described one"
         if gated and final > cap_value:
             final = cap_value
+        ground = grounding_gate(c, analysis, settings) if v is None else None
+        if ground:
+            gated = ground if not gated else f"{gated}; {ground}"
+            final = min(final, max(0.0, settings.review_floor - 0.01))
 
         reasons = [("evidence - " + ", ".join(matched)) if matched else "no scene terms found in clip title/tags"]
         if gated:
