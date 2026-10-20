@@ -1,0 +1,9 @@
+1
+00:00:00,100 --> 00:00:01,950
+The bank approved the
+loan this morning.
+
+2
+00:00:02,932 --> 00:00:05,607
+Customers queue at the
+counter to sign documents.

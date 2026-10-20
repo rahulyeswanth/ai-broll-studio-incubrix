@@ -1,0 +1,678 @@
+{
+  "schema_version": "1.0",
+  "job_id": "5722e41a79b4",
+  "aspect_ratio": "16:9",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": {
+    "file": "narration.mp3",
+    "source": "generated:edge-tts"
+  },
+  "total_duration": 7.131,
+  "scenes": [
+    {
+      "scene_id": "scene-001",
+      "index": 1,
+      "start": 0.0,
+      "end": 3.432,
+      "duration": 3.432,
+      "narration_text": "Python is a popular programming language.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Programming code popular programing language.",
+      "visual_analysis": {
+        "subject": "programming code popular",
+        "action": "programing",
+        "setting": null,
+        "objects": [
+          "language"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "Word 'python' disambiguated as 'programming code' using context 'programming'."
+        ],
+        "frames": [],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "programing",
+          "program"
+        ],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "programming code popular programing language"
+      ],
+      "queries_detail": [
+        {
+          "query": "programming code popular programing language",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 1.0,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "145864",
+        "title": "robot, cyborg, chat, artificial, intelligence, laptop, technology, ai, 3d, cartoon, automate, computer, programming, program, software, hardware, machine, deep, learning, processing, language, chatbot",
+        "tags": [
+          "robot",
+          "cyborg",
+          "chat",
+          "artificial",
+          "intelligence",
+          "laptop",
+          "technology",
+          "ai",
+          "3d",
+          "cartoon",
+          "automate",
+          "computer",
+          "programming",
+          "program",
+          "software",
+          "hardware",
+          "machine",
+          "deep",
+          "learning",
+          "processing",
+          "language",
+          "chatbot"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-145864/",
+        "download_url": "https://cdn.pixabay.com/video/2023/01/09/145864-787701151_large.mp4",
+        "local_file": "clips/pixabay_145864.mp4",
+        "duration_seconds": 6.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "julientromeur",
+        "creator_url": "https://pixabay.com/users/julientromeur-3630051/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T07:31:38+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.8254,
+            "saturation": 0.1526,
+            "frames": 12
+          },
+          "brightness": -0.12,
+          "saturation": 1.25,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-001.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by julientromeur via Pixabay"
+      },
+      "relevance": {
+        "score": 1.0,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 1.0,
+        "visual_score": null,
+        "label": "High",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "action": 1.0,
+            "object": 1.0
+          },
+          "matched_terms": {
+            "subject": "programming",
+            "action": "programing",
+            "object": "language"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "object": 0.25
+          },
+          "foil_hits": [],
+          "negative_hits": [
+            "cartoon"
+          ],
+          "action_evidenced": true,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:145864",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (1.00 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "programming code popular programing language",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:36784",
+          "title": "glitch, monogram, data, code, retro, gringe, hack, hacking, hacker, programing, digital, network, technology, coding, computer, freevideo",
+          "text_score": 0.906,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.916,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: code, action: programing, word-sense confirmed: code, coding, computer"
+          ],
+          "penalties": [],
+          "label": "High",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "code",
+              "action": "programing"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:4733",
+          "title": "source code, development, code, programming, typing, screen, developing, software, developer, coding, digital, information, application, computer, data, technology, web, internet, program, source, engineering, computing, platform, www, binary, web developer, programming code, programmer, php, java, javascript",
+          "text_score": 0.906,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.916,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: programming, action: programing, word-sense confirmed: code, coding, computer"
+          ],
+          "penalties": [],
+          "label": "High",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "programming",
+              "action": "programing"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:847",
+          "title": "binary, binary code, binary system, matrix, futuristic, texture, virtual, web, bits, byte, computer, digital, zero, one, computer science, data, code, technology, electronics, passage, communication, communication data, connection, programming, program, information, encoding, script, order, system, number, count, backdrop",
+          "text_score": 0.906,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.916,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: programming, action: programing, word-sense confirmed: code, computer, programming"
+          ],
+          "penalties": [],
+          "label": "High",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "programming",
+              "action": "programing"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-002",
+      "index": 2,
+      "start": 3.432,
+      "end": 7.131,
+      "duration": 3.699,
+      "narration_text": "Developers write scripts to automate tasks.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Developers writing scripts in office.",
+      "visual_analysis": {
+        "subject": "developers",
+        "action": "writing",
+        "setting": "office",
+        "objects": [
+          "scripts",
+          "automate tasks"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "Setting 'office' is inferred from the subject, not stated in the narration.",
+          "Alternative search phrasings added from activity frame(s): typing_writing."
+        ],
+        "frames": [
+          "typing_writing"
+        ],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "writing",
+          "handwriting",
+          "notebook",
+          "journaling",
+          "pen"
+        ],
+        "object_evidence_terms": [
+          "pen",
+          "notebook",
+          "paper",
+          "desk"
+        ],
+        "foil_terms": [
+          "typing",
+          "keyboard"
+        ]
+      },
+      "search_queries": [
+        "developers writing scripts in office"
+      ],
+      "queries_detail": [
+        {
+          "query": "developers writing scripts in office",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 1.0,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "117",
+        "title": "notebook, laptop, blur, home office, typing, writing, programming, developer, programmer, fingers, hands, mobile, electronics, device",
+        "tags": [
+          "notebook",
+          "laptop",
+          "blur",
+          "home office",
+          "typing",
+          "writing",
+          "programming",
+          "developer",
+          "programmer",
+          "fingers",
+          "hands",
+          "mobile",
+          "electronics",
+          "device"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-117/",
+        "download_url": "https://cdn.pixabay.com/video/2015/08/08/117-135736418_large.mp4",
+        "local_file": "clips/pixabay_117.mp4",
+        "duration_seconds": 13.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "Coverr-Free-Footage",
+        "creator_url": "https://pixabay.com/users/Coverr-Free-Footage-1281706/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T07:31:38+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.303,
+            "saturation": 0.3321,
+            "frames": 12
+          },
+          "brightness": 0.12,
+          "saturation": 0.8,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-002.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by Coverr-Free-Footage via Pixabay"
+      },
+      "relevance": {
+        "score": 1.0,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 1.0,
+        "visual_score": null,
+        "label": "High",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "action": 1.0,
+            "object": 1.0,
+            "setting": 1.0
+          },
+          "matched_terms": {
+            "subject": "developers",
+            "action": "writing",
+            "object": "notebook",
+            "setting": "office"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "object": 0.25,
+            "setting": 0.075
+          },
+          "foil_hits": [
+            "typing"
+          ],
+          "negative_hits": [],
+          "action_evidenced": true,
+          "object_evidenced": true
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:117",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (1.00 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "developers writing scripts in office",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:3145",
+          "title": "laptop, keyboard, typing, writing, notebook, developer, user, using, study, work, top view, working, computer, technology, communication",
+          "text_score": 0.919,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.928,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: developers, action: writing, object: notebook"
+          ],
+          "penalties": [],
+          "label": "High",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 1.0,
+              "object": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "developers",
+              "action": "writing",
+              "object": "notebook"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.075
+            },
+            "foil_hits": [
+              "typing",
+              "keyboard"
+            ],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": true
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:10822",
+          "title": "keyboard, typing, writing, notebook, computer, technology, laptop, business, internet, work, office, person, hand, communication, working, using, connection, pc, information, desktop, web, workplace",
+          "text_score": 0.676,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.712,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: writing, object: notebook, setting: office"
+          ],
+          "penalties": [],
+          "label": "High",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "object": 1.0,
+              "setting": 1.0
+            },
+            "matched_terms": {
+              "action": "writing",
+              "object": "notebook",
+              "setting": "office"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.075
+            },
+            "foil_hits": [
+              "typing",
+              "keyboard"
+            ],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": true
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:80314",
+          "title": "office, desk, team work, insurance, writing, facts, thinking",
+          "text_score": 0.676,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.712,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: writing, object: desk, setting: office"
+          ],
+          "penalties": [],
+          "label": "High",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "object": 1.0,
+              "setting": 1.0
+            },
+            "matched_terms": {
+              "action": "writing",
+              "object": "desk",
+              "setting": "office"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.075
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": true
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    }
+  ],
+  "warnings": [
+    "Relevance based on clip title/tags only (no visual verification of frames).",
+    "Footage relevance was estimated from provider titles/tags and scene analysis only. No vision-language model inspected the video frames."
+  ],
+  "avoid": [],
+  "footage_provider": "pixabay",
+  "render": {
+    "engine": "per-scene segments + stream-copy concat",
+    "fps": 30,
+    "total_frames": 214,
+    "colour_normalisation": {
+      "enabled": true,
+      "target": {
+        "luma": 0.5642,
+        "saturation": 0.2424
+      },
+      "method": "per-clip mean luma/saturation vs job median; bounded eq filter"
+    },
+    "min_scene_seconds": 2.0
+  }
+}

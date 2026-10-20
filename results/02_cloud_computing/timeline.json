@@ -1,0 +1,878 @@
+{
+  "schema_version": "1.0",
+  "job_id": "2567e57352d7",
+  "aspect_ratio": "16:9",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": {
+    "file": "narration.mp3",
+    "source": "generated:edge-tts"
+  },
+  "total_duration": 7.68,
+  "scenes": [
+    {
+      "scene_id": "scene-001",
+      "index": 1,
+      "start": 0.0,
+      "end": 4.296,
+      "duration": 4.296,
+      "narration_text": "Cloud computing lets teams store data on remote servers.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Cloud computing lets teams store data in remote servers.",
+      "visual_analysis": {
+        "subject": "cloud computing",
+        "action": null,
+        "setting": "remote servers",
+        "objects": [
+          "lets teams store data"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase."
+        ],
+        "frames": [],
+        "scene_type": "object",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "cloud computing store data in remote servers",
+        "cloud computing in remote servers",
+        "cloud computing lets teams store data in remote",
+        "lets teams store data in remote servers",
+        "cloud computing",
+        "cloud computing lets"
+      ],
+      "queries_detail": [
+        {
+          "query": "cloud computing store data in remote servers",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.532,
+          "error": null
+        },
+        {
+          "query": "cloud computing in remote servers",
+          "returned": 12,
+          "kept": 9,
+          "rejected": [
+            "pixabay:14900: duplicate candidate",
+            "pixabay:232538: duplicate candidate",
+            "pixabay:68978: duplicate candidate"
+          ],
+          "best_score": 0.492,
+          "error": null
+        },
+        {
+          "query": "cloud computing lets teams store data in remote",
+          "returned": 12,
+          "kept": 5,
+          "rejected": [
+            "pixabay:68978: duplicate candidate",
+            "pixabay:7529: duplicate candidate",
+            "pixabay:746: duplicate candidate",
+            "pixabay:2176: duplicate candidate",
+            "pixabay:5364: duplicate candidate",
+            "pixabay:232538: duplicate candidate",
+            "pixabay:847: duplicate candidate"
+          ],
+          "best_score": 0.526,
+          "error": null
+        },
+        {
+          "query": "lets teams store data in remote servers",
+          "returned": 12,
+          "kept": 1,
+          "rejected": [
+            "pixabay:14900: duplicate candidate",
+            "pixabay:746: duplicate candidate",
+            "pixabay:2176: duplicate candidate",
+            "pixabay:14906: duplicate candidate",
+            "pixabay:14907: duplicate candidate",
+            "pixabay:4001: duplicate candidate",
+            "pixabay:2340: duplicate candidate",
+            "pixabay:4000: duplicate candidate",
+            "pixabay:1006: duplicate candidate",
+            "pixabay:364184: duplicate candidate",
+            "pixabay:27539: duplicate candidate"
+          ],
+          "best_score": 0.198,
+          "error": null
+        },
+        {
+          "query": "cloud computing",
+          "returned": 12,
+          "kept": 11,
+          "rejected": [
+            "pixabay:68978: duplicate candidate"
+          ],
+          "best_score": 0.579,
+          "error": null
+        },
+        {
+          "query": "cloud computing lets",
+          "returned": 12,
+          "kept": 4,
+          "rejected": [
+            "pixabay:232538: duplicate candidate",
+            "pixabay:68978: duplicate candidate",
+            "pixabay:9797: duplicate candidate",
+            "pixabay:10715: duplicate candidate",
+            "pixabay:9151: duplicate candidate",
+            "pixabay:289855: duplicate candidate",
+            "pixabay:1154: duplicate candidate",
+            "pixabay:112957: duplicate candidate"
+          ],
+          "best_score": 0.482,
+          "error": null
+        }
+      ],
+      "candidate_count": 42,
+      "retry_attempts": 5,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "292275",
+        "title": "cloud network, green tech, digital cloud, internet of things, data network, glowing green, cloud computing, ai connection, smart tech, virtual network, communication, server cloud, modern technology, cyber system, connected world, green motion, neural network, it cloud, data stream, cloud transfer, green glow, internet cloud, smart connection, artificial intelligence, seamless motion",
+        "tags": [
+          "cloud network",
+          "green tech",
+          "digital cloud",
+          "internet of things",
+          "data network",
+          "glowing green",
+          "cloud computing",
+          "ai connection",
+          "smart tech",
+          "virtual network",
+          "communication",
+          "server cloud",
+          "modern technology",
+          "cyber system",
+          "connected world",
+          "green motion",
+          "neural network",
+          "it cloud",
+          "data stream",
+          "cloud transfer",
+          "green glow",
+          "internet cloud",
+          "smart connection",
+          "artificial intelligence",
+          "seamless motion"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-292275/",
+        "download_url": "https://cdn.pixabay.com/video/2025/07/19/292275_large.mp4",
+        "local_file": "clips/pixabay_292275.mp4",
+        "duration_seconds": 10.0,
+        "width": 3840,
+        "height": 2160,
+        "creator": "mydul1986",
+        "creator_url": "https://pixabay.com/users/mydul1986-51272023/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T07:29:39+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.0321,
+            "saturation": 0.833,
+            "frames": 12
+          },
+          "brightness": 0.0265,
+          "saturation": 0.8,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-001.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by mydul1986 via Pixabay"
+      },
+      "relevance": {
+        "score": 0.579,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.527,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "object": 0.125,
+            "setting": 0.25
+          },
+          "matched_terms": {
+            "subject": "cloud",
+            "object": "lets teams store data",
+            "setting": "remote servers"
+          },
+          "weights": {
+            "subject": 0.3,
+            "object": 0.25,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:292275",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.58 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "cloud computing store data in remote servers",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "cloud computing in remote servers",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "cloud computing lets teams store data in remote",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "lets teams store data in remote servers",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "cloud computing",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "cloud computing lets",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:13461",
+          "title": "circuit board, motherboard, technology, computer, digital, hardware, electronics, circuit, chip, processor, design, electricity, macro, tech, server board, server, cloud computing",
+          "text_score": 0.482,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.54,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: cloud, setting: remote servers"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0,
+              "setting": 0.25
+            },
+            "matched_terms": {
+              "subject": "cloud",
+              "setting": "remote servers"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:115996",
+          "title": "cloud, background, technology, weather, beautiful wallpaper, internet, computer, business, storage, data",
+          "text_score": 0.473,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.532,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: cloud, object: lets teams store data"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.125,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "cloud",
+              "object": "lets teams store data"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:128210",
+          "title": "app, business, cloud, communication, computer, concept, connection, data, design, device, flat, graphic, infographic, internet, isometric, laptop, media, mobile, network, search, service, smart, smartphone, social",
+          "text_score": 0.473,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.532,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: cloud, object: lets teams store data"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.125,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "cloud",
+              "object": "lets teams store data"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-002",
+      "index": 2,
+      "start": 4.296,
+      "end": 7.68,
+      "duration": 3.384,
+      "narration_text": "Engineers scale applications in minutes.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Engineers scale applications in minutes.",
+      "visual_analysis": {
+        "subject": "engineers scale",
+        "action": null,
+        "setting": "minutes",
+        "objects": [
+          "applications"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase."
+        ],
+        "frames": [],
+        "scene_type": "object",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "engineers scale applications in minutes",
+        "engineers scale in minutes",
+        "applications in minutes",
+        "engineers scale",
+        "engineers scale applications"
+      ],
+      "queries_detail": [
+        {
+          "query": "engineers scale applications in minutes",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.492,
+          "error": null
+        },
+        {
+          "query": "engineers scale in minutes",
+          "returned": 12,
+          "kept": 0,
+          "rejected": [
+            "pixabay:26452: duplicate candidate",
+            "pixabay:27539: duplicate candidate",
+            "pixabay:50803: duplicate candidate",
+            "pixabay:10350: duplicate candidate",
+            "pixabay:198470: duplicate candidate",
+            "pixabay:151889: duplicate candidate",
+            "pixabay:21223: duplicate candidate",
+            "pixabay:15615: duplicate candidate",
+            "pixabay:215189: duplicate candidate",
+            "pixabay:21222: duplicate candidate",
+            "pixabay:215188: duplicate candidate",
+            "pixabay:282086: duplicate candidate"
+          ],
+          "best_score": null,
+          "error": null
+        },
+        {
+          "query": "applications in minutes",
+          "returned": 12,
+          "kept": 2,
+          "rejected": [
+            "pixabay:27539: duplicate candidate",
+            "pixabay:26452: duplicate candidate",
+            "pixabay:50803: duplicate candidate",
+            "pixabay:10350: duplicate candidate",
+            "pixabay:198470: duplicate candidate",
+            "pixabay:151889: duplicate candidate",
+            "pixabay:21223: duplicate candidate",
+            "pixabay:15615: duplicate candidate",
+            "pixabay:21222: duplicate candidate",
+            "pixabay:282086: duplicate candidate"
+          ],
+          "best_score": 0.111,
+          "error": null
+        },
+        {
+          "query": "engineers scale",
+          "returned": 12,
+          "kept": 10,
+          "rejected": [
+            "pixabay:215189: duplicate candidate",
+            "pixabay:215188: duplicate candidate"
+          ],
+          "best_score": 0.492,
+          "error": null
+        },
+        {
+          "query": "engineers scale applications",
+          "returned": 12,
+          "kept": 1,
+          "rejected": [
+            "pixabay:215189: duplicate candidate",
+            "pixabay:215188: duplicate candidate",
+            "pixabay:212433: duplicate candidate",
+            "pixabay:40816: duplicate candidate",
+            "pixabay:115731: duplicate candidate",
+            "pixabay:40054: duplicate candidate",
+            "pixabay:3779: duplicate candidate",
+            "pixabay:192703: duplicate candidate",
+            "pixabay:154902: duplicate candidate",
+            "pixabay:120194: duplicate candidate",
+            "pixabay:136268: duplicate candidate"
+          ],
+          "best_score": 0.81,
+          "error": null
+        }
+      ],
+      "candidate_count": 25,
+      "retry_attempts": 4,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "4733",
+        "title": "source code, development, code, programming, typing, screen, developing, software, developer, coding, digital, information, application, computer, data, technology, web, internet, program, source, engineering, computing, platform, www, binary, web developer, programming code, programmer, php, java, javascript",
+        "tags": [
+          "source code",
+          "development",
+          "code",
+          "programming",
+          "typing",
+          "screen",
+          "developing",
+          "software",
+          "developer",
+          "coding",
+          "digital",
+          "information",
+          "application",
+          "computer",
+          "data",
+          "technology",
+          "web",
+          "internet",
+          "program",
+          "source",
+          "engineering",
+          "computing",
+          "platform",
+          "www",
+          "binary",
+          "web developer",
+          "programming code",
+          "programmer",
+          "php",
+          "java",
+          "javascript"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-4733/",
+        "download_url": "https://cdn.pixabay.com/video/2016/08/22/4733-179738669_large.mp4",
+        "local_file": "clips/pixabay_4733.mp4",
+        "duration_seconds": 15.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "Coverr-Free-Footage",
+        "creator_url": "https://pixabay.com/users/Coverr-Free-Footage-1281706/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T07:29:41+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.0852,
+            "saturation": 0.1662,
+            "frames": 12
+          },
+          "brightness": -0.0266,
+          "saturation": 1.25,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-002.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by Coverr-Free-Footage via Pixabay"
+      },
+      "relevance": {
+        "score": 0.81,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.786,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "object": 1.0,
+            "setting": 0.0
+          },
+          "matched_terms": {
+            "subject": "engineers",
+            "object": "applications"
+          },
+          "weights": {
+            "subject": 0.3,
+            "object": 0.25,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:4733",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.81 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "engineers scale applications in minutes",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "engineers scale in minutes",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "applications in minutes",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "engineers scale",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "engineers scale applications",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:136259",
+          "title": "business, office, contemporary, computer, work, desk, table, technology, room, background, design, interior, workplace, programmer, software, developer, internet, engineer, programming, job, beautiful wallpaper, monitor, program, people",
+          "text_score": 0.429,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.492,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: engineers"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "engineers"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:136268",
+          "title": "business, office, contemporary, computer, work, desk, table, technology, room, background, design, interior, workplace, programmer, software, developer, internet, beautiful wallpaper, engineer, programming, job, monitor, program, people",
+          "text_score": 0.429,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.492,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: engineers"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "engineers"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:154902",
+          "title": "technology, manufacturing, equipment, process, production, machines, tools, create products, skills, automation, industrial automation, engineer, industry 4",
+          "text_score": 0.429,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.492,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: engineers"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "engineers"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    }
+  ],
+  "warnings": [
+    "Relevance based on clip title/tags only (no visual verification of frames).",
+    "Footage relevance was estimated from provider titles/tags and scene analysis only. No vision-language model inspected the video frames."
+  ],
+  "avoid": [],
+  "footage_provider": "pixabay",
+  "render": {
+    "engine": "per-scene segments + stream-copy concat",
+    "fps": 30,
+    "total_frames": 230,
+    "colour_normalisation": {
+      "enabled": true,
+      "target": {
+        "luma": 0.0586,
+        "saturation": 0.4996
+      },
+      "method": "per-clip mean luma/saturation vs job median; bounded eq filter"
+    },
+    "min_scene_seconds": 2.0
+  }
+}

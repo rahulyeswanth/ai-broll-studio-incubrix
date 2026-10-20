@@ -1,0 +1,94 @@
+[
+  {
+    "input": "01_ocean.json",
+    "job_id": "bdee64747699",
+    "state": "succeeded",
+    "error": null,
+    "seconds": 192.6
+  },
+  {
+    "input": "02_cloud_computing.json",
+    "job_id": "2567e57352d7",
+    "state": "succeeded",
+    "error": null,
+    "seconds": 35.0
+  },
+  {
+    "input": "03_river_bank.json",
+    "job_id": "f56453d38a0e",
+    "state": "succeeded",
+    "error": null,
+    "seconds": 41.1
+  },
+  {
+    "input": "04_finance.json",
+    "job_id": "f8ca466215a9",
+    "state": "succeeded",
+    "error": null,
+    "seconds": 30.6
+  },
+  {
+    "input": "05_python_code.json",
+    "job_id": "5722e41a79b4",
+    "state": "succeeded",
+    "error": null,
+    "seconds": 24.2
+  },
+  {
+    "input": "06_numbers.json",
+    "job_id": "ecbb39ce4162",
+    "state": "succeeded",
+    "error": null,
+    "seconds": 30.2
+  },
+  {
+    "input": "07_abstract.json",
+    "job_id": "1830711e4a37",
+    "state": "succeeded",
+    "error": null,
+    "seconds": 23.4
+  },
+  {
+    "input": "08_no_footage.json",
+    "job_id": "99ef45a536f1",
+    "state": "succeeded",
+    "error": null,
+    "seconds": 50.6
+  },
+  {
+    "input": "09_long_words.json",
+    "job_id": "5e1477cf1c49",
+    "state": "failed",
+    "error": {
+      "code": "FOOTAGE_UNAVAILABLE",
+      "message": "No suitable footage could be found for: scene-001",
+      "retryable": false,
+      "details": {
+        "scenes": [
+          {
+            "scene_id": "scene-001",
+            "narration": "Internationalization and electroencephalography require extraordinarily comprehensive documentation.",
+            "status": "unmatched",
+            "reason": "no candidate reached the minimum relevance floor 0.30 (best was 0.16: weak title/tag match)",
+            "queries": [
+              "internationalization electroencephalography require extraordinarily comprehensive documentation",
+              "internationalization electroencephalography",
+              "require extraordinarily comprehensive documentation",
+              "internationalization electroencephalography require"
+            ],
+            "errors": []
+          }
+        ]
+      },
+      "user_message": "No suitable footage could be found for any scene. Try a more concrete script or another provider."
+    },
+    "seconds": 7.8
+  },
+  {
+    "input": "10_unicode.json",
+    "job_id": "14a0bf25be31",
+    "state": "succeeded",
+    "error": null,
+    "seconds": 65.7
+  }
+]

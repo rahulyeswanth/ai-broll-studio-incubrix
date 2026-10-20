@@ -1,0 +1,670 @@
+{
+  "schema_version": "1.0",
+  "job_id": "1830711e4a37",
+  "aspect_ratio": "16:9",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": {
+    "file": "narration.mp3",
+    "source": "generated:edge-tts"
+  },
+  "total_duration": 6.844,
+  "scenes": [
+    {
+      "scene_id": "scene-001",
+      "index": 1,
+      "start": 0.0,
+      "end": 2.76,
+      "duration": 2.76,
+      "narration_text": "Real value comes from trust.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Real value comes trust.",
+      "visual_analysis": {
+        "subject": "real value",
+        "action": null,
+        "setting": null,
+        "objects": [
+          "comes trust"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase."
+        ],
+        "frames": [],
+        "scene_type": "object",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "real value comes trust"
+      ],
+      "queries_detail": [
+        {
+          "query": "real value comes trust",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.697,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "1027",
+        "title": "home, house, returning, real estate, family, coming home, evening, nightfall, building, shelter, property, residential",
+        "tags": [
+          "home",
+          "house",
+          "returning",
+          "real estate",
+          "family",
+          "coming home",
+          "evening",
+          "nightfall",
+          "building",
+          "shelter",
+          "property",
+          "residential"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-1027/",
+        "download_url": "https://cdn.pixabay.com/video/2015/10/16/1027-142621279_large.mp4",
+        "local_file": "clips/pixabay_1027.mp4",
+        "duration_seconds": 16.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "Coverr-Free-Footage",
+        "creator_url": "https://pixabay.com/users/Coverr-Free-Footage-1281706/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T07:32:39+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.5954,
+            "saturation": 0.3442,
+            "frames": 12
+          },
+          "brightness": 0.026,
+          "saturation": 1.0,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-001.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by Coverr-Free-Footage via Pixabay"
+      },
+      "relevance": {
+        "score": 0.697,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.659,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "object": 0.25
+          },
+          "matched_terms": {
+            "subject": "real",
+            "object": "comes trust"
+          },
+          "weights": {
+            "subject": 0.3,
+            "object": 0.25
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:1027",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.70 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "real value comes trust",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:107140",
+          "title": "tape, registration, sound, pulley, retro, nostalgic, studio, reel to reel tape recorder, reel tape, real to real",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.596,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: real"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "real"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:3121",
+          "title": "diamond, crystal, jewelry, bright, wealth, value, clear, carat, glamour, magnificent, luxury, transparent, 163382674",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.596,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: value"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "value"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:3124",
+          "title": "diamond, crystal, jewelry, bright, wealth, value, clear, carat, glamour, magnificent, luxury, transparent, 163400457",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.596,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: value"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "value"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-002",
+      "index": 2,
+      "start": 2.76,
+      "end": 6.844,
+      "duration": 4.084,
+      "narration_text": "Great teams build it slowly, one decision at a time.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Teams building it one decision in time.",
+      "visual_analysis": {
+        "subject": "teams",
+        "action": "building",
+        "setting": "time",
+        "objects": [
+          "it one decision"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "Alternative search phrasings added from activity frame(s): construction_work."
+        ],
+        "frames": [
+          "construction_work"
+        ],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "construction",
+          "building",
+          "welding",
+          "bricklaying",
+          "working",
+          "crane",
+          "excavator"
+        ],
+        "object_evidence_terms": [
+          "bricks",
+          "scaffolding",
+          "crane",
+          "helmet",
+          "concrete",
+          "steel",
+          "excavator",
+          "tools"
+        ],
+        "foil_terms": [
+          "architecture model",
+          "blueprint only"
+        ]
+      },
+      "search_queries": [
+        "teams building it one decision in time",
+        "construction workers building on site"
+      ],
+      "queries_detail": [
+        {
+          "query": "teams building it one decision in time",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.511,
+          "error": null
+        },
+        {
+          "query": "construction workers building on site",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.733,
+          "error": null
+        }
+      ],
+      "candidate_count": 24,
+      "retry_attempts": 1,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "1009",
+        "title": "construction site, elevator, building, build, architecture, construction, industrial, industry, structure, concrete, engineering, safety, worker, cement, technology, heavy, lift, elevating, builder, machine, lifting",
+        "tags": [
+          "construction site",
+          "elevator",
+          "building",
+          "build",
+          "architecture",
+          "construction",
+          "industrial",
+          "industry",
+          "structure",
+          "concrete",
+          "engineering",
+          "safety",
+          "worker",
+          "cement",
+          "technology",
+          "heavy",
+          "lift",
+          "elevating",
+          "builder",
+          "machine",
+          "lifting"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-1009/",
+        "download_url": "https://cdn.pixabay.com/video/2015/10/16/1009-142621189_large.mp4",
+        "local_file": "clips/pixabay_1009.mp4",
+        "duration_seconds": 15.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "Coverr-Free-Footage",
+        "creator_url": "https://pixabay.com/users/Coverr-Free-Footage-1281706/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T07:32:39+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.6474,
+            "saturation": 0.2972,
+            "frames": 12
+          },
+          "brightness": -0.026,
+          "saturation": 1.0,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-002.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by Coverr-Free-Footage via Pixabay"
+      },
+      "relevance": {
+        "score": 0.733,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.7,
+        "visual_score": null,
+        "label": "High",
+        "evidence": {
+          "elements": {
+            "subject": 0.0,
+            "action": 1.0,
+            "object": 1.0,
+            "setting": 1.0
+          },
+          "matched_terms": {
+            "action": "construction",
+            "object": "concrete",
+            "setting": "construction site"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "object": 0.25,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": true,
+          "object_evidenced": true
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:1009",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.73 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "teams building it one decision in time",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "construction workers building on site",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:121409",
+          "title": "construction, site, excavator, house, new house, development, aerial, drone, building site",
+          "text_score": 0.7,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.733,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: construction, object: excavator, setting: construction site"
+          ],
+          "penalties": [],
+          "label": "High",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "object": 1.0,
+              "setting": 1.0
+            },
+            "matched_terms": {
+              "action": "construction",
+              "object": "excavator",
+              "setting": "construction site"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": true
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:3741",
+          "title": "working site, excavator, construction, site, equipment, digger, machine, develop, industrial, construction site, construction equipment, dig, bulldozer, under construction, development, teamwork, aerial view",
+          "text_score": 0.7,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.733,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: construction, object: excavator, setting: construction site"
+          ],
+          "penalties": [],
+          "label": "High",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "object": 1.0,
+              "setting": 1.0
+            },
+            "matched_terms": {
+              "action": "construction",
+              "object": "excavator",
+              "setting": "construction site"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": true
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:85350",
+          "title": "builder, repair, worker, building, professional, tools, safety, master, construction, foreman",
+          "text_score": 0.588,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.633,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: construction, object: tools, setting: construction site"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "object": 1.0,
+              "setting": 0.25
+            },
+            "matched_terms": {
+              "action": "construction",
+              "object": "tools",
+              "setting": "construction site"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": true
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    }
+  ],
+  "warnings": [
+    "Relevance based on clip title/tags only (no visual verification of frames).",
+    "Footage relevance was estimated from provider titles/tags and scene analysis only. No vision-language model inspected the video frames."
+  ],
+  "avoid": [],
+  "footage_provider": "pixabay",
+  "render": {
+    "engine": "per-scene segments + stream-copy concat",
+    "fps": 30,
+    "total_frames": 205,
+    "colour_normalisation": {
+      "enabled": true,
+      "target": {
+        "luma": 0.6214,
+        "saturation": 0.3207
+      },
+      "method": "per-clip mean luma/saturation vs job median; bounded eq filter"
+    },
+    "min_scene_seconds": 2.0
+  }
+}

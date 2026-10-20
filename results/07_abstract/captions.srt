@@ -1,0 +1,8 @@
+1
+00:00:00,100 --> 00:00:01,887
+Real value comes from trust.
+
+2
+00:00:02,860 --> 00:00:05,910
+Great teams build it slowly,
+one decision at a time.

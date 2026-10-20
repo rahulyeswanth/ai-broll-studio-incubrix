@@ -1,0 +1,395 @@
+{
+  "schema_version": "1.0",
+  "job_id": "99ef45a536f1",
+  "aspect_ratio": "16:9",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": {
+    "file": "narration.mp3",
+    "source": "generated:edge-tts"
+  },
+  "total_duration": 3.918,
+  "scenes": [
+    {
+      "scene_id": "scene-001",
+      "index": 1,
+      "start": 0.0,
+      "end": 3.918,
+      "duration": 3.918,
+      "narration_text": "Zorblax quantum flibbertigibbet snorfs wibbly.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Zorblax quantum flibbertigibbet snorfs wibbly.",
+      "visual_analysis": {
+        "subject": "zorblax quantum",
+        "action": null,
+        "setting": null,
+        "objects": [
+          "flibbertigibbet snorfs wibbly"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase."
+        ],
+        "frames": [],
+        "scene_type": "object",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "zorblax quantum flibbertigibbet snorfs wibbly",
+        "zorblax quantum",
+        "flibbertigibbet snorfs wibbly",
+        "zorblax quantum flibbertigibbet"
+      ],
+      "queries_detail": [
+        {
+          "query": "zorblax quantum flibbertigibbet snorfs wibbly",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.596,
+          "error": null
+        },
+        {
+          "query": "zorblax quantum",
+          "returned": 12,
+          "kept": 0,
+          "rejected": [
+            "pixabay:171885: duplicate candidate",
+            "pixabay:132338: duplicate candidate",
+            "pixabay:54856: duplicate candidate",
+            "pixabay:150865: duplicate candidate",
+            "pixabay:178908: duplicate candidate",
+            "pixabay:49449: duplicate candidate",
+            "pixabay:133081: duplicate candidate",
+            "pixabay:42586: duplicate candidate",
+            "pixabay:71663: duplicate candidate",
+            "pixabay:35923: duplicate candidate",
+            "pixabay:23135: duplicate candidate",
+            "pixabay:251796: duplicate candidate"
+          ],
+          "best_score": null,
+          "error": null
+        },
+        {
+          "query": "flibbertigibbet snorfs wibbly",
+          "returned": 0,
+          "kept": 0,
+          "rejected": [],
+          "best_score": null,
+          "error": null
+        },
+        {
+          "query": "zorblax quantum flibbertigibbet",
+          "returned": 12,
+          "kept": 0,
+          "rejected": [
+            "pixabay:171885: duplicate candidate",
+            "pixabay:132338: duplicate candidate",
+            "pixabay:54856: duplicate candidate",
+            "pixabay:150865: duplicate candidate",
+            "pixabay:178908: duplicate candidate",
+            "pixabay:49449: duplicate candidate",
+            "pixabay:133081: duplicate candidate",
+            "pixabay:42586: duplicate candidate",
+            "pixabay:71663: duplicate candidate",
+            "pixabay:35923: duplicate candidate",
+            "pixabay:23135: duplicate candidate",
+            "pixabay:251796: duplicate candidate"
+          ],
+          "best_score": null,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 3,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "132338",
+        "title": "ocean, waves, nebula, beautiful wallpaper, bubbles, fantasy, dream, magic, psychedelic, music, background, light, reflection, space, dimension, quantum, colorful",
+        "tags": [
+          "ocean",
+          "waves",
+          "nebula",
+          "beautiful wallpaper",
+          "bubbles",
+          "fantasy",
+          "dream",
+          "magic",
+          "psychedelic",
+          "music",
+          "background",
+          "light",
+          "reflection",
+          "space",
+          "dimension",
+          "quantum",
+          "colorful"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-132338/",
+        "download_url": "https://cdn.pixabay.com/video/2022/09/23/132338-753175537_large.mp4",
+        "local_file": "clips/pixabay_132338.mp4",
+        "duration_seconds": 20.0,
+        "width": 3840,
+        "height": 2160,
+        "creator": "ChristianBodhi",
+        "creator_url": "https://pixabay.com/users/ChristianBodhi-9869182/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T07:33:04+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.2719,
+            "saturation": 0.7006,
+            "frames": 12
+          },
+          "brightness": 0.0,
+          "saturation": 1.0,
+          "applied": false
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-001.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by ChristianBodhi via Pixabay"
+      },
+      "relevance": {
+        "score": 0.596,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.545,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "object": 0.0
+          },
+          "matched_terms": {
+            "subject": "quantum"
+          },
+          "weights": {
+            "subject": 0.3,
+            "object": 0.25
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:132338",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.60 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "zorblax quantum flibbertigibbet snorfs wibbly",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "zorblax quantum",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "flibbertigibbet snorfs wibbly",
+            "returned_by_provider": {
+              "pixabay": 0
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "zorblax quantum flibbertigibbet",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:133081",
+          "title": "bubbles, fantasy, dream, magic, beautiful wallpaper, psychedelic, music, background, light, reflection, space, dimension, quantum, colorful, black, spheres, air, mulitverse, universe",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.596,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: quantum"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "quantum"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:150865",
+          "title": "tunnel, stars, light, freedom, escape, music, wormhole, dream, space, universe, cosmos, particles, physics, quantum, mechanics, accelerator, rings, energy, subatomic",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.596,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: quantum"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "quantum"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:171885",
+          "title": "fire, eye, meditation, spiritual, space, quantum",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.596,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: quantum"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "quantum"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    }
+  ],
+  "warnings": [
+    "Relevance based on clip title/tags only (no visual verification of frames).",
+    "Footage relevance was estimated from provider titles/tags and scene analysis only. No vision-language model inspected the video frames."
+  ],
+  "avoid": [],
+  "footage_provider": "pixabay",
+  "render": {
+    "engine": "per-scene segments + stream-copy concat",
+    "fps": 30,
+    "total_frames": 118,
+    "colour_normalisation": {
+      "enabled": true,
+      "target": null,
+      "method": "per-clip mean luma/saturation vs job median; bounded eq filter"
+    },
+    "min_scene_seconds": 2.0
+  }
+}

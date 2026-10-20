@@ -1,0 +1,1065 @@
+{
+  "schema_version": "1.0",
+  "job_id": "bdee64747699",
+  "aspect_ratio": "9:16",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "audio": {
+    "file": "narration.mp3",
+    "source": "generated:edge-tts"
+  },
+  "total_duration": 9.639,
+  "scenes": [
+    {
+      "scene_id": "scene-001",
+      "index": 1,
+      "start": 0.0,
+      "end": 3.096,
+      "duration": 3.096,
+      "narration_text": "The ocean covers most of our planet.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Ocean covers planet.",
+      "visual_analysis": {
+        "subject": "ocean covers",
+        "action": null,
+        "setting": null,
+        "objects": [
+          "planet"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase."
+        ],
+        "frames": [],
+        "scene_type": "object",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "ocean covers planet"
+      ],
+      "queries_detail": [
+        {
+          "query": "ocean covers planet",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 1.0,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "126923",
+        "title": "earth, galaxy, space, surreal, ocean, night, stars, waves, milky way, planet, landscape, fantasy",
+        "tags": [
+          "earth",
+          "galaxy",
+          "space",
+          "surreal",
+          "ocean",
+          "night",
+          "stars",
+          "waves",
+          "milky way",
+          "planet",
+          "landscape",
+          "fantasy"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-126923/",
+        "download_url": "https://cdn.pixabay.com/video/2022/08/06/126923-737187446_large.mp4",
+        "local_file": "clips/pixabay_126923.mp4",
+        "duration_seconds": 25.0,
+        "width": 1080,
+        "height": 1920,
+        "creator": "Mabelle-Elise",
+        "creator_url": "https://pixabay.com/users/Mabelle-Elise-15751335/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T07:27:19+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.3317,
+            "saturation": 0.5924,
+            "frames": 12
+          },
+          "brightness": 0.1107,
+          "saturation": 1.0,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-001.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by Mabelle-Elise via Pixabay"
+      },
+      "relevance": {
+        "score": 1.0,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 1.0,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "object": 1.0
+          },
+          "matched_terms": {
+            "subject": "ocean",
+            "object": "planet"
+          },
+          "weights": {
+            "subject": 0.3,
+            "object": 0.25
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:126923",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (1.00 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "ocean covers planet",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:130978",
+          "title": "sea, ocean, moon, planet, sunset, space, horizon",
+          "text_score": 1.0,
+          "visual_score": null,
+          "technical_score": 0.5,
+          "final_score": 0.889,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: ocean, object: planet",
+            "orientation 1920x1080 differs from 9:16; will be cropped"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 1.0
+            },
+            "matched_terms": {
+              "subject": "ocean",
+              "object": "planet"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:145734",
+          "title": "exoplanets, water planet, planet, planet with aliens, alien planets, planet with moon, oceanic world, ocean planet",
+          "text_score": 1.0,
+          "visual_score": null,
+          "technical_score": 0.5,
+          "final_score": 0.889,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: ocean, object: planet",
+            "orientation 1920x1080 differs from 9:16; will be cropped"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 1.0
+            },
+            "matched_terms": {
+              "subject": "ocean",
+              "object": "planet"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:26016",
+          "title": "planet, earth, atlantic, global, nasa, ocean, pacific, sea, solar, stars, world",
+          "text_score": 1.0,
+          "visual_score": null,
+          "technical_score": 0.5,
+          "final_score": 0.889,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: ocean, object: planet",
+            "orientation 1920x1080 differs from 9:16; will be cropped"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 1.0
+            },
+            "matched_terms": {
+              "subject": "ocean",
+              "object": "planet"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-002",
+      "index": 2,
+      "start": 3.096,
+      "end": 6.216,
+      "duration": 3.12,
+      "narration_text": "Plastic waste threatens marine life.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Plastic waste threatens marine life.",
+      "visual_analysis": {
+        "subject": "plastic waste",
+        "action": null,
+        "setting": null,
+        "objects": [
+          "threatens marine life"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase."
+        ],
+        "frames": [],
+        "scene_type": "object",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "plastic waste threatens marine life",
+        "plastic waste",
+        "threatens marine life",
+        "plastic waste threatens"
+      ],
+      "queries_detail": [
+        {
+          "query": "plastic waste threatens marine life",
+          "returned": 12,
+          "kept": 11,
+          "rejected": [
+            "pixabay:41869: matches avoid rule (people)"
+          ],
+          "best_score": 0.51,
+          "error": null
+        },
+        {
+          "query": "plastic waste",
+          "returned": 12,
+          "kept": 5,
+          "rejected": [
+            "pixabay:41869: matches avoid rule (people)",
+            "pixabay:218339: duplicate candidate",
+            "pixabay:179588: duplicate candidate",
+            "pixabay:31507: duplicate candidate",
+            "pixabay:47516: duplicate candidate",
+            "pixabay:95071: duplicate candidate",
+            "pixabay:47515: duplicate candidate"
+          ],
+          "best_score": 0.51,
+          "error": null
+        },
+        {
+          "query": "threatens marine life",
+          "returned": 12,
+          "kept": 6,
+          "rejected": [
+            "pixabay:24265: matches avoid rule (people)",
+            "pixabay:244754: duplicate candidate",
+            "pixabay:110877: duplicate candidate",
+            "pixabay:10480: duplicate candidate",
+            "pixabay:244755: duplicate candidate",
+            "pixabay:908: duplicate candidate"
+          ],
+          "best_score": 0.182,
+          "error": null
+        },
+        {
+          "query": "plastic waste threatens",
+          "returned": 12,
+          "kept": 3,
+          "rejected": [
+            "pixabay:41869: matches avoid rule (people)",
+            "pixabay:218339: duplicate candidate",
+            "pixabay:179588: duplicate candidate",
+            "pixabay:31507: duplicate candidate",
+            "pixabay:47516: duplicate candidate",
+            "pixabay:95071: duplicate candidate",
+            "pixabay:47515: duplicate candidate",
+            "pixabay:36473: duplicate candidate",
+            "pixabay:36472: duplicate candidate"
+          ],
+          "best_score": 0.51,
+          "error": null
+        }
+      ],
+      "candidate_count": 25,
+      "retry_attempts": 3,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "113588",
+        "title": "waste, environment, plastic, bottle, environmental pollution, garbage, plastic waste, thai, thailand, asia, island, ocean, sea, water, sea water, salt water, waves, move, sand, beach, vacations, travel, underwater, flood, tide",
+        "tags": [
+          "waste",
+          "environment",
+          "plastic",
+          "bottle",
+          "environmental pollution",
+          "garbage",
+          "plastic waste",
+          "thai",
+          "thailand",
+          "asia",
+          "island",
+          "ocean",
+          "sea",
+          "water",
+          "sea water",
+          "salt water",
+          "waves",
+          "move",
+          "sand",
+          "beach",
+          "vacations",
+          "travel",
+          "underwater",
+          "flood",
+          "tide"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-113588/",
+        "download_url": "https://cdn.pixabay.com/video/2022/04/11/113588-698386448_large.mp4",
+        "local_file": "clips/pixabay_113588.mp4",
+        "duration_seconds": 12.0,
+        "width": 3840,
+        "height": 2160,
+        "creator": "viarami",
+        "creator_url": "https://pixabay.com/users/viarami-13458823/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T07:27:19+00:00",
+        "looped": false,
+        "framing_method": "edge_energy_centroid",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.5059,
+            "saturation": 0.235,
+            "frames": 12
+          },
+          "brightness": -0.0635,
+          "saturation": 1.25,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-002.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by viarami via Pixabay"
+      },
+      "relevance": {
+        "score": 0.51,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.545,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "object": 0.0
+          },
+          "matched_terms": {
+            "subject": "plastic"
+          },
+          "weights": {
+            "subject": 0.3,
+            "object": 0.25
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:113588",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.51 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "plastic waste threatens marine life",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "plastic waste",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "threatens marine life",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "plastic waste threatens",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:140956",
+          "title": "garbage, waste, worker, work, recycling, metal, plastic, pollution",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 0.5,
+          "final_score": 0.51,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: plastic",
+            "orientation 1920x1080 differs from 9:16; will be cropped"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "plastic"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:147075",
+          "title": "water tap, waterdrop, fountain, water, drought, waste, quiet, drops",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 0.5,
+          "final_score": 0.51,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: waste",
+            "orientation 3840x2160 differs from 9:16; will be cropped"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "waste"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:179588",
+          "title": "garbage, environmental protection, plastic waste, environmental pollution, environment, plastic, water, riverside, bottle, riverbank",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 0.5,
+          "final_score": 0.51,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: plastic",
+            "orientation 3840x2160 differs from 9:16; will be cropped"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "plastic"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-003",
+      "index": 3,
+      "start": 6.216,
+      "end": 9.639,
+      "duration": 3.423,
+      "narration_text": "Volunteers clean beaches every weekend.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Volunteers cleaning beaches weekend.",
+      "visual_analysis": {
+        "subject": "volunteers",
+        "action": "cleaning",
+        "setting": null,
+        "objects": [
+          "beaches weekend"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [],
+        "frames": [],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "cleaning",
+          "clean"
+        ],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "volunteers cleaning beaches weekend",
+        "volunteers cleaning",
+        "beaches weekend",
+        "volunteers beaches weekend"
+      ],
+      "queries_detail": [
+        {
+          "query": "volunteers cleaning beaches weekend",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.35,
+          "error": null
+        },
+        {
+          "query": "volunteers cleaning",
+          "returned": 12,
+          "kept": 5,
+          "rejected": [
+            "pixabay:379716: duplicate candidate",
+            "pixabay:166273: duplicate candidate",
+            "pixabay:30704: duplicate candidate",
+            "pixabay:3092: duplicate candidate",
+            "pixabay:2333: duplicate candidate",
+            "pixabay:10157: duplicate candidate",
+            "pixabay:12799: duplicate candidate"
+          ],
+          "best_score": 0.35,
+          "error": null
+        },
+        {
+          "query": "beaches weekend",
+          "returned": 12,
+          "kept": 6,
+          "rejected": [
+            "pixabay:136697: matches avoid rule (man)",
+            "pixabay:174417: duplicate candidate",
+            "pixabay:135734: duplicate candidate",
+            "pixabay:39292: duplicate candidate",
+            "pixabay:36911: duplicate candidate",
+            "pixabay:161448: duplicate candidate"
+          ],
+          "best_score": 0.301,
+          "error": null
+        },
+        {
+          "query": "volunteers beaches weekend",
+          "returned": 12,
+          "kept": 0,
+          "rejected": [
+            "pixabay:136697: matches avoid rule (man)",
+            "pixabay:135734: duplicate candidate",
+            "pixabay:174417: duplicate candidate",
+            "pixabay:379716: duplicate candidate",
+            "pixabay:39292: duplicate candidate",
+            "pixabay:36911: duplicate candidate",
+            "pixabay:161448: duplicate candidate",
+            "pixabay:161462: duplicate candidate",
+            "pixabay:248388: duplicate candidate",
+            "pixabay:161455: duplicate candidate",
+            "pixabay:136614: duplicate candidate",
+            "pixabay:32317: duplicate candidate"
+          ],
+          "best_score": null,
+          "error": null
+        }
+      ],
+      "candidate_count": 23,
+      "retry_attempts": 3,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "10157",
+        "title": "birds, nest, cleaning, nature",
+        "tags": [
+          "birds",
+          "nest",
+          "cleaning",
+          "nature"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-10157/",
+        "download_url": "https://cdn.pixabay.com/video/2017/06/20/10157-222898721_large.mp4",
+        "local_file": "clips/pixabay_10157.mp4",
+        "duration_seconds": 20.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "gayulo",
+        "creator_url": "https://pixabay.com/users/gayulo-3585927/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T07:27:19+00:00",
+        "looped": false,
+        "framing_method": "edge_energy_centroid",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.4424,
+            "saturation": 0.7262,
+            "frames": 12
+          },
+          "brightness": 0.0,
+          "saturation": 0.8158,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-003.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by gayulo via Pixabay"
+      },
+      "relevance": {
+        "score": 0.35,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": false,
+        "text_score": 0.353,
+        "visual_score": null,
+        "label": "Low",
+        "evidence": {
+          "elements": {
+            "subject": 0.0,
+            "action": 1.0,
+            "object": 0.0
+          },
+          "matched_terms": {
+            "action": "cleaning"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "object": 0.25
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": true,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": true,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:10157",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "needs review: score 0.35 is below the match threshold 0.45",
+      "match_status": "fallback_low_confidence",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "volunteers cleaning beaches weekend",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "volunteers cleaning",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "beaches weekend",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "volunteers beaches weekend",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:122610",
+          "title": "cat, domestic cat, striped, cute, animal, pet, beauty care, paw, cleaning, wildlife",
+          "text_score": 0.353,
+          "visual_score": null,
+          "technical_score": 0.5,
+          "final_score": 0.35,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: cleaning",
+            "orientation 3840x2160 differs from 9:16; will be cropped"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "action": "cleaning"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:12799",
+          "title": "tractor, field, cleaning, storks",
+          "text_score": 0.353,
+          "visual_score": null,
+          "technical_score": 0.5,
+          "final_score": 0.35,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: cleaning",
+            "orientation 1920x1080 differs from 9:16; will be cropped"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "action": "cleaning"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:131163",
+          "title": "cat, cleaning, black cat, rest, pet, animal, lick, clean cat, mascot, domestic, home",
+          "text_score": 0.353,
+          "visual_score": null,
+          "technical_score": 0.5,
+          "final_score": 0.35,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: cleaning",
+            "orientation 1920x1080 differs from 9:16; will be cropped"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "action": "cleaning"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Scene scene-003: footage may NOT accurately depict the narration (score 0.35 is below the match threshold 0.45)."
+      ],
+      "visual_hint": null
+    }
+  ],
+  "warnings": [
+    "Relevance based on clip title/tags only (no visual verification of frames).",
+    "Scene scene-003: footage may NOT accurately depict the narration (score 0.35 is below the match threshold 0.45).",
+    "Footage relevance was estimated from provider titles/tags and scene analysis only. No vision-language model inspected the video frames."
+  ],
+  "avoid": [
+    "people"
+  ],
+  "footage_provider": "pixabay",
+  "render": {
+    "engine": "per-scene segments + stream-copy concat",
+    "fps": 30,
+    "total_frames": 289,
+    "colour_normalisation": {
+      "enabled": true,
+      "target": {
+        "luma": 0.4424,
+        "saturation": 0.5924
+      },
+      "method": "per-clip mean luma/saturation vs job median; bounded eq filter"
+    },
+    "min_scene_seconds": 2.0
+  }
+}

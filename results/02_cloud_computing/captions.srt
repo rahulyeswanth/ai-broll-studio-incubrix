@@ -1,0 +1,9 @@
+1
+00:00:00,100 --> 00:00:03,412
+Cloud computing lets teams
+store data on remote servers.
+
+2
+00:00:04,396 --> 00:00:06,758
+Engineers scale
+applications in minutes.

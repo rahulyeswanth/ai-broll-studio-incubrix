@@ -1,0 +1,631 @@
+{
+  "schema_version": "1.0",
+  "job_id": "f56453d38a0e",
+  "aspect_ratio": "16:9",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": {
+    "file": "narration.mp3",
+    "source": "generated:edge-tts"
+  },
+  "total_duration": 6.557,
+  "scenes": [
+    {
+      "scene_id": "scene-001",
+      "index": 1,
+      "start": 0.0,
+      "end": 2.928,
+      "duration": 2.928,
+      "narration_text": "The river bank was quiet at dawn.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "River bank quiet in dawn.",
+      "visual_analysis": {
+        "subject": "river bank",
+        "action": null,
+        "setting": "dawn",
+        "objects": [
+          "quiet"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase.",
+          "Word 'bank' disambiguated as 'river bank' using context 'river'."
+        ],
+        "frames": [],
+        "scene_type": "object",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "river bank quiet in dawn"
+      ],
+      "queries_detail": [
+        {
+          "query": "river bank quiet in dawn",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.987,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "149574",
+        "title": "bank, fog, outlook, quiet, wooden bench, clouds, nature, landscape, bench",
+        "tags": [
+          "bank",
+          "fog",
+          "outlook",
+          "quiet",
+          "wooden bench",
+          "clouds",
+          "nature",
+          "landscape",
+          "bench"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-149574/",
+        "download_url": "https://cdn.pixabay.com/video/2023/02/06/149574-796481241_large.mp4",
+        "local_file": "clips/pixabay_149574.mp4",
+        "duration_seconds": 12.0,
+        "width": 3840,
+        "height": 2160,
+        "creator": "adege",
+        "creator_url": "https://pixabay.com/users/adege-4994132/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T07:30:17+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.3164,
+            "saturation": 0.2846,
+            "frames": 12
+          },
+          "brightness": 0.056,
+          "saturation": 1.25,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-001.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by adege via Pixabay"
+      },
+      "relevance": {
+        "score": 0.987,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.986,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "object": 1.0,
+            "setting": 0.0
+          },
+          "matched_terms": {
+            "subject": "bank",
+            "object": "quiet"
+          },
+          "weights": {
+            "subject": 0.3,
+            "object": 0.25,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:149574",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.99 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "river bank quiet in dawn",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:15343",
+          "title": "sunset, lake, eventide, sun, quiet, water, river, nature, peace, reflection, beauty, landscape",
+          "text_score": 0.986,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.987,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: river, object: quiet, word-sense confirmed: lake, nature, river"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "river",
+              "object": "quiet"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:25949",
+          "title": "water, rock, flow, river, quiet",
+          "text_score": 0.986,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.987,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: river, object: quiet, word-sense confirmed: river, water"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "river",
+              "object": "quiet"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:85008",
+          "title": "bank, wooden bench, forest, bach, water, lapping, waterfall, quiet, relax, lonliness, relaxation, trees, leaves, break, nature",
+          "text_score": 0.986,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.987,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: bank, object: quiet, word-sense confirmed: nature, water"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "bank",
+              "object": "quiet"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-002",
+      "index": 2,
+      "start": 2.928,
+      "end": 6.557,
+      "duration": 3.629,
+      "narration_text": "Fishermen cast their lines into the slow water.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Fishermen cast lines watering in slow.",
+      "visual_analysis": {
+        "subject": "fishermen cast lines",
+        "action": "watering",
+        "setting": "slow",
+        "objects": [],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [],
+        "frames": [],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "watering",
+          "water"
+        ],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "fishermen cast lines watering in slow"
+      ],
+      "queries_detail": [
+        {
+          "query": "fishermen cast lines watering in slow",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 1.0,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "27803",
+        "title": "yellow, liquid, paint, space, beautiful wallpaper, motion paint, macro, abstract, slow, ink, ink in water, fluid, flow, water, arts, acrylic, watercolor, parallax, lines, forms, backdrop, background, colors, live wallpaper",
+        "tags": [
+          "yellow",
+          "liquid",
+          "paint",
+          "space",
+          "beautiful wallpaper",
+          "motion paint",
+          "macro",
+          "abstract",
+          "slow",
+          "ink",
+          "ink in water",
+          "fluid",
+          "flow",
+          "water",
+          "arts",
+          "acrylic",
+          "watercolor",
+          "parallax",
+          "lines",
+          "forms",
+          "backdrop",
+          "background",
+          "colors",
+          "live wallpaper"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-27803/",
+        "download_url": "https://cdn.pixabay.com/video/2019/10/11/27803-365891137_large.mp4",
+        "local_file": "clips/pixabay_27803.mp4",
+        "duration_seconds": 24.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "FreeCreativeStuff",
+        "creator_url": "https://pixabay.com/users/FreeCreativeStuff-6346290/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T07:30:17+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.4284,
+            "saturation": 0.8956,
+            "frames": 12
+          },
+          "brightness": -0.056,
+          "saturation": 0.8,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-002.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by FreeCreativeStuff via Pixabay"
+      },
+      "relevance": {
+        "score": 1.0,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 1.0,
+        "visual_score": null,
+        "label": "High",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "action": 1.0,
+            "setting": 1.0
+          },
+          "matched_terms": {
+            "subject": "lines",
+            "action": "watering",
+            "setting": "slow"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": true,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:27803",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (1.00 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "fishermen cast lines watering in slow",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:166586",
+          "title": "water snake, water, pond, wildlife, line, reptile, slow motion",
+          "text_score": 0.6,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.644,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: watering, setting: slow"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "setting": 1.0
+            },
+            "matched_terms": {
+              "action": "watering",
+              "setting": "slow"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:181541",
+          "title": "water, water tap, drinking water, fountain, water pipe, water splashes, slow motion, people in the background",
+          "text_score": 0.6,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.644,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: watering, setting: slow"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "setting": 1.0
+            },
+            "matched_terms": {
+              "action": "watering",
+              "setting": "slow"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:181916",
+          "title": "raindrop, rain, water, lake, rainy weather, drops, wet, raindrops jump, slow motion, nature",
+          "text_score": 0.6,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.644,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: watering, setting: slow"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "setting": 1.0
+            },
+            "matched_terms": {
+              "action": "watering",
+              "setting": "slow"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    }
+  ],
+  "warnings": [
+    "Relevance based on clip title/tags only (no visual verification of frames).",
+    "Footage relevance was estimated from provider titles/tags and scene analysis only. No vision-language model inspected the video frames."
+  ],
+  "avoid": [],
+  "footage_provider": "pixabay",
+  "render": {
+    "engine": "per-scene segments + stream-copy concat",
+    "fps": 30,
+    "total_frames": 197,
+    "colour_normalisation": {
+      "enabled": true,
+      "target": {
+        "luma": 0.3724,
+        "saturation": 0.5901
+      },
+      "method": "per-clip mean luma/saturation vs job median; bounded eq filter"
+    },
+    "min_scene_seconds": 2.0
+  }
+}
