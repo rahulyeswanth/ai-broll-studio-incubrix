@@ -1,0 +1,1183 @@
+{
+  "schema_version": "1.0",
+  "job_id": "965b428e3116",
+  "aspect_ratio": "16:9",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": {
+    "file": "narration.mp3",
+    "source": "generated:edge-tts"
+  },
+  "total_duration": 12.016,
+  "scenes": [
+    {
+      "scene_id": "scene-001",
+      "index": 1,
+      "start": 0.0,
+      "end": 3.648,
+      "duration": 3.648,
+      "narration_text": "A deadly flood swept through the village last night.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Deadly flooding swept through village last night.",
+      "visual_analysis": {
+        "subject": "deadly",
+        "action": "flooding",
+        "setting": "village last night",
+        "objects": [
+          "swept"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [],
+        "frames": [],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "flooding",
+          "flood"
+        ],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "deadly flooding swept through village last night",
+        "deadly flooding through village last night",
+        "swept through village last night",
+        "deadly through village last night",
+        "deadly flooding",
+        "deadly swept village"
+      ],
+      "queries_detail": [
+        {
+          "query": "deadly flooding swept through village last night",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.378,
+          "error": null
+        },
+        {
+          "query": "deadly flooding through village last night",
+          "returned": 12,
+          "kept": 0,
+          "rejected": [
+            "pixabay:249590: duplicate candidate",
+            "pixabay:14324: duplicate candidate",
+            "pixabay:135765: duplicate candidate",
+            "pixabay:17285: duplicate candidate",
+            "pixabay:44927: duplicate candidate",
+            "pixabay:167115: duplicate candidate",
+            "pixabay:50567: duplicate candidate",
+            "pixabay:131615: duplicate candidate",
+            "pixabay:42931: duplicate candidate",
+            "pixabay:4878: duplicate candidate",
+            "pixabay:144742: duplicate candidate",
+            "pixabay:212404: duplicate candidate"
+          ],
+          "best_score": null,
+          "error": null
+        },
+        {
+          "query": "swept through village last night",
+          "returned": 12,
+          "kept": 5,
+          "rejected": [
+            "pixabay:249590: duplicate candidate",
+            "pixabay:17285: duplicate candidate",
+            "pixabay:167115: duplicate candidate",
+            "pixabay:131615: duplicate candidate",
+            "pixabay:4878: duplicate candidate",
+            "pixabay:144742: duplicate candidate",
+            "pixabay:212404: duplicate candidate"
+          ],
+          "best_score": 0.156,
+          "error": null
+        },
+        {
+          "query": "deadly through village last night",
+          "returned": 12,
+          "kept": 0,
+          "rejected": [
+            "pixabay:249590: duplicate candidate",
+            "pixabay:17285: duplicate candidate",
+            "pixabay:167115: duplicate candidate",
+            "pixabay:131615: duplicate candidate",
+            "pixabay:4878: duplicate candidate",
+            "pixabay:212404: duplicate candidate",
+            "pixabay:334302: duplicate candidate",
+            "pixabay:144742: duplicate candidate",
+            "pixabay:150784: duplicate candidate",
+            "pixabay:204326: duplicate candidate",
+            "pixabay:132347: duplicate candidate",
+            "pixabay:10339: duplicate candidate"
+          ],
+          "best_score": null,
+          "error": null
+        },
+        {
+          "query": "deadly flooding",
+          "returned": 12,
+          "kept": 7,
+          "rejected": [
+            "pixabay:14324: duplicate candidate",
+            "pixabay:135765: duplicate candidate",
+            "pixabay:44927: duplicate candidate",
+            "pixabay:50567: duplicate candidate",
+            "pixabay:42931: duplicate candidate"
+          ],
+          "best_score": 0.378,
+          "error": null
+        },
+        {
+          "query": "deadly swept village",
+          "returned": 12,
+          "kept": 10,
+          "rejected": [
+            "pixabay:334302: duplicate candidate",
+            "pixabay:249590: duplicate candidate"
+          ],
+          "best_score": 0.133,
+          "error": null
+        }
+      ],
+      "candidate_count": 34,
+      "retry_attempts": 5,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "109032",
+        "title": "flood, flooding, water, rain, sky, clouds, nature, dark, cold, card drowning, car drowning, people drowning",
+        "tags": [
+          "flood",
+          "flooding",
+          "water",
+          "rain",
+          "sky",
+          "clouds",
+          "nature",
+          "dark",
+          "cold",
+          "card drowning",
+          "car drowning",
+          "people drowning"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-109032/",
+        "download_url": "https://cdn.pixabay.com/video/2022/02/27/109032-683077174_large.mp4",
+        "local_file": "clips/pixabay_109032.mp4",
+        "duration_seconds": 10.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "nazharul",
+        "creator_url": "https://pixabay.com/users/nazharul-24144515/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T07:47:52+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.4917,
+            "saturation": 0.4176,
+            "frames": 12
+          },
+          "brightness": 0.0,
+          "saturation": 0.8,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-001.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by nazharul via Pixabay"
+      },
+      "relevance": {
+        "score": 0.378,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": false,
+        "text_score": 0.3,
+        "visual_score": null,
+        "label": "Low",
+        "evidence": {
+          "elements": {
+            "subject": 0.0,
+            "action": 1.0,
+            "object": 0.0,
+            "setting": 0.0
+          },
+          "matched_terms": {
+            "action": "flooding"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "object": 0.25,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": true,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": true,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:109032",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "needs review: score 0.38 is below the match threshold 0.45",
+      "match_status": "fallback_low_confidence",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "deadly flooding swept through village last night",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "deadly flooding through village last night",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "swept through village last night",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "deadly through village last night",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "deadly flooding",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "deadly swept village",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:135765",
+          "title": "river, flooding, town, water, flood, damage, landscape",
+          "text_score": 0.3,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.378,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: flooding"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "object": 0.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "action": "flooding"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:14324",
+          "title": "high water, flood, river, flooding, europe",
+          "text_score": 0.3,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.378,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: flooding"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "object": 0.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "action": "flooding"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:175038",
+          "title": "lake, promenade, water, rain, raindrop, fog, mountains, nature, landscape, flooding, web, boardwalk, traunsee, austria",
+          "text_score": 0.3,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.378,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: flooding"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "object": 0.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "action": "flooding"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Scene scene-001: footage may NOT accurately depict the narration (score 0.38 is below the match threshold 0.45)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-002",
+      "index": 2,
+      "start": 3.648,
+      "end": 7.824,
+      "duration": 4.176,
+      "narration_text": "Families lost their homes and many people are still missing.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Homes and people missing.",
+      "visual_analysis": {
+        "subject": "homes and people",
+        "action": null,
+        "setting": null,
+        "objects": [
+          "missing"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase."
+        ],
+        "frames": [],
+        "scene_type": "object",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "homes and people missing",
+        "homes and people",
+        "missing",
+        "homes people missing"
+      ],
+      "queries_detail": [
+        {
+          "query": "homes and people missing",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.596,
+          "error": null
+        },
+        {
+          "query": "homes and people",
+          "returned": 12,
+          "kept": 10,
+          "rejected": [
+            "pixabay:92480: duplicate candidate",
+            "pixabay:564: duplicate candidate"
+          ],
+          "best_score": 0.596,
+          "error": null
+        },
+        {
+          "query": "missing",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.515,
+          "error": null
+        },
+        {
+          "query": "homes people missing",
+          "returned": 12,
+          "kept": 0,
+          "rejected": [
+            "pixabay:6387: duplicate candidate",
+            "pixabay:293085: duplicate candidate",
+            "pixabay:36510: duplicate candidate",
+            "pixabay:3627: duplicate candidate",
+            "pixabay:21115: duplicate candidate",
+            "pixabay:14476: duplicate candidate",
+            "pixabay:92480: duplicate candidate",
+            "pixabay:21782: duplicate candidate",
+            "pixabay:21116: duplicate candidate",
+            "pixabay:564: duplicate candidate",
+            "pixabay:44702: duplicate candidate",
+            "pixabay:23258: duplicate candidate"
+          ],
+          "best_score": null,
+          "error": null
+        }
+      ],
+      "candidate_count": 34,
+      "retry_attempts": 3,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "129289",
+        "title": "internet, media, messenger app, person, smart, relax, home wireless, technology, social teen, modern surfing, device user, social media, people, technology virtual, looking, lifestyle",
+        "tags": [
+          "internet",
+          "media",
+          "messenger app",
+          "person",
+          "smart",
+          "relax",
+          "home wireless",
+          "technology",
+          "social teen",
+          "modern surfing",
+          "device user",
+          "social media",
+          "people",
+          "technology virtual",
+          "looking",
+          "lifestyle"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-129289/",
+        "download_url": "https://cdn.pixabay.com/video/2022/08/27/129289-743827387_large.mp4",
+        "local_file": "clips/pixabay_129289.mp4",
+        "duration_seconds": 10.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "Amorn_mimi",
+        "creator_url": "https://pixabay.com/users/Amorn_mimi-27759397/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T07:47:53+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.5584,
+            "saturation": 0.2318,
+            "frames": 12
+          },
+          "brightness": -0.0474,
+          "saturation": 1.25,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-002.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by Amorn_mimi via Pixabay"
+      },
+      "relevance": {
+        "score": 0.596,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.545,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "object": 0.0
+          },
+          "matched_terms": {
+            "subject": "people"
+          },
+          "weights": {
+            "subject": 0.3,
+            "object": 0.25
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:129289",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.60 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "homes and people missing",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "homes and people",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "missing",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "homes people missing",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:133898",
+          "title": "medical, medicine, health, woman, technology, science, healthcare, professional, hospital, doctor, care, virus, covid-19, research, people, laboratory, computer, treatment, test, physician, female, quarantine, patient, home, coronavirus",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.596,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: people"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "people"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:133899",
+          "title": "medical, medicine, health, woman, technology, science, healthcare, professional, hospital, doctor, care, virus, covid-19, research, people, laboratory, computer, treatment, test, physician, female, quarantine, patient, home, coronavirus",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.596,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: people"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "people"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:21115",
+          "title": "seoul, street, traffic, cars, speed, motorcycle, people, movement",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.596,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: people"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "people"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-003",
+      "index": 3,
+      "start": 7.824,
+      "end": 12.016,
+      "duration": 4.192,
+      "narration_text": "Rescue teams are working through the night to find survivors.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Rescuing teams through night to find survivors.",
+      "visual_analysis": {
+        "subject": null,
+        "action": "rescuing",
+        "setting": "night to find survivors",
+        "objects": [
+          "teams"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [],
+        "frames": [],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "rescuing",
+          "rescue"
+        ],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "rescuing teams through night to find survivors",
+        "rescuing through night to find survivors",
+        "teams through night to find survivors",
+        "teams night find"
+      ],
+      "queries_detail": [
+        {
+          "query": "rescuing teams through night to find survivors",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.429,
+          "error": null
+        },
+        {
+          "query": "rescuing through night to find survivors",
+          "returned": 12,
+          "kept": 2,
+          "rejected": [
+            "pixabay:17285: duplicate candidate",
+            "pixabay:131615: duplicate candidate",
+            "pixabay:4878: duplicate candidate",
+            "pixabay:212404: duplicate candidate",
+            "pixabay:132347: duplicate candidate",
+            "pixabay:10339: duplicate candidate",
+            "pixabay:202877: duplicate candidate",
+            "pixabay:7093: duplicate candidate",
+            "pixabay:31569: duplicate candidate",
+            "pixabay:9135: duplicate candidate"
+          ],
+          "best_score": 0.111,
+          "error": null
+        },
+        {
+          "query": "teams through night to find survivors",
+          "returned": 12,
+          "kept": 0,
+          "rejected": [
+            "pixabay:2340: duplicate candidate",
+            "pixabay:17285: duplicate candidate",
+            "pixabay:131615: duplicate candidate",
+            "pixabay:4878: duplicate candidate",
+            "pixabay:212404: duplicate candidate",
+            "pixabay:132347: duplicate candidate",
+            "pixabay:10339: duplicate candidate",
+            "pixabay:286879: duplicate candidate",
+            "pixabay:7093: duplicate candidate",
+            "pixabay:202877: duplicate candidate",
+            "pixabay:9135: duplicate candidate",
+            "pixabay:31569: duplicate candidate"
+          ],
+          "best_score": null,
+          "error": null
+        },
+        {
+          "query": "teams night find",
+          "returned": 12,
+          "kept": 4,
+          "rejected": [
+            "pixabay:2340: duplicate candidate",
+            "pixabay:212404: duplicate candidate",
+            "pixabay:10339: duplicate candidate",
+            "pixabay:286879: duplicate candidate",
+            "pixabay:7093: duplicate candidate",
+            "pixabay:202877: duplicate candidate",
+            "pixabay:31569: duplicate candidate",
+            "pixabay:5393: duplicate candidate"
+          ],
+          "best_score": 0.429,
+          "error": null
+        }
+      ],
+      "candidate_count": 18,
+      "retry_attempts": 3,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "202134",
+        "title": "people, laptop, team, friend, sitting, grass",
+        "tags": [
+          "people",
+          "laptop",
+          "team",
+          "friend",
+          "sitting",
+          "grass"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-202134/",
+        "download_url": "https://cdn.pixabay.com/video/2024/02/27/202134-917314709_large.mp4",
+        "local_file": "clips/pixabay_202134.mp4",
+        "duration_seconds": 17.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "Samidurrakzai",
+        "creator_url": "https://pixabay.com/users/Samidurrakzai-42221807/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T07:47:55+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.511,
+            "saturation": 0.3147,
+            "frames": 12
+          },
+          "brightness": 0.0,
+          "saturation": 1.0,
+          "applied": false
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-003.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by Samidurrakzai via Pixabay"
+      },
+      "relevance": {
+        "score": 0.429,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": false,
+        "text_score": 0.357,
+        "visual_score": null,
+        "label": "Low",
+        "evidence": {
+          "elements": {
+            "action": 0.0,
+            "object": 1.0,
+            "setting": 0.0
+          },
+          "matched_terms": {
+            "object": "teams"
+          },
+          "weights": {
+            "action": 0.3,
+            "object": 0.25,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": true,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:202134",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "needs review: score 0.43 is below the match threshold 0.45",
+      "match_status": "fallback_low_confidence",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "rescuing teams through night to find survivors",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "rescuing through night to find survivors",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "teams through night to find survivors",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "teams night find",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:2340",
+          "title": "meeting, planning, marketing, business, team, people, office, teamwork, group, discussion, business meeting, group meeting, office meeting, team meeting, communication, corporate, talking, plan",
+          "text_score": 0.357,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.429,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - object: teams"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "action": 0.0,
+              "object": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "object": "teams"
+            },
+            "weights": {
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:286879",
+          "title": "team, people, podcast",
+          "text_score": 0.357,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.429,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - object: teams"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "action": 0.0,
+              "object": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "object": "teams"
+            },
+            "weights": {
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:132932",
+          "title": "sunset, sea, boat, sun, evening, nature, night",
+          "text_score": 0.036,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.143,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - setting: night to find survivors"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "action": 0.0,
+              "object": 0.0,
+              "setting": 0.167
+            },
+            "matched_terms": {
+              "setting": "night to find survivors"
+            },
+            "weights": {
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Scene scene-003: footage may NOT accurately depict the narration (score 0.43 is below the match threshold 0.45)."
+      ],
+      "visual_hint": null
+    }
+  ],
+  "warnings": [
+    "Scene scene-001: footage may NOT accurately depict the narration (score 0.38 is below the match threshold 0.45).",
+    "Relevance based on clip title/tags only (no visual verification of frames).",
+    "Scene scene-003: footage may NOT accurately depict the narration (score 0.43 is below the match threshold 0.45).",
+    "Footage relevance was estimated from provider titles/tags and scene analysis only. No vision-language model inspected the video frames."
+  ],
+  "avoid": [],
+  "footage_provider": "pixabay",
+  "render": {
+    "engine": "per-scene segments + stream-copy concat",
+    "fps": 30,
+    "total_frames": 360,
+    "colour_normalisation": {
+      "enabled": true,
+      "target": {
+        "luma": 0.511,
+        "saturation": 0.3147
+      },
+      "method": "per-clip mean luma/saturation vs job median; bounded eq filter"
+    },
+    "min_scene_seconds": 2.0
+  }
+}

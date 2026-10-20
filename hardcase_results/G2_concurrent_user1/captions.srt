@@ -1,0 +1,9 @@
+1
+00:00:00,100 --> 00:00:02,612
+Mountains rise above
+the clouds at sunrise.
+
+2
+00:00:03,580 --> 00:00:06,105
+Hikers climb a narrow
+trail through the pines.

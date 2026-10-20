@@ -1,0 +1,75 @@
+{
+  "job_id": "781ce9459d4b",
+  "created_at": "2026-10-20T07:50:32+00:00",
+  "status": "completed",
+  "progress": 100,
+  "step": "Done",
+  "input_type": "script_only",
+  "aspect_ratio": "16:9",
+  "error": null,
+  "request_fingerprint": null,
+  "footage_provider": null,
+  "updated_at": "2026-10-20T07:51:36+00:00",
+  "aspect_ratios": [
+    "16:9"
+  ],
+  "idempotency_key": false,
+  "request": {
+    "style": null,
+    "avoid": [],
+    "captions": {
+      "burn_in": true,
+      "srt": true
+    },
+    "voice": null
+  },
+  "outputs": {
+    "video": {
+      "file": "video.mp4",
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "duration_seconds": 7.033,
+      "size_bytes": 4104270
+    },
+    "audio": {
+      "file": "narration.mp3",
+      "duration_seconds": 7.027,
+      "source": "generated:edge-tts"
+    },
+    "captions": "captions.srt",
+    "timeline": "timeline.json",
+    "manifest": "manifest.json"
+  },
+  "warnings": [
+    "Relevance based on clip title/tags only (no visual verification of frames).",
+    "Footage relevance was estimated from provider titles/tags and scene analysis only. No vision-language model inspected the video frames.",
+    "Commercial-use status is based on the provider's published licence policy only; per-clip rights (identifiable people, trademarks) are not verified."
+  ],
+  "manifest_status": "completed",
+  "summary": [
+    {
+      "level": "success",
+      "text": "Video generated successfully."
+    },
+    {
+      "level": "info",
+      "text": "Some footage could not be verified visually."
+    }
+  ],
+  "counts": {
+    "needs_review": 0,
+    "unmatched": 0,
+    "alternate_clips": 0
+  },
+  "state": "succeeded",
+  "files": {
+    "narration.mp3": "/jobs/781ce9459d4b/files/narration.mp3",
+    "captions.srt": "/jobs/781ce9459d4b/files/captions.srt",
+    "video.mp4": "/jobs/781ce9459d4b/files/video.mp4",
+    "thumb_scene-001.jpg": "/jobs/781ce9459d4b/files/thumb_scene-001.jpg",
+    "thumb_scene-002.jpg": "/jobs/781ce9459d4b/files/thumb_scene-002.jpg",
+    "timeline.json": "/jobs/781ce9459d4b/files/timeline.json",
+    "manifest.json": "/jobs/781ce9459d4b/files/manifest.json"
+  }
+}

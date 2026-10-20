@@ -1,0 +1,65 @@
+[
+  {
+    "case": "A_named_person_brand",
+    "job_id": "6995f6141729",
+    "result": "succeeded",
+    "seconds": 55.8,
+    "error": null
+  },
+  {
+    "case": "B_sad_news",
+    "job_id": "965b428e3116",
+    "result": "succeeded",
+    "seconds": 55.0,
+    "error": null
+  },
+  {
+    "case": "C_empty_script",
+    "result": "rejected 422",
+    "error": "INVALID_INPUT: Provide audio (audio_url or upload), a script, or scenes."
+  },
+  {
+    "case": "D_silent_audio",
+    "result": "rejected 422",
+    "error": "INVALID_AUDIO: Audio appears to be silent (no audible speech detected)."
+  },
+  {
+    "case": "E_wrong_file_type",
+    "result": "rejected 422",
+    "error": "INVALID_AUDIO: Audio file is unreadable or corrupted: [mp3 @ 0x5655551c7f80] Failed to find two consecutive MPEG audio frames.\n/app/storage/jobs/8653d6d52983/input/upload.mp3: Invalid data found when processing input"
+  },
+  {
+    "case": "F_music_only",
+    "job_id": "80bd09019e2e",
+    "result": "failed",
+    "seconds": 14.0,
+    "error": {
+      "code": "INVALID_INPUT",
+      "message": "No speech was detected in the uploaded audio.",
+      "retryable": false,
+      "details": {},
+      "user_message": "The script or settings were not accepted. Check the input and try again."
+    }
+  },
+  {
+    "case": "G1_double_meaning",
+    "job_id": "869bd756e800",
+    "result": "succeeded",
+    "seconds": 77.2,
+    "error": null
+  },
+  {
+    "case": "G2_concurrent_user1",
+    "job_id": "781ce9459d4b",
+    "result": "succeeded",
+    "seconds": 67.5,
+    "error": null
+  },
+  {
+    "case": "G3_concurrent_user2",
+    "job_id": "e931cb42dc0e",
+    "result": "succeeded",
+    "seconds": 35.6,
+    "error": null
+  }
+]

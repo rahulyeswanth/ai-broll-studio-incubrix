@@ -1,0 +1,1230 @@
+{
+  "schema_version": "1.0",
+  "job_id": "869bd756e800",
+  "aspect_ratio": "16:9",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": {
+    "file": "narration.mp3",
+    "source": "generated:edge-tts"
+  },
+  "total_duration": 11.755,
+  "scenes": [
+    {
+      "scene_id": "scene-001",
+      "index": 1,
+      "start": 0.0,
+      "end": 2.592,
+      "duration": 2.592,
+      "narration_text": "The bank of the river was calm.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "River bank of river calm.",
+      "visual_analysis": {
+        "subject": "river bank of river",
+        "action": null,
+        "setting": null,
+        "objects": [
+          "calm"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase.",
+          "Word 'bank' disambiguated as 'river bank' using context 'river'."
+        ],
+        "frames": [],
+        "scene_type": "object",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "river bank of river calm"
+      ],
+      "queries_detail": [
+        {
+          "query": "river bank of river calm",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 1.0,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "302877",
+        "title": "summer, river, stream, flowing, water, rocks, stones, surface, sunny, bank, grass, clear, nature, horizontal, landscape, scene, scenic, view, park, calm, environment, tranquil, serene, background, peaceful",
+        "tags": [
+          "summer",
+          "river",
+          "stream",
+          "flowing",
+          "water",
+          "rocks",
+          "stones",
+          "surface",
+          "sunny",
+          "bank",
+          "grass",
+          "clear",
+          "nature",
+          "horizontal",
+          "landscape",
+          "scene",
+          "scenic",
+          "view",
+          "park",
+          "calm",
+          "environment",
+          "tranquil",
+          "serene",
+          "background",
+          "peaceful"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-302877/",
+        "download_url": "https://cdn.pixabay.com/video/2025/09/09/302877_large.mp4",
+        "local_file": "clips/pixabay_302877.mp4",
+        "duration_seconds": 15.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "loswin23",
+        "creator_url": "https://pixabay.com/users/loswin23-15879800/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T07:49:14+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.3346,
+            "saturation": 0.367,
+            "frames": 12
+          },
+          "brightness": 0.0364,
+          "saturation": 1.0,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-001.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by loswin23 via Pixabay"
+      },
+      "relevance": {
+        "score": 1.0,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 1.0,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "object": 1.0
+          },
+          "matched_terms": {
+            "subject": "river",
+            "object": "calm"
+          },
+          "weights": {
+            "subject": 0.3,
+            "object": 0.25
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:302877",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (1.00 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "river bank of river calm",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:305988",
+          "title": "summer, nature, river, landscape, forest, trees, water, sky, clous, rock, stone, green, stream, rippling, outdoors, park, bank, foliage, season, scene, scenery, view, beautiful, calm, background",
+          "text_score": 1.0,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 1.0,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: river, object: calm, word-sense confirmed: nature, river, stream"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 1.0
+            },
+            "matched_terms": {
+              "subject": "river",
+              "object": "calm"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:308687",
+          "title": "nature, river, water, flowing, rippling, bank, grass, foliage, rock, stone, wall, cliff, sunny, clear, surface, ripples, calm, sunlight, outdoors, scene, view, horizontal, peaceful",
+          "text_score": 1.0,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 1.0,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: river, object: calm, word-sense confirmed: nature, river, water"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 1.0
+            },
+            "matched_terms": {
+              "subject": "river",
+              "object": "calm"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:310057",
+          "title": "nature, autumn, fall, river, landscape, rock, stone, water, trees, sky, wind, breeze, blowing, bank, park, sunny, horizontal, leaves, outdoors, forest, calm, peaceful, environment, season",
+          "text_score": 1.0,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 1.0,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: river, object: calm, word-sense confirmed: nature, river, water"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 1.0
+            },
+            "matched_terms": {
+              "subject": "river",
+              "object": "calm"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-002",
+      "index": 2,
+      "start": 2.592,
+      "end": 4.992,
+      "duration": 2.4,
+      "narration_text": "The bank approved the loan.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Bank building approved loan.",
+      "visual_analysis": {
+        "subject": "bank building approved",
+        "action": null,
+        "setting": null,
+        "objects": [
+          "loan"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase.",
+          "Word 'bank' disambiguated as 'bank building' using context 'loan'."
+        ],
+        "frames": [],
+        "scene_type": "object",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "bank building approved loan"
+      ],
+      "queries_detail": [
+        {
+          "query": "bank building approved loan",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 1.0,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "12922",
+        "title": "piggy, bank, dollars, flying, money, finance, business, banking, currency, piggy bank, pig, savings, cash, financial, investment, wealth, save, coin, deposit, economy, piggybank, invest, account, retirement, income, investing, rich, symbol, fund, loan, safe, dollar, golden, gold, rotating, moving, bill, design, beautiful wallpaper, 3d, background, loop, seamless, banknote",
+        "tags": [
+          "piggy",
+          "bank",
+          "dollars",
+          "flying",
+          "money",
+          "finance",
+          "business",
+          "banking",
+          "currency",
+          "piggy bank",
+          "pig",
+          "savings",
+          "cash",
+          "financial",
+          "investment",
+          "wealth",
+          "save",
+          "coin",
+          "deposit",
+          "economy",
+          "piggybank",
+          "invest",
+          "account",
+          "retirement",
+          "income",
+          "investing",
+          "rich",
+          "symbol",
+          "fund",
+          "loan",
+          "safe",
+          "dollar",
+          "golden",
+          "gold",
+          "rotating",
+          "moving",
+          "bill",
+          "design",
+          "beautiful wallpaper",
+          "3d",
+          "background",
+          "loop",
+          "seamless",
+          "banknote"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-12922/",
+        "download_url": "https://cdn.pixabay.com/video/2017/11/13/12922-242538643_large.mp4",
+        "local_file": "clips/pixabay_12922.mp4",
+        "duration_seconds": 20.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "QuinceCreative",
+        "creator_url": "https://pixabay.com/users/QuinceCreative-1031690/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T07:49:14+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.4969,
+            "saturation": 0.3962,
+            "frames": 12
+          },
+          "brightness": -0.12,
+          "saturation": 1.0,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-002.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by QuinceCreative via Pixabay"
+      },
+      "relevance": {
+        "score": 1.0,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 1.0,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "object": 1.0
+          },
+          "matched_terms": {
+            "subject": "bank",
+            "object": "loan"
+          },
+          "weights": {
+            "subject": 0.3,
+            "object": 0.25
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:12922",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (1.00 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "bank building approved loan",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:12923",
+          "title": "piggy, bank, finance, money, business, banking, currency, piggy bank, pig, savings, cash, financial, investment, beautiful wallpaper, wealth, save, coin, deposit, economy, piggybank, invest, account, retirement, dollar, income, investing, rich, symbol, fund, loan, safe, usd, payment, design, balance, revenue, pay, interest, conceptual, 3d, background, loop, seamless, gold, metallic, budgeting",
+          "text_score": 1.0,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 1.0,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: bank, object: loan, word-sense confirmed: account, business, finance"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 1.0
+            },
+            "matched_terms": {
+              "subject": "bank",
+              "object": "loan"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:12924",
+          "title": "piggy, bank, money, finance, business, banking, currency, piggy bank, pig, savings, cash, financial, investment, wealth, save, deposit, economy, pink, piggybank, invest, account, retirement, dollar, income, investing, rich, symbol, fund, loan, safe, funny, conceptual, 3d, payment, pay",
+          "text_score": 1.0,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 1.0,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: bank, object: loan, word-sense confirmed: account, business, finance"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 1.0
+            },
+            "matched_terms": {
+              "subject": "bank",
+              "object": "loan"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:198755",
+          "title": "dollar, money, finance, currency, cash, wealth, business, bank, saving, financial",
+          "text_score": 0.745,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.774,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: bank, word-sense confirmed: business, finance, financial"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "bank"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-003",
+      "index": 3,
+      "start": 4.992,
+      "end": 8.76,
+      "duration": 3.768,
+      "narration_text": "A mouse ran across the cloud computing server room.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Mouse running across cloud computing server room.",
+      "visual_analysis": {
+        "subject": "mouse",
+        "action": "running",
+        "setting": "cloud computing server room",
+        "objects": [],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "Word 'mouse' is ambiguous and no disambiguating context was found."
+        ],
+        "frames": [],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "running",
+          "run"
+        ],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "mouse running across cloud computing server room"
+      ],
+      "queries_detail": [
+        {
+          "query": "mouse running across cloud computing server room",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.689,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "162514",
+        "title": "mouse, rodent, 3d, cartoon, animal, superhero, longevity, dna, rna, medical, health, run, running, aging, lifespan, red blood cells, white blood cells, hematopoiesis, anemia, platelets, hematocrit, immune system, dna damage",
+        "tags": [
+          "mouse",
+          "rodent",
+          "3d",
+          "cartoon",
+          "animal",
+          "superhero",
+          "longevity",
+          "dna",
+          "rna",
+          "medical",
+          "health",
+          "run",
+          "running",
+          "aging",
+          "lifespan",
+          "red blood cells",
+          "white blood cells",
+          "hematopoiesis",
+          "anemia",
+          "platelets",
+          "hematocrit",
+          "immune system",
+          "dna damage"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-162514/",
+        "download_url": "https://cdn.pixabay.com/video/2023/05/10/162514-825694643_large.mp4",
+        "local_file": "clips/pixabay_162514.mp4",
+        "duration_seconds": 6.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "julientromeur",
+        "creator_url": "https://pixabay.com/users/julientromeur-3630051/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T07:49:15+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.4074,
+            "saturation": 0.772,
+            "frames": 12
+          },
+          "brightness": -0.0364,
+          "saturation": 0.8,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-003.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by julientromeur via Pixabay"
+      },
+      "relevance": {
+        "score": 0.689,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.65,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "action": 1.0,
+            "setting": 0.0
+          },
+          "matched_terms": {
+            "subject": "mouse",
+            "action": "running"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [
+            "cartoon"
+          ],
+          "action_evidenced": true,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:162514",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.69 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "mouse running across cloud computing server room",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:2967",
+          "title": "iphone, computer, mouse click, computing, online, communication, hand, device, mouse, click, internet, computer mouse, technology, business, office, work, job, finger, net, connection, information, tech, pushing, button, pointer, scroll, input, pc, web, white, electronic, keyboard, equipment, data, working",
+          "text_score": 0.425,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.489,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: mouse, setting: cloud computing server room"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0,
+              "setting": 0.125
+            },
+            "matched_terms": {
+              "subject": "mouse",
+              "setting": "cloud computing server room"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:1046",
+          "title": "keyboard, hands, writing, computer, mouse, typing, project, design, coffee mug, working, study, technology, business, office",
+          "text_score": 0.4,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.467,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: mouse"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "mouse"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:127",
+          "title": "optical mouse, computer, navigation, control, device, mouse cursor, navigate, pc, wireless, black, hardware, periphery, red led",
+          "text_score": 0.4,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.467,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: mouse"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "mouse"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-004",
+      "index": 4,
+      "start": 8.76,
+      "end": 11.755,
+      "duration": 2.995,
+      "narration_text": "A python slithered through the grass.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Python slithered through grass.",
+      "visual_analysis": {
+        "subject": "python slithered",
+        "action": null,
+        "setting": "grass",
+        "objects": [],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase.",
+          "Word 'python' is ambiguous and no disambiguating context was found."
+        ],
+        "frames": [],
+        "scene_type": "place",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "python slithered through grass"
+      ],
+      "queries_detail": [
+        {
+          "query": "python slithered through grass",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.704,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "173143",
+        "title": "snake, python, serpent, reptile, animal, wildlife",
+        "tags": [
+          "snake",
+          "python",
+          "serpent",
+          "reptile",
+          "animal",
+          "wildlife"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-173143/",
+        "download_url": "https://cdn.pixabay.com/video/2023/07/25/173143-848555639_large.mp4",
+        "local_file": "clips/pixabay_173143.mp4",
+        "duration_seconds": 22.0,
+        "width": 3840,
+        "height": 2160,
+        "creator": "FestiMania",
+        "creator_url": "https://pixabay.com/users/FestiMania-17107587/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T07:49:15+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.2235,
+            "saturation": 0.3815,
+            "frames": 12
+          },
+          "brightness": 0.12,
+          "saturation": 1.0,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-004.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by FestiMania via Pixabay"
+      },
+      "relevance": {
+        "score": 0.704,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.667,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "setting": 0.0
+          },
+          "matched_terms": {
+            "subject": "python"
+          },
+          "weights": {
+            "subject": 0.3,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:173143",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.70 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "python slithered through grass",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:212324",
+          "title": "python, green python, green tree python, snake, reptile, green snake, coiling, coiled, coiling snake, wildlife, animal, nature",
+          "text_score": 0.667,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.704,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: python"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "python"
+            },
+            "weights": {
+              "subject": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:220923",
+          "title": "snake, python, rare snake, rough-scaled python, reptile, scales, serpent, boa, australian snake, australian python",
+          "text_score": 0.667,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.704,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: python"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "python"
+            },
+            "weights": {
+              "subject": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:131615",
+          "title": "hand, field, grass, running through crops, relax, green, beautiful, nature",
+          "text_score": 0.333,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.407,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - setting: grass"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "setting": 1.0
+            },
+            "matched_terms": {
+              "setting": "grass"
+            },
+            "weights": {
+              "subject": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    }
+  ],
+  "warnings": [
+    "Relevance based on clip title/tags only (no visual verification of frames).",
+    "Footage relevance was estimated from provider titles/tags and scene analysis only. No vision-language model inspected the video frames."
+  ],
+  "avoid": [],
+  "footage_provider": "pixabay",
+  "render": {
+    "engine": "per-scene segments + stream-copy concat",
+    "fps": 30,
+    "total_frames": 353,
+    "colour_normalisation": {
+      "enabled": true,
+      "target": {
+        "luma": 0.371,
+        "saturation": 0.3889
+      },
+      "method": "per-clip mean luma/saturation vs job median; bounded eq filter"
+    },
+    "min_scene_seconds": 2.0
+  }
+}

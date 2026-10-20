@@ -1,0 +1,745 @@
+{
+  "schema_version": "1.0",
+  "job_id": "781ce9459d4b",
+  "aspect_ratio": "16:9",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": {
+    "file": "narration.mp3",
+    "source": "generated:edge-tts"
+  },
+  "total_duration": 7.027,
+  "scenes": [
+    {
+      "scene_id": "scene-001",
+      "index": 1,
+      "start": 0.0,
+      "end": 3.48,
+      "duration": 3.48,
+      "narration_text": "Mountains rise above the clouds at sunrise.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Mountains rising above clouds.",
+      "visual_analysis": {
+        "subject": "mountains",
+        "action": "rising",
+        "setting": "clouds",
+        "objects": [],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [],
+        "frames": [],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "rising",
+          "rise"
+        ],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "mountains rising above clouds"
+      ],
+      "queries_detail": [
+        {
+          "query": "mountains rising above clouds",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.644,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "128109",
+        "title": "clouds, mountain, summit, view, motion, viewpoint, vista, above the clouds, stunning, trees, forest, nature, sky, landscape",
+        "tags": [
+          "clouds",
+          "mountain",
+          "summit",
+          "view",
+          "motion",
+          "viewpoint",
+          "vista",
+          "above the clouds",
+          "stunning",
+          "trees",
+          "forest",
+          "nature",
+          "sky",
+          "landscape"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-128109/",
+        "download_url": "https://cdn.pixabay.com/video/2022/08/17/128109-740854483_large.mp4",
+        "local_file": "clips/pixabay_128109.mp4",
+        "duration_seconds": 12.0,
+        "width": 3840,
+        "height": 2160,
+        "creator": "JoshuaWoroniecki",
+        "creator_url": "https://pixabay.com/users/JoshuaWoroniecki-12734309/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T07:50:36+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.3558,
+            "saturation": 0.3619,
+            "frames": 12
+          },
+          "brightness": 0.0948,
+          "saturation": 1.0,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-001.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by JoshuaWoroniecki via Pixabay"
+      },
+      "relevance": {
+        "score": 0.644,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.6,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "action": 0.0,
+            "setting": 1.0
+          },
+          "matched_terms": {
+            "subject": "mountains",
+            "setting": "clouds"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:128109",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.64 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "mountains rising above clouds",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:169951",
+          "title": "starry sky, mountains, milky way, universe, cloud, city lights, hotakadake, chubu mountain national park, time lapse, japan",
+          "text_score": 0.6,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.644,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: mountains, setting: clouds"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0,
+              "setting": 1.0
+            },
+            "matched_terms": {
+              "subject": "mountains",
+              "setting": "clouds"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:278750",
+          "title": "clouds, beautiful wallpaper, storm, landscape, background, mountain background",
+          "text_score": 0.6,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.644,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: mountains, setting: clouds"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0,
+              "setting": 1.0
+            },
+            "matched_terms": {
+              "subject": "mountains",
+              "setting": "clouds"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:289855",
+          "title": "mountains, morning, cloud, sea of clouds, asahi, kii mountains, japan, landscape",
+          "text_score": 0.6,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.644,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: mountains, setting: clouds"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0,
+              "setting": 1.0
+            },
+            "matched_terms": {
+              "subject": "mountains",
+              "setting": "clouds"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-002",
+      "index": 2,
+      "start": 3.48,
+      "end": 7.027,
+      "duration": 3.547,
+      "narration_text": "Hikers climb a narrow trail through the pines.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Hikers climbing narrow trail through pines.",
+      "visual_analysis": {
+        "subject": "hikers",
+        "action": "climbing",
+        "setting": "pines",
+        "objects": [
+          "narrow trail"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [],
+        "frames": [],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "climbing",
+          "climb"
+        ],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "hikers climbing narrow trail through pines",
+        "hikers climbing through pines",
+        "narrow trail through pines",
+        "hikers through pines",
+        "hikers climbing"
+      ],
+      "queries_detail": [
+        {
+          "query": "hikers climbing narrow trail through pines",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.433,
+          "error": null
+        },
+        {
+          "query": "hikers climbing through pines",
+          "returned": 12,
+          "kept": 4,
+          "rejected": [
+            "pixabay:142579: duplicate candidate",
+            "pixabay:1409: duplicate candidate",
+            "pixabay:335040: duplicate candidate",
+            "pixabay:17285: duplicate candidate",
+            "pixabay:176780: duplicate candidate",
+            "pixabay:183442: duplicate candidate",
+            "pixabay:222082: duplicate candidate",
+            "pixabay:33565: duplicate candidate"
+          ],
+          "best_score": 0.378,
+          "error": null
+        },
+        {
+          "query": "narrow trail through pines",
+          "returned": 12,
+          "kept": 5,
+          "rejected": [
+            "pixabay:71835: duplicate candidate",
+            "pixabay:142579: duplicate candidate",
+            "pixabay:136509: duplicate candidate",
+            "pixabay:335040: duplicate candidate",
+            "pixabay:17285: duplicate candidate",
+            "pixabay:131615: duplicate candidate",
+            "pixabay:4878: duplicate candidate"
+          ],
+          "best_score": 0.167,
+          "error": null
+        },
+        {
+          "query": "hikers through pines",
+          "returned": 12,
+          "kept": 1,
+          "rejected": [
+            "pixabay:142579: duplicate candidate",
+            "pixabay:335040: duplicate candidate",
+            "pixabay:17285: duplicate candidate",
+            "pixabay:176780: duplicate candidate",
+            "pixabay:183442: duplicate candidate",
+            "pixabay:222082: duplicate candidate",
+            "pixabay:131615: duplicate candidate",
+            "pixabay:4878: duplicate candidate",
+            "pixabay:132347: duplicate candidate",
+            "pixabay:71835: duplicate candidate",
+            "pixabay:99807: duplicate candidate"
+          ],
+          "best_score": 0.378,
+          "error": null
+        },
+        {
+          "query": "hikers climbing",
+          "returned": 12,
+          "kept": 10,
+          "rejected": [
+            "pixabay:1409: duplicate candidate",
+            "pixabay:176780: duplicate candidate"
+          ],
+          "best_score": 0.7,
+          "error": null
+        }
+      ],
+      "candidate_count": 32,
+      "retry_attempts": 4,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "297771",
+        "title": "ai generated, mountain, hiker, hoodie, backpack, cross, clouds, sunrise, landscape, adventure, journey, freedom, nature, trail, peak, view, scene, explore, climb, wandering, outdoors, faith, spiritual, path, travel",
+        "tags": [
+          "ai generated",
+          "mountain",
+          "hiker",
+          "hoodie",
+          "backpack",
+          "cross",
+          "clouds",
+          "sunrise",
+          "landscape",
+          "adventure",
+          "journey",
+          "freedom",
+          "nature",
+          "trail",
+          "peak",
+          "view",
+          "scene",
+          "explore",
+          "climb",
+          "wandering",
+          "outdoors",
+          "faith",
+          "spiritual",
+          "path",
+          "travel"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-297771/",
+        "download_url": "https://cdn.pixabay.com/video/2025/08/16/297771_large.mp4",
+        "local_file": "clips/pixabay_297771.mp4",
+        "duration_seconds": 5.0,
+        "width": 2556,
+        "height": 1439,
+        "creator": "Vlad-X",
+        "creator_url": "https://pixabay.com/users/Vlad-X-51466350/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T07:50:38+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.5454,
+            "saturation": 0.4009,
+            "frames": 12
+          },
+          "brightness": -0.0948,
+          "saturation": 1.0,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-002.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by Vlad-X via Pixabay"
+      },
+      "relevance": {
+        "score": 0.7,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.662,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "action": 1.0,
+            "object": 0.25,
+            "setting": 0.0
+          },
+          "matched_terms": {
+            "subject": "hikers",
+            "action": "climbing",
+            "object": "narrow trail"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "object": 0.25,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": true,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:297771",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.70 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "hikers climbing narrow trail through pines",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "hikers climbing through pines",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "narrow trail through pines",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "hikers through pines",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "hikers climbing",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:176784",
+          "title": "man, hiker, forest, walk, trekking, climb, camp",
+          "text_score": 0.6,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.644,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: hikers, action: climbing"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 1.0,
+              "object": 0.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "hikers",
+              "action": "climbing"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:314126",
+          "title": "mountians, mountian, nature, landscape, sky, sport, inukshuk, trees, mountain, climbing, outdoors, saguaro, vorarlberg, snow, cold, scenic, scenery, outdoor, summer, sunrise, travel, hiker, adventure, lake, mountains",
+          "text_score": 0.6,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.644,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: hikers, action: climbing"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 1.0,
+              "object": 0.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "hikers",
+              "action": "climbing"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:314128",
+          "title": "mountians, mountian, nature, landscape, sky, sport, inukshuk, trees, mountain, climbing, outdoors, saguaro, vorarlberg, snow, cold, scenic, scenery, outdoor, summer, sunrise, travel, hiker, adventure, lake, mountains",
+          "text_score": 0.6,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.644,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: hikers, action: climbing"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 1.0,
+              "object": 0.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "hikers",
+              "action": "climbing"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    }
+  ],
+  "warnings": [
+    "Relevance based on clip title/tags only (no visual verification of frames).",
+    "Footage relevance was estimated from provider titles/tags and scene analysis only. No vision-language model inspected the video frames."
+  ],
+  "avoid": [],
+  "footage_provider": "pixabay",
+  "render": {
+    "engine": "per-scene segments + stream-copy concat",
+    "fps": 30,
+    "total_frames": 211,
+    "colour_normalisation": {
+      "enabled": true,
+      "target": {
+        "luma": 0.4506,
+        "saturation": 0.3814
+      },
+      "method": "per-clip mean luma/saturation vs job median; bounded eq filter"
+    },
+    "min_scene_seconds": 2.0
+  }
+}

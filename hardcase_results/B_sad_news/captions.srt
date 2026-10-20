@@ -1,0 +1,14 @@
+1
+00:00:00,100 --> 00:00:02,763
+A deadly flood swept through
+the village last night.
+
+2
+00:00:03,748 --> 00:00:06,948
+Families lost their homes and
+many people are still missing.
+
+3
+00:00:07,924 --> 00:00:11,086
+Rescue teams are working through
+the night to find survivors.

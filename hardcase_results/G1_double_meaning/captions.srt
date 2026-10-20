@@ -1,0 +1,16 @@
+1
+00:00:00,100 --> 00:00:01,700
+The bank of the river was calm.
+
+2
+00:00:02,692 --> 00:00:04,117
+The bank approved the loan.
+
+3
+00:00:05,092 --> 00:00:07,880
+A mouse ran across the
+cloud computing server room.
+
+4
+00:00:08,860 --> 00:00:10,835
+A python slithered through the grass.

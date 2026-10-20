@@ -1,0 +1,13 @@
+1
+00:00:00,100 --> 00:00:02,537
+Elon Musk announced
+a new Tesla update.
+
+2
+00:00:03,508 --> 00:00:05,646
+Apple released the iPhone at an event.
+
+3
+00:00:06,628 --> 00:00:09,040
+Nike sponsors athletes
+around the world.

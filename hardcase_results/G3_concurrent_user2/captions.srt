@@ -1,0 +1,9 @@
+1
+00:00:00,100 --> 00:00:02,575
+Waves crash on a
+sandy beach at sunset.
+
+2
+00:00:03,556 --> 00:00:05,756
+Surfers paddle out
+into the blue water.
