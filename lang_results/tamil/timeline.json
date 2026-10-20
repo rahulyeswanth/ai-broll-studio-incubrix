@@ -1,0 +1,456 @@
+{
+  "schema_version": "1.0",
+  "job_id": "fc8a552c7e2c",
+  "aspect_ratio": "16:9",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": {
+    "file": "narration.mp3",
+    "source": "generated:edge-tts"
+  },
+  "total_duration": 8.856,
+  "scenes": [
+    {
+      "scene_id": "scene-001",
+      "index": 1,
+      "start": 0.0,
+      "end": 3.264,
+      "duration": 3.264,
+      "narration_text": "கடல் நம் பூமியின் பெரும்பகுதியை மூடியுள்ளது.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Nature landscape.",
+      "visual_analysis": {
+        "subject": null,
+        "action": null,
+        "setting": null,
+        "objects": [],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase.",
+          "Narration contained no concrete visual terms; generic query used."
+        ],
+        "frames": [],
+        "scene_type": "object",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "nature landscape"
+      ],
+      "queries_detail": [
+        {
+          "query": "nature landscape",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 1.0,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "111179",
+        "title": "clouds, sky, blue, white, nature, landscape",
+        "tags": [
+          "clouds",
+          "sky",
+          "blue",
+          "white",
+          "nature",
+          "landscape"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-111179/",
+        "download_url": "https://cdn.pixabay.com/video/2022/03/18/111179-689949805_large.mp4",
+        "local_file": "clips/pixabay_111179.mp4",
+        "duration_seconds": 8.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "RuslanSikunov",
+        "creator_url": "https://pixabay.com/users/RuslanSikunov-11647343/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T07:59:57+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.6312,
+            "saturation": 0.3494,
+            "frames": 12
+          },
+          "brightness": -0.12,
+          "saturation": 0.8449,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-001.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by RuslanSikunov via Pixabay"
+      },
+      "relevance": {
+        "score": 1.0,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 1.0,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {},
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:111179",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (1.00 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "nature landscape",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:153976",
+          "title": "sunset, sea, sun, evening atmosphere, nature, landscape",
+          "text_score": 1.0,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 1.0,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - nature, landscape"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {},
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:188778",
+          "title": "winter, snow, people, walk, to stroll, landscape, winter landscape, covered in snow, trees, nature",
+          "text_score": 1.0,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 1.0,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - nature, landscape"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {},
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:192649",
+          "title": "nature, trees, forest, snow, aerial view, winter, hill, landscape, winter landscape, white",
+          "text_score": 1.0,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 1.0,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - nature, landscape"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {},
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-002",
+      "index": 2,
+      "start": 3.264,
+      "end": 8.856,
+      "duration": 5.592,
+      "narration_text": "அலைகள் கரையைத் தொடுகின்றன. மீனவர்கள் காலையில் படகில் செல்கிறார்கள்.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Nature landscape.",
+      "visual_analysis": {
+        "subject": null,
+        "action": null,
+        "setting": null,
+        "objects": [],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase.",
+          "Narration contained no concrete visual terms; generic query used."
+        ],
+        "frames": [],
+        "scene_type": "object",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "nature landscape"
+      ],
+      "queries_detail": [
+        {
+          "query": "nature landscape",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 1.0,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "153976",
+        "title": "sunset, sea, sun, evening atmosphere, nature, landscape",
+        "tags": [
+          "sunset",
+          "sea",
+          "sun",
+          "evening atmosphere",
+          "nature",
+          "landscape"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-153976/",
+        "download_url": "https://cdn.pixabay.com/video/2023/03/09/153976-817104245_large.mp4",
+        "local_file": "clips/pixabay_153976.mp4",
+        "duration_seconds": 21.0,
+        "width": 3840,
+        "height": 2160,
+        "creator": "adege",
+        "creator_url": "https://pixabay.com/users/adege-4994132/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T07:59:57+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.3532,
+            "saturation": 0.241,
+            "frames": 12
+          },
+          "brightness": 0.12,
+          "saturation": 1.2249,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-002.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by adege via Pixabay"
+      },
+      "relevance": {
+        "score": 1.0,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 1.0,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {},
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:153976",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (1.00 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "nature landscape",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:153976",
+          "title": "sunset, sea, sun, evening atmosphere, nature, landscape",
+          "text_score": 1.0,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 1.0,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - nature, landscape"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {},
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:188778",
+          "title": "winter, snow, people, walk, to stroll, landscape, winter landscape, covered in snow, trees, nature",
+          "text_score": 1.0,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 1.0,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - nature, landscape"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {},
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:192649",
+          "title": "nature, trees, forest, snow, aerial view, winter, hill, landscape, winter landscape, white",
+          "text_score": 1.0,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 1.0,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - nature, landscape"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {},
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    }
+  ],
+  "warnings": [
+    "The script is mostly non-Latin text. Scene analysis and stock-footage search are English-only, so B-roll relevance will be poor; consider an English visual hint per scene.",
+    "Relevance based on clip title/tags only (no visual verification of frames).",
+    "Footage relevance was estimated from provider titles/tags and scene analysis only. No vision-language model inspected the video frames."
+  ],
+  "avoid": [],
+  "footage_provider": "pixabay",
+  "render": {
+    "engine": "per-scene segments + stream-copy concat",
+    "fps": 30,
+    "total_frames": 266,
+    "colour_normalisation": {
+      "enabled": true,
+      "target": {
+        "luma": 0.4922,
+        "saturation": 0.2952
+      },
+      "method": "per-clip mean luma/saturation vs job median; bounded eq filter"
+    },
+    "min_scene_seconds": 2.0
+  }
+}
