@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "job_id": "e931cb42dc0e",
+  "job_id": "3cb2c540a625",
   "aspect_ratio": "16:9",
   "width": 1920,
   "height": 1080,
@@ -93,7 +93,7 @@
         "creator": "Mario_Krimer",
         "creator_url": "https://pixabay.com/users/Mario_Krimer-34815979/",
         "ai_generated": null,
-        "retrieved_at": "2026-10-20T07:50:35+00:00",
+        "retrieved_at": "2026-10-20T08:49:29+00:00",
         "looped": false,
         "framing_method": "center_default(no_crop_needed)",
         "color_normalisation": {
@@ -387,10 +387,15 @@
           "clip": "pixabay:236273",
           "outcome": "download_failed",
           "reason": "Clip is 279 MB; limit is 100 MB."
+        },
+        {
+          "clip": "pixabay:225844",
+          "outcome": "download_failed",
+          "reason": "Clip is 327 MB; limit is 100 MB."
         }
       ],
       "used_alternate": false,
-      "selection_reason": "all 1 candidate clip(s) failed to download or validate",
+      "selection_reason": "all 2 candidate clip(s) failed to download or validate",
       "match_status": "unmatched",
       "provider_selection": {
         "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
@@ -411,6 +416,46 @@
         "chosen_because": null
       },
       "alternatives": [
+        {
+          "clip": "pixabay:225844",
+          "title": "ocean, sea, water, waves, beach, seascape, coast, splash, blue, surfer, surf, surfing, sport, surfboard, calm, serene, nature",
+          "text_score": 0.412,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.478,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: surfers, setting: blue water"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0,
+              "object": 0.0,
+              "setting": 0.75
+            },
+            "matched_terms": {
+              "subject": "surfers",
+              "setting": "blue water"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
         {
           "clip": "pixabay:218794",
           "title": "ocean, paddling, kayak, water, rowing, beach, nature, philippines",
@@ -490,51 +535,11 @@
             "object_evidenced": false
           },
           "visual_detail": {}
-        },
-        {
-          "clip": "pixabay:339840",
-          "title": "surfer, nature, sea, beach, surfboard, ocean, surf, surfing, water, waves, sand",
-          "text_score": 0.337,
-          "visual_score": null,
-          "technical_score": 1.0,
-          "final_score": 0.411,
-          "method": "metadata_text_fallback",
-          "passed": false,
-          "visual_verified": false,
-          "reasons": [
-            "evidence - subject: surfers, setting: blue water"
-          ],
-          "penalties": [],
-          "label": "Low",
-          "gated": null,
-          "evidence": {
-            "elements": {
-              "subject": 1.0,
-              "action": 0.0,
-              "object": 0.0,
-              "setting": 0.25
-            },
-            "matched_terms": {
-              "subject": "surfers",
-              "setting": "blue water"
-            },
-            "weights": {
-              "subject": 0.3,
-              "action": 0.3,
-              "object": 0.25,
-              "setting": 0.15
-            },
-            "foil_hits": [],
-            "negative_hits": [],
-            "action_evidenced": false,
-            "object_evidenced": false
-          },
-          "visual_detail": {}
         }
       ],
       "warnings": [
         "Relevance based on clip title/tags only (no visual verification of frames).",
-        "Scene scene-002 has no matching footage: all 1 candidate clip(s) failed to download or validate."
+        "Scene scene-002 has no matching footage: all 2 candidate clip(s) failed to download or validate."
       ],
       "visual_hint": null
     }

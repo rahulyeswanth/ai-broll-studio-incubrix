@@ -1,0 +1,365 @@
+{
+  "schema_version": "1.0",
+  "job_id": "39cfa86d4e49",
+  "status": "completed",
+  "created_at": "2026-10-20T08:50:43+00:00",
+  "input_type": "uploaded_audio",
+  "input": {
+    "filename": "speech_clear.m4a",
+    "size_bytes": 97599,
+    "duration_seconds": 7.663,
+    "sha256": "c647c64c6d1e8dcaadefa1c709cb352e1af428838a87bfa062fa84b9b8631fd5",
+    "audio": {
+      "duration_seconds": 7.663,
+      "codec": "aac",
+      "sample_rate": 22050,
+      "channels": 1,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "size_bytes": 97599,
+      "max_volume_db": -0.4,
+      "mean_volume_db": -17.2
+    },
+    "script_also_provided": false,
+    "script_characters": null,
+    "scene_count": 2
+  },
+  "requested_aspect_ratio": "16:9",
+  "outputs": {
+    "video": {
+      "file": "video.mp4",
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "duration_seconds": 7.667,
+      "size_bytes": 2142761
+    },
+    "audio": {
+      "file": "narration.m4a",
+      "duration_seconds": 7.663,
+      "source": "uploaded"
+    },
+    "captions": "captions.srt",
+    "timeline": "timeline.json",
+    "manifest": "manifest.json"
+  },
+  "providers": {
+    "tts": {
+      "name": null
+    },
+    "transcription": {
+      "name": "faster-whisper",
+      "model": "whisper-base",
+      "version": "1.2.1",
+      "is_real": true,
+      "detected_language": "en",
+      "language_probability": 0.9920471906661987,
+      "timing_granularity": "word"
+    },
+    "footage": {
+      "name": "pixabay",
+      "providers_in_priority_order": [
+        "pixabay"
+      ],
+      "selection_rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider)."
+    },
+    "visual_verifier": {
+      "name": "none",
+      "version": null,
+      "performs_visual_analysis": false,
+      "requested": "metadata",
+      "unavailable_reason": null
+    },
+    "scene_analyzer": {
+      "name": "rule_based_v1"
+    }
+  },
+  "matching": {
+    "strategy": "analyse scene -> multi-query search -> filter -> score -> threshold -> retry -> disclosed fallback",
+    "scoring_methods_used": [
+      "metadata_text_fallback"
+    ],
+    "threshold": 0.45,
+    "weights": {
+      "visual": 0.55,
+      "text": 0.35,
+      "technical": 0.1
+    },
+    "visual_ai_verification_performed": false,
+    "scenes_total": 2,
+    "scenes_matched": 2,
+    "scenes_low_confidence_fallback": 0,
+    "scenes_needs_review": 0,
+    "scenes_unmatched": 0,
+    "review_floor": 0.3,
+    "high_confidence": 0.7,
+    "relevance_note": "scores are uncalibrated relevance rankings, not probabilities; labels use documented thresholds",
+    "fallback_policy": "review"
+  },
+  "captions": {
+    "enabled": true,
+    "file": "captions.srt",
+    "burned_in": true,
+    "cue_count": 2,
+    "timing_method": "asr_word_timestamps",
+    "alignment_precision": "word-level (ASR timestamps)"
+  },
+  "processing": {
+    "jobs_subdir": "jobs",
+    "tts_provider": "edge",
+    "transcription_provider": "whisper",
+    "footage_provider": "pixabay",
+    "allow_mock_providers": false,
+    "default_voice": "en-US-AriaNeural",
+    "default_language": "en",
+    "whisper_model_size": "base",
+    "whisper_device": "cpu",
+    "whisper_compute_type": "int8",
+    "tts_timeout_seconds": 60.0,
+    "transcription_timeout_seconds": 900.0,
+    "max_script_chars": 10000,
+    "max_audio_mb": 50,
+    "max_audio_seconds": 900.0,
+    "min_audio_seconds": 1.0,
+    "allowed_audio_extensions": [
+      ".mp3",
+      ".wav",
+      ".m4a",
+      ".aac",
+      ".ogg",
+      ".flac"
+    ],
+    "silence_max_volume_db": -55.0,
+    "min_scene_seconds": 2.0,
+    "max_scene_seconds": 12.0,
+    "candidates_per_query": 12,
+    "max_query_attempts": 6,
+    "match_threshold": 0.45,
+    "weight_visual": 0.55,
+    "weight_text": 0.35,
+    "weight_technical": 0.1,
+    "visual_verifier": "metadata",
+    "clip_model_name": "ViT-B-32",
+    "clip_pretrained": "laion2b_s34b_b79k",
+    "fallback_policy": "review",
+    "review_floor": 0.3,
+    "high_confidence": 0.7,
+    "min_grounded_terms": 2,
+    "early_stop_score": 0.62,
+    "evidence_weight_subject": 0.3,
+    "evidence_weight_action": 0.3,
+    "evidence_weight_object": 0.25,
+    "evidence_weight_setting": 0.15,
+    "foil_penalty": 0.1,
+    "sense_mismatch_penalty": 0.35,
+    "sense_match_bonus": 0.2,
+    "max_download_alternates": 4,
+    "duplicate_hash_distance": 6,
+    "allow_clip_reuse": true,
+    "min_clip_seconds": 1.5,
+    "footage_fallback_providers": [],
+    "footage_min_primary_results": 3,
+    "max_download_mb": 100,
+    "download_timeout_seconds": 60.0,
+    "allowed_download_hosts": [
+      "cdn.pixabay.com",
+      "videos.pexels.com",
+      "player.vimeo.com"
+    ],
+    "require_https": true,
+    "fps": 30,
+    "crf": 21,
+    "preset": "veryfast",
+    "render_timeout_seconds": 1800,
+    "normalize_color": true,
+    "caption_max_chars_per_line": 38,
+    "caption_max_lines": 2,
+    "caption_max_seconds": 6.0,
+    "caption_min_seconds": 0.6
+  },
+  "processing_durations_seconds": {
+    "validate_input": 0.396,
+    "transcription": 3.28,
+    "scene_building": 0.0,
+    "matching": 1.009,
+    "download": 30.06,
+    "captions": 0.0,
+    "render": 13.471,
+    "validation": 1.353,
+    "total": 49.569
+  },
+  "cost_estimate": {
+    "amount_usd": 0.0,
+    "currency": "USD",
+    "basis": "All configured providers are free to call (Edge TTS endpoint, local Whisper, free-tier footage APIs). Local compute, bandwidth and any provider rate limits are not priced."
+  },
+  "licensing": {
+    "clips": [
+      {
+        "scene_id": "scene-001",
+        "provider": "pixabay",
+        "clip_id": "35453",
+        "license": {
+          "license_name": "Pixabay Content License",
+          "license_url": "https://pixabay.com/service/license-summary/",
+          "commercial_use": true,
+          "commercial_use_basis": "provider_policy_documented",
+          "attribution_required": false,
+          "restrictions": [
+            "Content must not be sold or distributed unaltered as stand-alone content.",
+            "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+            "No implication of endorsement by depicted people or brands."
+          ],
+          "verified_per_clip": false,
+          "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+        },
+        "creator": "ninosouza",
+        "source_page_url": "https://pixabay.com/videos/id-35453/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T08:50:48+00:00"
+      },
+      {
+        "scene_id": "scene-002",
+        "provider": "pixabay",
+        "clip_id": "147075",
+        "license": {
+          "license_name": "Pixabay Content License",
+          "license_url": "https://pixabay.com/service/license-summary/",
+          "commercial_use": true,
+          "commercial_use_basis": "provider_policy_documented",
+          "attribution_required": false,
+          "restrictions": [
+            "Content must not be sold or distributed unaltered as stand-alone content.",
+            "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+            "No implication of endorsement by depicted people or brands."
+          ],
+          "verified_per_clip": false,
+          "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+        },
+        "creator": "mariya_m",
+        "source_page_url": "https://pixabay.com/videos/id-147075/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T08:50:48+00:00"
+      }
+    ],
+    "all_commercial_use_per_provider_policy": true,
+    "attribution_required_for_any": null,
+    "disclaimer": "Licence data reflects provider-level published policy; per-clip rights are not verified."
+  },
+  "warnings": [
+    "Relevance based on clip title/tags only (no visual verification of frames).",
+    "scene-002: top clip could not be used; used next-best candidate.",
+    "Footage relevance was estimated from provider titles/tags and scene analysis only. No vision-language model inspected the video frames.",
+    "Commercial-use status is based on the provider's published licence policy only; per-clip rights (identifiable people, trademarks) are not verified."
+  ],
+  "fallback_events": [
+    {
+      "type": "download_failure",
+      "scene_id": "scene-002",
+      "clip": "pixabay:95071",
+      "message": "Clip is 158 MB; limit is 100 MB."
+    },
+    {
+      "type": "download_fallback",
+      "scene_id": "scene-002",
+      "message": "used pixabay:147075"
+    },
+    {
+      "type": "metadata_only_matching",
+      "message": "Footage relevance was estimated from provider titles/tags and scene analysis only. No vision-language model inspected the video frames."
+    }
+  ],
+  "validation": {
+    "video": {
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "file_size_bytes": 2142761,
+        "duration_seconds": 7.667,
+        "video_codec": "h264",
+        "pix_fmt": "yuv420p",
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "30/1",
+        "profile": "High",
+        "audio_codec": "aac",
+        "audio_sample_rate": "48000",
+        "audio_channels": 2,
+        "audio_duration_seconds": 7.662,
+        "black_intervals": [],
+        "freeze_intervals_seconds": []
+      }
+    },
+    "srt_problems": [],
+    "srt_valid": true,
+    "timeline_problems": [],
+    "timeline_valid": true,
+    "duplicate_clips_in_video": [],
+    "narration_covers_video": true
+  },
+  "diagnostics": {
+    "summary": [
+      {
+        "level": "success",
+        "text": "Video generated successfully."
+      },
+      {
+        "level": "info",
+        "text": "One scene uses an alternate clip."
+      },
+      {
+        "level": "info",
+        "text": "Some footage could not be verified visually."
+      }
+    ],
+    "items": [
+      {
+        "code": "download_failed",
+        "severity": "info",
+        "scene_id": "scene-002",
+        "title": "A candidate could not be used",
+        "message": "pixabay:95071: Clip is 158 MB; limit is 100 MB.",
+        "details": {
+          "outcome": "download_failed"
+        }
+      },
+      {
+        "code": "alternate_clip",
+        "severity": "info",
+        "scene_id": "scene-002",
+        "title": "Alternate clip used",
+        "message": "The top-ranked clip could not be used (download failed or near-duplicate); the next-best acceptable candidate was used.",
+        "details": {}
+      },
+      {
+        "code": "metadata_only",
+        "severity": "info",
+        "scene_id": null,
+        "title": "Not verified visually",
+        "message": "Relevance was estimated from provider titles/tags and scene analysis. No vision model inspected the frames, so the action shown in a clip is not confirmed.",
+        "details": {}
+      },
+      {
+        "code": "licence_basis",
+        "severity": "info",
+        "scene_id": null,
+        "title": "Licence information",
+        "message": "Commercial-use status reflects the provider's published policy, not a per-clip legal check. Verify before publishing.",
+        "details": {}
+      },
+      {
+        "code": "note",
+        "severity": "info",
+        "scene_id": null,
+        "title": "Note",
+        "message": "scene-002: top clip could not be used; used next-best candidate.",
+        "details": {}
+      }
+    ],
+    "counts": {
+      "needs_review": 0,
+      "unmatched": 0,
+      "alternate_clips": 1
+    }
+  }
+}

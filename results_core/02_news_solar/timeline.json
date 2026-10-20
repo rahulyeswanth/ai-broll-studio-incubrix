@@ -1,0 +1,2302 @@
+{
+  "schema_version": "1.0",
+  "job_id": "7ec3c623851b",
+  "aspect_ratio": "16:9",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": {
+    "file": "narration.mp3",
+    "source": "generated:edge-tts"
+  },
+  "total_duration": 31.425,
+  "scenes": [
+    {
+      "scene_id": "scene-001",
+      "index": 1,
+      "start": 0.0,
+      "end": 6.288,
+      "duration": 6.288,
+      "narration_text": "A new solar farm has opened outside the city, and it is already powering thousands of homes.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "New solar farm opened in city and.",
+      "visual_analysis": {
+        "subject": "new solar farm",
+        "action": null,
+        "setting": "city and",
+        "objects": [
+          "opened"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase."
+        ],
+        "frames": [],
+        "scene_type": "object",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "new solar farm opened in city and"
+      ],
+      "queries_detail": [
+        {
+          "query": "new solar farm opened in city and",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.683,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "26541",
+        "title": "turkey, travel, beautiful, city, landscape, sunset, offer, solar, sky, cloud, sunrise, marine, ocean, black sea, coastal, beach, holiday, trip, aesthetics, in the evening, nature, peace",
+        "tags": [
+          "turkey",
+          "travel",
+          "beautiful",
+          "city",
+          "landscape",
+          "sunset",
+          "offer",
+          "solar",
+          "sky",
+          "cloud",
+          "sunrise",
+          "marine",
+          "ocean",
+          "black sea",
+          "coastal",
+          "beach",
+          "holiday",
+          "trip",
+          "aesthetics",
+          "in the evening",
+          "nature",
+          "peace"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-26541/",
+        "download_url": "https://cdn.pixabay.com/video/2019/09/04/26541-357855274_large.mp4",
+        "local_file": "clips/pixabay_26541.mp4",
+        "duration_seconds": 25.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "yunusgurel",
+        "creator_url": "https://pixabay.com/users/yunusgurel-7974952/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T08:56:43+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.2752,
+            "saturation": 0.4448,
+            "frames": 12
+          },
+          "brightness": 0.12,
+          "saturation": 1.0,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-001.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by yunusgurel via Pixabay"
+      },
+      "relevance": {
+        "score": 0.683,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.643,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "object": 0.0,
+            "setting": 1.0
+          },
+          "matched_terms": {
+            "subject": "solar",
+            "setting": "city and"
+          },
+          "weights": {
+            "subject": 0.3,
+            "object": 0.25,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:26541",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.68 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "new solar farm opened in city and",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:168801",
+          "title": "houses, solar panels, solar farm, solar estate, solar-powered estate, sun-powered housing estate",
+          "text_score": 0.429,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.492,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: solar"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "solar"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:282086",
+          "title": "tulips, flowers, wind turbine, pink color, agricultural field, agriculture, sustainable energy, farm worker, rural scene, nature, springtime, in bloom, blossom, environment, power in nature, environmental conservation, dutch culture",
+          "text_score": 0.429,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.492,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: farm"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "farm"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:1044",
+          "title": "new york city, manhattan, people, cars, crossroads, america, street, usa, city, skyscrapers, pedestrians, midtown, avenue",
+          "text_score": 0.643,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: new, setting: city and",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0,
+              "setting": 1.0
+            },
+            "matched_terms": {
+              "subject": "new",
+              "setting": "city and"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-002",
+      "index": 2,
+      "start": 6.288,
+      "end": 11.616,
+      "duration": 5.328,
+      "narration_text": "Workers installed rows of panels across the open fields in just under a year.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Workers installed rowing of panels across open fields.",
+      "visual_analysis": {
+        "subject": "workers installed",
+        "action": "rowing",
+        "setting": "open fields",
+        "objects": [
+          "of panels"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [],
+        "frames": [],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "rowing",
+          "row"
+        ],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "workers installed rowing of panels across open fields",
+        "workers installed rowing across open fields",
+        "of panels across open fields",
+        "workers installed across open fields",
+        "workers installed rowing",
+        "workers installed panels"
+      ],
+      "queries_detail": [
+        {
+          "query": "workers installed rowing of panels across open fields",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.411,
+          "error": null
+        },
+        {
+          "query": "workers installed rowing across open fields",
+          "returned": 12,
+          "kept": 2,
+          "rejected": [
+            "pixabay:1635: duplicate candidate",
+            "pixabay:282086: duplicate candidate",
+            "pixabay:44534: duplicate candidate",
+            "pixabay:271463: duplicate candidate",
+            "pixabay:243239: duplicate candidate",
+            "pixabay:267359: duplicate candidate",
+            "pixabay:231246: duplicate candidate",
+            "pixabay:262484: duplicate candidate",
+            "pixabay:265356: duplicate candidate",
+            "pixabay:271466: duplicate candidate"
+          ],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "of panels across open fields",
+          "returned": 12,
+          "kept": 9,
+          "rejected": [
+            "pixabay:10853: duplicate candidate",
+            "pixabay:118838: duplicate candidate",
+            "pixabay:203923: duplicate candidate"
+          ],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "workers installed across open fields",
+          "returned": 12,
+          "kept": 1,
+          "rejected": [
+            "pixabay:1635: duplicate candidate",
+            "pixabay:282086: duplicate candidate",
+            "pixabay:271463: duplicate candidate",
+            "pixabay:243239: duplicate candidate",
+            "pixabay:267359: duplicate candidate",
+            "pixabay:231246: duplicate candidate",
+            "pixabay:262484: duplicate candidate",
+            "pixabay:267357: duplicate candidate",
+            "pixabay:271466: duplicate candidate",
+            "pixabay:203923: duplicate candidate",
+            "pixabay:265356: duplicate candidate"
+          ],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "workers installed rowing",
+          "returned": 12,
+          "kept": 4,
+          "rejected": [
+            "pixabay:44534: duplicate candidate",
+            "pixabay:271463: duplicate candidate",
+            "pixabay:267359: duplicate candidate",
+            "pixabay:262484: duplicate candidate",
+            "pixabay:267357: duplicate candidate",
+            "pixabay:271466: duplicate candidate",
+            "pixabay:265356: duplicate candidate",
+            "pixabay:265360: duplicate candidate"
+          ],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "workers installed panels",
+          "returned": 12,
+          "kept": 0,
+          "rejected": [
+            "pixabay:10853: duplicate candidate",
+            "pixabay:271463: duplicate candidate",
+            "pixabay:267359: duplicate candidate",
+            "pixabay:262484: duplicate candidate",
+            "pixabay:118838: duplicate candidate",
+            "pixabay:271466: duplicate candidate",
+            "pixabay:267357: duplicate candidate",
+            "pixabay:265356: duplicate candidate",
+            "pixabay:265360: duplicate candidate",
+            "pixabay:262479: duplicate candidate",
+            "pixabay:72837: duplicate candidate",
+            "pixabay:265354: duplicate candidate"
+          ],
+          "best_score": null,
+          "error": null
+        }
+      ],
+      "candidate_count": 28,
+      "retry_attempts": 5,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "231246",
+        "title": "field, paddy field, plantation, agriculture, rural, rice, plant, paddy, farmer, farm, countryside, worker, season, outdoor, organic, holding, harvesting, vietnam, thailand, nature",
+        "tags": [
+          "field",
+          "paddy field",
+          "plantation",
+          "agriculture",
+          "rural",
+          "rice",
+          "plant",
+          "paddy",
+          "farmer",
+          "farm",
+          "countryside",
+          "worker",
+          "season",
+          "outdoor",
+          "organic",
+          "holding",
+          "harvesting",
+          "vietnam",
+          "thailand",
+          "nature"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-231246/",
+        "download_url": "https://cdn.pixabay.com/video/2024/09/13/231246_large.mp4",
+        "local_file": "clips/pixabay_231246.mp4",
+        "duration_seconds": 9.0,
+        "width": 3840,
+        "height": 2160,
+        "creator": "TungArt7",
+        "creator_url": "https://pixabay.com/users/TungArt7-38741244/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T08:56:44+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.371,
+            "saturation": 0.7182,
+            "frames": 12
+          },
+          "brightness": 0.0251,
+          "saturation": 0.8,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-002.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by TungArt7 via Pixabay"
+      },
+      "relevance": {
+        "score": 0.411,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": false,
+        "text_score": 0.337,
+        "visual_score": null,
+        "label": "Low",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "action": 0.0,
+            "object": 0.0,
+            "setting": 0.25
+          },
+          "matched_terms": {
+            "subject": "workers",
+            "setting": "open fields"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "object": 0.25,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": true,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:231246",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "needs review: score 0.41 is below the match threshold 0.45",
+      "match_status": "fallback_low_confidence",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "workers installed rowing of panels across open fields",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "workers installed rowing across open fields",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "of panels across open fields",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "workers installed across open fields",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "workers installed rowing",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "workers installed panels",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:243239",
+          "title": "man, farmer, agriculture, countryside, field, rural, farming, farm, farmland, harvest, culture, outside, traditional, worker, work, nature",
+          "text_score": 0.337,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.411,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: workers, setting: open fields"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0,
+              "object": 0.0,
+              "setting": 0.25
+            },
+            "matched_terms": {
+              "subject": "workers",
+              "setting": "open fields"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:282086",
+          "title": "tulips, flowers, wind turbine, pink color, agricultural field, agriculture, sustainable energy, farm worker, rural scene, nature, springtime, in bloom, blossom, environment, power in nature, environmental conservation, dutch culture",
+          "text_score": 0.337,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.411,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: workers, setting: open fields"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0,
+              "object": 0.0,
+              "setting": 0.25
+            },
+            "matched_terms": {
+              "subject": "workers",
+              "setting": "open fields"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:1635",
+          "title": "worker, early, morning, people, person, field work, field worker, farmer, india, asia, shiva, man, male, labor, hard, gardening, farming",
+          "text_score": 0.337,
+          "visual_score": null,
+          "technical_score": 0.65,
+          "final_score": 0.359,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: workers, setting: open fields"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0,
+              "object": 0.0,
+              "setting": 0.25
+            },
+            "matched_terms": {
+              "subject": "workers",
+              "setting": "open fields"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Scene scene-002: footage may NOT accurately depict the narration (score 0.41 is below the match threshold 0.45)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-003",
+      "index": 3,
+      "start": 11.616,
+      "end": 16.944,
+      "duration": 5.328,
+      "narration_text": "Engineers say the farm will cut carbon emissions and lower electricity bills.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Engineers say farm cut carbon emissions lower electricity bills in workshop.",
+      "visual_analysis": {
+        "subject": "engineers say farm",
+        "action": null,
+        "setting": "workshop",
+        "objects": [
+          "cut carbon emissions lower electricity bills"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase.",
+          "Setting 'workshop' is inferred from the subject, not stated in the narration."
+        ],
+        "frames": [],
+        "scene_type": "object",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "engineers say farm electricity bills in workshop",
+        "engineers say farm in workshop",
+        "engineers say farm cut carbon emissions lower electricity",
+        "cut carbon emissions lower electricity bills in workshop",
+        "engineers say farm"
+      ],
+      "queries_detail": [
+        {
+          "query": "engineers say farm electricity bills in workshop",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.567,
+          "error": null
+        },
+        {
+          "query": "engineers say farm in workshop",
+          "returned": 12,
+          "kept": 8,
+          "rejected": [
+            "pixabay:282086: duplicate candidate",
+            "pixabay:27539: duplicate candidate",
+            "pixabay:370568: duplicate candidate",
+            "pixabay:174452: duplicate candidate"
+          ],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "engineers say farm cut carbon emissions lower electricity",
+          "returned": 12,
+          "kept": 11,
+          "rejected": [
+            "pixabay:307864: duplicate candidate"
+          ],
+          "best_score": 0.597,
+          "error": null
+        },
+        {
+          "query": "cut carbon emissions lower electricity bills in workshop",
+          "returned": 12,
+          "kept": 1,
+          "rejected": [
+            "pixabay:29234: duplicate candidate",
+            "pixabay:230545: duplicate candidate",
+            "pixabay:307864: duplicate candidate",
+            "pixabay:18244: duplicate candidate",
+            "pixabay:344380: duplicate candidate",
+            "pixabay:99350: duplicate candidate",
+            "pixabay:230553: duplicate candidate",
+            "pixabay:81655: duplicate candidate",
+            "pixabay:81653: duplicate candidate",
+            "pixabay:27539: duplicate candidate",
+            "pixabay:230555: duplicate candidate"
+          ],
+          "best_score": 0.141,
+          "error": null
+        },
+        {
+          "query": "engineers say farm",
+          "returned": 12,
+          "kept": 3,
+          "rejected": [
+            "pixabay:370568: duplicate candidate",
+            "pixabay:174452: duplicate candidate",
+            "pixabay:66810: duplicate candidate",
+            "pixabay:120739: duplicate candidate",
+            "pixabay:186195: duplicate candidate",
+            "pixabay:215189: duplicate candidate",
+            "pixabay:10685: duplicate candidate",
+            "pixabay:179207: duplicate candidate",
+            "pixabay:215188: duplicate candidate"
+          ],
+          "best_score": 0.29,
+          "error": null
+        }
+      ],
+      "candidate_count": 35,
+      "retry_attempts": 4,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "230545",
+        "title": "windmills, wind turbines, renewable, field, energy, sustainability, summer, aerial, environment, wind farm, eco, electricity, infrastructure, carbon neutral, solar, carbon footprint, wind turbine blades, wind energy, energy security, nature",
+        "tags": [
+          "windmills",
+          "wind turbines",
+          "renewable",
+          "field",
+          "energy",
+          "sustainability",
+          "summer",
+          "aerial",
+          "environment",
+          "wind farm",
+          "eco",
+          "electricity",
+          "infrastructure",
+          "carbon neutral",
+          "solar",
+          "carbon footprint",
+          "wind turbine blades",
+          "wind energy",
+          "energy security",
+          "nature"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-230545/",
+        "download_url": "https://cdn.pixabay.com/video/2024/09/09/230545_large.mp4",
+        "local_file": "clips/pixabay_230545.mp4",
+        "duration_seconds": 16.0,
+        "width": 3840,
+        "height": 2160,
+        "creator": "DrohnenpilotDeutschland",
+        "creator_url": "https://pixabay.com/users/DrohnenpilotDeutschland-45761896/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T08:56:46+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.4816,
+            "saturation": 0.6022,
+            "frames": 12
+          },
+          "brightness": -0.0855,
+          "saturation": 0.8,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-003.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by DrohnenpilotDeutschland via Pixabay"
+      },
+      "relevance": {
+        "score": 0.597,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.547,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "object": 0.167,
+            "setting": 0.0
+          },
+          "matched_terms": {
+            "subject": "farm",
+            "object": "cut carbon emissions lower electricity bills"
+          },
+          "weights": {
+            "subject": 0.3,
+            "object": 0.25,
+            "setting": 0.075
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:230545",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.60 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "engineers say farm electricity bills in workshop",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "engineers say farm in workshop",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "engineers say farm cut carbon emissions lower electricity",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "cut carbon emissions lower electricity bills in workshop",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "engineers say farm",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:230549",
+          "title": "windmills, wind turbines, renewable, field, energy, sustainability, summer, aerial, environment, wind farm, eco, electricity, infrastructure, carbon neutral, solar, carbon footprint, wind turbine blades, wind energy, energy security, wind power, green energy, alternative energy, sustainable, renewable resources, nature",
+          "text_score": 0.547,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.597,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: farm, object: cut carbon emissions lower electricity bills"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.167,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "farm",
+              "object": "cut carbon emissions lower electricity bills"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25,
+              "setting": 0.075
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:230550",
+          "title": "windmills, wind turbines, renewable, field, energy, sustainability, summer, aerial, environment, wind farm, eco, electricity, infrastructure, carbon neutral, solar, carbon footprint, wind turbine blades, wind energy, energy security, wind power, green energy, alternative energy, sustainable, renewable resources, nature",
+          "text_score": 0.547,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.597,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: farm, object: cut carbon emissions lower electricity bills"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.167,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "farm",
+              "object": "cut carbon emissions lower electricity bills"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25,
+              "setting": 0.075
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:230552",
+          "title": "windmills, wind turbines, renewable, field, energy, sustainability, summer, aerial, environment, wind farm, eco, electricity, infrastructure, carbon neutral, solar, carbon footprint, wind turbine blades, wind energy, energy security, wind power, green energy, nature",
+          "text_score": 0.547,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.597,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: farm, object: cut carbon emissions lower electricity bills"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.167,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "farm",
+              "object": "cut carbon emissions lower electricity bills"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25,
+              "setting": 0.075
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-004",
+      "index": 4,
+      "start": 16.944,
+      "end": 20.832,
+      "duration": 3.888,
+      "narration_text": "Local farmers still graze sheep between the panels.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Local farmers grazing sheep between panels in agricultural field.",
+      "visual_analysis": {
+        "subject": "local farmers",
+        "action": "grazing",
+        "setting": "agricultural field",
+        "objects": [
+          "sheep between panels"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "Setting 'agricultural field' is inferred from the subject, not stated in the narration."
+        ],
+        "frames": [],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "grazing",
+          "graze"
+        ],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "local farmers grazing between panels in agricultural field",
+        "local farmers grazing in agricultural field",
+        "sheep between panels in agricultural field",
+        "local farmers in agricultural field",
+        "local farmers grazing",
+        "local farmers sheep"
+      ],
+      "queries_detail": [
+        {
+          "query": "local farmers grazing between panels in agricultural field",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.457,
+          "error": null
+        },
+        {
+          "query": "local farmers grazing in agricultural field",
+          "returned": 12,
+          "kept": 0,
+          "rejected": [
+            "pixabay:282086: duplicate candidate",
+            "pixabay:84624: duplicate candidate",
+            "pixabay:43044: duplicate candidate",
+            "pixabay:37663: duplicate candidate",
+            "pixabay:4329: duplicate candidate",
+            "pixabay:85897: duplicate candidate",
+            "pixabay:85895: duplicate candidate",
+            "pixabay:85898: duplicate candidate",
+            "pixabay:46140: duplicate candidate",
+            "pixabay:62714: duplicate candidate",
+            "pixabay:46139: duplicate candidate",
+            "pixabay:378768: duplicate candidate"
+          ],
+          "best_score": null,
+          "error": null
+        },
+        {
+          "query": "sheep between panels in agricultural field",
+          "returned": 12,
+          "kept": 9,
+          "rejected": [
+            "pixabay:282086: duplicate candidate",
+            "pixabay:62714: duplicate candidate",
+            "pixabay:84624: duplicate candidate"
+          ],
+          "best_score": 0.439,
+          "error": null
+        },
+        {
+          "query": "local farmers in agricultural field",
+          "returned": 12,
+          "kept": 1,
+          "rejected": [
+            "pixabay:282086: duplicate candidate",
+            "pixabay:84624: duplicate candidate",
+            "pixabay:43044: duplicate candidate",
+            "pixabay:37663: duplicate candidate",
+            "pixabay:4329: duplicate candidate",
+            "pixabay:85897: duplicate candidate",
+            "pixabay:85898: duplicate candidate",
+            "pixabay:85895: duplicate candidate",
+            "pixabay:46140: duplicate candidate",
+            "pixabay:46139: duplicate candidate",
+            "pixabay:378768: duplicate candidate"
+          ],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "local farmers grazing",
+          "returned": 12,
+          "kept": 11,
+          "rejected": [
+            "pixabay:118590: duplicate candidate"
+          ],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "local farmers sheep",
+          "returned": 12,
+          "kept": 7,
+          "rejected": [
+            "pixabay:120739: duplicate candidate",
+            "pixabay:47905: duplicate candidate",
+            "pixabay:240860: duplicate candidate",
+            "pixabay:79168: duplicate candidate",
+            "pixabay:281640: duplicate candidate"
+          ],
+          "best_score": 0.151,
+          "error": null
+        }
+      ],
+      "candidate_count": 40,
+      "retry_attempts": 5,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "62714",
+        "title": "lamb, sheep, cattle, sunset, livestock, agriculture, pasture, animals, grass, field, farm, graze, cute, grazing",
+        "tags": [
+          "lamb",
+          "sheep",
+          "cattle",
+          "sunset",
+          "livestock",
+          "agriculture",
+          "pasture",
+          "animals",
+          "grass",
+          "field",
+          "farm",
+          "graze",
+          "cute",
+          "grazing"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-62714/",
+        "download_url": "https://cdn.pixabay.com/video/2021/01/23/62714-504665734_large.mp4",
+        "local_file": "clips/pixabay_62714.mp4",
+        "duration_seconds": 35.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "Matthias_Groeneveld",
+        "creator_url": "https://pixabay.com/users/Matthias_Groeneveld-4535957/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T08:56:47+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.4356,
+            "saturation": 0.2774,
+            "frames": 12
+          },
+          "brightness": -0.0395,
+          "saturation": 1.25,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-004.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by Matthias_Groeneveld via Pixabay"
+      },
+      "relevance": {
+        "score": 0.457,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.39,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 0.0,
+            "action": 1.0,
+            "object": 0.167,
+            "setting": 0.25
+          },
+          "matched_terms": {
+            "action": "grazing",
+            "object": "sheep between panels",
+            "setting": "agricultural field"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "object": 0.25,
+            "setting": 0.075
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": true,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:62714",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.46 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "local farmers grazing between panels in agricultural field",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "local farmers grazing in agricultural field",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "sheep between panels in agricultural field",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "local farmers in agricultural field",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "local farmers grazing",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "local farmers sheep",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:79168",
+          "title": "sheep, herd, meadow, graze, agriculture, wool, animals, sheep sheep, flock of sheep, group, north sea, landscape, pasture, nature, rural",
+          "text_score": 0.369,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.439,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: graze, object: sheep between panels"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "object": 0.167,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "action": "graze",
+              "object": "sheep between panels"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.075
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:118590",
+          "title": "field, meadow, sheep, grazing, hedge, aerial",
+          "text_score": 0.39,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: grazing, object: sheep between panels, setting: agricultural field",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "object": 0.167,
+              "setting": 0.25
+            },
+            "matched_terms": {
+              "action": "grazing",
+              "object": "sheep between panels",
+              "setting": "agricultural field"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.075
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:124396",
+          "title": "pig, animal, mammal, mud, grazing, meadow, farm",
+          "text_score": 0.324,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: grazing",
+            "NOT accepted automatically: clip metadata covers only 0 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 0 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "object": 0.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "action": "grazing"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.075
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-005",
+      "index": 5,
+      "start": 20.832,
+      "end": 25.44,
+      "duration": 4.608,
+      "narration_text": "The mayor visited the site on opening day and praised the project.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Mayor visited site in opening day and praised project.",
+      "visual_analysis": {
+        "subject": "mayor visited",
+        "action": null,
+        "setting": "opening day and praised project",
+        "objects": [
+          "site"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase."
+        ],
+        "frames": [],
+        "scene_type": "object",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "mayor visited site in opening day and praised",
+        "mayor visited in opening day and praised project",
+        "site in opening day and praised project",
+        "mayor visited",
+        "mayor visited site"
+      ],
+      "queries_detail": [
+        {
+          "query": "mayor visited site in opening day and praised",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "mayor visited in opening day and praised project",
+          "returned": 12,
+          "kept": 3,
+          "rejected": [
+            "pixabay:111280: duplicate candidate",
+            "pixabay:122873: duplicate candidate",
+            "pixabay:88883: duplicate candidate",
+            "pixabay:27539: duplicate candidate",
+            "pixabay:2222: duplicate candidate",
+            "pixabay:90877: duplicate candidate",
+            "pixabay:31377: duplicate candidate",
+            "pixabay:158229: duplicate candidate",
+            "pixabay:6714: duplicate candidate"
+          ],
+          "best_score": 0.135,
+          "error": null
+        },
+        {
+          "query": "site in opening day and praised project",
+          "returned": 12,
+          "kept": 0,
+          "rejected": [
+            "pixabay:3741: duplicate candidate",
+            "pixabay:111280: duplicate candidate",
+            "pixabay:1046: duplicate candidate",
+            "pixabay:122873: duplicate candidate",
+            "pixabay:88883: duplicate candidate",
+            "pixabay:27539: duplicate candidate",
+            "pixabay:2222: duplicate candidate",
+            "pixabay:90877: duplicate candidate",
+            "pixabay:3992: duplicate candidate",
+            "pixabay:31377: duplicate candidate",
+            "pixabay:158229: duplicate candidate",
+            "pixabay:42923: duplicate candidate"
+          ],
+          "best_score": null,
+          "error": null
+        },
+        {
+          "query": "mayor visited",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "mayor visited site",
+          "returned": 12,
+          "kept": 9,
+          "rejected": [
+            "pixabay:3741: duplicate candidate",
+            "pixabay:3992: duplicate candidate",
+            "pixabay:42923: duplicate candidate"
+          ],
+          "best_score": 0.29,
+          "error": null
+        }
+      ],
+      "candidate_count": 36,
+      "retry_attempts": 4,
+      "clip": null,
+      "license": {},
+      "attribution": null,
+      "relevance": {
+        "score": null,
+        "scoring_method": null,
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": false,
+        "text_score": null,
+        "visual_score": null,
+        "label": null,
+        "evidence": null,
+        "gated": null,
+        "visual_detail": null
+      },
+      "needs_review": false,
+      "placeholder": true,
+      "download_attempts": [],
+      "used_alternate": false,
+      "selection_reason": "no candidate reached the minimum relevance floor 0.30 (best was 0.29: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust)",
+      "match_status": "unmatched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "mayor visited site in opening day and praised",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "mayor visited in opening day and praised project",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "site in opening day and praised project",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "mayor visited",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "mayor visited site",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": null,
+        "chosen_because": null
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:10877",
+          "title": "construction site, excavator, digging, industry, machinery, excavation, machine, equipment, building, digger, industrial, bulldozer, heavy, development, excavate, hydraulic",
+          "text_score": 0.357,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - object: site",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "object": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "object": "site"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:121409",
+          "title": "construction, site, excavator, house, new house, development, aerial, drone, building site",
+          "text_score": 0.357,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - object: site",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "object": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "object": "site"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:16261",
+          "title": "site, landfills, aftereffect, infographic, bug data, data analytics, machine learning",
+          "text_score": 0.357,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - object: site",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "object": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "object": "site"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Scene scene-005 has no matching footage: no candidate reached the minimum relevance floor 0.30 (best was 0.29: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-006",
+      "index": 6,
+      "start": 25.44,
+      "end": 31.425,
+      "duration": 5.985,
+      "narration_text": "Experts expect more solar farms to follow across the region over the next five years.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Experts expect solar farms across region.",
+      "visual_analysis": {
+        "subject": "experts expect",
+        "action": null,
+        "setting": "region",
+        "objects": [
+          "solar farms",
+          "follow"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase."
+        ],
+        "frames": [],
+        "scene_type": "object",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "experts expect solar farms across region",
+        "experts expect across region",
+        "solar farms across region",
+        "experts expect",
+        "experts expect solar"
+      ],
+      "queries_detail": [
+        {
+          "query": "experts expect solar farms across region",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.429,
+          "error": null
+        },
+        {
+          "query": "experts expect across region",
+          "returned": 12,
+          "kept": 10,
+          "rejected": [
+            "pixabay:367098: duplicate candidate",
+            "pixabay:7418: duplicate candidate"
+          ],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "solar farms across region",
+          "returned": 12,
+          "kept": 0,
+          "rejected": [
+            "pixabay:168801: duplicate candidate",
+            "pixabay:370344: duplicate candidate",
+            "pixabay:8947: duplicate candidate",
+            "pixabay:367098: duplicate candidate",
+            "pixabay:188306: duplicate candidate",
+            "pixabay:2172: duplicate candidate",
+            "pixabay:156444: duplicate candidate",
+            "pixabay:42388: duplicate candidate",
+            "pixabay:174452: duplicate candidate",
+            "pixabay:161333: duplicate candidate",
+            "pixabay:7418: duplicate candidate",
+            "pixabay:259949: duplicate candidate"
+          ],
+          "best_score": null,
+          "error": null
+        },
+        {
+          "query": "experts expect",
+          "returned": 12,
+          "kept": 11,
+          "rejected": [
+            "pixabay:24999: duplicate candidate"
+          ],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "experts expect solar",
+          "returned": 12,
+          "kept": 3,
+          "rejected": [
+            "pixabay:370344: duplicate candidate",
+            "pixabay:8947: duplicate candidate",
+            "pixabay:188306: duplicate candidate",
+            "pixabay:2172: duplicate candidate",
+            "pixabay:156444: duplicate candidate",
+            "pixabay:168801: duplicate candidate",
+            "pixabay:42388: duplicate candidate",
+            "pixabay:161333: duplicate candidate",
+            "pixabay:259949: duplicate candidate"
+          ],
+          "best_score": 0.19,
+          "error": null
+        }
+      ],
+      "candidate_count": 36,
+      "retry_attempts": 4,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "168801",
+        "title": "houses, solar panels, solar farm, solar estate, solar-powered estate, sun-powered housing estate",
+        "tags": [
+          "houses",
+          "solar panels",
+          "solar farm",
+          "solar estate",
+          "solar-powered estate",
+          "sun-powered housing estate"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-168801/",
+        "download_url": "https://cdn.pixabay.com/video/2023/06/25/168801-839864542_large.mp4",
+        "local_file": "clips/pixabay_168801.mp4",
+        "duration_seconds": 18.0,
+        "width": 3840,
+        "height": 2160,
+        "creator": "Juras2021",
+        "creator_url": "https://pixabay.com/users/Juras2021-24850305/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T08:56:51+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.3961,
+            "saturation": 0.308,
+            "frames": 12
+          },
+          "brightness": 0.0,
+          "saturation": 1.25,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-006.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by Juras2021 via Pixabay"
+      },
+      "relevance": {
+        "score": 0.429,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": false,
+        "text_score": 0.357,
+        "visual_score": null,
+        "label": "Low",
+        "evidence": {
+          "elements": {
+            "subject": 0.0,
+            "object": 1.0,
+            "setting": 0.0
+          },
+          "matched_terms": {
+            "object": "solar farms"
+          },
+          "weights": {
+            "subject": 0.3,
+            "object": 0.25,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": true,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:168801",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "needs review: score 0.43 is below the match threshold 0.45",
+      "match_status": "fallback_low_confidence",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "experts expect solar farms across region",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "experts expect across region",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "solar farms across region",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "experts expect",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "experts expect solar",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:11072",
+          "title": "airplane, building, outside the window, landing, kaohsiung international airport, kaohsiung airport, kaohsiung city, home, overlooking, cloudy day, go home, expect",
+          "text_score": 0.429,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: expect",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "expect"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:111366",
+          "title": "trees, forest, snow, perm region, spruce winter, winter, russia",
+          "text_score": 0.214,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - setting: region",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "object": 0.0,
+              "setting": 1.0
+            },
+            "matched_terms": {
+              "setting": "region"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:111367",
+          "title": "trees, forest, snow, perm region, spruce winter, winter, russia",
+          "text_score": 0.214,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - setting: region",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "object": 0.0,
+              "setting": 1.0
+            },
+            "matched_terms": {
+              "setting": "region"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Scene scene-006: footage may NOT accurately depict the narration (score 0.43 is below the match threshold 0.45)."
+      ],
+      "visual_hint": null
+    }
+  ],
+  "warnings": [
+    "Relevance based on clip title/tags only (no visual verification of frames).",
+    "Scene scene-002: footage may NOT accurately depict the narration (score 0.41 is below the match threshold 0.45).",
+    "Scene scene-005 has no matching footage: no candidate reached the minimum relevance floor 0.30 (best was 0.29: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust).",
+    "Scene scene-006: footage may NOT accurately depict the narration (score 0.43 is below the match threshold 0.45).",
+    "Footage relevance was estimated from provider titles/tags and scene analysis only. No vision-language model inspected the video frames."
+  ],
+  "avoid": [],
+  "footage_provider": "pixabay",
+  "render": {
+    "engine": "per-scene segments + stream-copy concat",
+    "fps": 30,
+    "total_frames": 943,
+    "colour_normalisation": {
+      "enabled": true,
+      "target": {
+        "luma": 0.3961,
+        "saturation": 0.4448
+      },
+      "method": "per-clip mean luma/saturation vs job median; bounded eq filter"
+    },
+    "min_scene_seconds": 2.0
+  }
+}

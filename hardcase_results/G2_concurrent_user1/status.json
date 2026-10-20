@@ -1,6 +1,6 @@
 {
-  "job_id": "781ce9459d4b",
-  "created_at": "2026-10-20T07:50:32+00:00",
+  "job_id": "00c46f608293",
+  "created_at": "2026-10-20T08:49:26+00:00",
   "status": "completed",
   "progress": 100,
   "step": "Done",
@@ -9,7 +9,7 @@
   "error": null,
   "request_fingerprint": null,
   "footage_provider": null,
-  "updated_at": "2026-10-20T07:51:36+00:00",
+  "updated_at": "2026-10-20T08:50:37+00:00",
   "aspect_ratios": [
     "16:9"
   ],
@@ -30,7 +30,7 @@
       "height": 1080,
       "fps": 30,
       "duration_seconds": 7.033,
-      "size_bytes": 4104270
+      "size_bytes": 4102276
     },
     "audio": {
       "file": "narration.mp3",
@@ -64,12 +64,12 @@
   },
   "state": "succeeded",
   "files": {
-    "narration.mp3": "/jobs/781ce9459d4b/files/narration.mp3",
-    "captions.srt": "/jobs/781ce9459d4b/files/captions.srt",
-    "video.mp4": "/jobs/781ce9459d4b/files/video.mp4",
-    "thumb_scene-001.jpg": "/jobs/781ce9459d4b/files/thumb_scene-001.jpg",
-    "thumb_scene-002.jpg": "/jobs/781ce9459d4b/files/thumb_scene-002.jpg",
-    "timeline.json": "/jobs/781ce9459d4b/files/timeline.json",
-    "manifest.json": "/jobs/781ce9459d4b/files/manifest.json"
+    "narration.mp3": "/jobs/00c46f608293/files/narration.mp3",
+    "captions.srt": "/jobs/00c46f608293/files/captions.srt",
+    "video.mp4": "/jobs/00c46f608293/files/video.mp4",
+    "thumb_scene-001.jpg": "/jobs/00c46f608293/files/thumb_scene-001.jpg",
+    "thumb_scene-002.jpg": "/jobs/00c46f608293/files/thumb_scene-002.jpg",
+    "timeline.json": "/jobs/00c46f608293/files/timeline.json",
+    "manifest.json": "/jobs/00c46f608293/files/manifest.json"
   }
 }

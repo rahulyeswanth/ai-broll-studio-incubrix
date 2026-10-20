@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "job_id": "781ce9459d4b",
+  "job_id": "00c46f608293",
   "aspect_ratio": "16:9",
   "width": 1920,
   "height": 1080,
@@ -88,7 +88,7 @@
         "creator": "JoshuaWoroniecki",
         "creator_url": "https://pixabay.com/users/JoshuaWoroniecki-12734309/",
         "ai_generated": null,
-        "retrieved_at": "2026-10-20T07:50:36+00:00",
+        "retrieved_at": "2026-10-20T08:49:30+00:00",
         "looped": false,
         "framing_method": "center_default(no_crop_needed)",
         "color_normalisation": {
@@ -368,9 +368,9 @@
             "pixabay:176780: duplicate candidate",
             "pixabay:183442: duplicate candidate",
             "pixabay:222082: duplicate candidate",
-            "pixabay:33565: duplicate candidate"
+            "pixabay:131615: duplicate candidate"
           ],
-          "best_score": 0.378,
+          "best_score": 0.29,
           "error": null
         },
         {
@@ -463,7 +463,7 @@
         "creator": "Vlad-X",
         "creator_url": "https://pixabay.com/users/Vlad-X-51466350/",
         "ai_generated": null,
-        "retrieved_at": "2026-10-20T07:50:38+00:00",
+        "retrieved_at": "2026-10-20T08:49:31+00:00",
         "looped": false,
         "framing_method": "center_default(no_crop_needed)",
         "color_normalisation": {

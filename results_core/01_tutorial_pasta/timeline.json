@@ -1,0 +1,2659 @@
+{
+  "schema_version": "1.0",
+  "job_id": "d992c7396941",
+  "aspect_ratio": "16:9",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": {
+    "file": "narration.mp3",
+    "source": "generated:edge-tts"
+  },
+  "total_duration": 32.888,
+  "scenes": [
+    {
+      "scene_id": "scene-001",
+      "index": 1,
+      "start": 0.0,
+      "end": 3.816,
+      "duration": 3.816,
+      "narration_text": "Making fresh pasta at home is easier than you think.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Pasta at home easier.",
+      "visual_analysis": {
+        "subject": "pasta at home",
+        "action": null,
+        "setting": null,
+        "objects": [
+          "easier"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase."
+        ],
+        "frames": [],
+        "scene_type": "object",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "pasta at home easier",
+        "pasta at home",
+        "easier",
+        "pasta home easier"
+      ],
+      "queries_detail": [
+        {
+          "query": "pasta at home easier",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.596,
+          "error": null
+        },
+        {
+          "query": "pasta at home",
+          "returned": 12,
+          "kept": 0,
+          "rejected": [
+            "pixabay:200157: duplicate candidate",
+            "pixabay:293085: duplicate candidate",
+            "pixabay:33256: duplicate candidate",
+            "pixabay:34473: duplicate candidate",
+            "pixabay:12126: duplicate candidate",
+            "pixabay:108365: duplicate candidate",
+            "pixabay:34474: duplicate candidate",
+            "pixabay:61699: duplicate candidate",
+            "pixabay:345244: duplicate candidate",
+            "pixabay:61706: duplicate candidate",
+            "pixabay:61702: duplicate candidate",
+            "pixabay:175152: duplicate candidate"
+          ],
+          "best_score": null,
+          "error": null
+        },
+        {
+          "query": "easier",
+          "returned": 0,
+          "kept": 0,
+          "rejected": [],
+          "best_score": null,
+          "error": null
+        },
+        {
+          "query": "pasta home easier",
+          "returned": 12,
+          "kept": 8,
+          "rejected": [
+            "pixabay:200157: duplicate candidate",
+            "pixabay:33256: duplicate candidate",
+            "pixabay:175152: duplicate candidate",
+            "pixabay:293085: duplicate candidate"
+          ],
+          "best_score": 0.29,
+          "error": null
+        }
+      ],
+      "candidate_count": 20,
+      "retry_attempts": 3,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "108365",
+        "title": "aquarium, fishes, water, freshwater, multicoloured, beautiful, at home",
+        "tags": [
+          "aquarium",
+          "fishes",
+          "water",
+          "freshwater",
+          "multicoloured",
+          "beautiful",
+          "at home"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-108365/",
+        "download_url": "https://cdn.pixabay.com/video/2022/02/20/108365-680178192_large.mp4",
+        "local_file": "clips/pixabay_108365.mp4",
+        "duration_seconds": 18.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "RoyBuri",
+        "creator_url": "https://pixabay.com/users/RoyBuri-3128024/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T08:53:49+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.4143,
+            "saturation": 0.4074,
+            "frames": 12
+          },
+          "brightness": 0.0,
+          "saturation": 1.0,
+          "applied": false
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-001.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by RoyBuri via Pixabay"
+      },
+      "relevance": {
+        "score": 0.596,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.545,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "object": 0.0
+          },
+          "matched_terms": {
+            "subject": "home"
+          },
+          "weights": {
+            "subject": 0.3,
+            "object": 0.25
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:108365",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.60 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "pasta at home easier",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "pasta at home",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "easier",
+            "returned_by_provider": {
+              "pixabay": 0
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "pasta home easier",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:12126",
+          "title": "city, movement, night, at home, building, street, light, window, community, lights, evening, transport",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: home",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "home"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:14476",
+          "title": "house, stone, street, motorbike, old, person, architecture, building, travel, home, tourism, summer, turkey, city",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: home",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "home"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:175152",
+          "title": "noodles, pasta, cook, cooking, food",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: pasta",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "pasta"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-002",
+      "index": 2,
+      "start": 3.816,
+      "end": 7.896,
+      "duration": 4.08,
+      "narration_text": "Pour flour onto a wooden board and make a well in the middle.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Pouring flour onto wooden board.",
+      "visual_analysis": {
+        "subject": null,
+        "action": "pouring",
+        "setting": null,
+        "objects": [
+          "flour onto wooden board"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [],
+        "frames": [],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "pouring",
+          "pour"
+        ],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "pouring flour onto wooden board",
+        "pouring",
+        "flour onto wooden board",
+        "flour onto wooden"
+      ],
+      "queries_detail": [
+        {
+          "query": "pouring flour onto wooden board",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "pouring",
+          "returned": 12,
+          "kept": 9,
+          "rejected": [
+            "pixabay:13100: duplicate candidate",
+            "pixabay:4315: duplicate candidate",
+            "pixabay:257265: duplicate candidate"
+          ],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "flour onto wooden board",
+          "returned": 12,
+          "kept": 3,
+          "rejected": [
+            "pixabay:275052: duplicate candidate",
+            "pixabay:200157: duplicate candidate",
+            "pixabay:19600: duplicate candidate",
+            "pixabay:94003: duplicate candidate",
+            "pixabay:94004: duplicate candidate",
+            "pixabay:784: duplicate candidate",
+            "pixabay:65104: duplicate candidate",
+            "pixabay:19459: duplicate candidate",
+            "pixabay:275498: duplicate candidate"
+          ],
+          "best_score": 0.162,
+          "error": null
+        },
+        {
+          "query": "flour onto wooden",
+          "returned": 12,
+          "kept": 5,
+          "rejected": [
+            "pixabay:200157: duplicate candidate",
+            "pixabay:94003: duplicate candidate",
+            "pixabay:94004: duplicate candidate",
+            "pixabay:784: duplicate candidate",
+            "pixabay:197564: duplicate candidate",
+            "pixabay:75700: duplicate candidate",
+            "pixabay:275052: duplicate candidate"
+          ],
+          "best_score": 0.162,
+          "error": null
+        }
+      ],
+      "candidate_count": 29,
+      "retry_attempts": 3,
+      "clip": null,
+      "license": {},
+      "attribution": null,
+      "relevance": {
+        "score": null,
+        "scoring_method": null,
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": false,
+        "text_score": null,
+        "visual_score": null,
+        "label": null,
+        "evidence": null,
+        "gated": null,
+        "visual_detail": null
+      },
+      "needs_review": false,
+      "placeholder": true,
+      "download_attempts": [],
+      "used_alternate": false,
+      "selection_reason": "no candidate reached the minimum relevance floor 0.30 (best was 0.29: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust)",
+      "match_status": "unmatched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "pouring flour onto wooden board",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "pouring",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "flour onto wooden board",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "flour onto wooden",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": null,
+        "chosen_because": null
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:13100",
+          "title": "universe, jar, colourful, experiment, close-up, particles, oil, ink, water, abstract, galaxy, pouring",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: pouring",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "action": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "action": "pouring"
+            },
+            "weights": {
+              "action": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:15721",
+          "title": "water, fluid, simulation, sim, pour, pouring, spill",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: pouring",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "action": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "action": "pouring"
+            },
+            "weights": {
+              "action": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:23955",
+          "title": "tea, kettle, hot, pour, glass, drink, liquid, pouring, water, natural",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: pouring",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "action": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "action": "pouring"
+            },
+            "weights": {
+              "action": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Scene scene-002 has no matching footage: no candidate reached the minimum relevance floor 0.30 (best was 0.29: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-003",
+      "index": 3,
+      "start": 7.896,
+      "end": 11.952,
+      "duration": 4.056,
+      "narration_text": "Crack eggs into the well and whisk them gently with a fork.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Crack eggs in well and whisk them gently with fork.",
+      "visual_analysis": {
+        "subject": "crack eggs",
+        "action": null,
+        "setting": "well and whisk them gently with fork",
+        "objects": [],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase."
+        ],
+        "frames": [],
+        "scene_type": "place",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "crack eggs in well and whisk them gently",
+        "crack eggs",
+        "crack eggs whisk"
+      ],
+      "queries_detail": [
+        {
+          "query": "crack eggs in well and whisk them gently",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "crack eggs",
+          "returned": 12,
+          "kept": 5,
+          "rejected": [
+            "pixabay:290890: duplicate candidate",
+            "pixabay:246644: duplicate candidate",
+            "pixabay:220476: duplicate candidate",
+            "pixabay:213748: duplicate candidate",
+            "pixabay:129497: duplicate candidate",
+            "pixabay:1770: duplicate candidate",
+            "pixabay:221961: duplicate candidate"
+          ],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "crack eggs whisk",
+          "returned": 12,
+          "kept": 0,
+          "rejected": [
+            "pixabay:290890: duplicate candidate",
+            "pixabay:246644: duplicate candidate",
+            "pixabay:220476: duplicate candidate",
+            "pixabay:213748: duplicate candidate",
+            "pixabay:129497: duplicate candidate",
+            "pixabay:1770: duplicate candidate",
+            "pixabay:221961: duplicate candidate",
+            "pixabay:157263: duplicate candidate",
+            "pixabay:66635: duplicate candidate",
+            "pixabay:36847: duplicate candidate",
+            "pixabay:31921: duplicate candidate",
+            "pixabay:66634: duplicate candidate"
+          ],
+          "best_score": null,
+          "error": null
+        }
+      ],
+      "candidate_count": 17,
+      "retry_attempts": 2,
+      "clip": null,
+      "license": {},
+      "attribution": null,
+      "relevance": {
+        "score": null,
+        "scoring_method": null,
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": false,
+        "text_score": null,
+        "visual_score": null,
+        "label": null,
+        "evidence": null,
+        "gated": null,
+        "visual_detail": null
+      },
+      "needs_review": false,
+      "placeholder": true,
+      "download_attempts": [],
+      "used_alternate": false,
+      "selection_reason": "no candidate reached the minimum relevance floor 0.30 (best was 0.29: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust)",
+      "match_status": "unmatched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "crack eggs in well and whisk them gently",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "crack eggs",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "crack eggs whisk",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": null,
+        "chosen_because": null
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:157263",
+          "title": "chicken, hen, animal, farm, egg, country",
+          "text_score": 0.667,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: eggs",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "eggs"
+            },
+            "weights": {
+              "subject": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:1770",
+          "title": "egg, egg yolk, yolk, food, meal, kitchen, eggs, fresh, enjoy the meal, cook",
+          "text_score": 0.667,
+          "visual_score": null,
+          "technical_score": 0.498,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: eggs",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+            "clip (2.0s) shorter than scene (4.1s); will loop"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "eggs"
+            },
+            "weights": {
+              "subject": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:213748",
+          "title": "egg, food, protein, breakfast, healthy, kitchen",
+          "text_score": 0.667,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: eggs",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "eggs"
+            },
+            "weights": {
+              "subject": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Scene scene-003 has no matching footage: no candidate reached the minimum relevance floor 0.30 (best was 0.29: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-004",
+      "index": 4,
+      "start": 11.952,
+      "end": 16.152,
+      "duration": 4.2,
+      "narration_text": "Slowly pull the flour into the eggs until a dough forms.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Pulling flour in eggs.",
+      "visual_analysis": {
+        "subject": null,
+        "action": "pulling",
+        "setting": "eggs",
+        "objects": [
+          "flour"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [],
+        "frames": [],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "pulling",
+          "pull"
+        ],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "pulling flour in eggs",
+        "pulling in eggs",
+        "flour in eggs",
+        "flour eggs"
+      ],
+      "queries_detail": [
+        {
+          "query": "pulling flour in eggs",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.555,
+          "error": null
+        },
+        {
+          "query": "pulling in eggs",
+          "returned": 12,
+          "kept": 8,
+          "rejected": [
+            "pixabay:27539: duplicate candidate",
+            "pixabay:290890: duplicate candidate",
+            "pixabay:246644: duplicate candidate",
+            "pixabay:220476: duplicate candidate"
+          ],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "flour in eggs",
+          "returned": 12,
+          "kept": 0,
+          "rejected": [
+            "pixabay:200157: duplicate candidate",
+            "pixabay:784: duplicate candidate",
+            "pixabay:27539: duplicate candidate",
+            "pixabay:1785: duplicate candidate",
+            "pixabay:290890: duplicate candidate",
+            "pixabay:75700: duplicate candidate",
+            "pixabay:246644: duplicate candidate",
+            "pixabay:220476: duplicate candidate",
+            "pixabay:207994: duplicate candidate",
+            "pixabay:63066: duplicate candidate",
+            "pixabay:207992: duplicate candidate",
+            "pixabay:42040: duplicate candidate"
+          ],
+          "best_score": null,
+          "error": null
+        },
+        {
+          "query": "flour eggs",
+          "returned": 12,
+          "kept": 1,
+          "rejected": [
+            "pixabay:1785: duplicate candidate",
+            "pixabay:200157: duplicate candidate",
+            "pixabay:784: duplicate candidate",
+            "pixabay:290890: duplicate candidate",
+            "pixabay:75700: duplicate candidate",
+            "pixabay:246644: duplicate candidate",
+            "pixabay:220476: duplicate candidate",
+            "pixabay:63066: duplicate candidate",
+            "pixabay:207994: duplicate candidate",
+            "pixabay:207992: duplicate candidate",
+            "pixabay:42040: duplicate candidate"
+          ],
+          "best_score": 0.29,
+          "error": null
+        }
+      ],
+      "candidate_count": 21,
+      "retry_attempts": 3,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "1785",
+        "title": "eggs, bread, flour, breadcrumbs, schnitzel, white, kitchen, food, edible, cook, breading",
+        "tags": [
+          "eggs",
+          "bread",
+          "flour",
+          "breadcrumbs",
+          "schnitzel",
+          "white",
+          "kitchen",
+          "food",
+          "edible",
+          "cook",
+          "breading"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-1785/",
+        "download_url": "https://cdn.pixabay.com/video/2015/12/29/1785-150302559_medium.mp4",
+        "local_file": "clips/pixabay_1785.mp4",
+        "duration_seconds": 4.0,
+        "width": 0,
+        "height": 0,
+        "creator": "jensb",
+        "creator_url": "https://pixabay.com/users/jensb-724999/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T08:53:53+00:00",
+        "looped": true,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.5525,
+            "saturation": 0.2396,
+            "frames": 8
+          },
+          "brightness": -0.12,
+          "saturation": 1.25,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-004.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by jensb via Pixabay"
+      },
+      "relevance": {
+        "score": 0.555,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.571,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "action": 0.0,
+            "object": 1.0,
+            "setting": 1.0
+          },
+          "matched_terms": {
+            "object": "flour",
+            "setting": "eggs"
+          },
+          "weights": {
+            "action": 0.3,
+            "object": 0.25,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:1785",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.56 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "pulling flour in eggs",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "pulling in eggs",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "flour in eggs",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "flour eggs",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:200157",
+          "title": "cook, meal, food, carbohydrates, raw, nourishment, dough, flour, baked goods, pasta, pasta machine",
+          "text_score": 0.357,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.429,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - object: flour"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "action": 0.0,
+              "object": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "object": "flour"
+            },
+            "weights": {
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:42040",
+          "title": "bread, flour, food, baker, bakery, dough, baking, bake",
+          "text_score": 0.357,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.429,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - object: flour"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "action": 0.0,
+              "object": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "object": "flour"
+            },
+            "weights": {
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:129497",
+          "title": "egg, protein, cooking, breakfast, food",
+          "text_score": 0.214,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - setting: eggs",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "action": 0.0,
+              "object": 0.0,
+              "setting": 1.0
+            },
+            "matched_terms": {
+              "setting": "eggs"
+            },
+            "weights": {
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-005",
+      "index": 5,
+      "start": 16.152,
+      "end": 20.256,
+      "duration": 4.104,
+      "narration_text": "Knead the dough with your hands for ten minutes until it is smooth.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Knead dough hands ten minutes.",
+      "visual_analysis": {
+        "subject": "knead dough",
+        "action": null,
+        "setting": null,
+        "objects": [
+          "hands ten minutes"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase."
+        ],
+        "frames": [],
+        "scene_type": "object",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "knead dough hands ten minutes",
+        "knead dough",
+        "hands ten minutes",
+        "knead dough hands"
+      ],
+      "queries_detail": [
+        {
+          "query": "knead dough hands ten minutes",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.596,
+          "error": null
+        },
+        {
+          "query": "knead dough",
+          "returned": 12,
+          "kept": 11,
+          "rejected": [
+            "pixabay:43653: duplicate candidate"
+          ],
+          "best_score": 0.596,
+          "error": null
+        },
+        {
+          "query": "hands ten minutes",
+          "returned": 12,
+          "kept": 5,
+          "rejected": [
+            "pixabay:55443: duplicate candidate",
+            "pixabay:26452: duplicate candidate",
+            "pixabay:73847: duplicate candidate",
+            "pixabay:50803: duplicate candidate",
+            "pixabay:5404: duplicate candidate",
+            "pixabay:10350: duplicate candidate",
+            "pixabay:198470: duplicate candidate"
+          ],
+          "best_score": 0.178,
+          "error": null
+        },
+        {
+          "query": "knead dough hands",
+          "returned": 12,
+          "kept": 5,
+          "rejected": [
+            "pixabay:200157: duplicate candidate",
+            "pixabay:1261: duplicate candidate",
+            "pixabay:73847: duplicate candidate",
+            "pixabay:43653: duplicate candidate",
+            "pixabay:250784: duplicate candidate",
+            "pixabay:208477: duplicate candidate",
+            "pixabay:34091: duplicate candidate"
+          ],
+          "best_score": 0.29,
+          "error": null
+        }
+      ],
+      "candidate_count": 33,
+      "retry_attempts": 3,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "373412",
+        "title": "ai generated, dough, pizza dough, italian food, italian kitchen, cooking, food, baking, flour, chef, cooking process, kneading, handmade, artisan, homemade, bakery, pizzeria, restaurant, gastronomy, culinary, fresh dough, kitchen, food preparation, mediterranean",
+        "tags": [
+          "ai generated",
+          "dough",
+          "pizza dough",
+          "italian food",
+          "italian kitchen",
+          "cooking",
+          "food",
+          "baking",
+          "flour",
+          "chef",
+          "cooking process",
+          "kneading",
+          "handmade",
+          "artisan",
+          "homemade",
+          "bakery",
+          "pizzeria",
+          "restaurant",
+          "gastronomy",
+          "culinary",
+          "fresh dough",
+          "kitchen",
+          "food preparation",
+          "mediterranean"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-373412/",
+        "download_url": "https://cdn.pixabay.com/video/2026/08/30/373412_large.mp4",
+        "local_file": "clips/pixabay_373412.mp4",
+        "duration_seconds": 8.0,
+        "width": 3840,
+        "height": 2160,
+        "creator": "Openly",
+        "creator_url": "https://pixabay.com/users/Openly-55605327/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T08:53:54+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.4177,
+            "saturation": 0.4984,
+            "frames": 12
+          },
+          "brightness": 0.0,
+          "saturation": 0.8156,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-005.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by Openly via Pixabay"
+      },
+      "relevance": {
+        "score": 0.596,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.545,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "object": 0.0
+          },
+          "matched_terms": {
+            "subject": "knead"
+          },
+          "weights": {
+            "subject": 0.3,
+            "object": 0.25
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:373412",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.60 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "knead dough hands ten minutes",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "knead dough",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "hands ten minutes",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "knead dough hands",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:373414",
+          "title": "ai generated, dough, pizza dough, italian food, italian kitchen, cooking, food, baking, flour, chef, cooking process, kneading, homemade, bakery, pizzeria, restaurant, gastronomy, culinary, fresh dough, pasta dough, traditional, kitchen, food preparation, mediterranean",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.596,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: knead"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "knead"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:373415",
+          "title": "ai generated, dough, pizza dough, italian food, italian kitchen, cooking, food, baking, flour, chef, cooking process, kneading, handmade, artisan, homemade, bakery, pizzeria, restaurant, gastronomy, culinary, fresh dough, pasta dough, traditional, mediterranean",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.596,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: knead"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "knead"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:373417",
+          "title": "ai generated, dough, pizza dough, italian food, italian kitchen, cooking, food, baking, flour, chef, cooking process, kneading, homemade, bakery, pizzeria, restaurant, gastronomy, culinary, fresh dough, pasta dough, traditional, kitchen, food preparation, mediterranean",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.596,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: knead"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "knead"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-006",
+      "index": 6,
+      "start": 20.256,
+      "end": 22.752,
+      "duration": 2.496,
+      "narration_text": "Wrap it and let it rest.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Wrap rest.",
+      "visual_analysis": {
+        "subject": "wrap rest",
+        "action": null,
+        "setting": null,
+        "objects": [],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase."
+        ],
+        "frames": [],
+        "scene_type": "object",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "wrap rest"
+      ],
+      "queries_detail": [
+        {
+          "query": "wrap rest",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 1.0,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "130139",
+        "title": "cat, feline, black cat, fatigue, rest, sleep, pet, animal",
+        "tags": [
+          "cat",
+          "feline",
+          "black cat",
+          "fatigue",
+          "rest",
+          "sleep",
+          "pet",
+          "animal"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-130139/",
+        "download_url": "https://cdn.pixabay.com/video/2022/09/03/130139-746386404_large.mp4",
+        "local_file": "clips/pixabay_130139.mp4",
+        "duration_seconds": 22.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "Dx21",
+        "creator_url": "https://pixabay.com/users/Dx21-24119034/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T08:53:56+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.4054,
+            "saturation": 0.1581,
+            "frames": 12
+          },
+          "brightness": 0.0,
+          "saturation": 1.25,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-006.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by Dx21 via Pixabay"
+      },
+      "relevance": {
+        "score": 1.0,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 1.0,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 1.0
+          },
+          "matched_terms": {
+            "subject": "rest"
+          },
+          "weights": {
+            "subject": 0.3
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:130139",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (1.00 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "wrap rest",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:138588",
+          "title": "sea, ocean, beach, waves, sun, dusk, sunset, nature, rest, meditation",
+          "text_score": 1.0,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 1.0,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: rest"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0
+            },
+            "matched_terms": {
+              "subject": "rest"
+            },
+            "weights": {
+              "subject": 0.3
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:170134",
+          "title": "baby, child, new born, infant, nap, rest",
+          "text_score": 1.0,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 1.0,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: rest"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0
+            },
+            "matched_terms": {
+              "subject": "rest"
+            },
+            "weights": {
+              "subject": 0.3
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:174070",
+          "title": "spacecraft, space travel, rest, module, futuristic, science fiction",
+          "text_score": 1.0,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 1.0,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: rest"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0
+            },
+            "matched_terms": {
+              "subject": "rest"
+            },
+            "weights": {
+              "subject": 0.3
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-007",
+      "index": 7,
+      "start": 22.752,
+      "end": 27.072,
+      "duration": 4.32,
+      "narration_text": "Then roll it thin with a rolling pin and cut it into ribbons.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Roll thin rolling pin cut in ribbons.",
+      "visual_analysis": {
+        "subject": "roll thin",
+        "action": null,
+        "setting": "ribbons",
+        "objects": [
+          "rolling pin cut"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase."
+        ],
+        "frames": [],
+        "scene_type": "object",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "roll thin rolling pin cut in ribbons",
+        "roll thin in ribbons",
+        "rolling pin cut in ribbons",
+        "roll thin",
+        "roll thin rolling"
+      ],
+      "queries_detail": [
+        {
+          "query": "roll thin rolling pin cut in ribbons",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.545,
+          "error": null
+        },
+        {
+          "query": "roll thin in ribbons",
+          "returned": 12,
+          "kept": 9,
+          "rejected": [
+            "pixabay:27539: duplicate candidate",
+            "pixabay:4572: duplicate candidate",
+            "pixabay:213670: duplicate candidate"
+          ],
+          "best_score": 0.545,
+          "error": null
+        },
+        {
+          "query": "rolling pin cut in ribbons",
+          "returned": 12,
+          "kept": 1,
+          "rejected": [
+            "pixabay:16160: duplicate candidate",
+            "pixabay:171970: duplicate candidate",
+            "pixabay:27539: duplicate candidate",
+            "pixabay:67461: duplicate candidate",
+            "pixabay:353078: duplicate candidate",
+            "pixabay:123409: duplicate candidate",
+            "pixabay:119178: duplicate candidate",
+            "pixabay:111308: duplicate candidate",
+            "pixabay:138961: duplicate candidate",
+            "pixabay:152081: duplicate candidate",
+            "pixabay:282086: duplicate candidate"
+          ],
+          "best_score": 0.164,
+          "error": null
+        },
+        {
+          "query": "roll thin",
+          "returned": 12,
+          "kept": 6,
+          "rejected": [
+            "pixabay:4572: duplicate candidate",
+            "pixabay:50365: duplicate candidate",
+            "pixabay:124523: duplicate candidate",
+            "pixabay:124522: duplicate candidate",
+            "pixabay:209887: duplicate candidate",
+            "pixabay:48115: duplicate candidate"
+          ],
+          "best_score": 0.545,
+          "error": null
+        },
+        {
+          "query": "roll thin rolling",
+          "returned": 12,
+          "kept": 0,
+          "rejected": [
+            "pixabay:1050: duplicate candidate",
+            "pixabay:16160: duplicate candidate",
+            "pixabay:353078: duplicate candidate",
+            "pixabay:4572: duplicate candidate",
+            "pixabay:123409: duplicate candidate",
+            "pixabay:119178: duplicate candidate",
+            "pixabay:111308: duplicate candidate",
+            "pixabay:138961: duplicate candidate",
+            "pixabay:50365: duplicate candidate",
+            "pixabay:124523: duplicate candidate",
+            "pixabay:209887: duplicate candidate",
+            "pixabay:124522: duplicate candidate"
+          ],
+          "best_score": null,
+          "error": null
+        }
+      ],
+      "candidate_count": 28,
+      "retry_attempts": 4,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "1050",
+        "title": "horse, rolling, farm, animal, equine, equestrian, roll, nature, brown, lie, sand, mammal, playful",
+        "tags": [
+          "horse",
+          "rolling",
+          "farm",
+          "animal",
+          "equine",
+          "equestrian",
+          "roll",
+          "nature",
+          "brown",
+          "lie",
+          "sand",
+          "mammal",
+          "playful"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-1050/",
+        "download_url": "https://cdn.pixabay.com/video/2015/10/16/1050-142621406_large.mp4",
+        "local_file": "clips/pixabay_1050.mp4",
+        "duration_seconds": 13.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "Coverr-Free-Footage",
+        "creator_url": "https://pixabay.com/users/Coverr-Free-Footage-1281706/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T08:53:56+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.5144,
+            "saturation": 0.4057,
+            "frames": 12
+          },
+          "brightness": -0.0984,
+          "saturation": 1.0,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-007.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by Coverr-Free-Footage via Pixabay"
+      },
+      "relevance": {
+        "score": 0.545,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.488,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "object": 0.167,
+            "setting": 0.0
+          },
+          "matched_terms": {
+            "subject": "roll",
+            "object": "rolling pin cut"
+          },
+          "weights": {
+            "subject": 0.3,
+            "object": 0.25,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:1050",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.54 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "roll thin rolling pin cut in ribbons",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "roll thin in ribbons",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "rolling pin cut in ribbons",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "roll thin",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "roll thin rolling",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:111308",
+          "title": "nature, landscape, sun, clouds, rolling, sky, mountain, light, sunbeams, beautiful wallpaper, heaven, sunrise, sunset, background",
+          "text_score": 0.488,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.545,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: roll, object: rolling pin cut"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.167,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "roll",
+              "object": "rolling pin cut"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:119178",
+          "title": "clouds, wind, sky, cumulus, rolling, motion",
+          "text_score": 0.488,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.545,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: roll, object: rolling pin cut"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.167,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "roll",
+              "object": "rolling pin cut"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:123409",
+          "title": "clouds, skies, moving, motion, rolling, dissolving",
+          "text_score": 0.488,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.545,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: roll, object: rolling pin cut"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.167,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "roll",
+              "object": "rolling pin cut"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-008",
+      "index": 8,
+      "start": 27.072,
+      "end": 32.888,
+      "duration": 5.816,
+      "narration_text": "Drop the pasta into boiling water for two minutes and serve it with tomato sauce and basil.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Drop pasta watering for two minutes in boiling, serving it with tomato sauce and basil.",
+      "visual_analysis": {
+        "subject": "drop pasta",
+        "action": "watering",
+        "setting": "boiling",
+        "objects": [
+          "for two minutes",
+          "it with tomato sauce and basil"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card",
+          "harvesting",
+          "market"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "Second coordinated action recognised: serving it with tomato sauce and basil.",
+          "Alternative search phrasings added from activity frame(s): watering_plants."
+        ],
+        "frames": [
+          "watering_plants"
+        ],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "watering",
+          "irrigation",
+          "irrigating",
+          "sprinkler",
+          "sprinkling",
+          "hose",
+          "watering can",
+          "drip irrigation",
+          "spraying water"
+        ],
+        "object_evidence_terms": [
+          "hose",
+          "watering can",
+          "sprinkler",
+          "irrigation system"
+        ],
+        "foil_terms": [
+          "harvesting",
+          "harvest",
+          "picking",
+          "plowing",
+          "ploughing",
+          "tractor",
+          "combine",
+          "planting",
+          "sowing",
+          "pruning"
+        ]
+      },
+      "search_queries": [
+        "drop pasta watering for two minutes in boiling"
+      ],
+      "queries_detail": [
+        {
+          "query": "drop pasta watering for two minutes in boiling",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.7,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "229254",
+        "title": "ai generated, water, liquid, splash, drops",
+        "tags": [
+          "ai generated",
+          "water",
+          "liquid",
+          "splash",
+          "drops"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-229254/",
+        "download_url": "https://cdn.pixabay.com/video/2024/09/01/229254_large.mp4",
+        "local_file": "clips/pixabay_229254.mp4",
+        "duration_seconds": 13.0,
+        "width": 3840,
+        "height": 2160,
+        "creator": "u_0m97lsp80x",
+        "creator_url": "https://pixabay.com/users/u_0m97lsp80x-45750885/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T08:53:58+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.1782,
+            "saturation": 0.4378,
+            "frames": 12
+          },
+          "brightness": 0.12,
+          "saturation": 1.0,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-008.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by u_0m97lsp80x via Pixabay"
+      },
+      "relevance": {
+        "score": 0.7,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.662,
+        "visual_score": null,
+        "label": "High",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "action": 1.0,
+            "object": 0.25,
+            "setting": 0.0
+          },
+          "matched_terms": {
+            "subject": "drop",
+            "action": "watering",
+            "object": "watering can"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "object": 0.25,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": true,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:21536",
+          "outcome": "download_failed",
+          "reason": "Clip is 139 MB; limit is 100 MB."
+        },
+        {
+          "clip": "pixabay:229254",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": true,
+      "selection_reason": "highest-scoring unused candidate (0.70 >= threshold 0.45; metadata_text_fallback) | original choice unusable; replaced by next-best acceptable candidate (pixabay:229254)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "drop pasta watering for two minutes in boiling",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:229254",
+          "title": "ai generated, water, liquid, splash, drops",
+          "text_score": 0.662,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.7,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: drop, action: watering, object: watering can"
+          ],
+          "penalties": [],
+          "label": "High",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 1.0,
+              "object": 0.25,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "drop",
+              "action": "watering",
+              "object": "watering can"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:28236",
+          "title": "rain, raindrop, wet, water, window, drop, weather, droplets, blue, rainy, beautiful wallpaper, dark, raining, background, live wallpaper",
+          "text_score": 0.662,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.7,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: drop, action: watering, object: watering can"
+          ],
+          "penalties": [],
+          "label": "High",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 1.0,
+              "object": 0.25,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "drop",
+              "action": "watering",
+              "object": "watering can"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:3591",
+          "title": "cooking, boiling, broccoli, vegetables, pot, hot, kitchen, cuisine, diet, food, prepare, vitamins, boiled, water",
+          "text_score": 0.512,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.567,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: watering, object: watering can, setting: boiling"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "object": 0.25,
+              "setting": 1.0
+            },
+            "matched_terms": {
+              "action": "watering",
+              "object": "watering can",
+              "setting": "boiling"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    }
+  ],
+  "warnings": [
+    "Relevance based on clip title/tags only (no visual verification of frames).",
+    "Scene scene-002 has no matching footage: no candidate reached the minimum relevance floor 0.30 (best was 0.29: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust).",
+    "Scene scene-003 has no matching footage: no candidate reached the minimum relevance floor 0.30 (best was 0.29: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust).",
+    "scene-008: top clip could not be used; used next-best candidate.",
+    "scene-004: clip is 3.8s but the scene needs 4.2s; clip is looped.",
+    "black frames detected at 3.8s for 8.2s",
+    "frozen video detected for 4.9s",
+    "Footage relevance was estimated from provider titles/tags and scene analysis only. No vision-language model inspected the video frames."
+  ],
+  "avoid": [],
+  "footage_provider": "pixabay",
+  "render": {
+    "engine": "per-scene segments + stream-copy concat",
+    "fps": 30,
+    "total_frames": 987,
+    "colour_normalisation": {
+      "enabled": true,
+      "target": {
+        "luma": 0.416,
+        "saturation": 0.4065
+      },
+      "method": "per-clip mean luma/saturation vs job median; bounded eq filter"
+    },
+    "min_scene_seconds": 2.0
+  }
+}

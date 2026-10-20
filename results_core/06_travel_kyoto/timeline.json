@@ -1,0 +1,1974 @@
+{
+  "schema_version": "1.0",
+  "job_id": "dfe1bdd9a9e5",
+  "aspect_ratio": "16:9",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": {
+    "file": "narration.mp3",
+    "source": "generated:edge-tts"
+  },
+  "total_duration": 28.134,
+  "scenes": [
+    {
+      "scene_id": "scene-001",
+      "index": 1,
+      "start": 0.0,
+      "end": 4.08,
+      "duration": 4.08,
+      "narration_text": "Kyoto is a city where old traditions meet modern life.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Where old traditions meeting modern life.",
+      "visual_analysis": {
+        "subject": "where old traditions",
+        "action": "meeting",
+        "setting": null,
+        "objects": [
+          "modern life"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [],
+        "frames": [],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "meeting",
+          "meet"
+        ],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "where old traditions meeting modern life"
+      ],
+      "queries_detail": [
+        {
+          "query": "where old traditions meeting modern life",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.621,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "130648",
+        "title": "woman, waving, videoconference, meeting, computer, webcam, city life, technology, internet, connection, tourism, social, modern technology, leisure, street style, casual, social media, young, person, lifestyle, urban, portrait",
+        "tags": [
+          "woman",
+          "waving",
+          "videoconference",
+          "meeting",
+          "computer",
+          "webcam",
+          "city life",
+          "technology",
+          "internet",
+          "connection",
+          "tourism",
+          "social",
+          "modern technology",
+          "leisure",
+          "street style",
+          "casual",
+          "social media",
+          "young",
+          "person",
+          "lifestyle",
+          "urban",
+          "portrait"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-130648/",
+        "download_url": "https://cdn.pixabay.com/video/2022/09/08/130648-747868373_large.mp4",
+        "local_file": "clips/pixabay_130648.mp4",
+        "duration_seconds": 25.0,
+        "width": 3840,
+        "height": 2160,
+        "creator": "SYG_Anime",
+        "creator_url": "https://pixabay.com/users/SYG_Anime-7158719/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T09:09:03+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.5598,
+            "saturation": 0.1377,
+            "frames": 12
+          },
+          "brightness": -0.12,
+          "saturation": 1.25,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-001.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by SYG_Anime via Pixabay"
+      },
+      "relevance": {
+        "score": 0.621,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.574,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 0.0,
+            "action": 1.0,
+            "object": 0.75
+          },
+          "matched_terms": {
+            "action": "meeting",
+            "object": "modern life"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "object": 0.25
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": true,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:130648",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.62 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "where old traditions meeting modern life",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:130649",
+          "title": "woman, waving, videoconference, meeting, computer, webcam, city life, technology, internet, connection, tourism, social, modern technology, leisure, street style, casual, social media, young, person, lifestyle, urban, portrait",
+          "text_score": 0.574,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.621,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: meeting, object: modern life"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "object": 0.75
+            },
+            "matched_terms": {
+              "action": "meeting",
+              "object": "modern life"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:130650",
+          "title": "woman, smartphone, social media, videoconference, meeting, city life, technology, internet, connection, tourism, social, modern technology, leisure, casual, young, person, lifestyle, urban, portrait",
+          "text_score": 0.574,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.621,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: meeting, object: modern life"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "object": 0.75
+            },
+            "matched_terms": {
+              "action": "meeting",
+              "object": "modern life"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:343478",
+          "title": "aerial view, urban, cityscape, dusk, sunset, skyline, drone, city, evening, lights, architecture, urban landscape, modern city, travel, tourism, panorama, sky, buildings, metropolitan, downtown, scenic, horizon, nightfall, golden hour, urban life",
+          "text_score": 0.221,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.307,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - object: modern life"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 0.0,
+              "object": 0.75
+            },
+            "matched_terms": {
+              "object": "modern life"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-002",
+      "index": 2,
+      "start": 4.08,
+      "end": 9.48,
+      "duration": 5.4,
+      "narration_text": "Walk through the red gates of Fushimi Inari as the morning mist lifts from the hills.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Walking through red gates of fushimi inari.",
+      "visual_analysis": {
+        "subject": null,
+        "action": "walking",
+        "setting": "red gates of fushimi inari",
+        "objects": [],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [],
+        "frames": [],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "walking",
+          "walk"
+        ],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "walking through red gates of fushimi inari",
+        "red gates fushimi"
+      ],
+      "queries_detail": [
+        {
+          "query": "walking through red gates of fushimi inari",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "red gates fushimi",
+          "returned": 12,
+          "kept": 10,
+          "rejected": [
+            "pixabay:18392: duplicate candidate",
+            "pixabay:1383: duplicate candidate"
+          ],
+          "best_score": 0.148,
+          "error": null
+        }
+      ],
+      "candidate_count": 22,
+      "retry_attempts": 1,
+      "clip": null,
+      "license": {},
+      "attribution": null,
+      "relevance": {
+        "score": null,
+        "scoring_method": null,
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": false,
+        "text_score": null,
+        "visual_score": null,
+        "label": null,
+        "evidence": null,
+        "gated": null,
+        "visual_detail": null
+      },
+      "needs_review": false,
+      "placeholder": true,
+      "download_attempts": [],
+      "used_alternate": false,
+      "selection_reason": "no candidate reached the minimum relevance floor 0.30 (best was 0.29: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust)",
+      "match_status": "unmatched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "walking through red gates of fushimi inari",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "red gates fushimi",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": null,
+        "chosen_because": null
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:150605",
+          "title": "astronaut, walking, red planet, space, mars, astronomy, futuristic, horizon",
+          "text_score": 0.708,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: walking, setting: red gates of fushimi inari",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "action": 1.0,
+              "setting": 0.125
+            },
+            "matched_terms": {
+              "action": "walking",
+              "setting": "red gates of fushimi inari"
+            },
+            "weights": {
+              "action": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:152798",
+          "title": "couple, lovers, hands, love, street, walking",
+          "text_score": 0.667,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: walking",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "action": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "action": "walking"
+            },
+            "weights": {
+              "action": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:1632",
+          "title": "country girl, gate, countryside, farm, girl, woman, walking, legs, country, fence, rural, wooden, young, caucasian, exit, leaving, walking away",
+          "text_score": 0.667,
+          "visual_score": null,
+          "technical_score": 0.65,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: walking",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "action": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "action": "walking"
+            },
+            "weights": {
+              "action": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Scene scene-002 has no matching footage: no candidate reached the minimum relevance floor 0.30 (best was 0.29: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-003",
+      "index": 3,
+      "start": 9.48,
+      "end": 14.424,
+      "duration": 4.944,
+      "narration_text": "Visit a quiet bamboo forest where tall green stalks sway in the wind.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Visit quiet bamboo forest tall green stalks sway in wind.",
+      "visual_analysis": {
+        "subject": "visit quiet",
+        "action": null,
+        "setting": "wind",
+        "objects": [
+          "bamboo forest tall green stalks sway"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase.",
+          "Alternative search phrasings added from activity frame(s): sightseeing."
+        ],
+        "frames": [
+          "sightseeing"
+        ],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "sightseeing",
+          "tourist",
+          "tourists",
+          "traveling",
+          "travelling",
+          "walking",
+          "exploring",
+          "visiting"
+        ],
+        "object_evidence_terms": [
+          "landmark",
+          "luggage",
+          "map",
+          "backpack"
+        ],
+        "foil_terms": [
+          "airport"
+        ]
+      },
+      "search_queries": [
+        "visit quiet stalks sway in wind",
+        "tourists sightseeing in city",
+        "traveler exploring old town",
+        "visit quiet in wind",
+        "visit quiet bamboo forest tall green stalks sway",
+        "bamboo forest tall green stalks sway in wind"
+      ],
+      "queries_detail": [
+        {
+          "query": "visit quiet stalks sway in wind",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.263,
+          "error": null
+        },
+        {
+          "query": "tourists sightseeing in city",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "traveler exploring old town",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "visit quiet in wind",
+          "returned": 12,
+          "kept": 5,
+          "rejected": [
+            "pixabay:282086: duplicate candidate",
+            "pixabay:150539: duplicate candidate",
+            "pixabay:203923: duplicate candidate",
+            "pixabay:158384: duplicate candidate",
+            "pixabay:118417: duplicate candidate",
+            "pixabay:38270: duplicate candidate",
+            "pixabay:152740: duplicate candidate"
+          ],
+          "best_score": 0.511,
+          "error": null
+        },
+        {
+          "query": "visit quiet bamboo forest tall green stalks sway",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.415,
+          "error": null
+        },
+        {
+          "query": "bamboo forest tall green stalks sway in wind",
+          "returned": 12,
+          "kept": 5,
+          "rejected": [
+            "pixabay:311442: duplicate candidate",
+            "pixabay:146585: duplicate candidate",
+            "pixabay:118417: duplicate candidate",
+            "pixabay:119302: duplicate candidate",
+            "pixabay:20836: duplicate candidate",
+            "pixabay:44239: duplicate candidate",
+            "pixabay:282086: duplicate candidate"
+          ],
+          "best_score": 0.281,
+          "error": null
+        }
+      ],
+      "candidate_count": 58,
+      "retry_attempts": 5,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "119399",
+        "title": "landscape, pond, water, trees, wind, idyllic, quiet, relaxing, nature",
+        "tags": [
+          "landscape",
+          "pond",
+          "water",
+          "trees",
+          "wind",
+          "idyllic",
+          "quiet",
+          "relaxing",
+          "nature"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-119399/",
+        "download_url": "https://cdn.pixabay.com/video/2022/06/06/119399-717695272_large.mp4",
+        "local_file": "clips/pixabay_119399.mp4",
+        "duration_seconds": 18.0,
+        "width": 3840,
+        "height": 2160,
+        "creator": "NickyPe",
+        "creator_url": "https://pixabay.com/users/NickyPe-10327513/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T09:09:05+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.3194,
+            "saturation": 0.6512,
+            "frames": 12
+          },
+          "brightness": 0.021,
+          "saturation": 0.8226,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-003.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by NickyPe via Pixabay"
+      },
+      "relevance": {
+        "score": 0.511,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.45,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "action": 0.0,
+            "object": 0.0,
+            "setting": 1.0
+          },
+          "matched_terms": {
+            "subject": "quiet",
+            "setting": "wind"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "object": 0.25,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:119399",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.51 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "visit quiet stalks sway in wind",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "tourists sightseeing in city",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "traveler exploring old town",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "visit quiet in wind",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "visit quiet bamboo forest tall green stalks sway",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "bamboo forest tall green stalks sway in wind",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:15131",
+          "title": "wind, silence, quiet",
+          "text_score": 0.45,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.511,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: quiet, setting: wind"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0,
+              "object": 0.0,
+              "setting": 1.0
+            },
+            "matched_terms": {
+              "subject": "quiet",
+              "setting": "wind"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:335040",
+          "title": "drone, nature, landscape, flight, forest, aerial, summer, travel, trees, pine, evergreen, woods, green",
+          "text_score": 0.342,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.415,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: traveling, object: bamboo forest tall green stalks sway"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "object": 0.167,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "action": "traveling",
+              "object": "bamboo forest tall green stalks sway"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:117019",
+          "title": "tree, leaves, forest, quiet, sun, warmth, relaxation, green, spring, nature",
+          "text_score": 0.342,
+          "visual_score": null,
+          "technical_score": 0.967,
+          "final_score": 0.41,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: quiet, object: bamboo forest tall green stalks sway"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0,
+              "object": 0.167,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "quiet",
+              "object": "bamboo forest tall green stalks sway"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-004",
+      "index": 4,
+      "start": 14.424,
+      "end": 18.576,
+      "duration": 4.152,
+      "narration_text": "Watch a tea master prepare matcha in a wooden teahouse.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Watching tea master prepare matcha in wooden teahouse.",
+      "visual_analysis": {
+        "subject": null,
+        "action": "watching",
+        "setting": "wooden teahouse",
+        "objects": [
+          "tea master prepare matcha"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [],
+        "frames": [],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "watching",
+          "watch"
+        ],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "watching tea master prepare matcha in wooden teahouse",
+        "watching in wooden teahouse",
+        "tea master prepare matcha in wooden teahouse",
+        "tea master prepare"
+      ],
+      "queries_detail": [
+        {
+          "query": "watching tea master prepare matcha in wooden teahouse",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.54,
+          "error": null
+        },
+        {
+          "query": "watching in wooden teahouse",
+          "returned": 12,
+          "kept": 8,
+          "rejected": [
+            "pixabay:187970: duplicate candidate",
+            "pixabay:177474: duplicate candidate",
+            "pixabay:27539: duplicate candidate",
+            "pixabay:12396: duplicate candidate"
+          ],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "tea master prepare matcha in wooden teahouse",
+          "returned": 12,
+          "kept": 0,
+          "rejected": [
+            "pixabay:2339: duplicate candidate",
+            "pixabay:8389: duplicate candidate",
+            "pixabay:11606: duplicate candidate",
+            "pixabay:43238: duplicate candidate",
+            "pixabay:27539: duplicate candidate",
+            "pixabay:12396: duplicate candidate",
+            "pixabay:4352: duplicate candidate",
+            "pixabay:11657: duplicate candidate",
+            "pixabay:84906: duplicate candidate",
+            "pixabay:11230: duplicate candidate",
+            "pixabay:197564: duplicate candidate",
+            "pixabay:185908: duplicate candidate"
+          ],
+          "best_score": null,
+          "error": null
+        },
+        {
+          "query": "tea master prepare",
+          "returned": 12,
+          "kept": 6,
+          "rejected": [
+            "pixabay:2339: duplicate candidate",
+            "pixabay:11606: duplicate candidate",
+            "pixabay:43238: duplicate candidate",
+            "pixabay:4352: duplicate candidate",
+            "pixabay:84906: duplicate candidate",
+            "pixabay:11230: duplicate candidate"
+          ],
+          "best_score": 0.151,
+          "error": null
+        }
+      ],
+      "candidate_count": 26,
+      "retry_attempts": 3,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "177474",
+        "title": "birds, seagulls, meeting, wooden pole, plumage, lake, water, bird watching, slow motion, wildlife",
+        "tags": [
+          "birds",
+          "seagulls",
+          "meeting",
+          "wooden pole",
+          "plumage",
+          "lake",
+          "water",
+          "bird watching",
+          "slow motion",
+          "wildlife"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-177474/",
+        "download_url": "https://cdn.pixabay.com/video/2023/08/24/177474-857714980_large.mp4",
+        "local_file": "clips/pixabay_177474.mp4",
+        "duration_seconds": 21.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "NickyPe",
+        "creator_url": "https://pixabay.com/users/NickyPe-10327513/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T09:09:06+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.3173,
+            "saturation": 0.6406,
+            "frames": 12
+          },
+          "brightness": 0.0231,
+          "saturation": 0.8362,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-004.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by NickyPe via Pixabay"
+      },
+      "relevance": {
+        "score": 0.54,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.482,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "action": 1.0,
+            "object": 0.0,
+            "setting": 0.25
+          },
+          "matched_terms": {
+            "action": "watching",
+            "setting": "wooden teahouse"
+          },
+          "weights": {
+            "action": 0.3,
+            "object": 0.25,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": true,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:177474",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.54 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "watching tea master prepare matcha in wooden teahouse",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "watching in wooden teahouse",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "tea master prepare matcha in wooden teahouse",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "tea master prepare",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:187970",
+          "title": "bird, blue tit, plumage, feeding place, bird watching, wildlife",
+          "text_score": 0.429,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: watching",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "action": 1.0,
+              "object": 0.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "action": "watching"
+            },
+            "weights": {
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:201159",
+          "title": "thank you, watching, outro, gratitude, message",
+          "text_score": 0.429,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: watching",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "action": 1.0,
+              "object": 0.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "action": "watching"
+            },
+            "weights": {
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:216517",
+          "title": "geese, lake, canadian goose, migratory birds, edmonton lake, bird watching, nature, canada, canadian wildlife, spring, fauna, geese in spring, goose behavior, birds of edmonton, natural habitat, wildlife, 4k bird watching",
+          "text_score": 0.429,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: watching",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "action": 1.0,
+              "object": 0.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "action": "watching"
+            },
+            "weights": {
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-005",
+      "index": 5,
+      "start": 18.576,
+      "end": 23.16,
+      "duration": 4.584,
+      "narration_text": "In the evening, lanterns glow along the narrow streets of Gion.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "In evening lanterns glow.",
+      "visual_analysis": {
+        "subject": null,
+        "action": null,
+        "setting": "evening lanterns glow",
+        "objects": [],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase."
+        ],
+        "frames": [],
+        "scene_type": "place",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "in evening lanterns glow",
+        "evening lanterns glow"
+      ],
+      "queries_detail": [
+        {
+          "query": "in evening lanterns glow",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.407,
+          "error": null
+        },
+        {
+          "query": "evening lanterns glow",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.777,
+          "error": null
+        }
+      ],
+      "candidate_count": 24,
+      "retry_attempts": 1,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "373157",
+        "title": "ai generated, halloween, pumpkin, lamp, lantern, jack o lantern, glowing pumpkin, autumn, fall, october, orange, warm light, candlelight, night, evening, seasonal, halloween decor, decoration, porch, home, glow, festive, fall decor, pumpkin light",
+        "tags": [
+          "ai generated",
+          "halloween",
+          "pumpkin",
+          "lamp",
+          "lantern",
+          "jack o lantern",
+          "glowing pumpkin",
+          "autumn",
+          "fall",
+          "october",
+          "orange",
+          "warm light",
+          "candlelight",
+          "night",
+          "evening",
+          "seasonal",
+          "halloween decor",
+          "decoration",
+          "porch",
+          "home",
+          "glow",
+          "festive",
+          "fall decor",
+          "pumpkin light"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-373157/",
+        "download_url": "https://cdn.pixabay.com/video/2026/08/29/373157_large.mp4",
+        "local_file": "clips/pixabay_373157.mp4",
+        "duration_seconds": 5.0,
+        "width": 2580,
+        "height": 1440,
+        "creator": "Solarselle77",
+        "creator_url": "https://pixabay.com/users/Solarselle77-52253391/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T09:09:08+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.3404,
+            "saturation": 0.5357,
+            "frames": 10
+          },
+          "brightness": 0.0,
+          "saturation": 1.0,
+          "applied": false
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-005.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by Solarselle77 via Pixabay"
+      },
+      "relevance": {
+        "score": 0.777,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.75,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "setting": 0.75
+          },
+          "matched_terms": {
+            "setting": "evening lanterns glow"
+          },
+          "weights": {
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:373157",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.78 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "in evening lanterns glow",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "evening lanterns glow",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:373162",
+          "title": "ai generated, halloween, pumpkin, lamp, lantern, jack o lantern, glowing pumpkin, autumn, fall, october, orange, warm light, night, evening, spooky, cozy, seasonal, halloween decor, decoration, porch, home, glow, festive, fall decor, pumpkin light",
+          "text_score": 0.75,
+          "visual_score": null,
+          "technical_score": 0.996,
+          "final_score": 0.777,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - setting: evening lanterns glow"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "setting": 0.75
+            },
+            "matched_terms": {
+              "setting": "evening lanterns glow"
+            },
+            "weights": {
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:373163",
+          "title": "ai generated, halloween, pumpkin, lamp, lantern, jack o lantern, glowing pumpkin, autumn, fall, october, orange, warm light, candlelight, night, evening, spooky, cozy, seasonal, halloween decor, decoration, porch, home, glow, pumpkin light",
+          "text_score": 0.75,
+          "visual_score": null,
+          "technical_score": 0.996,
+          "final_score": 0.777,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - setting: evening lanterns glow"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "setting": 0.75
+            },
+            "matched_terms": {
+              "setting": "evening lanterns glow"
+            },
+            "weights": {
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:373166",
+          "title": "ai generated, halloween, pumpkin, lamp, lantern, jack o lantern, glowing pumpkin, autumn, fall, october, orange, warm light, evening, spooky, cozy, seasonal, halloween decor, decoration, porch, home, glow, festive, fall decor, pumpkin light",
+          "text_score": 0.75,
+          "visual_score": null,
+          "technical_score": 0.996,
+          "final_score": 0.777,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - setting: evening lanterns glow"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "setting": 0.75
+            },
+            "matched_terms": {
+              "setting": "evening lanterns glow"
+            },
+            "weights": {
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-006",
+      "index": 6,
+      "start": 23.16,
+      "end": 28.134,
+      "duration": 4.974,
+      "narration_text": "Take the train to Osaka for street food, or stay and enjoy the calm.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Train.",
+      "visual_analysis": {
+        "subject": "train",
+        "action": null,
+        "setting": null,
+        "objects": [
+          "osaka for street food or stay"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase.",
+          "Alternative search phrasings added from activity frame(s): running_exercise."
+        ],
+        "frames": [
+          "running_exercise"
+        ],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "running",
+          "jogging",
+          "exercise",
+          "exercising",
+          "workout",
+          "training",
+          "sprinting",
+          "gym",
+          "fitness"
+        ],
+        "object_evidence_terms": [
+          "treadmill",
+          "weights",
+          "dumbbells",
+          "track",
+          "trail"
+        ],
+        "foil_terms": [
+          "walking",
+          "standing",
+          "sitting"
+        ]
+      },
+      "search_queries": [
+        "train"
+      ],
+      "queries_detail": [
+        {
+          "query": "train",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 1.0,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "121764",
+        "title": "train, nature, rail, electric train, tracks, fields, landscape",
+        "tags": [
+          "train",
+          "nature",
+          "rail",
+          "electric train",
+          "tracks",
+          "fields",
+          "landscape"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-121764/",
+        "download_url": "https://cdn.pixabay.com/video/2022/06/22/121764-724719672_large.mp4",
+        "local_file": "clips/pixabay_121764.mp4",
+        "duration_seconds": 13.0,
+        "width": 3840,
+        "height": 2160,
+        "creator": "adamixx",
+        "creator_url": "https://pixabay.com/users/adamixx-19315488/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T09:09:08+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.4939,
+            "saturation": 0.3706,
+            "frames": 12
+          },
+          "brightness": -0.12,
+          "saturation": 1.25,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-006.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by adamixx via Pixabay"
+      },
+      "relevance": {
+        "score": 1.0,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 1.0,
+        "visual_score": null,
+        "label": "High",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "action": 1.0,
+            "object": 1.0,
+            "setting": 1.0
+          },
+          "matched_terms": {
+            "subject": "train",
+            "action": "training",
+            "object": "track",
+            "setting": "track"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "object": 0.25,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": true,
+          "object_evidenced": true
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:121764",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (1.00 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "train",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:209494",
+          "title": "train, railway, train tracks, mountain, clouds, landscape",
+          "text_score": 1.0,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 1.0,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: train, action: training, object: track, setting: track"
+          ],
+          "penalties": [],
+          "label": "High",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 1.0,
+              "object": 1.0,
+              "setting": 1.0
+            },
+            "matched_terms": {
+              "subject": "train",
+              "action": "training",
+              "object": "track",
+              "setting": "track"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": true
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:218494",
+          "title": "train, railway, tracks, up line, diesel train, carriages, travel, transport",
+          "text_score": 1.0,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 1.0,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: train, action: training, object: track, setting: track"
+          ],
+          "penalties": [],
+          "label": "High",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 1.0,
+              "object": 1.0,
+              "setting": 1.0
+            },
+            "matched_terms": {
+              "subject": "train",
+              "action": "training",
+              "object": "track",
+              "setting": "track"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": true
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:1003",
+          "title": "subway, metro, train, urban, city, public transport, new york, underground, transportation, station, transport, travel, railway, transit, railroad, technology, platform, motion",
+          "text_score": 0.6,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.644,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: train, action: training"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 1.0,
+              "object": 0.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "train",
+              "action": "training"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    }
+  ],
+  "warnings": [
+    "Relevance based on clip title/tags only (no visual verification of frames).",
+    "Scene scene-002 has no matching footage: no candidate reached the minimum relevance floor 0.30 (best was 0.29: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust).",
+    "Footage relevance was estimated from provider titles/tags and scene analysis only. No vision-language model inspected the video frames."
+  ],
+  "avoid": [],
+  "footage_provider": "pixabay",
+  "render": {
+    "engine": "per-scene segments + stream-copy concat",
+    "fps": 30,
+    "total_frames": 844,
+    "colour_normalisation": {
+      "enabled": true,
+      "target": {
+        "luma": 0.3404,
+        "saturation": 0.5357
+      },
+      "method": "per-clip mean luma/saturation vs job median; bounded eq filter"
+    },
+    "min_scene_seconds": 2.0
+  }
+}

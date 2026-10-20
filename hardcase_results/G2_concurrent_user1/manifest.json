@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "job_id": "781ce9459d4b",
+  "job_id": "00c46f608293",
   "status": "completed",
-  "created_at": "2026-10-20T07:50:32+00:00",
+  "created_at": "2026-10-20T08:49:26+00:00",
   "input_type": "script_only",
   "input": {
     "script_characters": 90,
@@ -20,7 +20,7 @@
       "height": 1080,
       "fps": 30,
       "duration_seconds": 7.033,
-      "size_bytes": 4104270
+      "size_bytes": 4102276
     },
     "audio": {
       "file": "narration.mp3",
@@ -131,6 +131,7 @@
     "fallback_policy": "review",
     "review_floor": 0.3,
     "high_confidence": 0.7,
+    "min_grounded_terms": 2,
     "early_stop_score": 0.62,
     "evidence_weight_subject": 0.3,
     "evidence_weight_action": 0.3,
@@ -164,14 +165,14 @@
     "caption_min_seconds": 0.6
   },
   "processing_durations_seconds": {
-    "narration": 3.669,
+    "narration": 3.072,
     "validate_input": 0.0,
-    "matching": 2.812,
-    "download": 32.86,
+    "matching": 2.036,
+    "download": 38.018,
     "captions": 0.0,
-    "render": 20.527,
-    "validation": 1.403,
-    "total": 61.271
+    "render": 21.57,
+    "validation": 1.886,
+    "total": 66.582
   },
   "cost_estimate": {
     "amount_usd": 0.0,
@@ -201,7 +202,7 @@
         "creator": "JoshuaWoroniecki",
         "source_page_url": "https://pixabay.com/videos/id-128109/",
         "ai_generated": null,
-        "retrieved_at": "2026-10-20T07:50:36+00:00"
+        "retrieved_at": "2026-10-20T08:49:30+00:00"
       },
       {
         "scene_id": "scene-002",
@@ -224,7 +225,7 @@
         "creator": "Vlad-X",
         "source_page_url": "https://pixabay.com/videos/id-297771/",
         "ai_generated": null,
-        "retrieved_at": "2026-10-20T07:50:38+00:00"
+        "retrieved_at": "2026-10-20T08:49:31+00:00"
       }
     ],
     "all_commercial_use_per_provider_policy": true,
@@ -248,7 +249,7 @@
       "errors": [],
       "warnings": [],
       "checks": {
-        "file_size_bytes": 4104270,
+        "file_size_bytes": 4102276,
         "duration_seconds": 7.033,
         "video_codec": "h264",
         "pix_fmt": "yuv420p",

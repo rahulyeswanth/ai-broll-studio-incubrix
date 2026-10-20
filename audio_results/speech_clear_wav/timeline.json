@@ -1,0 +1,664 @@
+{
+  "schema_version": "1.0",
+  "job_id": "c8f89892c26b",
+  "aspect_ratio": "16:9",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": {
+    "file": "narration.wav",
+    "source": "uploaded"
+  },
+  "total_duration": 7.663,
+  "scenes": [
+    {
+      "scene_id": "scene-001",
+      "index": 1,
+      "start": 0.0,
+      "end": 5.44,
+      "duration": 5.44,
+      "narration_text": "Ocean waves crash on the shore, scientists study coral reefs to protect marine life.",
+      "timing_method": "asr_word_timestamps",
+      "visual_description": "Ocean waving crash in shore scientists study coral reefs to protect marine life.",
+      "visual_analysis": {
+        "subject": "ocean",
+        "action": "waving",
+        "setting": "shore scientists study coral reefs to protect marine life",
+        "objects": [
+          "crash"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "Alternative search phrasings added from activity frame(s): studying_reading."
+        ],
+        "frames": [
+          "studying_reading"
+        ],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "studying",
+          "reading",
+          "learning",
+          "homework",
+          "revising"
+        ],
+        "object_evidence_terms": [
+          "book",
+          "books",
+          "notes",
+          "library",
+          "textbook",
+          "desk"
+        ],
+        "foil_terms": [
+          "exam hall"
+        ]
+      },
+      "search_queries": [
+        "ocean waving crash in shore scientists study coral",
+        "student studying with books at desk"
+      ],
+      "queries_detail": [
+        {
+          "query": "ocean waving crash in shore scientists study coral",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.608,
+          "error": null
+        },
+        {
+          "query": "student studying with books at desk",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.733,
+          "error": null
+        }
+      ],
+      "candidate_count": 24,
+      "retry_attempts": 1,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "35453",
+        "title": "education, school, library, books, student, children, study, knowledge, book, research, reading, learning, science, studying, read, ink, design, brush",
+        "tags": [
+          "education",
+          "school",
+          "library",
+          "books",
+          "student",
+          "children",
+          "study",
+          "knowledge",
+          "book",
+          "research",
+          "reading",
+          "learning",
+          "science",
+          "studying",
+          "read",
+          "ink",
+          "design",
+          "brush"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-35453/",
+        "download_url": "https://cdn.pixabay.com/video/2020/04/08/35453-407130965_large.mp4",
+        "local_file": "clips/pixabay_35453.mp4",
+        "duration_seconds": 18.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "ninosouza",
+        "creator_url": "https://pixabay.com/users/ninosouza-8385382/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T08:52:40+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.6036,
+            "saturation": 0.3286,
+            "frames": 12
+          },
+          "brightness": -0.12,
+          "saturation": 1.1549,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-001.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by ninosouza via Pixabay"
+      },
+      "relevance": {
+        "score": 0.733,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.7,
+        "visual_score": null,
+        "label": "High",
+        "evidence": {
+          "elements": {
+            "subject": 0.0,
+            "action": 1.0,
+            "object": 1.0,
+            "setting": 1.0
+          },
+          "matched_terms": {
+            "action": "studying",
+            "object": "book",
+            "setting": "library"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "object": 0.25,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": true,
+          "object_evidenced": true
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:35453",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.73 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "ocean waving crash in shore scientists study coral",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "student studying with books at desk",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:224767",
+          "title": "beach, ocean, wave, crash, shore, water, liquid, splash, sand, lüderitz, namibia, africa, sea, coast",
+          "text_score": 0.559,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.608,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: ocean, object: crash, setting: shore scientists study coral reefs to protect marine life"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0,
+              "object": 1.0,
+              "setting": 0.062
+            },
+            "matched_terms": {
+              "subject": "ocean",
+              "object": "crash",
+              "setting": "shore scientists study coral reefs to protect marine life"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:226331",
+          "title": "ocean, water, shore, coast, waves, splash, crash, cliffs, sunset, sea, africa, namibia, lüderitz",
+          "text_score": 0.559,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.608,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: ocean, object: crash, setting: shore scientists study coral reefs to protect marine life"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0,
+              "object": 1.0,
+              "setting": 0.062
+            },
+            "matched_terms": {
+              "subject": "ocean",
+              "object": "crash",
+              "setting": "shore scientists study coral reefs to protect marine life"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:348904",
+          "title": "wave, rock, horizon, ocean, sun, beach, sea, shore, coast, coastline, stone, seascape, sunset, peaceful, foam, coastal, cliff, shoreline, island, splash, rock texture, crash, remote, textured",
+          "text_score": 0.559,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.608,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: ocean, object: crash, setting: shore scientists study coral reefs to protect marine life"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0,
+              "object": 1.0,
+              "setting": 0.062
+            },
+            "matched_terms": {
+              "subject": "ocean",
+              "object": "crash",
+              "setting": "shore scientists study coral reefs to protect marine life"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-002",
+      "index": 2,
+      "start": 5.44,
+      "end": 7.663,
+      "duration": 2.223,
+      "narration_text": "Plastic waste is a growing threat to the sea.",
+      "timing_method": "asr_word_timestamps",
+      "visual_description": "Plastic waste growing threat.",
+      "visual_analysis": {
+        "subject": "plastic waste",
+        "action": null,
+        "setting": null,
+        "objects": [
+          "growing threat",
+          "sea"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase."
+        ],
+        "frames": [],
+        "scene_type": "object",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "plastic waste growing threat"
+      ],
+      "queries_detail": [
+        {
+          "query": "plastic waste growing threat",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 1.0,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "147075",
+        "title": "water tap, waterdrop, fountain, water, drought, waste, quiet, drops",
+        "tags": [
+          "water tap",
+          "waterdrop",
+          "fountain",
+          "water",
+          "drought",
+          "waste",
+          "quiet",
+          "drops"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-147075/",
+        "download_url": "https://cdn.pixabay.com/video/2023/01/18/147075-790648914_large.mp4",
+        "local_file": "clips/pixabay_147075.mp4",
+        "duration_seconds": 31.0,
+        "width": 3840,
+        "height": 2160,
+        "creator": "mariya_m",
+        "creator_url": "https://pixabay.com/users/mariya_m-12752456/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T08:52:40+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.2775,
+            "saturation": 0.4304,
+            "frames": 12
+          },
+          "brightness": 0.12,
+          "saturation": 0.8817,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-002.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by mariya_m via Pixabay"
+      },
+      "relevance": {
+        "score": 0.596,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.545,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "object": 0.0
+          },
+          "matched_terms": {
+            "subject": "waste"
+          },
+          "weights": {
+            "subject": 0.3,
+            "object": 0.25
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:95071",
+          "outcome": "download_failed",
+          "reason": "Clip is 158 MB; limit is 100 MB."
+        },
+        {
+          "clip": "pixabay:147075",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": true,
+      "selection_reason": "highest-scoring unused candidate (1.00 >= threshold 0.45; metadata_text_fallback) | original choice unusable; replaced by next-best acceptable candidate (pixabay:147075)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "plastic waste growing threat",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:147075",
+          "title": "water tap, waterdrop, fountain, water, drought, waste, quiet, drops",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.596,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: waste"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "waste"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:179588",
+          "title": "garbage, environmental protection, plastic waste, environmental pollution, environment, plastic, water, riverside, bottle, riverbank",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.596,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: plastic"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "plastic"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:218339",
+          "title": "garbage, environmental protection, plastic waste, environmental pollution, environment, plastic, water, riverside, bottle, riverbank",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.596,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: plastic"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "plastic"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    }
+  ],
+  "warnings": [
+    "Relevance based on clip title/tags only (no visual verification of frames).",
+    "scene-002: top clip could not be used; used next-best candidate.",
+    "Footage relevance was estimated from provider titles/tags and scene analysis only. No vision-language model inspected the video frames."
+  ],
+  "avoid": [],
+  "footage_provider": "pixabay",
+  "render": {
+    "engine": "per-scene segments + stream-copy concat",
+    "fps": 30,
+    "total_frames": 230,
+    "colour_normalisation": {
+      "enabled": true,
+      "target": {
+        "luma": 0.4405,
+        "saturation": 0.3795
+      },
+      "method": "per-clip mean luma/saturation vs job median; bounded eq filter"
+    },
+    "min_scene_seconds": 2.0
+  }
+}

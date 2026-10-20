@@ -1,0 +1,1802 @@
+{
+  "schema_version": "1.0",
+  "job_id": "c094ed5a373e",
+  "aspect_ratio": "16:9",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": {
+    "file": "narration.mp3",
+    "source": "generated:edge-tts"
+  },
+  "total_duration": 21.394,
+  "scenes": [
+    {
+      "scene_id": "scene-001",
+      "index": 1,
+      "start": 0.0,
+      "end": 3.816,
+      "duration": 3.816,
+      "narration_text": "A wildfire swept through the mountain town overnight.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Wildfire swept through mountain town overnight.",
+      "visual_analysis": {
+        "subject": "wildfire swept",
+        "action": null,
+        "setting": "mountain town overnight",
+        "objects": [],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase.",
+          "Sensitive story detected: sombre queries used and upbeat clips are rejected."
+        ],
+        "frames": [],
+        "scene_type": "place",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "firefighters wildfire smoke"
+      ],
+      "queries_detail": [
+        {
+          "query": "firefighters wildfire smoke",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.753,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "80267",
+        "title": "airplane, wildfire, forest, fighting, fire, fight, smoke, firefighters, firefighter, emergency, burning, spray, water, air tractor at-802a, plane, mountain, burn, flying, fly, aircraft, drop, fire boss, airtractor, trees, fireboss",
+        "tags": [
+          "airplane",
+          "wildfire",
+          "forest",
+          "fighting",
+          "fire",
+          "fight",
+          "smoke",
+          "firefighters",
+          "firefighter",
+          "emergency",
+          "burning",
+          "spray",
+          "water",
+          "air tractor at-802a",
+          "plane",
+          "mountain",
+          "burn",
+          "flying",
+          "fly",
+          "aircraft",
+          "drop",
+          "fire boss",
+          "airtractor",
+          "trees",
+          "fireboss"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-80267/",
+        "download_url": "https://cdn.pixabay.com/video/2021/07/05/80267-572838295_large.mp4",
+        "local_file": "clips/pixabay_80267.mp4",
+        "duration_seconds": 12.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "BlenderTimer",
+        "creator_url": "https://pixabay.com/users/BlenderTimer-9538909/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T09:13:19+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.3846,
+            "saturation": 0.2428,
+            "frames": 12
+          },
+          "brightness": -0.0754,
+          "saturation": 0.8,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-001.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by BlenderTimer via Pixabay"
+      },
+      "relevance": {
+        "score": 0.753,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.722,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "setting": 0.167
+          },
+          "matched_terms": {
+            "subject": "wildfire",
+            "setting": "mountain town overnight"
+          },
+          "weights": {
+            "subject": 0.3,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:80267",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.75 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "firefighters wildfire smoke",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:80268",
+          "title": "airplane, wildfire, forest, fighting, fire, fight, smoke, firefighters, firefighter, emergency, burning, spray, water, air tractor at-802a, plane, mountain, burn, flying, fly, aircraft, drop, fire boss, airtractor, trees, fireboss",
+          "text_score": 0.722,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.753,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: wildfire, setting: mountain town overnight"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "setting": 0.167
+            },
+            "matched_terms": {
+              "subject": "wildfire",
+              "setting": "mountain town overnight"
+            },
+            "weights": {
+              "subject": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:80269",
+          "title": "airplane, wildfire, forest, fighting, fire, fight, smoke, firefighters, firefighter, emergency, burning, spray, water, air tractor at-802a, plane, mountain, burn, flying, fly, aircraft, drop, fire boss, airtractor, trees, fireboss",
+          "text_score": 0.722,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.753,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: wildfire, setting: mountain town overnight"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "setting": 0.167
+            },
+            "matched_terms": {
+              "subject": "wildfire",
+              "setting": "mountain town overnight"
+            },
+            "weights": {
+              "subject": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:267023",
+          "title": "firetruck, firefighter, wildfire, fire, nature, bushfire, forest, burning, smoke, country, road, trees",
+          "text_score": 0.667,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.704,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: wildfire"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "wildfire"
+            },
+            "weights": {
+              "subject": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-002",
+      "index": 2,
+      "start": 3.816,
+      "end": 8.496,
+      "duration": 4.68,
+      "narration_text": "Hundreds of families lost their homes and many people are still missing.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Homes and people missing.",
+      "visual_analysis": {
+        "subject": "homes and people",
+        "action": null,
+        "setting": null,
+        "objects": [
+          "missing"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase.",
+          "Sensitive story detected: sombre queries used and upbeat clips are rejected."
+        ],
+        "frames": [],
+        "scene_type": "object",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "damaged houses aftermath",
+        "disaster aftermath",
+        "rain on window",
+        "candle flame dark",
+        "homes and people missing",
+        "homes and people"
+      ],
+      "queries_detail": [
+        {
+          "query": "damaged houses aftermath",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.596,
+          "error": null
+        },
+        {
+          "query": "disaster aftermath",
+          "returned": 12,
+          "kept": 11,
+          "rejected": [
+            "pixabay:165041: duplicate candidate"
+          ],
+          "best_score": 0.596,
+          "error": null
+        },
+        {
+          "query": "rain on window",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.596,
+          "error": null
+        },
+        {
+          "query": "candle flame dark",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.596,
+          "error": null
+        },
+        {
+          "query": "homes and people missing",
+          "returned": 12,
+          "kept": 11,
+          "rejected": [
+            "pixabay:14476: duplicate candidate"
+          ],
+          "best_score": 0.596,
+          "error": null
+        },
+        {
+          "query": "homes and people",
+          "returned": 12,
+          "kept": 10,
+          "rejected": [
+            "pixabay:92480: duplicate candidate",
+            "pixabay:564: duplicate candidate"
+          ],
+          "best_score": 0.29,
+          "error": null
+        }
+      ],
+      "candidate_count": 68,
+      "retry_attempts": 5,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "108595",
+        "title": "rain, glass, raindrops on glass, wet glass in water, wet glass background, glass background, glass window, glass window exposed to rain",
+        "tags": [
+          "rain",
+          "glass",
+          "raindrops on glass",
+          "wet glass in water",
+          "wet glass background",
+          "glass background",
+          "glass window",
+          "glass window exposed to rain"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-108595/",
+        "download_url": "https://cdn.pixabay.com/video/2022/02/22/108595-681143931_large.mp4",
+        "local_file": "clips/pixabay_108595.mp4",
+        "duration_seconds": 30.0,
+        "width": 3840,
+        "height": 2160,
+        "creator": "dahahutabarat60",
+        "creator_url": "https://pixabay.com/users/dahahutabarat60-24060218/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T09:13:20+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.3092,
+            "saturation": 0.1627,
+            "frames": 12
+          },
+          "brightness": 0.0,
+          "saturation": 1.0,
+          "applied": false
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-002.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by dahahutabarat60 via Pixabay"
+      },
+      "relevance": {
+        "score": 0.596,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.545,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "object": 0.0
+          },
+          "matched_terms": {
+            "subject": "rain"
+          },
+          "weights": {
+            "subject": 0.3,
+            "object": 0.25
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:108595",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.60 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "damaged houses aftermath",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "disaster aftermath",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "rain on window",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "candle flame dark",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "homes and people missing",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "homes and people",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:165041",
+          "title": "volcano, lava, smoke, aftermath, apocalypse, disaster, heat, underneath, texture, colorful, abstract, iceland, nature",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.596,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: disaster"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "disaster"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:165651",
+          "title": "bath, beautiful wallpaper, roses, flowers, candles, relaxation, spa, rain, drops on the window, background, cozy atmosphere, ai generated",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.596,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: rain"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "rain"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:175213",
+          "title": "candle, flame, blow out, dark, light",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.596,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: candle"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "candle"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-003",
+      "index": 3,
+      "start": 8.496,
+      "end": 12.288,
+      "duration": 3.792,
+      "narration_text": "Firefighters are battling the flames in thick smoke.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Firefighters battling flames in thick smoke.",
+      "visual_analysis": {
+        "subject": "firefighters",
+        "action": null,
+        "setting": "thick smoke",
+        "objects": [
+          "battling flames"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase."
+        ],
+        "frames": [],
+        "scene_type": "object",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "firefighters battling flames in thick smoke",
+        "firefighters in thick smoke",
+        "battling flames in thick smoke",
+        "firefighters",
+        "firefighters battling flames"
+      ],
+      "queries_detail": [
+        {
+          "query": "firefighters battling flames in thick smoke",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.54,
+          "error": null
+        },
+        {
+          "query": "firefighters in thick smoke",
+          "returned": 12,
+          "kept": 10,
+          "rejected": [
+            "pixabay:7818: duplicate candidate",
+            "pixabay:80694: duplicate candidate"
+          ],
+          "best_score": 0.54,
+          "error": null
+        },
+        {
+          "query": "battling flames in thick smoke",
+          "returned": 12,
+          "kept": 1,
+          "rejected": [
+            "pixabay:152174: duplicate candidate",
+            "pixabay:90996: duplicate candidate",
+            "pixabay:200715: duplicate candidate",
+            "pixabay:176811: duplicate candidate",
+            "pixabay:125068: duplicate candidate",
+            "pixabay:38618: duplicate candidate",
+            "pixabay:189258: duplicate candidate",
+            "pixabay:34532: duplicate candidate",
+            "pixabay:44699: duplicate candidate",
+            "pixabay:89377: duplicate candidate",
+            "pixabay:1469: duplicate candidate"
+          ],
+          "best_score": 0.159,
+          "error": null
+        },
+        {
+          "query": "firefighters",
+          "returned": 12,
+          "kept": 8,
+          "rejected": [
+            "pixabay:7818: duplicate candidate",
+            "pixabay:80694: duplicate candidate",
+            "pixabay:224206: duplicate candidate",
+            "pixabay:224207: duplicate candidate"
+          ],
+          "best_score": 0.571,
+          "error": null
+        },
+        {
+          "query": "firefighters battling flames",
+          "returned": 12,
+          "kept": 7,
+          "rejected": [
+            "pixabay:7818: duplicate candidate",
+            "pixabay:47889: duplicate candidate",
+            "pixabay:152174: duplicate candidate",
+            "pixabay:273597: duplicate candidate",
+            "pixabay:308239: duplicate candidate"
+          ],
+          "best_score": 0.111,
+          "error": null
+        }
+      ],
+      "candidate_count": 38,
+      "retry_attempts": 4,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "47889",
+        "title": "firefighter, fire, burning, fireman, safety, helmet, rescue, equipment, danger, hose, protection, service, job, flames, emergency, heat, live, risk",
+        "tags": [
+          "firefighter",
+          "fire",
+          "burning",
+          "fireman",
+          "safety",
+          "helmet",
+          "rescue",
+          "equipment",
+          "danger",
+          "hose",
+          "protection",
+          "service",
+          "job",
+          "flames",
+          "emergency",
+          "heat",
+          "live",
+          "risk"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-47889/",
+        "download_url": "https://cdn.pixabay.com/video/2020/08/23/47889-452144042_large.mp4",
+        "local_file": "clips/pixabay_47889.mp4",
+        "duration_seconds": 33.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "Matthias_Groeneveld",
+        "creator_url": "https://pixabay.com/users/Matthias_Groeneveld-4535957/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T09:13:23+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.5229,
+            "saturation": 0.1403,
+            "frames": 12
+          },
+          "brightness": -0.12,
+          "saturation": 1.0,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-003.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by Matthias_Groeneveld via Pixabay"
+      },
+      "relevance": {
+        "score": 0.571,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.518,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "object": 0.25,
+            "setting": 0.0
+          },
+          "matched_terms": {
+            "subject": "firefighters",
+            "object": "battling flames"
+          },
+          "weights": {
+            "subject": 0.3,
+            "object": 0.25,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:47889",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.57 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "firefighters battling flames in thick smoke",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "firefighters in thick smoke",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "battling flames in thick smoke",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "firefighters",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "firefighters battling flames",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:224206",
+          "title": "fire, firefighters, emergency, building, smoke",
+          "text_score": 0.482,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.54,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: firefighters, setting: thick smoke"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0,
+              "setting": 0.25
+            },
+            "matched_terms": {
+              "subject": "firefighters",
+              "setting": "thick smoke"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:224207",
+          "title": "fire, firefighters, emergency, building, smoke",
+          "text_score": 0.482,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.54,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: firefighters, setting: thick smoke"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0,
+              "setting": 0.25
+            },
+            "matched_terms": {
+              "subject": "firefighters",
+              "setting": "thick smoke"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:47895",
+          "title": "firefighters, platform, fire, smoke, disaster, environment, pollution, heat, heroes, emergency",
+          "text_score": 0.482,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.54,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: firefighters, setting: thick smoke"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0,
+              "setting": 0.25
+            },
+            "matched_terms": {
+              "subject": "firefighters",
+              "setting": "thick smoke"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-004",
+      "index": 4,
+      "start": 12.288,
+      "end": 16.56,
+      "duration": 4.272,
+      "narration_text": "Rescue teams are searching the burned streets for survivors.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Rescuing teams.",
+      "visual_analysis": {
+        "subject": null,
+        "action": "rescuing",
+        "setting": null,
+        "objects": [
+          "teams"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "Sensitive story detected: sombre queries used and upbeat clips are rejected."
+        ],
+        "frames": [],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "rescuing",
+          "rescue"
+        ],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "rescue team emergency responders"
+      ],
+      "queries_detail": [
+        {
+          "query": "rescue team emergency responders",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.739,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "22139",
+        "title": "heart, heartbeat, cardiology, beat, electrocardiogram, cardiogram, line, cardio, ecg, health, medical, pulse, wave, emergency, er, hospital, gurney, trolly, crisis, accident, urgent, rescue, doctor, patient",
+        "tags": [
+          "heart",
+          "heartbeat",
+          "cardiology",
+          "beat",
+          "electrocardiogram",
+          "cardiogram",
+          "line",
+          "cardio",
+          "ecg",
+          "health",
+          "medical",
+          "pulse",
+          "wave",
+          "emergency",
+          "er",
+          "hospital",
+          "gurney",
+          "trolly",
+          "crisis",
+          "accident",
+          "urgent",
+          "rescue",
+          "doctor",
+          "patient"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-22139/",
+        "download_url": "https://cdn.pixabay.com/video/2019/03/20/22139-325698660_large.mp4",
+        "local_file": "clips/pixabay_22139.mp4",
+        "duration_seconds": 6.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "conolan",
+        "creator_url": "https://pixabay.com/users/conolan-4525104/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T09:13:24+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.1558,
+            "saturation": 0.0096,
+            "frames": 12
+          },
+          "brightness": 0.12,
+          "saturation": 1.0,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-004.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by conolan via Pixabay"
+      },
+      "relevance": {
+        "score": 0.739,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.706,
+        "visual_score": null,
+        "label": "High",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "action": 1.0,
+            "object": 0.0
+          },
+          "matched_terms": {
+            "subject": "rescue",
+            "action": "rescue"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "object": 0.25
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": true,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:22139",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.74 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "rescue team emergency responders",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:4211",
+          "title": "bradycardia, tachycardia, medical, heartbeat, heart, medicine, cardiac, cardiology, ventricular, health, fibrillation, rhythm, pulse, attack, arrhythmia, hospital, monitor, rescue, disease, urgent, paramedics, tachyarrythmia, life, supraventricular, save, equipment, emergency, electrodes, electrical, dying, defibrillator, defibrillate, cardioverter, revive, resuscitation, artificial",
+          "text_score": 0.706,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.739,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: rescue, action: rescue"
+          ],
+          "penalties": [],
+          "label": "High",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "rescue",
+              "action": "rescue"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:47889",
+          "title": "firefighter, fire, burning, fireman, safety, helmet, rescue, equipment, danger, hose, protection, service, job, flames, emergency, heat, live, risk",
+          "text_score": 0.706,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.739,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: rescue, action: rescue"
+          ],
+          "penalties": [],
+          "label": "High",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "rescue",
+              "action": "rescue"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:7012",
+          "title": "blue light, fire fighters, mission, rescue operation, accident, rescue, ambulance, fire truck",
+          "text_score": 0.706,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.739,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: rescue, action: rescue"
+          ],
+          "penalties": [],
+          "label": "High",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "rescue",
+              "action": "rescue"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-005",
+      "index": 5,
+      "start": 16.56,
+      "end": 21.394,
+      "duration": 4.834,
+      "narration_text": "The town is mourning, and neighbours are gathering to share food and shelter.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Mourning and neighbours gathering to share food.",
+      "visual_analysis": {
+        "subject": "mourning and neighbours",
+        "action": "gathering",
+        "setting": null,
+        "objects": [
+          "to share food"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "Sensitive story detected: sombre queries used and upbeat clips are rejected."
+        ],
+        "frames": [],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "gathering",
+          "gather"
+        ],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "candle memorial",
+        "rain on window",
+        "mourning and neighbours gathering to share food",
+        "mourning and neighbours gathering",
+        "to share food",
+        "mourning neighbours share"
+      ],
+      "queries_detail": [
+        {
+          "query": "candle memorial",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.425,
+          "error": null
+        },
+        {
+          "query": "rain on window",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.425,
+          "error": null
+        },
+        {
+          "query": "mourning and neighbours gathering to share food",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "mourning and neighbours gathering",
+          "returned": 12,
+          "kept": 10,
+          "rejected": [
+            "pixabay:49790: duplicate candidate",
+            "pixabay:218873: duplicate candidate"
+          ],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "to share food",
+          "returned": 12,
+          "kept": 3,
+          "rejected": [
+            "pixabay:151831: duplicate candidate",
+            "pixabay:18357: duplicate candidate",
+            "pixabay:133249: duplicate candidate",
+            "pixabay:48891: duplicate candidate",
+            "pixabay:21491: duplicate candidate",
+            "pixabay:25104: duplicate candidate",
+            "pixabay:148288: duplicate candidate",
+            "pixabay:1192: duplicate candidate",
+            "pixabay:143486: duplicate candidate"
+          ],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "mourning neighbours share",
+          "returned": 12,
+          "kept": 1,
+          "rejected": [
+            "pixabay:151831: duplicate candidate",
+            "pixabay:18357: duplicate candidate",
+            "pixabay:49790: duplicate candidate",
+            "pixabay:133249: duplicate candidate",
+            "pixabay:21491: duplicate candidate",
+            "pixabay:25104: duplicate candidate",
+            "pixabay:48891: duplicate candidate",
+            "pixabay:30438: duplicate candidate",
+            "pixabay:188241: duplicate candidate",
+            "pixabay:180027: duplicate candidate",
+            "pixabay:187091: duplicate candidate"
+          ],
+          "best_score": 0.176,
+          "error": null
+        }
+      ],
+      "candidate_count": 50,
+      "retry_attempts": 5,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "137522",
+        "title": "candles, sadness, cemetery, memory, memorial, kahanec, candlestick, monument, grave",
+        "tags": [
+          "candles",
+          "sadness",
+          "cemetery",
+          "memory",
+          "memorial",
+          "kahanec",
+          "candlestick",
+          "monument",
+          "grave"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-137522/",
+        "download_url": "https://cdn.pixabay.com/video/2022/11/02/137522-766715298_large.mp4",
+        "local_file": "clips/pixabay_137522.mp4",
+        "duration_seconds": 56.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "phtorxp",
+        "creator_url": "https://pixabay.com/users/phtorxp-3603324/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T09:13:24+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.1591,
+            "saturation": 0.8433,
+            "frames": 12
+          },
+          "brightness": 0.12,
+          "saturation": 0.8,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-005.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by phtorxp via Pixabay"
+      },
+      "relevance": {
+        "score": 0.425,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": false,
+        "text_score": 0.353,
+        "visual_score": null,
+        "label": "Low",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "action": 0.0,
+            "object": 0.0
+          },
+          "matched_terms": {
+            "subject": "memorial"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "object": 0.25
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": true,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:137522",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "needs review: score 0.42 is below the match threshold 0.45",
+      "match_status": "fallback_low_confidence",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "candle memorial",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "rain on window",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "mourning and neighbours gathering to share food",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "mourning and neighbours gathering",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "to share food",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "mourning neighbours share",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:165651",
+          "title": "bath, beautiful wallpaper, roses, flowers, candles, relaxation, spa, rain, drops on the window, background, cozy atmosphere, ai generated",
+          "text_score": 0.353,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.425,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: rain"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "rain"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:207357",
+          "title": "candles, lights, flames, candlelight, prayer, christmas, fire, peace, calm, spiritual, zen, relaxation, wellness, religion, meditate, buddhism, peaceful, breathe, pray, hope, tranquil, memorial, introspection, thoughtful",
+          "text_score": 0.353,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.425,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: memorial"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "memorial"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:4933",
+          "title": "aflame, alight, background, banner, bright, burn, candle, beautiful wallpaper, closeup, combustion, energy, festive, fire, flame, flaming, flare, flick, flickering, glow, glowing, heat, hot, ignite, ignited, illuminated, illumination, lit, luminosity, luminous, memory, orange, religious, sacred, shine, tribute, worship",
+          "text_score": 0.353,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.425,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: candle"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "candle"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Scene scene-005: footage may NOT accurately depict the narration (score 0.42 is below the match threshold 0.45)."
+      ],
+      "visual_hint": null
+    }
+  ],
+  "warnings": [
+    "Relevance based on clip title/tags only (no visual verification of frames).",
+    "Scene scene-005: footage may NOT accurately depict the narration (score 0.42 is below the match threshold 0.45).",
+    "Footage relevance was estimated from provider titles/tags and scene analysis only. No vision-language model inspected the video frames."
+  ],
+  "avoid": [],
+  "footage_provider": "pixabay",
+  "render": {
+    "engine": "per-scene segments + stream-copy concat",
+    "fps": 30,
+    "total_frames": 642,
+    "colour_normalisation": {
+      "enabled": true,
+      "target": {
+        "luma": 0.3092,
+        "saturation": 0.1627
+      },
+      "method": "per-clip mean luma/saturation vs job median; bounded eq filter"
+    },
+    "min_scene_seconds": 2.0
+  }
+}

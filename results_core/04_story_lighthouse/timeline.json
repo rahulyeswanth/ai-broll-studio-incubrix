@@ -1,0 +1,2140 @@
+{
+  "schema_version": "1.0",
+  "job_id": "0754378b3939",
+  "aspect_ratio": "16:9",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": {
+    "file": "narration.mp3",
+    "source": "generated:edge-tts"
+  },
+  "total_duration": 28.891,
+  "scenes": [
+    {
+      "scene_id": "scene-001",
+      "index": 1,
+      "start": 0.0,
+      "end": 5.064,
+      "duration": 5.064,
+      "narration_text": "Long ago, an old keeper lived alone in a lighthouse on a rocky coast.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Long ago old keeper lived alone in lighthouse.",
+      "visual_analysis": {
+        "subject": "long ago",
+        "action": null,
+        "setting": "lighthouse",
+        "objects": [
+          "old keeper lived alone"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase."
+        ],
+        "frames": [],
+        "scene_type": "object",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "long ago old keeper lived alone in lighthouse",
+        "long ago in lighthouse",
+        "old keeper lived alone in lighthouse",
+        "long ago",
+        "long ago old"
+      ],
+      "queries_detail": [
+        {
+          "query": "long ago old keeper lived alone in lighthouse",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.302,
+          "error": null
+        },
+        {
+          "query": "long ago in lighthouse",
+          "returned": 12,
+          "kept": 6,
+          "rejected": [
+            "pixabay:19368: duplicate candidate",
+            "pixabay:355559: duplicate candidate",
+            "pixabay:22059: duplicate candidate",
+            "pixabay:1917: duplicate candidate",
+            "pixabay:214582: duplicate candidate",
+            "pixabay:27539: duplicate candidate"
+          ],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "old keeper lived alone in lighthouse",
+          "returned": 12,
+          "kept": 1,
+          "rejected": [
+            "pixabay:27539: duplicate candidate",
+            "pixabay:19368: duplicate candidate",
+            "pixabay:39116: duplicate candidate",
+            "pixabay:22059: duplicate candidate",
+            "pixabay:372041: duplicate candidate",
+            "pixabay:65390: duplicate candidate",
+            "pixabay:1917: duplicate candidate",
+            "pixabay:214582: duplicate candidate",
+            "pixabay:17060: duplicate candidate",
+            "pixabay:185468: duplicate candidate",
+            "pixabay:43633: duplicate candidate"
+          ],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "long ago",
+          "returned": 12,
+          "kept": 10,
+          "rejected": [
+            "pixabay:355559: duplicate candidate",
+            "pixabay:6962: duplicate candidate"
+          ],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "long ago old",
+          "returned": 12,
+          "kept": 4,
+          "rejected": [
+            "pixabay:355559: duplicate candidate",
+            "pixabay:6962: duplicate candidate",
+            "pixabay:192223: duplicate candidate",
+            "pixabay:231906: duplicate candidate",
+            "pixabay:210384: duplicate candidate",
+            "pixabay:65390: duplicate candidate",
+            "pixabay:81661: duplicate candidate",
+            "pixabay:8204: duplicate candidate"
+          ],
+          "best_score": 0.151,
+          "error": null
+        }
+      ],
+      "candidate_count": 33,
+      "retry_attempts": 4,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "17060",
+        "title": "landscape, lighthouse, see, ocean, nature, coast, live wallpaper",
+        "tags": [
+          "landscape",
+          "lighthouse",
+          "see",
+          "ocean",
+          "nature",
+          "coast",
+          "live wallpaper"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-17060/",
+        "download_url": "https://cdn.pixabay.com/video/2018/07/04/17060-278401005_large.mp4",
+        "local_file": "clips/pixabay_17060.mp4",
+        "duration_seconds": 20.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "Viya47Tkal",
+        "creator_url": "https://pixabay.com/users/Viya47Tkal-4594905/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T09:02:25+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.5114,
+            "saturation": 0.2385,
+            "frames": 12
+          },
+          "brightness": -0.12,
+          "saturation": 1.0,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-001.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by Viya47Tkal via Pixabay"
+      },
+      "relevance": {
+        "score": 0.302,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": false,
+        "text_score": 0.214,
+        "visual_score": null,
+        "label": "Low",
+        "evidence": {
+          "elements": {
+            "subject": 0.0,
+            "object": 0.0,
+            "setting": 1.0
+          },
+          "matched_terms": {
+            "setting": "lighthouse"
+          },
+          "weights": {
+            "subject": 0.3,
+            "object": 0.25,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": true,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:17060",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "needs review: score 0.30 is below the match threshold 0.45",
+      "match_status": "fallback_low_confidence",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "long ago old keeper lived alone in lighthouse",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "long ago in lighthouse",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "old keeper lived alone in lighthouse",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "long ago",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "long ago old",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:1917",
+          "title": "lighthouse, sunset, sunrise, sky, sea, ocean, coast, island, aerial, clouds, sun beams, sun rays",
+          "text_score": 0.214,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.302,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - setting: lighthouse"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "object": 0.0,
+              "setting": 1.0
+            },
+            "matched_terms": {
+              "setting": "lighthouse"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:19368",
+          "title": "wave, lighthouse, ocean, coast, blue, landscape",
+          "text_score": 0.214,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.302,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - setting: lighthouse"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "object": 0.0,
+              "setting": 1.0
+            },
+            "matched_terms": {
+              "setting": "lighthouse"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:214582",
+          "title": "boat, sea, lighthouse, bay, tinos, panormos, waves, greece, island, cyclades, nature, rock, coast, blue",
+          "text_score": 0.214,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.302,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - setting: lighthouse"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "object": 0.0,
+              "setting": 1.0
+            },
+            "matched_terms": {
+              "setting": "lighthouse"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Scene scene-001: footage may NOT accurately depict the narration (score 0.30 is below the match threshold 0.45)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-002",
+      "index": 2,
+      "start": 5.064,
+      "end": 9.744,
+      "duration": 4.68,
+      "narration_text": "Every evening he climbed the spiral stairs and lit the great lamp.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Evening climbing spiral stairs.",
+      "visual_analysis": {
+        "subject": "evening",
+        "action": "climbing",
+        "setting": null,
+        "objects": [
+          "spiral stairs"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [],
+        "frames": [],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "climbing",
+          "climb"
+        ],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "evening climbing spiral stairs",
+        "evening climbing",
+        "spiral stairs",
+        "evening spiral stairs"
+      ],
+      "queries_detail": [
+        {
+          "query": "evening climbing spiral stairs",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.425,
+          "error": null
+        },
+        {
+          "query": "evening climbing",
+          "returned": 12,
+          "kept": 5,
+          "rejected": [
+            "pixabay:1409: duplicate candidate",
+            "pixabay:318540: duplicate candidate",
+            "pixabay:153976: duplicate candidate",
+            "pixabay:6962: duplicate candidate",
+            "pixabay:148594: duplicate candidate",
+            "pixabay:33565: duplicate candidate",
+            "pixabay:132932: duplicate candidate"
+          ],
+          "best_score": 0.425,
+          "error": null
+        },
+        {
+          "query": "spiral stairs",
+          "returned": 12,
+          "kept": 7,
+          "rejected": [
+            "pixabay:6973: duplicate candidate",
+            "pixabay:220232: duplicate candidate",
+            "pixabay:218488: duplicate candidate",
+            "pixabay:217487: duplicate candidate",
+            "pixabay:218490: duplicate candidate"
+          ],
+          "best_score": 0.307,
+          "error": null
+        },
+        {
+          "query": "evening spiral stairs",
+          "returned": 12,
+          "kept": 0,
+          "rejected": [
+            "pixabay:6973: duplicate candidate",
+            "pixabay:318540: duplicate candidate",
+            "pixabay:153976: duplicate candidate",
+            "pixabay:218490: duplicate candidate",
+            "pixabay:218488: duplicate candidate",
+            "pixabay:220232: duplicate candidate",
+            "pixabay:217487: duplicate candidate",
+            "pixabay:6962: duplicate candidate",
+            "pixabay:148594: duplicate candidate",
+            "pixabay:132932: duplicate candidate",
+            "pixabay:125698: duplicate candidate",
+            "pixabay:6815: duplicate candidate"
+          ],
+          "best_score": null,
+          "error": null
+        }
+      ],
+      "candidate_count": 24,
+      "retry_attempts": 3,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "132932",
+        "title": "sunset, sea, boat, sun, evening, nature, night",
+        "tags": [
+          "sunset",
+          "sea",
+          "boat",
+          "sun",
+          "evening",
+          "nature",
+          "night"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-132932/",
+        "download_url": "https://cdn.pixabay.com/video/2022/09/29/132932-755272963_large.mp4",
+        "local_file": "clips/pixabay_132932.mp4",
+        "duration_seconds": 17.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "u_zwlh4zbli2",
+        "creator_url": "https://pixabay.com/users/u_zwlh4zbli2-30068386/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T09:02:27+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.3132,
+            "saturation": 0.6599,
+            "frames": 12
+          },
+          "brightness": 0.0,
+          "saturation": 0.8,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-002.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by u_zwlh4zbli2 via Pixabay"
+      },
+      "relevance": {
+        "score": 0.425,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": false,
+        "text_score": 0.353,
+        "visual_score": null,
+        "label": "Low",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "action": 0.0,
+            "object": 0.0
+          },
+          "matched_terms": {
+            "subject": "evening"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "object": 0.25
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": true,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:132932",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "needs review: score 0.42 is below the match threshold 0.45",
+      "match_status": "fallback_low_confidence",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "evening climbing spiral stairs",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "evening climbing",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "spiral stairs",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "evening spiral stairs",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:148594",
+          "title": "fire, evening, nature, forest, autumn, romance, love",
+          "text_score": 0.353,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.425,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: evening"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "evening"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:153976",
+          "title": "sunset, sea, sun, evening atmosphere, nature, landscape",
+          "text_score": 0.353,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.425,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: evening"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "evening"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:26790",
+          "title": "grass, evening, gentle, wind, movement, nature, beauty, contrast, live wallpaper",
+          "text_score": 0.353,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.425,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: evening"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "evening"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Scene scene-002: footage may NOT accurately depict the narration (score 0.42 is below the match threshold 0.45)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-003",
+      "index": 3,
+      "start": 9.744,
+      "end": 13.992,
+      "duration": 4.248,
+      "narration_text": "One stormy night, a fishing boat was lost in the waves.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Lost in waves.",
+      "visual_analysis": {
+        "subject": null,
+        "action": null,
+        "setting": "waves",
+        "objects": [
+          "lost"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase."
+        ],
+        "frames": [],
+        "scene_type": "object",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "lost in waves",
+        "lost waves"
+      ],
+      "queries_detail": [
+        {
+          "query": "lost in waves",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "lost waves",
+          "returned": 12,
+          "kept": 4,
+          "rejected": [
+            "pixabay:263305: duplicate candidate",
+            "pixabay:29416: duplicate candidate",
+            "pixabay:19368: duplicate candidate",
+            "pixabay:283533: duplicate candidate",
+            "pixabay:4006: duplicate candidate",
+            "pixabay:304019: duplicate candidate",
+            "pixabay:272620: duplicate candidate",
+            "pixabay:11168: duplicate candidate"
+          ],
+          "best_score": 1.0,
+          "error": null
+        }
+      ],
+      "candidate_count": 16,
+      "retry_attempts": 1,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "359409",
+        "title": "ai generated, atlantis, lost city, ancient city, giant waves, tsunami, flood, destruction, storm, mythology, fantasy, ancient civilization, ocean, disaster, ruins, cinematic, mystery, lost civilization, mythical city, apocalypse, underwater city",
+        "tags": [
+          "ai generated",
+          "atlantis",
+          "lost city",
+          "ancient city",
+          "giant waves",
+          "tsunami",
+          "flood",
+          "destruction",
+          "storm",
+          "mythology",
+          "fantasy",
+          "ancient civilization",
+          "ocean",
+          "disaster",
+          "ruins",
+          "cinematic",
+          "mystery",
+          "lost civilization",
+          "mythical city",
+          "apocalypse",
+          "underwater city"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-359409/",
+        "download_url": "https://cdn.pixabay.com/video/2026/06/19/359409_large.mp4",
+        "local_file": "clips/pixabay_359409.mp4",
+        "duration_seconds": 7.0,
+        "width": 3840,
+        "height": 2160,
+        "creator": "Luna_Isla_Melody",
+        "creator_url": "https://pixabay.com/users/Luna_Isla_Melody-55653229/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T09:02:29+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.3092,
+            "saturation": 0.1958,
+            "frames": 12
+          },
+          "brightness": 0.0,
+          "saturation": 1.25,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-003.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by Luna_Isla_Melody via Pixabay"
+      },
+      "relevance": {
+        "score": 1.0,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 1.0,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "object": 1.0,
+            "setting": 1.0
+          },
+          "matched_terms": {
+            "object": "lost",
+            "setting": "waves"
+          },
+          "weights": {
+            "object": 0.25,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:359409",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (1.00 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "lost in waves",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "lost waves",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:97979",
+          "title": "waving, astronaut, space, floating, lost, funny, spacesuit, animated",
+          "text_score": 1.0,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 1.0,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - object: lost, setting: waves"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "object": 1.0,
+              "setting": 1.0
+            },
+            "matched_terms": {
+              "object": "lost",
+              "setting": "waves"
+            },
+            "weights": {
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:279394",
+          "title": "bottle, message, beach, sand, sunset, ocean, shore, sunlight, romantic, mystery, adventure, lost, found, nostalgic, storytelling, treasure, waves, serenity, hope, dreams, tranquility, golden, reflection, journey, ai, ai generated",
+          "text_score": 1.0,
+          "visual_score": null,
+          "technical_score": 0.658,
+          "final_score": 0.924,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - object: lost, setting: waves",
+            "orientation 1440x2560 differs from 16:9; will be cropped"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "object": 1.0,
+              "setting": 1.0
+            },
+            "matched_terms": {
+              "object": "lost",
+              "setting": "waves"
+            },
+            "weights": {
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:371872",
+          "title": "ai generated, temple, ancient, ruins, forgotten, mysterious, beach, tropical, jungle, night, torch, fire, waves, columns, archaeology, lost, civilization, fantasy, mystery, adventure, history, coast, loop",
+          "text_score": 1.0,
+          "visual_score": null,
+          "technical_score": 0.658,
+          "final_score": 0.924,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - object: lost, setting: waves",
+            "orientation 2160x3840 differs from 16:9; will be cropped"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "object": 1.0,
+              "setting": 1.0
+            },
+            "matched_terms": {
+              "object": "lost",
+              "setting": "waves"
+            },
+            "weights": {
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-004",
+      "index": 4,
+      "start": 13.992,
+      "end": 18.216,
+      "duration": 4.224,
+      "narration_text": "The keeper watched the sea through the rain and kept the light turning.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Keeper watching sea through rain.",
+      "visual_analysis": {
+        "subject": "keeper",
+        "action": "watching",
+        "setting": "rain",
+        "objects": [
+          "sea"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [],
+        "frames": [],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "watching",
+          "watch"
+        ],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "keeper watching sea through rain",
+        "keeper watching through rain",
+        "sea through rain",
+        "keeper through rain",
+        "keeper watching",
+        "keeper sea rain"
+      ],
+      "queries_detail": [
+        {
+          "query": "keeper watching sea through rain",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.511,
+          "error": null
+        },
+        {
+          "query": "keeper watching through rain",
+          "returned": 12,
+          "kept": 4,
+          "rejected": [
+            "pixabay:39116: duplicate candidate",
+            "pixabay:87900: duplicate candidate",
+            "pixabay:187970: duplicate candidate",
+            "pixabay:78: duplicate candidate",
+            "pixabay:187969: duplicate candidate",
+            "pixabay:185468: duplicate candidate",
+            "pixabay:114895: duplicate candidate",
+            "pixabay:17285: duplicate candidate"
+          ],
+          "best_score": 0.511,
+          "error": null
+        },
+        {
+          "query": "sea through rain",
+          "returned": 12,
+          "kept": 3,
+          "rejected": [
+            "pixabay:16160: duplicate candidate",
+            "pixabay:205011: duplicate candidate",
+            "pixabay:192282: duplicate candidate",
+            "pixabay:78: duplicate candidate",
+            "pixabay:17285: duplicate candidate",
+            "pixabay:123451: duplicate candidate",
+            "pixabay:42420: duplicate candidate",
+            "pixabay:11722: duplicate candidate",
+            "pixabay:28236: duplicate candidate"
+          ],
+          "best_score": 0.467,
+          "error": null
+        },
+        {
+          "query": "keeper through rain",
+          "returned": 12,
+          "kept": 4,
+          "rejected": [
+            "pixabay:39116: duplicate candidate",
+            "pixabay:78: duplicate candidate",
+            "pixabay:185468: duplicate candidate",
+            "pixabay:17285: duplicate candidate",
+            "pixabay:42420: duplicate candidate",
+            "pixabay:11722: duplicate candidate",
+            "pixabay:28236: duplicate candidate",
+            "pixabay:131615: duplicate candidate"
+          ],
+          "best_score": 0.378,
+          "error": null
+        },
+        {
+          "query": "keeper watching",
+          "returned": 12,
+          "kept": 8,
+          "rejected": [
+            "pixabay:39116: duplicate candidate",
+            "pixabay:187970: duplicate candidate",
+            "pixabay:185468: duplicate candidate",
+            "pixabay:10783: duplicate candidate"
+          ],
+          "best_score": 0.378,
+          "error": null
+        },
+        {
+          "query": "keeper sea rain",
+          "returned": 12,
+          "kept": 0,
+          "rejected": [
+            "pixabay:16160: duplicate candidate",
+            "pixabay:39116: duplicate candidate",
+            "pixabay:205011: duplicate candidate",
+            "pixabay:192282: duplicate candidate",
+            "pixabay:78: duplicate candidate",
+            "pixabay:185468: duplicate candidate",
+            "pixabay:123451: duplicate candidate",
+            "pixabay:42420: duplicate candidate",
+            "pixabay:191093: duplicate candidate",
+            "pixabay:11722: duplicate candidate",
+            "pixabay:10783: duplicate candidate",
+            "pixabay:200244: duplicate candidate"
+          ],
+          "best_score": null,
+          "error": null
+        }
+      ],
+      "candidate_count": 31,
+      "retry_attempts": 5,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "114895",
+        "title": "bird, sperling, rain, wet, plumage, feeding place, bird watching, chirping of birds, wildlife",
+        "tags": [
+          "bird",
+          "sperling",
+          "rain",
+          "wet",
+          "plumage",
+          "feeding place",
+          "bird watching",
+          "chirping of birds",
+          "wildlife"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-114895/",
+        "download_url": "https://cdn.pixabay.com/video/2022/04/24/114895-702640166_large.mp4",
+        "local_file": "clips/pixabay_114895.mp4",
+        "duration_seconds": 28.0,
+        "width": 3840,
+        "height": 2160,
+        "creator": "NickyPe",
+        "creator_url": "https://pixabay.com/users/NickyPe-10327513/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T09:02:29+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.2512,
+            "saturation": 0.4864,
+            "frames": 12
+          },
+          "brightness": 0.062,
+          "saturation": 0.8,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-004.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by NickyPe via Pixabay"
+      },
+      "relevance": {
+        "score": 0.511,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.45,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 0.0,
+            "action": 1.0,
+            "object": 0.0,
+            "setting": 1.0
+          },
+          "matched_terms": {
+            "action": "watching",
+            "setting": "rain"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "object": 0.25,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": true,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:114895",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.51 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "keeper watching sea through rain",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "keeper watching through rain",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "sea through rain",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "keeper through rain",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "keeper watching",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "keeper sea rain",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:123889",
+          "title": "bird, sperling, sparrow, plumage, feeding place, rain, bird watching, animal, insect, bees, wildlife, slow motion",
+          "text_score": 0.45,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.511,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: watching, setting: rain"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "object": 0.0,
+              "setting": 1.0
+            },
+            "matched_terms": {
+              "action": "watching",
+              "setting": "rain"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:187969",
+          "title": "bird, blackbird, plumage, rain, feeding place, bird watching, wildlife, slow motion",
+          "text_score": 0.45,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.511,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: watching, setting: rain"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "object": 0.0,
+              "setting": 1.0
+            },
+            "matched_terms": {
+              "action": "watching",
+              "setting": "rain"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:87900",
+          "title": "bird, sperling, sparrow, animal, feeding, bird watching, rain, plumage, feathers, raindrop, feeding place, slow motion",
+          "text_score": 0.45,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.511,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: watching, setting: rain"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "object": 0.0,
+              "setting": 1.0
+            },
+            "matched_terms": {
+              "action": "watching",
+              "setting": "rain"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-005",
+      "index": 5,
+      "start": 18.216,
+      "end": 23.232,
+      "duration": 5.016,
+      "narration_text": "Hours later the boat appeared out of the dark and sailed safely into the harbour.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Of dark and sailing safely in harbour.",
+      "visual_analysis": {
+        "subject": "of dark and",
+        "action": "sailing",
+        "setting": "harbour",
+        "objects": [
+          "safely"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [],
+        "frames": [],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "sailing",
+          "sail"
+        ],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "of dark and sailing safely in harbour"
+      ],
+      "queries_detail": [
+        {
+          "query": "of dark and sailing safely in harbour",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.644,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 0,
+      "clip": null,
+      "license": {},
+      "attribution": null,
+      "relevance": {
+        "score": null,
+        "scoring_method": null,
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": false,
+        "text_score": null,
+        "visual_score": null,
+        "label": null,
+        "evidence": null,
+        "gated": null,
+        "visual_detail": null
+      },
+      "needs_review": false,
+      "placeholder": true,
+      "download_attempts": [
+        {
+          "clip": "pixabay:348105",
+          "outcome": "download_failed",
+          "reason": "Clip is 157 MB; limit is 100 MB."
+        },
+        {
+          "clip": "pixabay:339772",
+          "outcome": "download_failed",
+          "reason": "Clip is 122 MB; limit is 100 MB."
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "all 2 candidate clip(s) failed to download or validate",
+      "match_status": "unmatched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "of dark and sailing safely in harbour",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": null,
+        "chosen_because": null
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:339772",
+          "title": "sailboat, boat, nature, sea, sailing, water, sail, ocean, landscape, harbour",
+          "text_score": 0.45,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.511,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: sailing, setting: harbour"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "object": 0.0,
+              "setting": 1.0
+            },
+            "matched_terms": {
+              "action": "sailing",
+              "setting": "harbour"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:124766",
+          "title": "harbor, sailing, balaton, mast, sunset, hungary, lake, sailing ships",
+          "text_score": 0.3,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.378,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: sailing"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "object": 0.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "action": "sailing"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:311",
+          "title": "ship, ocean, sea, storm, pirates, sailing, waves, thunderstorm, lightning, boat, dangerous, force of nature, elements, nature, 135731672",
+          "text_score": 0.3,
+          "visual_score": null,
+          "technical_score": 0.914,
+          "final_score": 0.365,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: sailing"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "object": 0.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "action": "sailing"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames).",
+        "Scene scene-005 has no matching footage: all 2 candidate clip(s) failed to download or validate."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-006",
+      "index": 6,
+      "start": 23.232,
+      "end": 28.891,
+      "duration": 5.659,
+      "narration_text": "The fishermen cheered on the dock, and the keeper smiled as the sun rose over the water.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Fishermen cheering in dock.",
+      "visual_analysis": {
+        "subject": "fishermen",
+        "action": "cheering",
+        "setting": "dock",
+        "objects": [],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [],
+        "frames": [],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "cheering",
+          "cheer"
+        ],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "fishermen cheering in dock",
+        "fishermen in dock",
+        "fishermen cheering",
+        "fishermen dock"
+      ],
+      "queries_detail": [
+        {
+          "query": "fishermen cheering in dock",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.467,
+          "error": null
+        },
+        {
+          "query": "fishermen in dock",
+          "returned": 12,
+          "kept": 1,
+          "rejected": [
+            "pixabay:329674: duplicate candidate",
+            "pixabay:21113: duplicate candidate",
+            "pixabay:27539: duplicate candidate",
+            "pixabay:225996: duplicate candidate",
+            "pixabay:282086: duplicate candidate",
+            "pixabay:1991: duplicate candidate",
+            "pixabay:7517: duplicate candidate",
+            "pixabay:188778: duplicate candidate",
+            "pixabay:273648: duplicate candidate",
+            "pixabay:189393: duplicate candidate",
+            "pixabay:273657: duplicate candidate"
+          ],
+          "best_score": 0.467,
+          "error": null
+        },
+        {
+          "query": "fishermen cheering",
+          "returned": 12,
+          "kept": 5,
+          "rejected": [
+            "pixabay:1630: duplicate candidate",
+            "pixabay:225996: duplicate candidate",
+            "pixabay:7517: duplicate candidate",
+            "pixabay:273648: duplicate candidate",
+            "pixabay:189393: duplicate candidate",
+            "pixabay:273657: duplicate candidate",
+            "pixabay:273660: duplicate candidate"
+          ],
+          "best_score": 0.467,
+          "error": null
+        },
+        {
+          "query": "fishermen dock",
+          "returned": 12,
+          "kept": 2,
+          "rejected": [
+            "pixabay:329674: duplicate candidate",
+            "pixabay:21113: duplicate candidate",
+            "pixabay:225996: duplicate candidate",
+            "pixabay:1991: duplicate candidate",
+            "pixabay:273648: duplicate candidate",
+            "pixabay:7517: duplicate candidate",
+            "pixabay:189393: duplicate candidate",
+            "pixabay:273660: duplicate candidate",
+            "pixabay:273657: duplicate candidate",
+            "pixabay:273652: duplicate candidate"
+          ],
+          "best_score": 0.644,
+          "error": null
+        }
+      ],
+      "candidate_count": 20,
+      "retry_attempts": 3,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "289238",
+        "title": "sri lanka, fishery, fishing, fishermen, harbour, nature, anchor, harbor, water, boat, skyline, travel, sea, ship, port, dock, shipyard, pier, ceylon",
+        "tags": [
+          "sri lanka",
+          "fishery",
+          "fishing",
+          "fishermen",
+          "harbour",
+          "nature",
+          "anchor",
+          "harbor",
+          "water",
+          "boat",
+          "skyline",
+          "travel",
+          "sea",
+          "ship",
+          "port",
+          "dock",
+          "shipyard",
+          "pier",
+          "ceylon"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-289238/",
+        "download_url": "https://cdn.pixabay.com/video/2025/07/03/289238_large.mp4",
+        "local_file": "clips/pixabay_289238.mp4",
+        "duration_seconds": 14.0,
+        "width": 3840,
+        "height": 2160,
+        "creator": "nuwaus",
+        "creator_url": "https://pixabay.com/users/nuwaus-2323355/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T09:02:34+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.4899,
+            "saturation": 0.2882,
+            "frames": 12
+          },
+          "brightness": -0.12,
+          "saturation": 1.0,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-006.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by nuwaus via Pixabay"
+      },
+      "relevance": {
+        "score": 0.644,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.6,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "action": 0.0,
+            "setting": 1.0
+          },
+          "matched_terms": {
+            "subject": "fishermen",
+            "setting": "dock"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:289238",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.64 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "fishermen cheering in dock",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "fishermen in dock",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "fishermen cheering",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "fishermen dock",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:189393",
+          "title": "fishermen, sea, ocean, floating, peaceful, fishing boat, seafood, agriculture, traditional, offshore, vietnam, drone",
+          "text_score": 0.4,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.467,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: fishermen"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "fishermen"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:225996",
+          "title": "boat, fish, fishermen, coast, beach, vietnam, nature",
+          "text_score": 0.4,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.467,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: fishermen"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "fishermen"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:273648",
+          "title": "aerial photography, keelung, fishing boats, fishing port, boats, fishermen, badouzi",
+          "text_score": 0.4,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.467,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: fishermen"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "fishermen"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    }
+  ],
+  "warnings": [
+    "Scene scene-001: footage may NOT accurately depict the narration (score 0.30 is below the match threshold 0.45).",
+    "Scene scene-002: footage may NOT accurately depict the narration (score 0.42 is below the match threshold 0.45).",
+    "Relevance based on clip title/tags only (no visual verification of frames).",
+    "Footage relevance was estimated from provider titles/tags and scene analysis only. No vision-language model inspected the video frames."
+  ],
+  "avoid": [],
+  "footage_provider": "pixabay",
+  "render": {
+    "engine": "per-scene segments + stream-copy concat",
+    "fps": 30,
+    "total_frames": 867,
+    "colour_normalisation": {
+      "enabled": true,
+      "target": {
+        "luma": 0.3132,
+        "saturation": 0.2882
+      },
+      "method": "per-clip mean luma/saturation vs job median; bounded eq filter"
+    },
+    "min_scene_seconds": 2.0
+  }
+}

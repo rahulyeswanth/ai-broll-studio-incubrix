@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "job_id": "e931cb42dc0e",
+  "job_id": "3cb2c540a625",
   "status": "completed",
-  "created_at": "2026-10-20T07:50:32+00:00",
+  "created_at": "2026-10-20T08:49:26+00:00",
   "input_type": "script_only",
   "input": {
     "script_characters": 79,
@@ -20,7 +20,7 @@
       "height": 1080,
       "fps": 30,
       "duration_seconds": 6.667,
-      "size_bytes": 4103997
+      "size_bytes": 4104883
     },
     "audio": {
       "file": "narration.mp3",
@@ -131,6 +131,7 @@
     "fallback_policy": "review",
     "review_floor": 0.3,
     "high_confidence": 0.7,
+    "min_grounded_terms": 2,
     "early_stop_score": 0.62,
     "evidence_weight_subject": 0.3,
     "evidence_weight_action": 0.3,
@@ -164,14 +165,14 @@
     "caption_min_seconds": 0.6
   },
   "processing_durations_seconds": {
-    "narration": 3.239,
+    "narration": 2.833,
     "validate_input": 0.0,
-    "matching": 0.712,
-    "download": 14.243,
+    "matching": 0.678,
+    "download": 18.511,
     "captions": 0.0,
-    "render": 13.473,
-    "validation": 2.243,
-    "total": 33.91
+    "render": 15.291,
+    "validation": 3.173,
+    "total": 40.486
   },
   "cost_estimate": {
     "amount_usd": 0.0,
@@ -201,7 +202,7 @@
         "creator": "Mario_Krimer",
         "source_page_url": "https://pixabay.com/videos/id-182970/",
         "ai_generated": null,
-        "retrieved_at": "2026-10-20T07:50:35+00:00"
+        "retrieved_at": "2026-10-20T08:49:29+00:00"
       }
     ],
     "all_commercial_use_per_provider_policy": true,
@@ -221,6 +222,12 @@
       "message": "Clip is 279 MB; limit is 100 MB."
     },
     {
+      "type": "download_failure",
+      "scene_id": "scene-002",
+      "clip": "pixabay:225844",
+      "message": "Clip is 327 MB; limit is 100 MB."
+    },
+    {
       "type": "metadata_only_matching",
       "message": "Footage relevance was estimated from provider titles/tags and scene analysis only. No vision-language model inspected the video frames."
     }
@@ -231,7 +238,7 @@
       "errors": [],
       "warnings": [],
       "checks": {
-        "file_size_bytes": 4103997,
+        "file_size_bytes": 4104883,
         "duration_seconds": 6.667,
         "video_codec": "h264",
         "pix_fmt": "yuv420p",
@@ -277,7 +284,7 @@
         "severity": "warning",
         "scene_id": "scene-002",
         "title": "No matching footage",
-        "message": "all 1 candidate clip(s) failed to download or validate",
+        "message": "all 2 candidate clip(s) failed to download or validate",
         "details": {
           "queries": [
             "surfers paddling out in blue water"
@@ -290,6 +297,16 @@
         "scene_id": "scene-002",
         "title": "A candidate could not be used",
         "message": "pixabay:236273: Clip is 279 MB; limit is 100 MB.",
+        "details": {
+          "outcome": "download_failed"
+        }
+      },
+      {
+        "code": "download_failed",
+        "severity": "info",
+        "scene_id": "scene-002",
+        "title": "A candidate could not be used",
+        "message": "pixabay:225844: Clip is 327 MB; limit is 100 MB.",
         "details": {
           "outcome": "download_failed"
         }

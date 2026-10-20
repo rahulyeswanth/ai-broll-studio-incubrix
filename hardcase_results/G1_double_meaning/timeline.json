@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "job_id": "869bd756e800",
+  "job_id": "ea384f5bfa64",
   "aspect_ratio": "16:9",
   "width": 1920,
   "height": 1080,
@@ -101,7 +101,7 @@
         "creator": "loswin23",
         "creator_url": "https://pixabay.com/users/loswin23-15879800/",
         "ai_generated": null,
-        "retrieved_at": "2026-10-20T07:49:14+00:00",
+        "retrieved_at": "2026-10-20T08:48:07+00:00",
         "looped": false,
         "framing_method": "center_default(no_crop_needed)",
         "color_normalisation": {
@@ -363,7 +363,7 @@
       "clip": {
         "provider": "pixabay",
         "clip_id": "12922",
-        "title": "piggy, bank, dollars, flying, money, finance, business, banking, currency, piggy bank, pig, savings, cash, financial, investment, wealth, save, coin, deposit, economy, piggybank, invest, account, retirement, income, investing, rich, symbol, fund, loan, safe, dollar, golden, gold, rotating, moving, bill, design, beautiful wallpaper, 3d, background, loop, seamless, banknote",
+        "title": "piggy, bank, dollars, flying, money, finance, business, banking, currency, piggy bank, pig, savings, cash, financial, investment, wealth, save, coin, beautiful wallpaper, deposit, economy, piggybank, invest, account, retirement, income, investing, rich, symbol, fund, loan, safe, dollar, golden, gold, rotating, moving, bill, design, 3d, background, loop, seamless, banknote",
         "tags": [
           "piggy",
           "bank",
@@ -383,6 +383,7 @@
           "wealth",
           "save",
           "coin",
+          "beautiful wallpaper",
           "deposit",
           "economy",
           "piggybank",
@@ -403,7 +404,6 @@
           "moving",
           "bill",
           "design",
-          "beautiful wallpaper",
           "3d",
           "background",
           "loop",
@@ -419,7 +419,7 @@
         "creator": "QuinceCreative",
         "creator_url": "https://pixabay.com/users/QuinceCreative-1031690/",
         "ai_generated": null,
-        "retrieved_at": "2026-10-20T07:49:14+00:00",
+        "retrieved_at": "2026-10-20T08:48:08+00:00",
         "looped": false,
         "framing_method": "center_default(no_crop_needed)",
         "color_normalisation": {
@@ -516,7 +516,7 @@
       "alternatives": [
         {
           "clip": "pixabay:12923",
-          "title": "piggy, bank, finance, money, business, banking, currency, piggy bank, pig, savings, cash, financial, investment, beautiful wallpaper, wealth, save, coin, deposit, economy, piggybank, invest, account, retirement, dollar, income, investing, rich, symbol, fund, loan, safe, usd, payment, design, balance, revenue, pay, interest, conceptual, 3d, background, loop, seamless, gold, metallic, budgeting",
+          "title": "piggy, bank, finance, money, business, banking, currency, piggy bank, pig, savings, cash, financial, investment, wealth, save, coin, deposit, economy, piggybank, invest, account, retirement, dollar, income, investing, rich, symbol, fund, loan, safe, usd, payment, design, balance, revenue, pay, interest, beautiful wallpaper, conceptual, 3d, background, loop, seamless, gold, metallic, budgeting",
           "text_score": 1.0,
           "visual_score": null,
           "technical_score": 1.0,
@@ -715,7 +715,7 @@
         "creator": "julientromeur",
         "creator_url": "https://pixabay.com/users/julientromeur-3630051/",
         "ai_generated": null,
-        "retrieved_at": "2026-10-20T07:49:15+00:00",
+        "retrieved_at": "2026-10-20T08:48:08+00:00",
         "looped": false,
         "framing_method": "center_default(no_crop_needed)",
         "color_normalisation": {
@@ -1001,7 +1001,7 @@
         "creator": "FestiMania",
         "creator_url": "https://pixabay.com/users/FestiMania-17107587/",
         "ai_generated": null,
-        "retrieved_at": "2026-10-20T07:49:15+00:00",
+        "retrieved_at": "2026-10-20T08:48:08+00:00",
         "looped": false,
         "framing_method": "center_default(no_crop_needed)",
         "color_normalisation": {

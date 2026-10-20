@@ -1,0 +1,2364 @@
+{
+  "schema_version": "1.0",
+  "job_id": "7d3c80a4c7fc",
+  "aspect_ratio": "16:9",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": {
+    "file": "narration.mp3",
+    "source": "generated:edge-tts"
+  },
+  "total_duration": 28.996,
+  "scenes": [
+    {
+      "scene_id": "scene-001",
+      "index": 1,
+      "start": 0.0,
+      "end": 4.392,
+      "duration": 4.392,
+      "narration_text": "The water cycle moves water around our planet again and again.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Water cycling moves water around planet.",
+      "visual_analysis": {
+        "subject": "water",
+        "action": "cycling",
+        "setting": "planet",
+        "objects": [
+          "moves water"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [],
+        "frames": [],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "cycling",
+          "cycle"
+        ],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "water cycling moves water around planet",
+        "water cycling around planet",
+        "moves water around planet",
+        "water around planet",
+        "water cycling"
+      ],
+      "queries_detail": [
+        {
+          "query": "water cycling moves water around planet",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.567,
+          "error": null
+        },
+        {
+          "query": "water cycling around planet",
+          "returned": 12,
+          "kept": 8,
+          "rejected": [
+            "pixabay:216034: duplicate candidate",
+            "pixabay:39183: duplicate candidate",
+            "pixabay:145734: duplicate candidate",
+            "pixabay:197444: duplicate candidate"
+          ],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "moves water around planet",
+          "returned": 12,
+          "kept": 1,
+          "rejected": [
+            "pixabay:24515: duplicate candidate",
+            "pixabay:216034: duplicate candidate",
+            "pixabay:145734: duplicate candidate",
+            "pixabay:2118: duplicate candidate",
+            "pixabay:1175: duplicate candidate",
+            "pixabay:22589: duplicate candidate",
+            "pixabay:1236: duplicate candidate",
+            "pixabay:359930: duplicate candidate",
+            "pixabay:135985: duplicate candidate",
+            "pixabay:8947: duplicate candidate",
+            "pixabay:197444: duplicate candidate"
+          ],
+          "best_score": 0.111,
+          "error": null
+        },
+        {
+          "query": "water around planet",
+          "returned": 12,
+          "kept": 3,
+          "rejected": [
+            "pixabay:216034: duplicate candidate",
+            "pixabay:145734: duplicate candidate",
+            "pixabay:2118: duplicate candidate",
+            "pixabay:1175: duplicate candidate",
+            "pixabay:1236: duplicate candidate",
+            "pixabay:359930: duplicate candidate",
+            "pixabay:135985: duplicate candidate",
+            "pixabay:8947: duplicate candidate",
+            "pixabay:197444: duplicate candidate"
+          ],
+          "best_score": 0.244,
+          "error": null
+        },
+        {
+          "query": "water cycling",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.7,
+          "error": null
+        }
+      ],
+      "candidate_count": 36,
+      "retry_attempts": 4,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "119785",
+        "title": "path, summer, daylight, nature, landscape, grass, trees, field, water, plants, afternoon, sunset, peaceful, beautiful, cyclist, cycling, bicycle, transport",
+        "tags": [
+          "path",
+          "summer",
+          "daylight",
+          "nature",
+          "landscape",
+          "grass",
+          "trees",
+          "field",
+          "water",
+          "plants",
+          "afternoon",
+          "sunset",
+          "peaceful",
+          "beautiful",
+          "cyclist",
+          "cycling",
+          "bicycle",
+          "transport"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-119785/",
+        "download_url": "https://cdn.pixabay.com/video/2022/06/09/119785-718927493_large.mp4",
+        "local_file": "clips/pixabay_119785.mp4",
+        "duration_seconds": 20.0,
+        "width": 3840,
+        "height": 2160,
+        "creator": "Matthias_Groeneveld",
+        "creator_url": "https://pixabay.com/users/Matthias_Groeneveld-4535957/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T09:05:14+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.5164,
+            "saturation": 0.2061,
+            "frames": 12
+          },
+          "brightness": 0.0,
+          "saturation": 1.25,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-001.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by Matthias_Groeneveld via Pixabay"
+      },
+      "relevance": {
+        "score": 0.7,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.662,
+        "visual_score": null,
+        "label": "High",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "action": 1.0,
+            "object": 0.25,
+            "setting": 0.0
+          },
+          "matched_terms": {
+            "subject": "water",
+            "action": "cycling",
+            "object": "moves water"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "object": 0.25,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": true,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:119785",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.70 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "water cycling moves water around planet",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "water cycling around planet",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "moves water around planet",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "water around planet",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "water cycling",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:119787",
+          "title": "path, summer, daylight, nature, landscape, grass, trees, field, water, plants, afternoon, sunset, peaceful, beautiful, cyclist, cycling, bicycle, transport, people talking, cute, couple, relaxing smooth, cycling girl, girl",
+          "text_score": 0.662,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.7,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: water, action: cycling, object: moves water"
+          ],
+          "penalties": [],
+          "label": "High",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 1.0,
+              "object": 0.25,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "water",
+              "action": "cycling",
+              "object": "moves water"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:128297",
+          "title": "sunset, afternoon, summer, 4k, drone, aerial, nature, flight, green, forest, lakes, water, sun, glare, clouds, path, cycling",
+          "text_score": 0.662,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.7,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: water, action: cycling, object: moves water"
+          ],
+          "penalties": [],
+          "label": "High",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 1.0,
+              "object": 0.25,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "water",
+              "action": "cycling",
+              "object": "moves water"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:128298",
+          "title": "sunset, afternoon, summer, 4k, drone, aerial, nature, flight, green, forest, lakes, water, sun, glare, clouds, path, cycling, relaxing smooth",
+          "text_score": 0.662,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.7,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: water, action: cycling, object: moves water"
+          ],
+          "penalties": [],
+          "label": "High",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 1.0,
+              "object": 0.25,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "water",
+              "action": "cycling",
+              "object": "moves water"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-002",
+      "index": 2,
+      "start": 4.392,
+      "end": 8.976,
+      "duration": 4.584,
+      "narration_text": "The sun warms the ocean and water rises into the air as vapour.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Warms ocean and watering rises in air.",
+      "visual_analysis": {
+        "subject": "warms ocean and",
+        "action": "watering",
+        "setting": "air",
+        "objects": [
+          "rises"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [],
+        "frames": [],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "watering",
+          "water"
+        ],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "warms ocean and watering rises in air"
+      ],
+      "queries_detail": [
+        {
+          "query": "warms ocean and watering rises in air",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.867,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "26067",
+        "title": "bubbles, bubbles in water, rising bubbles, fizz, water, underwater, diving, blue, ocean, sea, beautiful wallpaper, background, loop, relax, peaceful",
+        "tags": [
+          "bubbles",
+          "bubbles in water",
+          "rising bubbles",
+          "fizz",
+          "water",
+          "underwater",
+          "diving",
+          "blue",
+          "ocean",
+          "sea",
+          "beautiful wallpaper",
+          "background",
+          "loop",
+          "relax",
+          "peaceful"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-26067/",
+        "download_url": "https://cdn.pixabay.com/video/2019/08/15/26067-357512245_large.mp4",
+        "local_file": "clips/pixabay_26067.mp4",
+        "duration_seconds": 10.0,
+        "width": 3840,
+        "height": 2160,
+        "creator": "motionstock",
+        "creator_url": "https://pixabay.com/users/motionstock-13298494/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T09:05:15+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.2717,
+            "saturation": 0.9964,
+            "frames": 12
+          },
+          "brightness": 0.12,
+          "saturation": 0.8,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-002.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by motionstock via Pixabay"
+      },
+      "relevance": {
+        "score": 0.867,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.85,
+        "visual_score": null,
+        "label": "High",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "action": 1.0,
+            "object": 1.0,
+            "setting": 0.0
+          },
+          "matched_terms": {
+            "subject": "ocean",
+            "action": "watering",
+            "object": "rises"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "object": 0.25,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": true,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:26067",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.87 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "warms ocean and watering rises in air",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:23334",
+          "title": "drone, nature, landscape, air, photo, water, sea, ocean, live wallpaper, aerial, beach",
+          "text_score": 0.75,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.778,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: ocean, action: watering, setting: air"
+          ],
+          "penalties": [],
+          "label": "High",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 1.0,
+              "object": 0.0,
+              "setting": 1.0
+            },
+            "matched_terms": {
+              "subject": "ocean",
+              "action": "watering",
+              "setting": "air"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:37712",
+          "title": "underwater, sea, ocean, water, air bubbles, blue, underwater world, deep sea, nature, aquarium, marines, swim, diving, bubble, live wallpaper",
+          "text_score": 0.75,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.778,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: ocean, action: watering, setting: air"
+          ],
+          "penalties": [],
+          "label": "High",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 1.0,
+              "object": 0.0,
+              "setting": 1.0
+            },
+            "matched_terms": {
+              "subject": "ocean",
+              "action": "watering",
+              "setting": "air"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:112722",
+          "title": "live wallpaper, sea, water, waves, ocean",
+          "text_score": 0.6,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.644,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: ocean, action: watering"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 1.0,
+              "object": 0.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "ocean",
+              "action": "watering"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-003",
+      "index": 3,
+      "start": 8.976,
+      "end": 12.768,
+      "duration": 3.792,
+      "narration_text": "High in the sky the vapour cools and forms clouds.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "High in sky vapour cools and forms clouds.",
+      "visual_analysis": {
+        "subject": "high",
+        "action": null,
+        "setting": "sky vapour cools and forms clouds",
+        "objects": [],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase."
+        ],
+        "frames": [],
+        "scene_type": "place",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "high in sky vapour cools and forms clouds"
+      ],
+      "queries_detail": [
+        {
+          "query": "high in sky vapour cools and forms clouds",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.763,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "3186",
+        "title": "sky, clouds, wind, heaven, weather, atmosphere, high, air, oxygen",
+        "tags": [
+          "sky",
+          "clouds",
+          "wind",
+          "heaven",
+          "weather",
+          "atmosphere",
+          "high",
+          "air",
+          "oxygen"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-3186/",
+        "download_url": "https://cdn.pixabay.com/video/2016/05/12/3186-166339063_large.mp4",
+        "local_file": "clips/pixabay_3186.mp4",
+        "duration_seconds": 13.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "Coverr-Free-Footage",
+        "creator_url": "https://pixabay.com/users/Coverr-Free-Footage-1281706/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T09:05:15+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.5678,
+            "saturation": 0.3712,
+            "frames": 12
+          },
+          "brightness": -0.0514,
+          "saturation": 1.0,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-003.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by Coverr-Free-Footage via Pixabay"
+      },
+      "relevance": {
+        "score": 0.763,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.733,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "setting": 0.2
+          },
+          "matched_terms": {
+            "subject": "high",
+            "setting": "sky vapour cools and forms clouds"
+          },
+          "weights": {
+            "subject": 0.3,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:237366",
+          "outcome": "near_duplicate",
+          "reason": "looks like the clip used in scene-002 (hash distance 6)"
+        },
+        {
+          "clip": "pixabay:3186",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": true,
+      "selection_reason": "highest-scoring unused candidate (0.76 >= threshold 0.45; metadata_text_fallback) | original choice unusable; replaced by next-best acceptable candidate (pixabay:3186)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "high in sky vapour cools and forms clouds",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:3186",
+          "title": "sky, clouds, wind, heaven, weather, atmosphere, high, air, oxygen",
+          "text_score": 0.733,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.763,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: high, setting: sky vapour cools and forms clouds"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "setting": 0.2
+            },
+            "matched_terms": {
+              "subject": "high",
+              "setting": "sky vapour cools and forms clouds"
+            },
+            "weights": {
+              "subject": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:8016",
+          "title": "sky, air, clouds, high, nature, weather, blue, atmosphere, sunny, sunlight",
+          "text_score": 0.733,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.763,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: high, setting: sky vapour cools and forms clouds"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "setting": 0.2
+            },
+            "matched_terms": {
+              "subject": "high",
+              "setting": "sky vapour cools and forms clouds"
+            },
+            "weights": {
+              "subject": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:53358",
+          "title": "fog, mountains, road, foggy, dramatic, adventure, amazing, background, above, beautiful, blue, cloud, cold, dawn, environment, beautiful wallpaper, evening, high, live wallpaper",
+          "text_score": 0.7,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.733,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: high, setting: sky vapour cools and forms clouds"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "setting": 0.1
+            },
+            "matched_terms": {
+              "subject": "high",
+              "setting": "sky vapour cools and forms clouds"
+            },
+            "weights": {
+              "subject": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-004",
+      "index": 4,
+      "start": 12.768,
+      "end": 17.208,
+      "duration": 4.44,
+      "narration_text": "When the clouds grow heavy, rain falls on mountains and fields.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "When clouds growing heavy rain falls in mountains.",
+      "visual_analysis": {
+        "subject": "when clouds",
+        "action": "growing",
+        "setting": "mountains",
+        "objects": [
+          "heavy rain falls"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [],
+        "frames": [],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "growing",
+          "grow"
+        ],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "when clouds growing heavy rain falls in mountains",
+        "when clouds growing in mountains",
+        "heavy rain falls in mountains",
+        "when clouds in mountains",
+        "when clouds growing",
+        "clouds heavy rain"
+      ],
+      "queries_detail": [
+        {
+          "query": "when clouds growing heavy rain falls in mountains",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.456,
+          "error": null
+        },
+        {
+          "query": "when clouds growing in mountains",
+          "returned": 12,
+          "kept": 11,
+          "rejected": [
+            "pixabay:285663: duplicate candidate"
+          ],
+          "best_score": 0.511,
+          "error": null
+        },
+        {
+          "query": "heavy rain falls in mountains",
+          "returned": 12,
+          "kept": 4,
+          "rejected": [
+            "pixabay:78: duplicate candidate",
+            "pixabay:107635: duplicate candidate",
+            "pixabay:151744: duplicate candidate",
+            "pixabay:174773: duplicate candidate",
+            "pixabay:151629: duplicate candidate",
+            "pixabay:30224: duplicate candidate",
+            "pixabay:26369: duplicate candidate",
+            "pixabay:10746: duplicate candidate"
+          ],
+          "best_score": 0.281,
+          "error": null
+        },
+        {
+          "query": "when clouds in mountains",
+          "returned": 12,
+          "kept": 1,
+          "rejected": [
+            "pixabay:285663: duplicate candidate",
+            "pixabay:169951: duplicate candidate",
+            "pixabay:305657: duplicate candidate",
+            "pixabay:289855: duplicate candidate",
+            "pixabay:27539: duplicate candidate",
+            "pixabay:2266: duplicate candidate",
+            "pixabay:368458: duplicate candidate",
+            "pixabay:278750: duplicate candidate",
+            "pixabay:31175: duplicate candidate",
+            "pixabay:324297: duplicate candidate",
+            "pixabay:207309: duplicate candidate"
+          ],
+          "best_score": 0.511,
+          "error": null
+        },
+        {
+          "query": "when clouds growing",
+          "returned": 12,
+          "kept": 8,
+          "rejected": [
+            "pixabay:5635: duplicate candidate",
+            "pixabay:289855: duplicate candidate",
+            "pixabay:285663: duplicate candidate",
+            "pixabay:368458: duplicate candidate"
+          ],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "clouds heavy rain",
+          "returned": 12,
+          "kept": 8,
+          "rejected": [
+            "pixabay:212725: duplicate candidate",
+            "pixabay:10746: duplicate candidate",
+            "pixabay:223788: duplicate candidate",
+            "pixabay:220133: duplicate candidate"
+          ],
+          "best_score": 0.452,
+          "error": null
+        }
+      ],
+      "candidate_count": 44,
+      "retry_attempts": 5,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "169951",
+        "title": "starry sky, mountains, milky way, universe, cloud, city lights, hotakadake, chubu mountain national park, time lapse, japan",
+        "tags": [
+          "starry sky",
+          "mountains",
+          "milky way",
+          "universe",
+          "cloud",
+          "city lights",
+          "hotakadake",
+          "chubu mountain national park",
+          "time lapse",
+          "japan"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-169951/",
+        "download_url": "https://cdn.pixabay.com/video/2023/07/04/169951-842348732_large.mp4",
+        "local_file": "clips/pixabay_169951.mp4",
+        "duration_seconds": 11.0,
+        "width": 3840,
+        "height": 2160,
+        "creator": "Kanenori",
+        "creator_url": "https://pixabay.com/users/Kanenori-4749850/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T09:05:16+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.2263,
+            "saturation": 0.4299,
+            "frames": 12
+          },
+          "brightness": 0.12,
+          "saturation": 0.8635,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-004.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by Kanenori via Pixabay"
+      },
+      "relevance": {
+        "score": 0.511,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.45,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "action": 0.0,
+            "object": 0.0,
+            "setting": 1.0
+          },
+          "matched_terms": {
+            "subject": "clouds",
+            "setting": "mountains"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "object": 0.25,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:169951",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.51 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "when clouds growing heavy rain falls in mountains",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "when clouds growing in mountains",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "heavy rain falls in mountains",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "when clouds in mountains",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "when clouds growing",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "clouds heavy rain",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:207309",
+          "title": "cloud formation, fog, mountain, clouds, snow mountain, nature, winter landscape, snow landscape, landscape",
+          "text_score": 0.45,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.511,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: clouds, setting: mountains"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0,
+              "object": 0.0,
+              "setting": 1.0
+            },
+            "matched_terms": {
+              "subject": "clouds",
+              "setting": "mountains"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:230059",
+          "title": "clouds, cloud formation, mountain world, hiking area, outlook, nature",
+          "text_score": 0.45,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.511,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: clouds, setting: mountains"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0,
+              "object": 0.0,
+              "setting": 1.0
+            },
+            "matched_terms": {
+              "subject": "clouds",
+              "setting": "mountains"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:278750",
+          "title": "clouds, storm, landscape, background, beautiful wallpaper, mountain background",
+          "text_score": 0.45,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.511,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: clouds, setting: mountains"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0,
+              "object": 0.0,
+              "setting": 1.0
+            },
+            "matched_terms": {
+              "subject": "clouds",
+              "setting": "mountains"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-005",
+      "index": 5,
+      "start": 17.208,
+      "end": 21.792,
+      "duration": 4.584,
+      "narration_text": "Streams collect the rain and carry it down rivers back to the sea.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Streaming collect rain, carrying it down rivers back to sea.",
+      "visual_analysis": {
+        "subject": null,
+        "action": "streaming",
+        "setting": null,
+        "objects": [
+          "collect rain",
+          "it down rivers back to sea"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "Second coordinated action recognised: carrying it down rivers back to sea."
+        ],
+        "frames": [],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "streaming",
+          "stream",
+          "carrying"
+        ],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "streaming collect rain"
+      ],
+      "queries_detail": [
+        {
+          "query": "streaming collect rain",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.697,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "314",
+        "title": "waterfall, tropical, iguazu falls, cascade, rain-forest, exotic, paradise, beautiful, romantic, water, flowing, stream, river, amazon, sunset, dusk, dawn, setting sun, twilight, red, orange, beauty, harmony, zen, meditation, 132711038",
+        "tags": [
+          "waterfall",
+          "tropical",
+          "iguazu falls",
+          "cascade",
+          "rain-forest",
+          "exotic",
+          "paradise",
+          "beautiful",
+          "romantic",
+          "water",
+          "flowing",
+          "stream",
+          "river",
+          "amazon",
+          "sunset",
+          "dusk",
+          "dawn",
+          "setting sun",
+          "twilight",
+          "red",
+          "orange",
+          "beauty",
+          "harmony",
+          "zen",
+          "meditation",
+          "132711038"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-314/",
+        "download_url": "https://cdn.pixabay.com/video/2015/08/11/314-135984948_large.mp4",
+        "local_file": "clips/pixabay_314.mp4",
+        "duration_seconds": 17.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "Vimeo-Free-Videos",
+        "creator_url": "https://pixabay.com/users/Vimeo-Free-Videos-1283884/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T09:05:17+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.6089,
+            "saturation": 0.2664,
+            "frames": 12
+          },
+          "brightness": -0.0925,
+          "saturation": 1.25,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-005.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by Vimeo-Free-Videos via Pixabay"
+      },
+      "relevance": {
+        "score": 0.697,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.659,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "action": 1.0,
+            "object": 0.25
+          },
+          "matched_terms": {
+            "action": "streaming",
+            "object": "collect rain"
+          },
+          "weights": {
+            "action": 0.3,
+            "object": 0.25
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": true,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:314",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.70 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "streaming collect rain",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:79584",
+          "title": "starting soon, youtube intro, neon, hello, live streaming, streaming, welcome, intro, facebook intro, streaming intro",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: streaming",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "action": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "action": "streaming"
+            },
+            "weights": {
+              "action": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:79585",
+          "title": "youtube intro, intro, facebook intro, starting soon, streaming, youtube streaming, facebook streaming, instagram streaming",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: streaming",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "action": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "action": "streaming"
+            },
+            "weights": {
+              "action": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:81605",
+          "title": "intro, hello, welcome, starting soon, live streaming, neon lights, youtube, loop, streaming",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: streaming",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "action": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "action": "streaming"
+            },
+            "weights": {
+              "action": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-006",
+      "index": 6,
+      "start": 21.792,
+      "end": 26.112,
+      "duration": 4.32,
+      "narration_text": "Some water soaks into the soil and feeds trees and crops.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Water soaks in soil, feeding trees and crops.",
+      "visual_analysis": {
+        "subject": "water soaks",
+        "action": null,
+        "setting": "soil",
+        "objects": [
+          "trees and crops"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card",
+          "harvesting",
+          "market"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase.",
+          "Second coordinated action recognised: feeding trees and crops.",
+          "Alternative search phrasings added from activity frame(s): watering_plants."
+        ],
+        "frames": [
+          "watering_plants"
+        ],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "watering",
+          "irrigation",
+          "irrigating",
+          "sprinkler",
+          "sprinkling",
+          "hose",
+          "watering can",
+          "drip irrigation",
+          "spraying water"
+        ],
+        "object_evidence_terms": [
+          "hose",
+          "watering can",
+          "sprinkler",
+          "irrigation system"
+        ],
+        "foil_terms": [
+          "harvesting",
+          "harvest",
+          "picking",
+          "plowing",
+          "ploughing",
+          "tractor",
+          "combine",
+          "planting",
+          "sowing",
+          "pruning"
+        ]
+      },
+      "search_queries": [
+        "water soaks in soil"
+      ],
+      "queries_detail": [
+        {
+          "query": "water soaks in soil",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.833,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "266644",
+        "title": "iceland, geyser, hot water, landmark, travel, tourists, geology, reykjanes, hot, heat, energy, red soil, tourism",
+        "tags": [
+          "iceland",
+          "geyser",
+          "hot water",
+          "landmark",
+          "travel",
+          "tourists",
+          "geology",
+          "reykjanes",
+          "hot",
+          "heat",
+          "energy",
+          "red soil",
+          "tourism"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-266644/",
+        "download_url": "https://cdn.pixabay.com/video/2025/03/22/266644_large.mp4",
+        "local_file": "clips/pixabay_266644.mp4",
+        "duration_seconds": 22.0,
+        "width": 3840,
+        "height": 2160,
+        "creator": "Gylfi",
+        "creator_url": "https://pixabay.com/users/Gylfi-28844009/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T09:05:18+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.5584,
+            "saturation": 0.2212,
+            "frames": 12
+          },
+          "brightness": -0.042,
+          "saturation": 1.25,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-006.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by Gylfi via Pixabay"
+      },
+      "relevance": {
+        "score": 0.833,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.812,
+        "visual_score": null,
+        "label": "High",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "action": 1.0,
+            "object": 0.25,
+            "setting": 1.0
+          },
+          "matched_terms": {
+            "subject": "water",
+            "action": "watering",
+            "object": "watering can",
+            "setting": "soil"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "object": 0.25,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": true,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:266644",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.83 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "water soaks in soil",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:120522",
+          "title": "golden retriever, dog, animal, water, playing in the water, canine, pet, swimming, outdoors",
+          "text_score": 0.662,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: water, action: watering, object: watering can",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 1.0,
+              "object": 0.25,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "water",
+              "action": "watering",
+              "object": "watering can"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:14292",
+          "title": "ice, water, spring in the valley",
+          "text_score": 0.662,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: water, action: watering, object: watering can",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 1.0,
+              "object": 0.25,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "water",
+              "action": "watering",
+              "object": "watering can"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:14293",
+          "title": "ice, spring in the valley, winter landscapes, water",
+          "text_score": 0.662,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: water, action: watering, object: watering can",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 1.0,
+              "object": 0.25,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "water",
+              "action": "watering",
+              "object": "watering can"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-007",
+      "index": 7,
+      "start": 26.112,
+      "end": 28.996,
+      "duration": 2.884,
+      "narration_text": "Then the cycle begins once more.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Cycle begins.",
+      "visual_analysis": {
+        "subject": "cycle begins",
+        "action": null,
+        "setting": null,
+        "objects": [],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase."
+        ],
+        "frames": [],
+        "scene_type": "object",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "cycle begins"
+      ],
+      "queries_detail": [
+        {
+          "query": "cycle begins",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 1.0,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "110638",
+        "title": "particle, cycle, spin, light spot, light",
+        "tags": [
+          "particle",
+          "cycle",
+          "spin",
+          "light spot",
+          "light"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-110638/",
+        "download_url": "https://cdn.pixabay.com/video/2022/03/13/110638-689510351_large.mp4",
+        "local_file": "clips/pixabay_110638.mp4",
+        "duration_seconds": 10.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "Jasonyule",
+        "creator_url": "https://pixabay.com/users/Jasonyule-23924056/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T09:05:18+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.1031,
+            "saturation": 0.7286,
+            "frames": 12
+          },
+          "brightness": 0.12,
+          "saturation": 0.8,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-007.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by Jasonyule via Pixabay"
+      },
+      "relevance": {
+        "score": 1.0,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 1.0,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 1.0
+          },
+          "matched_terms": {
+            "subject": "cycle"
+          },
+          "weights": {
+            "subject": 0.3
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:110638",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (1.00 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "cycle begins",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:15216",
+          "title": "bicycle, shifting gears bike, sport, cycle, wheel, cycling, chain, sprocket, cassette, transport, mtb, close",
+          "text_score": 1.0,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 1.0,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: cycle"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0
+            },
+            "matched_terms": {
+              "subject": "cycle"
+            },
+            "weights": {
+              "subject": 0.3
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:156837",
+          "title": "bike, mountain bike, cycling, traveling, hiking, mountain cycling, mountains, trip, blog, cycle",
+          "text_score": 1.0,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 1.0,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: cycle"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0
+            },
+            "matched_terms": {
+              "subject": "cycle"
+            },
+            "weights": {
+              "subject": 0.3
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:18148",
+          "title": "mesh, cycle, 3d",
+          "text_score": 1.0,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 1.0,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: cycle"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0
+            },
+            "matched_terms": {
+              "subject": "cycle"
+            },
+            "weights": {
+              "subject": 0.3
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    }
+  ],
+  "warnings": [
+    "Relevance based on clip title/tags only (no visual verification of frames).",
+    "scene-003: top clip could not be used; used next-best candidate.",
+    "Footage relevance was estimated from provider titles/tags and scene analysis only. No vision-language model inspected the video frames."
+  ],
+  "avoid": [],
+  "footage_provider": "pixabay",
+  "render": {
+    "engine": "per-scene segments + stream-copy concat",
+    "fps": 30,
+    "total_frames": 870,
+    "colour_normalisation": {
+      "enabled": true,
+      "target": {
+        "luma": 0.5164,
+        "saturation": 0.3712
+      },
+      "method": "per-clip mean luma/saturation vs job median; bounded eq filter"
+    },
+    "min_scene_seconds": 2.0
+  }
+}

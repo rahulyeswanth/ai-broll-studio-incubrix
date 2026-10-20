@@ -1,0 +1,37 @@
+1
+00:00:00,100 --> 00:00:04,200
+Long ago, an old keeper lived alone
+in a lighthouse on a rocky coast.
+
+2
+00:00:05,164 --> 00:00:08,864
+Every evening he climbed the spiral
+stairs and lit the great lamp.
+
+3
+00:00:09,844 --> 00:00:13,131
+One stormy night, a fishing
+boat was lost in the waves.
+
+4
+00:00:14,092 --> 00:00:17,355
+The keeper watched the sea through
+the rain and kept the light turning.
+
+5
+00:00:18,316 --> 00:00:21,854
+Hours later the boat appeared out of
+the dark and sailed safely into the
+
+6
+00:00:21,866 --> 00:00:22,466
+harbour.
+
+7
+00:00:23,332 --> 00:00:27,207
+The fishermen cheered on the dock,
+and the keeper smiled as the sun rose
+
+8
+00:00:27,220 --> 00:00:27,982
+over the water.

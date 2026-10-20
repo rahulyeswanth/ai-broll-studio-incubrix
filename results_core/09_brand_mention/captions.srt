@@ -1,0 +1,32 @@
+1
+00:00:00,100 --> 00:00:04,000
+Apple released a new iPhone this week,
+and Nike announced a running shoe
+
+2
+00:00:04,013 --> 00:00:05,200
+with a recycled sole.
+
+3
+00:00:06,172 --> 00:00:09,372
+Tesla showed an updated
+electric car at a packed event.
+
+4
+00:00:10,348 --> 00:00:13,685
+Analysts say shoppers are paying
+more attention to quality and the
+
+5
+00:00:13,698 --> 00:00:14,473
+environment.
+
+6
+00:00:15,436 --> 00:00:18,099
+Crowds lined up outside
+stores on launch day.
+
+7
+00:00:19,084 --> 00:00:22,497
+Many buyers said they would keep
+their old devices for another year.

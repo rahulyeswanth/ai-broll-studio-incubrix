@@ -1,0 +1,655 @@
+{
+  "schema_version": "1.0",
+  "job_id": "ecbb39ce4162",
+  "aspect_ratio": "16:9",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": {
+    "file": "narration.mp3",
+    "source": "generated:edge-tts"
+  },
+  "total_duration": 9.169,
+  "scenes": [
+    {
+      "scene_id": "scene-001",
+      "index": 1,
+      "start": 0.0,
+      "end": 5.952,
+      "duration": 5.952,
+      "narration_text": "In 2024 the company grew 45% to 3.2 million users.",
+      "timing_method": "tts_word_boundaries_partial",
+      "visual_description": "In 2024 company growing 45.",
+      "visual_analysis": {
+        "subject": "in 2024 company",
+        "action": "growing",
+        "setting": null,
+        "objects": [
+          "45",
+          "3 2 million users"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [],
+        "frames": [],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "growing",
+          "grow"
+        ],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "in 2024 company growing 45"
+      ],
+      "queries_detail": [
+        {
+          "query": "in 2024 company growing 45",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.729,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "108459",
+        "title": "growth, grow, success, chart, graph, financial, finance, profit, data, wealth, business, bar, document, report, statistics, company, profile, paper, animated, show, showing",
+        "tags": [
+          "growth",
+          "grow",
+          "success",
+          "chart",
+          "graph",
+          "financial",
+          "finance",
+          "profit",
+          "data",
+          "wealth",
+          "business",
+          "bar",
+          "document",
+          "report",
+          "statistics",
+          "company",
+          "profile",
+          "paper",
+          "animated",
+          "show",
+          "showing"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-108459/",
+        "download_url": "https://cdn.pixabay.com/video/2022/02/21/108459-680697612_large.mp4",
+        "local_file": "clips/pixabay_108459.mp4",
+        "duration_seconds": 5.0,
+        "width": 3840,
+        "height": 2160,
+        "creator": "BeezeeStock",
+        "creator_url": "https://pixabay.com/users/BeezeeStock-13337584/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T07:32:07+00:00",
+        "looped": true,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.8935,
+            "saturation": 0.0246,
+            "frames": 10
+          },
+          "brightness": -0.12,
+          "saturation": 1.25,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-001.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by BeezeeStock via Pixabay"
+      },
+      "relevance": {
+        "score": 0.729,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.706,
+        "visual_score": null,
+        "label": "High",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "action": 1.0,
+            "object": 0.0
+          },
+          "matched_terms": {
+            "subject": "company",
+            "action": "growing"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "object": 0.25
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": true,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:108459",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.73 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "in 2024 company growing 45",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:179344",
+          "title": "grapes, grapevine, fruit, healthy, wine growing, food",
+          "text_score": 0.353,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.425,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: growing"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "action": "growing"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:5635",
+          "title": "plant, watering, grow, gardening, ewer, watering can, watering pot, water, nature, green, care, garden, spring, ecology, growth, environment, growing, summer, young, agriculture",
+          "text_score": 0.353,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.425,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: growing"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "action": "growing"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:4766",
+          "title": "flower, blossom, flowering, growing, plant, blossoming, abstract, design, 177130085",
+          "text_score": 0.353,
+          "visual_score": null,
+          "technical_score": 0.82,
+          "final_score": 0.398,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: growing",
+            "clip (4.0s) shorter than scene (6.0s); will loop"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "action": "growing"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-002",
+      "index": 2,
+      "start": 5.952,
+      "end": 9.169,
+      "duration": 3.217,
+      "narration_text": "Revenue reached 12 million dollars.",
+      "timing_method": "tts_word_boundaries_partial",
+      "visual_description": "Revenue reached 12 million dollars.",
+      "visual_analysis": {
+        "subject": "revenue reached",
+        "action": null,
+        "setting": null,
+        "objects": [
+          "12 million dollars"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase."
+        ],
+        "frames": [],
+        "scene_type": "object",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "revenue reached 12 million dollars"
+      ],
+      "queries_detail": [
+        {
+          "query": "revenue reached 12 million dollars",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.697,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "12923",
+        "title": "piggy, bank, finance, money, business, banking, currency, piggy bank, pig, savings, cash, financial, investment, wealth, save, coin, deposit, beautiful wallpaper, economy, piggybank, invest, account, retirement, dollar, income, investing, rich, symbol, fund, loan, safe, usd, payment, design, balance, revenue, pay, interest, conceptual, 3d, background, loop, seamless, gold, metallic, budgeting",
+        "tags": [
+          "piggy",
+          "bank",
+          "finance",
+          "money",
+          "business",
+          "banking",
+          "currency",
+          "piggy bank",
+          "pig",
+          "savings",
+          "cash",
+          "financial",
+          "investment",
+          "wealth",
+          "save",
+          "coin",
+          "deposit",
+          "beautiful wallpaper",
+          "economy",
+          "piggybank",
+          "invest",
+          "account",
+          "retirement",
+          "dollar",
+          "income",
+          "investing",
+          "rich",
+          "symbol",
+          "fund",
+          "loan",
+          "safe",
+          "usd",
+          "payment",
+          "design",
+          "balance",
+          "revenue",
+          "pay",
+          "interest",
+          "conceptual",
+          "3d",
+          "background",
+          "loop",
+          "seamless",
+          "gold",
+          "metallic",
+          "budgeting"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-12923/",
+        "download_url": "https://cdn.pixabay.com/video/2017/11/13/12923-242538645_large.mp4",
+        "local_file": "clips/pixabay_12923.mp4",
+        "duration_seconds": 20.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "QuinceCreative",
+        "creator_url": "https://pixabay.com/users/QuinceCreative-1031690/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T07:32:07+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.5073,
+            "saturation": 0.552,
+            "frames": 12
+          },
+          "brightness": 0.12,
+          "saturation": 0.8,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-002.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by QuinceCreative via Pixabay"
+      },
+      "relevance": {
+        "score": 0.697,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.659,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "object": 0.25
+          },
+          "matched_terms": {
+            "subject": "revenue",
+            "object": "12 million dollars"
+          },
+          "weights": {
+            "subject": 0.3,
+            "object": 0.25
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:12923",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.70 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "revenue reached 12 million dollars",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:144452",
+          "title": "rich, money, dollar, rich man, billionaire, million",
+          "text_score": 0.341,
+          "visual_score": null,
+          "technical_score": 0.967,
+          "final_score": 0.409,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - object: 12 million dollars"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "object": 0.75
+            },
+            "matched_terms": {
+              "object": "12 million dollars"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:172888",
+          "title": "money, currency, cash, dollar, finance, business",
+          "text_score": 0.114,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.212,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - object: 12 million dollars"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "object": 0.25
+            },
+            "matched_terms": {
+              "object": "12 million dollars"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:172891",
+          "title": "money, currency, dollar, cash, finance",
+          "text_score": 0.114,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.212,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - object: 12 million dollars"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "object": 0.25
+            },
+            "matched_terms": {
+              "object": "12 million dollars"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    }
+  ],
+  "warnings": [
+    "Caption word timing method is 'tts_word_boundaries_partial' (scene boundaries are exact; timing inside scenes is approximate).",
+    "Relevance based on clip title/tags only (no visual verification of frames).",
+    "scene-001: clip is 5.0s but the scene needs 6.0s; clip is looped.",
+    "Footage relevance was estimated from provider titles/tags and scene analysis only. No vision-language model inspected the video frames."
+  ],
+  "avoid": [],
+  "footage_provider": "pixabay",
+  "render": {
+    "engine": "per-scene segments + stream-copy concat",
+    "fps": 30,
+    "total_frames": 275,
+    "colour_normalisation": {
+      "enabled": true,
+      "target": {
+        "luma": 0.7004,
+        "saturation": 0.2883
+      },
+      "method": "per-clip mean luma/saturation vs job median; bounded eq filter"
+    },
+    "min_scene_seconds": 2.0
+  }
+}

@@ -1,0 +1,1780 @@
+{
+  "schema_version": "1.0",
+  "job_id": "032bf31e8d45",
+  "aspect_ratio": "16:9",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": {
+    "file": "narration.mp3",
+    "source": "generated:edge-tts"
+  },
+  "total_duration": 26.776,
+  "scenes": [
+    {
+      "scene_id": "scene-001",
+      "index": 1,
+      "start": 0.0,
+      "end": 4.344,
+      "duration": 4.344,
+      "narration_text": "Meet the new smart water bottle that keeps you hydrated all day.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Meeting new smart water bottle keeps you hydrated day.",
+      "visual_analysis": {
+        "subject": null,
+        "action": "meeting",
+        "setting": null,
+        "objects": [
+          "new smart water bottle keeps you hydrated day"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [],
+        "frames": [],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "meeting",
+          "meet"
+        ],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "meeting hydrated day",
+        "meeting",
+        "new smart water bottle keeps you hydrated day",
+        "new smart water"
+      ],
+      "queries_detail": [
+        {
+          "query": "meeting hydrated day",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "meeting",
+          "returned": 12,
+          "kept": 7,
+          "rejected": [
+            "pixabay:2340: duplicate candidate",
+            "pixabay:1035: duplicate candidate",
+            "pixabay:87593: duplicate candidate",
+            "pixabay:88225: duplicate candidate",
+            "pixabay:54326: duplicate candidate"
+          ],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "new smart water bottle keeps you hydrated day",
+          "returned": 12,
+          "kept": 11,
+          "rejected": [
+            "pixabay:158229: duplicate candidate"
+          ],
+          "best_score": 0.162,
+          "error": null
+        },
+        {
+          "query": "new smart water",
+          "returned": 12,
+          "kept": 11,
+          "rejected": [
+            "pixabay:29982: duplicate candidate"
+          ],
+          "best_score": 0.158,
+          "error": null
+        }
+      ],
+      "candidate_count": 41,
+      "retry_attempts": 3,
+      "clip": null,
+      "license": {},
+      "attribution": null,
+      "relevance": {
+        "score": null,
+        "scoring_method": null,
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": false,
+        "text_score": null,
+        "visual_score": null,
+        "label": null,
+        "evidence": null,
+        "gated": null,
+        "visual_detail": null
+      },
+      "needs_review": false,
+      "placeholder": true,
+      "download_attempts": [],
+      "used_alternate": false,
+      "selection_reason": "no candidate reached the minimum relevance floor 0.30 (best was 0.29: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust)",
+      "match_status": "unmatched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "meeting hydrated day",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "meeting",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "new smart water bottle keeps you hydrated day",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "new smart water",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": null,
+        "chosen_because": null
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:1112",
+          "title": "talk, discussion, meeting, team, group, conference, discuss, people, chairs, sitting, chatting, talking, debating, argument, men",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 0.65,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: meeting",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "action": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "action": "meeting"
+            },
+            "weights": {
+              "action": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:137265",
+          "title": "office, business, contemporary, computer, work, desk, table, technology, specialist, internet, meeting, group, professional, teamwork, brainstorming, strategy, team, laptop, communication, businessman, discussion, success, indoors, talking, executive",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: meeting",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "action": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "action": "meeting"
+            },
+            "weights": {
+              "action": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:22182",
+          "title": "animate, teacher, class, student, classroom, lecture, seminar, meeting, teach, education, doodle",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: meeting",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "action": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "action": "meeting"
+            },
+            "weights": {
+              "action": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Scene scene-001 has no matching footage: no candidate reached the minimum relevance floor 0.30 (best was 0.29: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-002",
+      "index": 2,
+      "start": 4.344,
+      "end": 8.976,
+      "duration": 4.632,
+      "narration_text": "A small sensor tracks every sip and sends reminders to your phone.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Small sensor tracks sip sends reminders.",
+      "visual_analysis": {
+        "subject": "small sensor",
+        "action": null,
+        "setting": null,
+        "objects": [
+          "tracks sip sends reminders",
+          "phone"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase."
+        ],
+        "frames": [],
+        "scene_type": "object",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "small sensor tracks sip sends reminders",
+        "small sensor",
+        "tracks sip sends reminders",
+        "small sensor tracks"
+      ],
+      "queries_detail": [
+        {
+          "query": "small sensor tracks sip sends reminders",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "small sensor",
+          "returned": 12,
+          "kept": 4,
+          "rejected": [
+            "pixabay:16166: duplicate candidate",
+            "pixabay:3829: duplicate candidate",
+            "pixabay:118893: duplicate candidate",
+            "pixabay:146349: duplicate candidate",
+            "pixabay:65202: duplicate candidate",
+            "pixabay:117804: duplicate candidate",
+            "pixabay:14869: duplicate candidate",
+            "pixabay:3830: duplicate candidate"
+          ],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "tracks sip sends reminders",
+          "returned": 12,
+          "kept": 8,
+          "rejected": [
+            "pixabay:192357: duplicate candidate",
+            "pixabay:275593: duplicate candidate",
+            "pixabay:8453: duplicate candidate",
+            "pixabay:161949: duplicate candidate"
+          ],
+          "best_score": 0.162,
+          "error": null
+        },
+        {
+          "query": "small sensor tracks",
+          "returned": 12,
+          "kept": 0,
+          "rejected": [
+            "pixabay:16166: duplicate candidate",
+            "pixabay:192357: duplicate candidate",
+            "pixabay:275593: duplicate candidate",
+            "pixabay:3829: duplicate candidate",
+            "pixabay:8453: duplicate candidate",
+            "pixabay:146349: duplicate candidate",
+            "pixabay:118893: duplicate candidate",
+            "pixabay:117804: duplicate candidate",
+            "pixabay:65202: duplicate candidate",
+            "pixabay:14869: duplicate candidate",
+            "pixabay:3830: duplicate candidate",
+            "pixabay:15305: duplicate candidate"
+          ],
+          "best_score": null,
+          "error": null
+        }
+      ],
+      "candidate_count": 24,
+      "retry_attempts": 3,
+      "clip": null,
+      "license": {},
+      "attribution": null,
+      "relevance": {
+        "score": null,
+        "scoring_method": null,
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": false,
+        "text_score": null,
+        "visual_score": null,
+        "label": null,
+        "evidence": null,
+        "gated": null,
+        "visual_detail": null
+      },
+      "needs_review": false,
+      "placeholder": true,
+      "download_attempts": [],
+      "used_alternate": false,
+      "selection_reason": "no candidate reached the minimum relevance floor 0.30 (best was 0.29: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust)",
+      "match_status": "unmatched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "small sensor tracks sip sends reminders",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "small sensor",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "tracks sip sends reminders",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "small sensor tracks",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": null,
+        "chosen_because": null
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:118893",
+          "title": "longhorn beetle, insect, beetle, sensor, ant",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: sensor",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "sensor"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:146349",
+          "title": "butterfly, wing, trunk, sensor, sense organ, insect, wildlife",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: sensor",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "sensor"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:14869",
+          "title": "dog, pet, animal, small, furry, cute, fur, outdoors, brown, looking, look, posing",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: small",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "small"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Scene scene-002 has no matching footage: no candidate reached the minimum relevance floor 0.30 (best was 0.29: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-003",
+      "index": 3,
+      "start": 8.976,
+      "end": 13.392,
+      "duration": 4.416,
+      "narration_text": "The insulated steel keeps drinks cold for twenty four hours.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Insulated steel keeps drinking cold for twenty four hours.",
+      "visual_analysis": {
+        "subject": "insulated steel keeps",
+        "action": "drinking",
+        "setting": null,
+        "objects": [
+          "cold for twenty four hours"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [],
+        "frames": [],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "drinking",
+          "drink"
+        ],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "insulated steel keeps drinking four hours",
+        "insulated steel keeps drinking"
+      ],
+      "queries_detail": [
+        {
+          "query": "insulated steel keeps drinking four hours",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.403,
+          "error": null
+        },
+        {
+          "query": "insulated steel keeps drinking",
+          "returned": 12,
+          "kept": 9,
+          "rejected": [
+            "pixabay:5631: duplicate candidate",
+            "pixabay:91998: duplicate candidate",
+            "pixabay:118648: duplicate candidate"
+          ],
+          "best_score": 0.771,
+          "error": null
+        }
+      ],
+      "candidate_count": 21,
+      "retry_attempts": 1,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "98143",
+        "title": "beer, bar, glass, cold, fresh, youth, girl, woman, hand, keep, fun, sociability, wheat, barley, acidic, drink, table, daytime, sunny, yellow, drunk, drunkenness, alcohol",
+        "tags": [
+          "beer",
+          "bar",
+          "glass",
+          "cold",
+          "fresh",
+          "youth",
+          "girl",
+          "woman",
+          "hand",
+          "keep",
+          "fun",
+          "sociability",
+          "wheat",
+          "barley",
+          "acidic",
+          "drink",
+          "table",
+          "daytime",
+          "sunny",
+          "yellow",
+          "drunk",
+          "drunkenness",
+          "alcohol"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-98143/",
+        "download_url": "https://cdn.pixabay.com/video/2021/11/17/98143-647000970_large.mp4",
+        "local_file": "clips/pixabay_98143.mp4",
+        "duration_seconds": 37.0,
+        "width": 3840,
+        "height": 2160,
+        "creator": "Engin_Akyurt",
+        "creator_url": "https://pixabay.com/users/Engin_Akyurt-3656355/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T09:00:23+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.5239,
+            "saturation": 0.2896,
+            "frames": 12
+          },
+          "brightness": -0.1004,
+          "saturation": 1.25,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-003.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by Engin_Akyurt via Pixabay"
+      },
+      "relevance": {
+        "score": 0.771,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.743,
+        "visual_score": null,
+        "label": "High",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "action": 1.0,
+            "object": 0.125
+          },
+          "matched_terms": {
+            "subject": "keeps",
+            "action": "drinking",
+            "object": "cold for twenty four hours"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "object": 0.25
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": true,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:98143",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.77 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "insulated steel keeps drinking four hours",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "insulated steel keeps drinking",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:5404",
+          "title": "time, watch, clock, minute, antique, luxury, hour, hand, old, beautiful wallpaper, second, steel, background",
+          "text_score": 0.39,
+          "visual_score": null,
+          "technical_score": 0.65,
+          "final_score": 0.403,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: steel, object: cold for twenty four hours"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0,
+              "object": 0.125
+            },
+            "matched_terms": {
+              "subject": "steel",
+              "object": "cold for twenty four hours"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:10447",
+          "title": "germany, duisburg, alsumer, industry, steel, concrete, vapor, chimney, production, factory, plant",
+          "text_score": 0.353,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: steel",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "steel"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:118648",
+          "title": "chick, chicken, livestock, animal, drinking water, young",
+          "text_score": 0.353,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: drinking",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "action": "drinking"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-004",
+      "index": 4,
+      "start": 13.392,
+      "end": 18.336,
+      "duration": 4.944,
+      "narration_text": "Hikers love the rugged design, and office workers love the clean look.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Hikers love rugged designing.",
+      "visual_analysis": {
+        "subject": "hikers love rugged",
+        "action": "designing",
+        "setting": null,
+        "objects": [],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [],
+        "frames": [],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "designing",
+          "design"
+        ],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "hikers love rugged designing"
+      ],
+      "queries_detail": [
+        {
+          "query": "hikers love rugged designing",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 1.0,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "48569",
+        "title": "golden, beautiful wallpaper, particles, overlay, decoration, glowing, love, design, cinematic, titles, background, dynamic, futuristic, light, flares, birthday, dreamy, live wallpaper",
+        "tags": [
+          "golden",
+          "beautiful wallpaper",
+          "particles",
+          "overlay",
+          "decoration",
+          "glowing",
+          "love",
+          "design",
+          "cinematic",
+          "titles",
+          "background",
+          "dynamic",
+          "futuristic",
+          "light",
+          "flares",
+          "birthday",
+          "dreamy",
+          "live wallpaper"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-48569/",
+        "download_url": "https://cdn.pixabay.com/video/2020/08/30/48569-454825064_large.mp4",
+        "local_file": "clips/pixabay_48569.mp4",
+        "duration_seconds": 10.0,
+        "width": 3840,
+        "height": 2160,
+        "creator": "motionstock",
+        "creator_url": "https://pixabay.com/users/motionstock-13298494/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T09:00:24+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.0126,
+            "saturation": 0.4312,
+            "frames": 12
+          },
+          "brightness": 0.12,
+          "saturation": 1.0,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-004.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by motionstock via Pixabay"
+      },
+      "relevance": {
+        "score": 1.0,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 1.0,
+        "visual_score": null,
+        "label": "High",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "action": 1.0
+          },
+          "matched_terms": {
+            "subject": "love",
+            "action": "designing"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": true,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:48569",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (1.00 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "hikers love rugged designing",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:960",
+          "title": "painting, drawing, colors, design, brush, artist painting, artistic, decoration, watercolor, creative, summer, hand drawing, picture, hearts, love, romantic, 104695749",
+          "text_score": 1.0,
+          "visual_score": null,
+          "technical_score": 0.65,
+          "final_score": 0.922,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: love, action: designing"
+          ],
+          "penalties": [],
+          "label": "High",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 1.0
+            },
+            "matched_terms": {
+              "subject": "love",
+              "action": "designing"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:148594",
+          "title": "fire, evening, nature, forest, autumn, romance, love",
+          "text_score": 0.5,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: love",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0
+            },
+            "matched_terms": {
+              "subject": "love"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:152798",
+          "title": "couple, lovers, hands, love, street, walking",
+          "text_score": 0.5,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: love",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0
+            },
+            "matched_terms": {
+              "subject": "love"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-005",
+      "index": 5,
+      "start": 18.336,
+      "end": 22.128,
+      "duration": 3.792,
+      "narration_text": "Charge it with a simple cable and it lasts for weeks.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Charge simple cable lasts weeks.",
+      "visual_analysis": {
+        "subject": "charge simple",
+        "action": null,
+        "setting": null,
+        "objects": [
+          "cable lasts weeks"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase."
+        ],
+        "frames": [],
+        "scene_type": "object",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "charge simple cable lasts weeks",
+        "charge simple",
+        "cable lasts weeks",
+        "charge simple cable"
+      ],
+      "queries_detail": [
+        {
+          "query": "charge simple cable lasts weeks",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "charge simple",
+          "returned": 12,
+          "kept": 10,
+          "rejected": [
+            "pixabay:578: duplicate candidate",
+            "pixabay:28067: duplicate candidate"
+          ],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "cable lasts weeks",
+          "returned": 12,
+          "kept": 2,
+          "rejected": [
+            "pixabay:11237: duplicate candidate",
+            "pixabay:14900: duplicate candidate",
+            "pixabay:149986: duplicate candidate",
+            "pixabay:23879: duplicate candidate",
+            "pixabay:8558: duplicate candidate",
+            "pixabay:14306: duplicate candidate",
+            "pixabay:5774: duplicate candidate",
+            "pixabay:120408: duplicate candidate",
+            "pixabay:13443: duplicate candidate",
+            "pixabay:8118: duplicate candidate"
+          ],
+          "best_score": 0.178,
+          "error": null
+        },
+        {
+          "query": "charge simple cable",
+          "returned": 12,
+          "kept": 1,
+          "rejected": [
+            "pixabay:11237: duplicate candidate",
+            "pixabay:14900: duplicate candidate",
+            "pixabay:8558: duplicate candidate",
+            "pixabay:578: duplicate candidate",
+            "pixabay:5774: duplicate candidate",
+            "pixabay:28067: duplicate candidate",
+            "pixabay:120408: duplicate candidate",
+            "pixabay:13443: duplicate candidate",
+            "pixabay:8118: duplicate candidate",
+            "pixabay:43273: duplicate candidate",
+            "pixabay:14906: duplicate candidate"
+          ],
+          "best_score": 0.178,
+          "error": null
+        }
+      ],
+      "candidate_count": 25,
+      "retry_attempts": 3,
+      "clip": null,
+      "license": {},
+      "attribution": null,
+      "relevance": {
+        "score": null,
+        "scoring_method": null,
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": false,
+        "text_score": null,
+        "visual_score": null,
+        "label": null,
+        "evidence": null,
+        "gated": null,
+        "visual_detail": null
+      },
+      "needs_review": false,
+      "placeholder": true,
+      "download_attempts": [],
+      "used_alternate": false,
+      "selection_reason": "no candidate reached the minimum relevance floor 0.30 (best was 0.29: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust)",
+      "match_status": "unmatched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "charge simple cable lasts weeks",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "charge simple",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "cable lasts weeks",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "charge simple cable",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": null,
+        "chosen_because": null
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:13496",
+          "title": "footage, clip, christmas, tree, greetings, merry, holidays, magical, particles, lights, night, dark, logo, rotating, beautiful wallpaper, festive, message, opener, intro, corporate, abstract, simple, clean, black, flare, title, background, enchanted studios, enchanted media",
+          "text_score": 0.395,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: simple",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [
+            "avoid-term 'logo' present in clip tags/title"
+          ],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "simple"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [
+              "logo"
+            ],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:210481",
+          "title": "circles, bright, geometric, fluorescent, futuristic, glow, beautiful wallpaper, laser, led, light, luminous, neon, night, ring, round, shapes, simple, technology, ultraviolet, fantasy, background",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: simple",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "simple"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:2388",
+          "title": "flower, floral, vines, silhouette, animation, white, art, simple, vintage",
+          "text_score": 0.395,
+          "visual_score": null,
+          "technical_score": 0.587,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: simple",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+            "clip (3.0s) shorter than scene (3.8s); will loop"
+          ],
+          "penalties": [
+            "avoid-term 'animation' present in clip tags/title"
+          ],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "simple"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [
+              "animation"
+            ],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Scene scene-005 has no matching footage: no candidate reached the minimum relevance floor 0.30 (best was 0.29: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-006",
+      "index": 6,
+      "start": 22.128,
+      "end": 26.776,
+      "duration": 4.648,
+      "narration_text": "Order today and start every morning with a fresh bottle of cold water.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Bottle of cold watering.",
+      "visual_analysis": {
+        "subject": "bottle of cold",
+        "action": "watering",
+        "setting": null,
+        "objects": [],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [],
+        "frames": [],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "watering",
+          "water"
+        ],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "bottle of cold watering"
+      ],
+      "queries_detail": [
+        {
+          "query": "bottle of cold watering",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 1.0,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "11066",
+        "title": "water, ripple, pool, run, flow, stream, surface, blue, closeup, liquid, cold, flowing, live wallpaper",
+        "tags": [
+          "water",
+          "ripple",
+          "pool",
+          "run",
+          "flow",
+          "stream",
+          "surface",
+          "blue",
+          "closeup",
+          "liquid",
+          "cold",
+          "flowing",
+          "live wallpaper"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-11066/",
+        "download_url": "https://cdn.pixabay.com/video/2017/08/01/11066-228113758_large.mp4",
+        "local_file": "clips/pixabay_11066.mp4",
+        "duration_seconds": 31.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "Tuan86",
+        "creator_url": "https://pixabay.com/users/Tuan86-332812/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T09:00:25+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.4235,
+            "saturation": 0.4023,
+            "frames": 12
+          },
+          "brightness": 0.0,
+          "saturation": 1.0,
+          "applied": false
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-006.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by Tuan86 via Pixabay"
+      },
+      "relevance": {
+        "score": 1.0,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 1.0,
+        "visual_score": null,
+        "label": "High",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "action": 1.0
+          },
+          "matched_terms": {
+            "subject": "cold",
+            "action": "watering"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": true,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:11066",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (1.00 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "bottle of cold watering",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:15245",
+          "title": "winter, waterfall, ice, nature, water, river, snow, cold, landscape, natural, white, frost, blue, outdoor, freeze, cascade, quebec, canada",
+          "text_score": 1.0,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 1.0,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: cold, action: watering"
+          ],
+          "penalties": [],
+          "label": "High",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 1.0
+            },
+            "matched_terms": {
+              "subject": "cold",
+              "action": "watering"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:154726",
+          "title": "waterfall, ice, water, melting, cold, spring, landscape, nature",
+          "text_score": 1.0,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 1.0,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: cold, action: watering"
+          ],
+          "penalties": [],
+          "label": "High",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 1.0
+            },
+            "matched_terms": {
+              "subject": "cold",
+              "action": "watering"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:19258",
+          "title": "water, young, bottle, woman, person, drink, beautiful, portrait, sed",
+          "text_score": 1.0,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 1.0,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: bottle, action: watering"
+          ],
+          "penalties": [],
+          "label": "High",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 1.0
+            },
+            "matched_terms": {
+              "subject": "bottle",
+              "action": "watering"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    }
+  ],
+  "warnings": [
+    "Scene scene-001 has no matching footage: no candidate reached the minimum relevance floor 0.30 (best was 0.29: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust).",
+    "Scene scene-002 has no matching footage: no candidate reached the minimum relevance floor 0.30 (best was 0.29: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust).",
+    "Relevance based on clip title/tags only (no visual verification of frames).",
+    "Scene scene-005 has no matching footage: no candidate reached the minimum relevance floor 0.30 (best was 0.29: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust).",
+    "black frames detected at 0.0s for 8.9s",
+    "Footage relevance was estimated from provider titles/tags and scene analysis only. No vision-language model inspected the video frames."
+  ],
+  "avoid": [],
+  "footage_provider": "pixabay",
+  "render": {
+    "engine": "per-scene segments + stream-copy concat",
+    "fps": 30,
+    "total_frames": 803,
+    "colour_normalisation": {
+      "enabled": true,
+      "target": {
+        "luma": 0.4235,
+        "saturation": 0.4023
+      },
+      "method": "per-clip mean luma/saturation vs job median; bounded eq filter"
+    },
+    "min_scene_seconds": 2.0
+  }
+}

@@ -1,0 +1,1721 @@
+{
+  "schema_version": "1.0",
+  "job_id": "2baf1c236ee7",
+  "aspect_ratio": "16:9",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": {
+    "file": "narration.mp3",
+    "source": "generated:edge-tts"
+  },
+  "total_duration": 23.406,
+  "scenes": [
+    {
+      "scene_id": "scene-001",
+      "index": 1,
+      "start": 0.0,
+      "end": 6.072,
+      "duration": 6.072,
+      "narration_text": "Apple released a new iPhone this week, and Nike announced a running shoe with a recycled sole.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Apple released new iphone week nike announced running shoe recycled sole.",
+      "visual_analysis": {
+        "subject": "apple released",
+        "action": null,
+        "setting": null,
+        "objects": [
+          "new iphone week nike announced running shoe recycled sole"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase.",
+          "Word 'apple' is ambiguous and no disambiguating context was found.",
+          "Alternative search phrasings added from activity frame(s): running_exercise.",
+          "Named brand/product shown through a generic stand-in (no logos or real people): person using smartphone, athlete running shoes."
+        ],
+        "frames": [
+          "running_exercise"
+        ],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "running",
+          "jogging",
+          "exercise",
+          "exercising",
+          "workout",
+          "training",
+          "sprinting",
+          "gym",
+          "fitness"
+        ],
+        "object_evidence_terms": [
+          "treadmill",
+          "weights",
+          "dumbbells",
+          "track",
+          "trail"
+        ],
+        "foil_terms": [
+          "walking",
+          "standing",
+          "sitting"
+        ]
+      },
+      "search_queries": [
+        "person using smartphone",
+        "athlete running shoes"
+      ],
+      "queries_detail": [
+        {
+          "query": "person using smartphone",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.39,
+          "error": null
+        },
+        {
+          "query": "athlete running shoes",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 1.0,
+          "error": null
+        }
+      ],
+      "candidate_count": 24,
+      "retry_attempts": 1,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "361127",
+        "title": "ai created, runner, feet, shoes, track, sunrise, ready to run, athletic shoes, running track, sunrise fitness, sports footwear, runner's feet, athletic, training, exercise, sport, fitness, outdoor, competition, sprint, race, marathon, warm-up, cool-down, anime",
+        "tags": [
+          "ai created",
+          "runner",
+          "feet",
+          "shoes",
+          "track",
+          "sunrise",
+          "ready to run",
+          "athletic shoes",
+          "running track",
+          "sunrise fitness",
+          "sports footwear",
+          "runner's feet",
+          "athletic",
+          "training",
+          "exercise",
+          "sport",
+          "fitness",
+          "outdoor",
+          "competition",
+          "sprint",
+          "race",
+          "marathon",
+          "warm-up",
+          "cool-down",
+          "anime"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-361127/",
+        "download_url": "https://cdn.pixabay.com/video/2026/06/28/361127_large.mp4",
+        "local_file": "clips/pixabay_361127.mp4",
+        "duration_seconds": 14.0,
+        "width": 3840,
+        "height": 2160,
+        "creator": "Hideaki_AnimeTH",
+        "creator_url": "https://pixabay.com/users/Hideaki_AnimeTH-29800360/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T09:15:25+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.579,
+            "saturation": 0.3926,
+            "frames": 12
+          },
+          "brightness": 0.0,
+          "saturation": 1.0,
+          "applied": false
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-001.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by Hideaki_AnimeTH via Pixabay"
+      },
+      "relevance": {
+        "score": 1.0,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 1.0,
+        "visual_score": null,
+        "label": "High",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "action": 1.0,
+            "object": 1.0,
+            "setting": 1.0
+          },
+          "matched_terms": {
+            "subject": "running",
+            "action": "running",
+            "object": "track",
+            "setting": "track"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "object": 0.25,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": true,
+          "object_evidenced": true
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:361127",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (1.00 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "person using smartphone",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "athlete running shoes",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:15748",
+          "title": "running, marathon, zurich, run, sports, runner, athletic, sportiness, competition, fit, sport event, sports event, running shoes",
+          "text_score": 0.614,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.657,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: running, action: running, object: new iphone week nike announced running shoe recycled sole"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 1.0,
+              "object": 0.056,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "running",
+              "action": "running",
+              "object": "new iphone week nike announced running shoe recycled sole"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:26386",
+          "title": "walk, running, move, shoes, step, quick step, gehbewgung",
+          "text_score": 0.614,
+          "visual_score": null,
+          "technical_score": 0.967,
+          "final_score": 0.651,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: running, action: running, object: new iphone week nike announced running shoe recycled sole"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 1.0,
+              "object": 0.056,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "running",
+              "action": "running",
+              "object": "new iphone week nike announced running shoe recycled sole"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [
+              "walking"
+            ],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:3168",
+          "title": "smartphone, iphone, black and white, ios, app, mobile, device, modern, communication, internet, wireless, touchscreen, technology, digital, cellphone, gadget, telephone, using, equipment, hand, cellular, multimedia, smart phone, communicator, screen",
+          "text_score": 0.314,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.39,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: smartphone, object: new iphone week nike announced running shoe recycled sole"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0,
+              "object": 0.056,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "smartphone",
+              "object": "new iphone week nike announced running shoe recycled sole"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-002",
+      "index": 2,
+      "start": 6.072,
+      "end": 10.248,
+      "duration": 4.176,
+      "narration_text": "Tesla showed an updated electric car at a packed event.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Tesla showing updated electric car in packed event.",
+      "visual_analysis": {
+        "subject": "tesla",
+        "action": "showing",
+        "setting": "packed event",
+        "objects": [
+          "updated electric car"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "Alternative search phrasings added from activity frame(s): driving_vehicle.",
+          "Named brand/product shown through a generic stand-in (no logos or real people): electric car charging."
+        ],
+        "frames": [
+          "driving_vehicle"
+        ],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "driving",
+          "traffic",
+          "highway",
+          "road trip",
+          "car",
+          "truck",
+          "driver"
+        ],
+        "object_evidence_terms": [
+          "car",
+          "steering wheel",
+          "road",
+          "highway",
+          "traffic"
+        ],
+        "foil_terms": [
+          "parked",
+          "car wash",
+          "repair",
+          "mechanic"
+        ]
+      },
+      "search_queries": [
+        "electric car charging"
+      ],
+      "queries_detail": [
+        {
+          "query": "electric car charging",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.9,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "344225",
+        "title": "electric vehicle charging, sustainable urban lifestyle, business woman professional, green energy technology, mobile app connectivity, eco-friendly transport, automotive clean energy, smart city commuting, modern business success, renewable power source, charging station interface, tech integrated living, female executive portrait, digital lifestyle mobility, future of transportation, zero emission vehicle, electric car owner, battery power refill, sustainable business practice, close up, daylight, white, orange, horizontal composition, ai generated",
+        "tags": [
+          "electric vehicle charging",
+          "sustainable urban lifestyle",
+          "business woman professional",
+          "green energy technology",
+          "mobile app connectivity",
+          "eco-friendly transport",
+          "automotive clean energy",
+          "smart city commuting",
+          "modern business success",
+          "renewable power source",
+          "charging station interface",
+          "tech integrated living",
+          "female executive portrait",
+          "digital lifestyle mobility",
+          "future of transportation",
+          "zero emission vehicle",
+          "electric car owner",
+          "battery power refill",
+          "sustainable business practice",
+          "close up",
+          "daylight",
+          "white",
+          "orange",
+          "horizontal composition",
+          "ai generated"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-344225/",
+        "download_url": "https://cdn.pixabay.com/video/2026/04/03/344225_large.mp4",
+        "local_file": "clips/pixabay_344225.mp4",
+        "duration_seconds": 8.0,
+        "width": 3840,
+        "height": 2160,
+        "creator": "MrWashingt0n",
+        "creator_url": "https://pixabay.com/users/MrWashingt0n-15745216/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T09:15:26+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.4994,
+            "saturation": 0.3891,
+            "frames": 12
+          },
+          "brightness": 0.0796,
+          "saturation": 1.0,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-002.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by MrWashingt0n via Pixabay"
+      },
+      "relevance": {
+        "score": 0.9,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.887,
+        "visual_score": null,
+        "label": "High",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "action": 1.0,
+            "object": 1.0,
+            "setting": 0.25
+          },
+          "matched_terms": {
+            "subject": "electric",
+            "action": "car",
+            "object": "car",
+            "setting": "city street"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "object": 0.25,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": true,
+          "object_evidenced": true
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:344225",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.90 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "electric car charging",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:154950",
+          "title": "employee, entrepreneur, cement, loader, man, uniform, driver, cargo, warehouse, pallets, electric car, building, industry, repair, accounting",
+          "text_score": 0.85,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.867,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: electric, action: car, object: car"
+          ],
+          "penalties": [],
+          "label": "High",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 1.0,
+              "object": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "electric",
+              "action": "car",
+              "object": "car"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [
+              "repair"
+            ],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": true
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:200682",
+          "title": "charging plug, e auto, electric car, charging station, e mobility, electric mobility, automobile, electricity, gas station, e-mobile, charging cable",
+          "text_score": 0.85,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.867,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: electric, action: car, object: car"
+          ],
+          "penalties": [],
+          "label": "High",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 1.0,
+              "object": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "electric",
+              "action": "car",
+              "object": "car"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": true
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:344231",
+          "title": "electric vehicle charging, green energy technology, sustainable transportation, clean energy future, ev power station, future mobility, eco-friendly transport, automotive innovation, no people, renewable energy, electric car socket, charging port, power supply, environmental conservation, high tech lifestyle, battery power, urban infrastructure, modern automotive, close up, blue glow, silver, metallic texture, selective focus, dark background, horizontal composition, ai generated",
+          "text_score": 0.85,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.867,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: electric, action: car, object: car"
+          ],
+          "penalties": [],
+          "label": "High",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 1.0,
+              "object": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "electric",
+              "action": "car",
+              "object": "car"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": true
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-003",
+      "index": 3,
+      "start": 10.248,
+      "end": 15.336,
+      "duration": 5.088,
+      "narration_text": "Analysts say shoppers are paying more attention to quality and the environment.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Analysts say shoppers paying attention.",
+      "visual_analysis": {
+        "subject": "analysts say shoppers",
+        "action": "paying",
+        "setting": null,
+        "objects": [
+          "attention",
+          "quality"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "Alternative search phrasings added from activity frame(s): shopping."
+        ],
+        "frames": [
+          "shopping"
+        ],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "shopping",
+          "buying",
+          "shoppers",
+          "customers",
+          "browsing",
+          "checkout"
+        ],
+        "object_evidence_terms": [
+          "cart",
+          "basket",
+          "store",
+          "supermarket",
+          "market",
+          "shelves",
+          "mall"
+        ],
+        "foil_terms": [
+          "online"
+        ]
+      },
+      "search_queries": [
+        "analysts say shoppers paying attention"
+      ],
+      "queries_detail": [
+        {
+          "query": "analysts say shoppers paying attention",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.733,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "2988",
+        "title": "ipad, imac, tablet, desktop, iphone, monitor, computer, display, mobile, network, technology, banking, paying, payment, people, retail, system, transaction, business, app, hand, buy, electronics, high-definition, industry, movie, search, analytics, youtube, office space, small business, ecommerce, e-learning, online shopping, information, data, digital marketing",
+        "tags": [
+          "ipad",
+          "imac",
+          "tablet",
+          "desktop",
+          "iphone",
+          "monitor",
+          "computer",
+          "display",
+          "mobile",
+          "network",
+          "technology",
+          "banking",
+          "paying",
+          "payment",
+          "people",
+          "retail",
+          "system",
+          "transaction",
+          "business",
+          "app",
+          "hand",
+          "buy",
+          "electronics",
+          "high-definition",
+          "industry",
+          "movie",
+          "search",
+          "analytics",
+          "youtube",
+          "office space",
+          "small business",
+          "ecommerce",
+          "e-learning",
+          "online shopping",
+          "information",
+          "data",
+          "digital marketing"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-2988/",
+        "download_url": "https://cdn.pixabay.com/video/2016/05/03/2988-165221419_large.mp4",
+        "local_file": "clips/pixabay_2988.mp4",
+        "duration_seconds": 12.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "starroom",
+        "creator_url": "https://pixabay.com/users/starroom-2499030/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T09:15:26+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.591,
+            "saturation": 0.2141,
+            "frames": 12
+          },
+          "brightness": 0.0,
+          "saturation": 1.25,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-003.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by starroom via Pixabay"
+      },
+      "relevance": {
+        "score": 0.733,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.7,
+        "visual_score": null,
+        "label": "High",
+        "evidence": {
+          "elements": {
+            "subject": 0.0,
+            "action": 1.0,
+            "object": 1.0,
+            "setting": 1.0
+          },
+          "matched_terms": {
+            "action": "shopping",
+            "object": "market",
+            "setting": "market"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "object": 0.25,
+            "setting": 0.15
+          },
+          "foil_hits": [
+            "online"
+          ],
+          "negative_hits": [],
+          "action_evidenced": true,
+          "object_evidenced": true
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:2988",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.73 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "analysts say shoppers paying attention",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:12513",
+          "title": "mall, shopping, people, timelapse, shopping mall, shop, shopper, customer",
+          "text_score": 1.0,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: shoppers, action: shopping, object: mall, setting: mall",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 1.0,
+              "object": 1.0,
+              "setting": 1.0
+            },
+            "matched_terms": {
+              "subject": "shoppers",
+              "action": "shopping",
+              "object": "mall",
+              "setting": "mall"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": true
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:143434",
+          "title": "oxygen, patient, medical attention, nurse",
+          "text_score": 0.25,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - object: attention",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 0.0,
+              "object": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "object": "attention"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:232169",
+          "title": "traffic lights, red, yellow, green, lights, traffic, stop, attention",
+          "text_score": 0.25,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - object: attention",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 0.0,
+              "object": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "object": "attention"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-004",
+      "index": 4,
+      "start": 15.336,
+      "end": 18.984,
+      "duration": 3.648,
+      "narration_text": "Crowds lined up outside stores on launch day.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Crowds lined up launching day in stores on.",
+      "visual_analysis": {
+        "subject": "crowds lined up",
+        "action": "launching",
+        "setting": "stores on",
+        "objects": [
+          "day"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [],
+        "frames": [],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "launching",
+          "launch"
+        ],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "crowds lined up launching day in stores",
+        "crowds lined up launching in stores",
+        "day in stores",
+        "crowds lined up in stores",
+        "crowds lined up launching",
+        "crowds lined day"
+      ],
+      "queries_detail": [
+        {
+          "query": "crowds lined up launching day in stores",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "crowds lined up launching in stores",
+          "returned": 12,
+          "kept": 3,
+          "rejected": [
+            "pixabay:1630: duplicate candidate",
+            "pixabay:36510: duplicate candidate",
+            "pixabay:3627: duplicate candidate",
+            "pixabay:1016: duplicate candidate",
+            "pixabay:1006: duplicate candidate",
+            "pixabay:23258: duplicate candidate",
+            "pixabay:27539: duplicate candidate",
+            "pixabay:53902: duplicate candidate",
+            "pixabay:1643: duplicate candidate"
+          ],
+          "best_score": 0.244,
+          "error": null
+        },
+        {
+          "query": "day in stores",
+          "returned": 12,
+          "kept": 5,
+          "rejected": [
+            "pixabay:1006: duplicate candidate",
+            "pixabay:122873: duplicate candidate",
+            "pixabay:27539: duplicate candidate",
+            "pixabay:90877: duplicate candidate",
+            "pixabay:140595: duplicate candidate",
+            "pixabay:24114: duplicate candidate",
+            "pixabay:2121: duplicate candidate"
+          ],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "crowds lined up in stores",
+          "returned": 12,
+          "kept": 0,
+          "rejected": [
+            "pixabay:1630: duplicate candidate",
+            "pixabay:3627: duplicate candidate",
+            "pixabay:36510: duplicate candidate",
+            "pixabay:1016: duplicate candidate",
+            "pixabay:1006: duplicate candidate",
+            "pixabay:23258: duplicate candidate",
+            "pixabay:27539: duplicate candidate",
+            "pixabay:53902: duplicate candidate",
+            "pixabay:1643: duplicate candidate",
+            "pixabay:140595: duplicate candidate",
+            "pixabay:24114: duplicate candidate",
+            "pixabay:2121: duplicate candidate"
+          ],
+          "best_score": null,
+          "error": null
+        },
+        {
+          "query": "crowds lined up launching",
+          "returned": 12,
+          "kept": 6,
+          "rejected": [
+            "pixabay:1630: duplicate candidate",
+            "pixabay:3627: duplicate candidate",
+            "pixabay:36510: duplicate candidate",
+            "pixabay:23258: duplicate candidate",
+            "pixabay:53902: duplicate candidate",
+            "pixabay:1643: duplicate candidate"
+          ],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "crowds lined day",
+          "returned": 12,
+          "kept": 1,
+          "rejected": [
+            "pixabay:1630: duplicate candidate",
+            "pixabay:36510: duplicate candidate",
+            "pixabay:3627: duplicate candidate",
+            "pixabay:23258: duplicate candidate",
+            "pixabay:53902: duplicate candidate",
+            "pixabay:1643: duplicate candidate",
+            "pixabay:90877: duplicate candidate",
+            "pixabay:31377: duplicate candidate",
+            "pixabay:158229: duplicate candidate",
+            "pixabay:370958: duplicate candidate",
+            "pixabay:189020: duplicate candidate"
+          ],
+          "best_score": 0.29,
+          "error": null
+        }
+      ],
+      "candidate_count": 27,
+      "retry_attempts": 5,
+      "clip": null,
+      "license": {},
+      "attribution": null,
+      "relevance": {
+        "score": null,
+        "scoring_method": null,
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": false,
+        "text_score": null,
+        "visual_score": null,
+        "label": null,
+        "evidence": null,
+        "gated": null,
+        "visual_detail": null
+      },
+      "needs_review": false,
+      "placeholder": true,
+      "download_attempts": [],
+      "used_alternate": false,
+      "selection_reason": "no candidate reached the minimum relevance floor 0.30 (best was 0.29: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust)",
+      "match_status": "unmatched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "crowds lined up launching day in stores",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "crowds lined up launching in stores",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "day in stores",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "crowds lined up in stores",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "crowds lined up launching",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "crowds lined day",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": null,
+        "chosen_because": null
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:110731",
+          "title": "motion, people, britain, business, architecture, building, city, travel, tied-up, tour tourism, colourful, consumer, crowd, crowded, downtown, global, hours, london, movement, moving, multi, multicultural, popular, population",
+          "text_score": 0.3,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: crowds",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0,
+              "object": 0.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "crowds"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:122873",
+          "title": "raindrop, rainy day, plant in the rain, rainy",
+          "text_score": 0.25,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - object: day",
+            "NOT accepted automatically: clip metadata covers only 0 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 0 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 0.0,
+              "object": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "object": "day"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:158229",
+          "title": "waterfall, river, water, drone, nature, ulba, ecuador, earth day",
+          "text_score": 0.25,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - object: day",
+            "NOT accepted automatically: clip metadata covers only 0 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 0 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 0.0,
+              "object": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "object": "day"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Scene scene-004 has no matching footage: no candidate reached the minimum relevance floor 0.30 (best was 0.29: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-005",
+      "index": 5,
+      "start": 18.984,
+      "end": 23.406,
+      "duration": 4.422,
+      "narration_text": "Many buyers said they would keep their old devices for another year.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Buyers said keep old devices another year.",
+      "visual_analysis": {
+        "subject": "buyers said",
+        "action": null,
+        "setting": null,
+        "objects": [
+          "keep old devices another year"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase."
+        ],
+        "frames": [],
+        "scene_type": "object",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "buyers said keep old devices another year",
+        "buyers said",
+        "keep old devices another year",
+        "buyers said keep"
+      ],
+      "queries_detail": [
+        {
+          "query": "buyers said keep old devices another year",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "buyers said",
+          "returned": 11,
+          "kept": 10,
+          "rejected": [
+            "pixabay:1735: duplicate candidate"
+          ],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "keep old devices another year",
+          "returned": 12,
+          "kept": 1,
+          "rejected": [
+            "pixabay:38084: duplicate candidate",
+            "pixabay:171361: duplicate candidate",
+            "pixabay:171365: duplicate candidate",
+            "pixabay:165234: duplicate candidate",
+            "pixabay:165233: duplicate candidate",
+            "pixabay:171363: duplicate candidate",
+            "pixabay:107256: duplicate candidate",
+            "pixabay:144656: duplicate candidate",
+            "pixabay:121032: duplicate candidate",
+            "pixabay:121651: duplicate candidate",
+            "pixabay:736: duplicate candidate"
+          ],
+          "best_score": 0.152,
+          "error": null
+        },
+        {
+          "query": "buyers said keep",
+          "returned": 12,
+          "kept": 8,
+          "rejected": [
+            "pixabay:1735: duplicate candidate",
+            "pixabay:91998: duplicate candidate",
+            "pixabay:29483: duplicate candidate",
+            "pixabay:123813: duplicate candidate"
+          ],
+          "best_score": 0.192,
+          "error": null
+        }
+      ],
+      "candidate_count": 31,
+      "retry_attempts": 3,
+      "clip": null,
+      "license": {},
+      "attribution": null,
+      "relevance": {
+        "score": null,
+        "scoring_method": null,
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": false,
+        "text_score": null,
+        "visual_score": null,
+        "label": null,
+        "evidence": null,
+        "gated": null,
+        "visual_detail": null
+      },
+      "needs_review": false,
+      "placeholder": true,
+      "download_attempts": [],
+      "used_alternate": false,
+      "selection_reason": "no candidate reached the minimum relevance floor 0.30 (best was 0.29: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust)",
+      "match_status": "unmatched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "buyers said keep old devices another year",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "buyers said",
+            "returned_by_provider": {
+              "pixabay": 11
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "keep old devices another year",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "buyers said keep",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": null,
+        "chosen_because": null
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:146050",
+          "title": "woman, craft, choose, buyer, hand, knit, mannequin",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: buyers",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "buyers"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:1735",
+          "title": "supermarket, cart, market, mall, buy, retail, buyer, price, shopping, consumer, store, purchase, customer, time lapse",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 0.933,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: buyers",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "buyers"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:29483",
+          "title": "television, broadcasting, satellite, antenna, corrupted, screen, retro, contact, telecommunications, transmission, radio, transmitter, technology, signal, radar, network, forwarding, frequency, buyer, tv, tower, information, media, art, symbol",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: buyers",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "buyers"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Scene scene-005 has no matching footage: no candidate reached the minimum relevance floor 0.30 (best was 0.29: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust)."
+      ],
+      "visual_hint": null
+    }
+  ],
+  "warnings": [
+    "Relevance based on clip title/tags only (no visual verification of frames).",
+    "Scene scene-004 has no matching footage: no candidate reached the minimum relevance floor 0.30 (best was 0.29: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust).",
+    "Scene scene-005 has no matching footage: no candidate reached the minimum relevance floor 0.30 (best was 0.29: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust).",
+    "black frames detected at 15.3s for 8.0s",
+    "Footage relevance was estimated from provider titles/tags and scene analysis only. No vision-language model inspected the video frames."
+  ],
+  "avoid": [],
+  "footage_provider": "pixabay",
+  "render": {
+    "engine": "per-scene segments + stream-copy concat",
+    "fps": 30,
+    "total_frames": 702,
+    "colour_normalisation": {
+      "enabled": true,
+      "target": {
+        "luma": 0.579,
+        "saturation": 0.3891
+      },
+      "method": "per-clip mean luma/saturation vs job median; bounded eq filter"
+    },
+    "min_scene_seconds": 2.0
+  }
+}

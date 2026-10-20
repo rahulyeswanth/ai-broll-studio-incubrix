@@ -1,0 +1,45 @@
+1
+00:00:00,100 --> 00:00:04,275
+A new solar farm has opened outside
+the city, and it is already powering
+
+2
+00:00:04,287 --> 00:00:05,412
+thousands of homes.
+
+3
+00:00:06,388 --> 00:00:10,276
+Workers installed rows of panels
+across the open fields in just under a
+
+4
+00:00:10,288 --> 00:00:10,888
+year.
+
+5
+00:00:11,716 --> 00:00:15,566
+Engineers say the farm will cut
+carbon emissions and lower electricity
+
+6
+00:00:15,579 --> 00:00:16,179
+bills.
+
+7
+00:00:17,044 --> 00:00:19,956
+Local farmers still graze
+sheep between the panels.
+
+8
+00:00:20,932 --> 00:00:24,557
+The mayor visited the site on
+opening day and praised the project.
+
+9
+00:00:25,540 --> 00:00:29,678
+Experts expect more solar farms to
+follow across the region over the next
+
+10
+00:00:29,690 --> 00:00:30,503
+five years.

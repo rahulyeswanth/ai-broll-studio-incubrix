@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "job_id": "965b428e3116",
+  "job_id": "e7ce0533d3d1",
   "aspect_ratio": "16:9",
   "width": 1920,
   "height": 1080,
@@ -36,7 +36,9 @@
           "title card"
         ],
         "method": "rule_based_v1",
-        "notes": [],
+        "notes": [
+          "Sensitive story detected: sombre queries used and upbeat clips are rejected."
+        ],
         "frames": [],
         "scene_type": "activity",
         "action_evidence_terms": [
@@ -47,142 +49,62 @@
         "foil_terms": []
       },
       "search_queries": [
-        "deadly flooding swept through village last night",
-        "deadly flooding through village last night",
-        "swept through village last night",
-        "deadly through village last night",
-        "deadly flooding",
-        "deadly swept village"
+        "flooded street aftermath"
       ],
       "queries_detail": [
         {
-          "query": "deadly flooding swept through village last night",
+          "query": "flooded street aftermath",
           "returned": 12,
           "kept": 12,
           "rejected": [],
-          "best_score": 0.378,
-          "error": null
-        },
-        {
-          "query": "deadly flooding through village last night",
-          "returned": 12,
-          "kept": 0,
-          "rejected": [
-            "pixabay:249590: duplicate candidate",
-            "pixabay:14324: duplicate candidate",
-            "pixabay:135765: duplicate candidate",
-            "pixabay:17285: duplicate candidate",
-            "pixabay:44927: duplicate candidate",
-            "pixabay:167115: duplicate candidate",
-            "pixabay:50567: duplicate candidate",
-            "pixabay:131615: duplicate candidate",
-            "pixabay:42931: duplicate candidate",
-            "pixabay:4878: duplicate candidate",
-            "pixabay:144742: duplicate candidate",
-            "pixabay:212404: duplicate candidate"
-          ],
-          "best_score": null,
-          "error": null
-        },
-        {
-          "query": "swept through village last night",
-          "returned": 12,
-          "kept": 5,
-          "rejected": [
-            "pixabay:249590: duplicate candidate",
-            "pixabay:17285: duplicate candidate",
-            "pixabay:167115: duplicate candidate",
-            "pixabay:131615: duplicate candidate",
-            "pixabay:4878: duplicate candidate",
-            "pixabay:144742: duplicate candidate",
-            "pixabay:212404: duplicate candidate"
-          ],
-          "best_score": 0.156,
-          "error": null
-        },
-        {
-          "query": "deadly through village last night",
-          "returned": 12,
-          "kept": 0,
-          "rejected": [
-            "pixabay:249590: duplicate candidate",
-            "pixabay:17285: duplicate candidate",
-            "pixabay:167115: duplicate candidate",
-            "pixabay:131615: duplicate candidate",
-            "pixabay:4878: duplicate candidate",
-            "pixabay:212404: duplicate candidate",
-            "pixabay:334302: duplicate candidate",
-            "pixabay:144742: duplicate candidate",
-            "pixabay:150784: duplicate candidate",
-            "pixabay:204326: duplicate candidate",
-            "pixabay:132347: duplicate candidate",
-            "pixabay:10339: duplicate candidate"
-          ],
-          "best_score": null,
-          "error": null
-        },
-        {
-          "query": "deadly flooding",
-          "returned": 12,
-          "kept": 7,
-          "rejected": [
-            "pixabay:14324: duplicate candidate",
-            "pixabay:135765: duplicate candidate",
-            "pixabay:44927: duplicate candidate",
-            "pixabay:50567: duplicate candidate",
-            "pixabay:42931: duplicate candidate"
-          ],
-          "best_score": 0.378,
-          "error": null
-        },
-        {
-          "query": "deadly swept village",
-          "returned": 12,
-          "kept": 10,
-          "rejected": [
-            "pixabay:334302: duplicate candidate",
-            "pixabay:249590: duplicate candidate"
-          ],
-          "best_score": 0.133,
+          "best_score": 0.644,
           "error": null
         }
       ],
-      "candidate_count": 34,
-      "retry_attempts": 5,
+      "candidate_count": 12,
+      "retry_attempts": 0,
       "clip": {
         "provider": "pixabay",
-        "clip_id": "109032",
-        "title": "flood, flooding, water, rain, sky, clouds, nature, dark, cold, card drowning, car drowning, people drowning",
+        "clip_id": "18702",
+        "title": "light, abstract, beautiful wallpaper, purple, background, texture, sample, flooded, rain, textures, wallpaper, glass, weeping, blue, sky, water, design, element, multicolored, bokeh",
         "tags": [
-          "flood",
-          "flooding",
-          "water",
+          "light",
+          "abstract",
+          "beautiful wallpaper",
+          "purple",
+          "background",
+          "texture",
+          "sample",
+          "flooded",
           "rain",
+          "textures",
+          "wallpaper",
+          "glass",
+          "weeping",
+          "blue",
           "sky",
-          "clouds",
-          "nature",
-          "dark",
-          "cold",
-          "card drowning",
-          "car drowning",
-          "people drowning"
+          "water",
+          "design",
+          "element",
+          "multicolored",
+          "bokeh"
         ],
-        "source_page_url": "https://pixabay.com/videos/id-109032/",
-        "download_url": "https://cdn.pixabay.com/video/2022/02/27/109032-683077174_large.mp4",
-        "local_file": "clips/pixabay_109032.mp4",
-        "duration_seconds": 10.0,
-        "width": 1920,
-        "height": 1080,
-        "creator": "nazharul",
-        "creator_url": "https://pixabay.com/users/nazharul-24144515/",
+        "source_page_url": "https://pixabay.com/videos/id-18702/",
+        "download_url": "https://cdn.pixabay.com/video/2018/10/14/18702-295718362_large.mp4",
+        "local_file": "clips/pixabay_18702.mp4",
+        "duration_seconds": 15.0,
+        "width": 3840,
+        "height": 2160,
+        "creator": "Gam-Ol",
+        "creator_url": "https://pixabay.com/users/Gam-Ol-2829280/",
         "ai_generated": null,
-        "retrieved_at": "2026-10-20T07:47:52+00:00",
+        "retrieved_at": "2026-10-20T08:46:08+00:00",
         "looped": false,
         "framing_method": "center_default(no_crop_needed)",
         "color_normalisation": {
           "measured": {
-            "luma": 0.4917,
-            "saturation": 0.4176,
+            "luma": 0.2672,
+            "saturation": 0.9169,
             "frames": 12
           },
           "brightness": 0.0,
@@ -208,25 +130,26 @@
       },
       "attribution": {
         "required": false,
-        "text": "Video by nazharul via Pixabay"
+        "text": "Video by Gam-Ol via Pixabay"
       },
       "relevance": {
-        "score": 0.378,
+        "score": 0.644,
         "scoring_method": "metadata_text_fallback",
         "visual_verified": false,
         "threshold": 0.45,
-        "passed_threshold": false,
-        "text_score": 0.3,
+        "passed_threshold": true,
+        "text_score": 0.6,
         "visual_score": null,
-        "label": "Low",
+        "label": "Medium",
         "evidence": {
           "elements": {
-            "subject": 0.0,
+            "subject": 1.0,
             "action": 1.0,
             "object": 0.0,
             "setting": 0.0
           },
           "matched_terms": {
+            "subject": "flood",
             "action": "flooding"
           },
           "weights": {
@@ -243,18 +166,18 @@
         "gated": null,
         "visual_detail": {}
       },
-      "needs_review": true,
+      "needs_review": false,
       "placeholder": false,
       "download_attempts": [
         {
-          "clip": "pixabay:109032",
+          "clip": "pixabay:18702",
           "outcome": "ok",
           "reason": "downloaded and validated"
         }
       ],
       "used_alternate": false,
-      "selection_reason": "needs review: score 0.38 is below the match threshold 0.45",
-      "match_status": "fallback_low_confidence",
+      "selection_reason": "highest-scoring unused candidate (0.64 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
       "provider_selection": {
         "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
         "providers_in_priority_order": [
@@ -262,47 +185,7 @@
         ],
         "queries": [
           {
-            "query": "deadly flooding swept through village last night",
-            "returned_by_provider": {
-              "pixabay": 12
-            },
-            "provider_errors": {},
-            "fallback_provider_queried": false
-          },
-          {
-            "query": "deadly flooding through village last night",
-            "returned_by_provider": {
-              "pixabay": 12
-            },
-            "provider_errors": {},
-            "fallback_provider_queried": false
-          },
-          {
-            "query": "swept through village last night",
-            "returned_by_provider": {
-              "pixabay": 12
-            },
-            "provider_errors": {},
-            "fallback_provider_queried": false
-          },
-          {
-            "query": "deadly through village last night",
-            "returned_by_provider": {
-              "pixabay": 12
-            },
-            "provider_errors": {},
-            "fallback_provider_queried": false
-          },
-          {
-            "query": "deadly flooding",
-            "returned_by_provider": {
-              "pixabay": 12
-            },
-            "provider_errors": {},
-            "fallback_provider_queried": false
-          },
-          {
-            "query": "deadly swept village",
+            "query": "flooded street aftermath",
             "returned_by_provider": {
               "pixabay": 12
             },
@@ -315,30 +198,31 @@
       },
       "alternatives": [
         {
-          "clip": "pixabay:135765",
-          "title": "river, flooding, town, water, flood, damage, landscape",
+          "clip": "pixabay:165041",
+          "title": "volcano, lava, smoke, aftermath, apocalypse, disaster, heat, underneath, texture, colorful, abstract, iceland, nature",
           "text_score": 0.3,
           "visual_score": null,
           "technical_score": 1.0,
-          "final_score": 0.378,
+          "final_score": 0.29,
           "method": "metadata_text_fallback",
           "passed": false,
           "visual_verified": false,
           "reasons": [
-            "evidence - action: flooding"
+            "evidence - subject: aftermath",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
           ],
           "penalties": [],
           "label": "Low",
-          "gated": null,
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
           "evidence": {
             "elements": {
-              "subject": 0.0,
-              "action": 1.0,
+              "subject": 1.0,
+              "action": 0.0,
               "object": 0.0,
               "setting": 0.0
             },
             "matched_terms": {
-              "action": "flooding"
+              "subject": "aftermath"
             },
             "weights": {
               "subject": 0.3,
@@ -348,36 +232,38 @@
             },
             "foil_hits": [],
             "negative_hits": [],
-            "action_evidenced": true,
+            "action_evidenced": false,
             "object_evidenced": false
           },
           "visual_detail": {}
         },
         {
-          "clip": "pixabay:14324",
-          "title": "high water, flood, river, flooding, europe",
-          "text_score": 0.3,
+          "clip": "pixabay:5278",
+          "title": "rainy, rain, night, summer, colorful, reflection, wet, weather, road, puddles, street, couple, live wallpaper",
+          "text_score": 0.325,
           "visual_score": null,
-          "technical_score": 1.0,
-          "final_score": 0.378,
+          "technical_score": 0.991,
+          "final_score": 0.29,
           "method": "metadata_text_fallback",
           "passed": false,
           "visual_verified": false,
           "reasons": [
-            "evidence - action: flooding"
+            "evidence - subject: rain, setting: village last night",
+            "NOT accepted automatically: sensitive story but clip metadata is upbeat (summer)"
           ],
           "penalties": [],
           "label": "Low",
-          "gated": null,
+          "gated": "sensitive story but clip metadata is upbeat (summer)",
           "evidence": {
             "elements": {
-              "subject": 0.0,
-              "action": 1.0,
+              "subject": 1.0,
+              "action": 0.0,
               "object": 0.0,
-              "setting": 0.0
+              "setting": 0.167
             },
             "matched_terms": {
-              "action": "flooding"
+              "subject": "rain",
+              "setting": "village last night"
             },
             "weights": {
               "subject": 0.3,
@@ -387,36 +273,37 @@
             },
             "foil_hits": [],
             "negative_hits": [],
-            "action_evidenced": true,
+            "action_evidenced": false,
             "object_evidenced": false
           },
           "visual_detail": {}
         },
         {
-          "clip": "pixabay:175038",
-          "title": "lake, promenade, water, rain, raindrop, fog, mountains, nature, landscape, flooding, web, boardwalk, traunsee, austria",
-          "text_score": 0.3,
+          "clip": "pixabay:21116",
+          "title": "seoul, street, night, neon, traffic, lights, road, cars, vehicles, people, movement, live wallpaper",
+          "text_score": 0.025,
           "visual_score": null,
           "technical_score": 1.0,
-          "final_score": 0.378,
+          "final_score": 0.133,
           "method": "metadata_text_fallback",
           "passed": false,
           "visual_verified": false,
           "reasons": [
-            "evidence - action: flooding"
+            "evidence - setting: village last night",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
           ],
           "penalties": [],
           "label": "Low",
-          "gated": null,
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
           "evidence": {
             "elements": {
               "subject": 0.0,
-              "action": 1.0,
+              "action": 0.0,
               "object": 0.0,
-              "setting": 0.0
+              "setting": 0.167
             },
             "matched_terms": {
-              "action": "flooding"
+              "setting": "village last night"
             },
             "weights": {
               "subject": 0.3,
@@ -426,14 +313,14 @@
             },
             "foil_hits": [],
             "negative_hits": [],
-            "action_evidenced": true,
+            "action_evidenced": false,
             "object_evidenced": false
           },
           "visual_detail": {}
         }
       ],
       "warnings": [
-        "Scene scene-001: footage may NOT accurately depict the narration (score 0.38 is below the match threshold 0.45)."
+        "Relevance based on clip title/tags only (no visual verification of frames)."
       ],
       "visual_hint": null
     },
@@ -463,7 +350,8 @@
         ],
         "method": "rule_based_v1",
         "notes": [
-          "No action verb recognised; scene treated as a noun phrase."
+          "No action verb recognised; scene treated as a noun phrase.",
+          "Sensitive story detected: sombre queries used and upbeat clips are rejected."
         ],
         "frames": [],
         "scene_type": "object",
@@ -472,17 +360,55 @@
         "foil_terms": []
       },
       "search_queries": [
+        "damaged houses aftermath",
+        "disaster aftermath",
+        "rain on window",
+        "candle flame dark",
         "homes and people missing",
-        "homes and people",
-        "missing",
-        "homes people missing"
+        "homes and people"
       ],
       "queries_detail": [
         {
-          "query": "homes and people missing",
+          "query": "damaged houses aftermath",
           "returned": 12,
           "kept": 12,
           "rejected": [],
+          "best_score": 0.596,
+          "error": null
+        },
+        {
+          "query": "disaster aftermath",
+          "returned": 12,
+          "kept": 11,
+          "rejected": [
+            "pixabay:165041: duplicate candidate"
+          ],
+          "best_score": 0.596,
+          "error": null
+        },
+        {
+          "query": "rain on window",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.596,
+          "error": null
+        },
+        {
+          "query": "candle flame dark",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.596,
+          "error": null
+        },
+        {
+          "query": "homes and people missing",
+          "returned": 12,
+          "kept": 11,
+          "rejected": [
+            "pixabay:14476: duplicate candidate"
+          ],
           "best_score": 0.596,
           "error": null
         },
@@ -494,83 +420,46 @@
             "pixabay:92480: duplicate candidate",
             "pixabay:564: duplicate candidate"
           ],
-          "best_score": 0.596,
-          "error": null
-        },
-        {
-          "query": "missing",
-          "returned": 12,
-          "kept": 12,
-          "rejected": [],
-          "best_score": 0.515,
-          "error": null
-        },
-        {
-          "query": "homes people missing",
-          "returned": 12,
-          "kept": 0,
-          "rejected": [
-            "pixabay:6387: duplicate candidate",
-            "pixabay:293085: duplicate candidate",
-            "pixabay:36510: duplicate candidate",
-            "pixabay:3627: duplicate candidate",
-            "pixabay:21115: duplicate candidate",
-            "pixabay:14476: duplicate candidate",
-            "pixabay:92480: duplicate candidate",
-            "pixabay:21782: duplicate candidate",
-            "pixabay:21116: duplicate candidate",
-            "pixabay:564: duplicate candidate",
-            "pixabay:44702: duplicate candidate",
-            "pixabay:23258: duplicate candidate"
-          ],
-          "best_score": null,
+          "best_score": 0.29,
           "error": null
         }
       ],
-      "candidate_count": 34,
-      "retry_attempts": 3,
+      "candidate_count": 68,
+      "retry_attempts": 5,
       "clip": {
         "provider": "pixabay",
-        "clip_id": "129289",
-        "title": "internet, media, messenger app, person, smart, relax, home wireless, technology, social teen, modern surfing, device user, social media, people, technology virtual, looking, lifestyle",
+        "clip_id": "108595",
+        "title": "rain, glass, raindrops on glass, wet glass in water, wet glass background, glass background, glass window, glass window exposed to rain",
         "tags": [
-          "internet",
-          "media",
-          "messenger app",
-          "person",
-          "smart",
-          "relax",
-          "home wireless",
-          "technology",
-          "social teen",
-          "modern surfing",
-          "device user",
-          "social media",
-          "people",
-          "technology virtual",
-          "looking",
-          "lifestyle"
+          "rain",
+          "glass",
+          "raindrops on glass",
+          "wet glass in water",
+          "wet glass background",
+          "glass background",
+          "glass window",
+          "glass window exposed to rain"
         ],
-        "source_page_url": "https://pixabay.com/videos/id-129289/",
-        "download_url": "https://cdn.pixabay.com/video/2022/08/27/129289-743827387_large.mp4",
-        "local_file": "clips/pixabay_129289.mp4",
-        "duration_seconds": 10.0,
-        "width": 1920,
-        "height": 1080,
-        "creator": "Amorn_mimi",
-        "creator_url": "https://pixabay.com/users/Amorn_mimi-27759397/",
+        "source_page_url": "https://pixabay.com/videos/id-108595/",
+        "download_url": "https://cdn.pixabay.com/video/2022/02/22/108595-681143931_large.mp4",
+        "local_file": "clips/pixabay_108595.mp4",
+        "duration_seconds": 30.0,
+        "width": 3840,
+        "height": 2160,
+        "creator": "dahahutabarat60",
+        "creator_url": "https://pixabay.com/users/dahahutabarat60-24060218/",
         "ai_generated": null,
-        "retrieved_at": "2026-10-20T07:47:53+00:00",
+        "retrieved_at": "2026-10-20T08:46:10+00:00",
         "looped": false,
         "framing_method": "center_default(no_crop_needed)",
         "color_normalisation": {
           "measured": {
-            "luma": 0.5584,
-            "saturation": 0.2318,
+            "luma": 0.3092,
+            "saturation": 0.1627,
             "frames": 12
           },
-          "brightness": -0.0474,
-          "saturation": 1.25,
+          "brightness": -0.042,
+          "saturation": 1.0,
           "applied": true
         },
         "reused_from_earlier_scene": false,
@@ -592,7 +481,7 @@
       },
       "attribution": {
         "required": false,
-        "text": "Video by Amorn_mimi via Pixabay"
+        "text": "Video by dahahutabarat60 via Pixabay"
       },
       "relevance": {
         "score": 0.596,
@@ -609,7 +498,7 @@
             "object": 0.0
           },
           "matched_terms": {
-            "subject": "people"
+            "subject": "rain"
           },
           "weights": {
             "subject": 0.3,
@@ -627,7 +516,7 @@
       "placeholder": false,
       "download_attempts": [
         {
-          "clip": "pixabay:129289",
+          "clip": "pixabay:108595",
           "outcome": "ok",
           "reason": "downloaded and validated"
         }
@@ -641,6 +530,38 @@
           "pixabay"
         ],
         "queries": [
+          {
+            "query": "damaged houses aftermath",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "disaster aftermath",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "rain on window",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "candle flame dark",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
           {
             "query": "homes and people missing",
             "returned_by_provider": {
@@ -656,22 +577,6 @@
             },
             "provider_errors": {},
             "fallback_provider_queried": false
-          },
-          {
-            "query": "missing",
-            "returned_by_provider": {
-              "pixabay": 12
-            },
-            "provider_errors": {},
-            "fallback_provider_queried": false
-          },
-          {
-            "query": "homes people missing",
-            "returned_by_provider": {
-              "pixabay": 12
-            },
-            "provider_errors": {},
-            "fallback_provider_queried": false
           }
         ],
         "chosen_provider": "pixabay",
@@ -679,8 +584,8 @@
       },
       "alternatives": [
         {
-          "clip": "pixabay:133898",
-          "title": "medical, medicine, health, woman, technology, science, healthcare, professional, hospital, doctor, care, virus, covid-19, research, people, laboratory, computer, treatment, test, physician, female, quarantine, patient, home, coronavirus",
+          "clip": "pixabay:165041",
+          "title": "volcano, lava, smoke, aftermath, apocalypse, disaster, heat, underneath, texture, colorful, abstract, iceland, nature",
           "text_score": 0.545,
           "visual_score": null,
           "technical_score": 1.0,
@@ -689,7 +594,7 @@
           "passed": true,
           "visual_verified": false,
           "reasons": [
-            "evidence - subject: people"
+            "evidence - subject: disaster"
           ],
           "penalties": [],
           "label": "Medium",
@@ -700,7 +605,7 @@
               "object": 0.0
             },
             "matched_terms": {
-              "subject": "people"
+              "subject": "disaster"
             },
             "weights": {
               "subject": 0.3,
@@ -714,8 +619,8 @@
           "visual_detail": {}
         },
         {
-          "clip": "pixabay:133899",
-          "title": "medical, medicine, health, woman, technology, science, healthcare, professional, hospital, doctor, care, virus, covid-19, research, people, laboratory, computer, treatment, test, physician, female, quarantine, patient, home, coronavirus",
+          "clip": "pixabay:165651",
+          "title": "bath, roses, flowers, beautiful wallpaper, candles, relaxation, spa, rain, drops on the window, background, cozy atmosphere, ai generated",
           "text_score": 0.545,
           "visual_score": null,
           "technical_score": 1.0,
@@ -724,7 +629,7 @@
           "passed": true,
           "visual_verified": false,
           "reasons": [
-            "evidence - subject: people"
+            "evidence - subject: rain"
           ],
           "penalties": [],
           "label": "Medium",
@@ -735,7 +640,7 @@
               "object": 0.0
             },
             "matched_terms": {
-              "subject": "people"
+              "subject": "rain"
             },
             "weights": {
               "subject": 0.3,
@@ -749,8 +654,8 @@
           "visual_detail": {}
         },
         {
-          "clip": "pixabay:21115",
-          "title": "seoul, street, traffic, cars, speed, motorcycle, people, movement",
+          "clip": "pixabay:175213",
+          "title": "candle, flame, blow out, dark, light",
           "text_score": 0.545,
           "visual_score": null,
           "technical_score": 1.0,
@@ -759,7 +664,7 @@
           "passed": true,
           "visual_verified": false,
           "reasons": [
-            "evidence - subject: people"
+            "evidence - subject: candle"
           ],
           "penalties": [],
           "label": "Medium",
@@ -770,7 +675,7 @@
               "object": 0.0
             },
             "matched_terms": {
-              "subject": "people"
+              "subject": "candle"
             },
             "weights": {
               "subject": 0.3,
@@ -814,7 +719,9 @@
           "title card"
         ],
         "method": "rule_based_v1",
-        "notes": [],
+        "notes": [
+          "Sensitive story detected: sombre queries used and upbeat clips are rejected."
+        ],
         "frames": [],
         "scene_type": "activity",
         "action_evidence_terms": [
@@ -825,113 +732,71 @@
         "foil_terms": []
       },
       "search_queries": [
-        "rescuing teams through night to find survivors",
-        "rescuing through night to find survivors",
-        "teams through night to find survivors",
-        "teams night find"
+        "rescue team emergency responders"
       ],
       "queries_detail": [
         {
-          "query": "rescuing teams through night to find survivors",
+          "query": "rescue team emergency responders",
           "returned": 12,
           "kept": 12,
           "rejected": [],
-          "best_score": 0.429,
-          "error": null
-        },
-        {
-          "query": "rescuing through night to find survivors",
-          "returned": 12,
-          "kept": 2,
-          "rejected": [
-            "pixabay:17285: duplicate candidate",
-            "pixabay:131615: duplicate candidate",
-            "pixabay:4878: duplicate candidate",
-            "pixabay:212404: duplicate candidate",
-            "pixabay:132347: duplicate candidate",
-            "pixabay:10339: duplicate candidate",
-            "pixabay:202877: duplicate candidate",
-            "pixabay:7093: duplicate candidate",
-            "pixabay:31569: duplicate candidate",
-            "pixabay:9135: duplicate candidate"
-          ],
-          "best_score": 0.111,
-          "error": null
-        },
-        {
-          "query": "teams through night to find survivors",
-          "returned": 12,
-          "kept": 0,
-          "rejected": [
-            "pixabay:2340: duplicate candidate",
-            "pixabay:17285: duplicate candidate",
-            "pixabay:131615: duplicate candidate",
-            "pixabay:4878: duplicate candidate",
-            "pixabay:212404: duplicate candidate",
-            "pixabay:132347: duplicate candidate",
-            "pixabay:10339: duplicate candidate",
-            "pixabay:286879: duplicate candidate",
-            "pixabay:7093: duplicate candidate",
-            "pixabay:202877: duplicate candidate",
-            "pixabay:9135: duplicate candidate",
-            "pixabay:31569: duplicate candidate"
-          ],
-          "best_score": null,
-          "error": null
-        },
-        {
-          "query": "teams night find",
-          "returned": 12,
-          "kept": 4,
-          "rejected": [
-            "pixabay:2340: duplicate candidate",
-            "pixabay:212404: duplicate candidate",
-            "pixabay:10339: duplicate candidate",
-            "pixabay:286879: duplicate candidate",
-            "pixabay:7093: duplicate candidate",
-            "pixabay:202877: duplicate candidate",
-            "pixabay:31569: duplicate candidate",
-            "pixabay:5393: duplicate candidate"
-          ],
-          "best_score": 0.429,
+          "best_score": 0.644,
           "error": null
         }
       ],
-      "candidate_count": 18,
-      "retry_attempts": 3,
+      "candidate_count": 12,
+      "retry_attempts": 0,
       "clip": {
         "provider": "pixabay",
-        "clip_id": "202134",
-        "title": "people, laptop, team, friend, sitting, grass",
+        "clip_id": "22139",
+        "title": "heart, heartbeat, cardiology, beat, electrocardiogram, cardiogram, line, cardio, ecg, health, medical, pulse, wave, emergency, er, hospital, gurney, trolly, crisis, accident, urgent, rescue, doctor, patient",
         "tags": [
-          "people",
-          "laptop",
-          "team",
-          "friend",
-          "sitting",
-          "grass"
+          "heart",
+          "heartbeat",
+          "cardiology",
+          "beat",
+          "electrocardiogram",
+          "cardiogram",
+          "line",
+          "cardio",
+          "ecg",
+          "health",
+          "medical",
+          "pulse",
+          "wave",
+          "emergency",
+          "er",
+          "hospital",
+          "gurney",
+          "trolly",
+          "crisis",
+          "accident",
+          "urgent",
+          "rescue",
+          "doctor",
+          "patient"
         ],
-        "source_page_url": "https://pixabay.com/videos/id-202134/",
-        "download_url": "https://cdn.pixabay.com/video/2024/02/27/202134-917314709_large.mp4",
-        "local_file": "clips/pixabay_202134.mp4",
-        "duration_seconds": 17.0,
+        "source_page_url": "https://pixabay.com/videos/id-22139/",
+        "download_url": "https://cdn.pixabay.com/video/2019/03/20/22139-325698660_large.mp4",
+        "local_file": "clips/pixabay_22139.mp4",
+        "duration_seconds": 6.0,
         "width": 1920,
         "height": 1080,
-        "creator": "Samidurrakzai",
-        "creator_url": "https://pixabay.com/users/Samidurrakzai-42221807/",
+        "creator": "conolan",
+        "creator_url": "https://pixabay.com/users/conolan-4525104/",
         "ai_generated": null,
-        "retrieved_at": "2026-10-20T07:47:55+00:00",
+        "retrieved_at": "2026-10-20T08:46:11+00:00",
         "looped": false,
         "framing_method": "center_default(no_crop_needed)",
         "color_normalisation": {
           "measured": {
-            "luma": 0.511,
-            "saturation": 0.3147,
+            "luma": 0.1558,
+            "saturation": 0.0096,
             "frames": 12
           },
-          "brightness": 0.0,
+          "brightness": 0.1114,
           "saturation": 1.0,
-          "applied": false
+          "applied": true
         },
         "reused_from_earlier_scene": false,
         "thumbnail": "thumb_scene-003.jpg"
@@ -952,51 +817,54 @@
       },
       "attribution": {
         "required": false,
-        "text": "Video by Samidurrakzai via Pixabay"
+        "text": "Video by conolan via Pixabay"
       },
       "relevance": {
-        "score": 0.429,
+        "score": 0.644,
         "scoring_method": "metadata_text_fallback",
         "visual_verified": false,
         "threshold": 0.45,
-        "passed_threshold": false,
-        "text_score": 0.357,
+        "passed_threshold": true,
+        "text_score": 0.6,
         "visual_score": null,
-        "label": "Low",
+        "label": "Medium",
         "evidence": {
           "elements": {
-            "action": 0.0,
-            "object": 1.0,
+            "subject": 1.0,
+            "action": 1.0,
+            "object": 0.0,
             "setting": 0.0
           },
           "matched_terms": {
-            "object": "teams"
+            "subject": "rescue",
+            "action": "rescue"
           },
           "weights": {
+            "subject": 0.3,
             "action": 0.3,
             "object": 0.25,
             "setting": 0.15
           },
           "foil_hits": [],
           "negative_hits": [],
-          "action_evidenced": false,
+          "action_evidenced": true,
           "object_evidenced": false
         },
         "gated": null,
         "visual_detail": {}
       },
-      "needs_review": true,
+      "needs_review": false,
       "placeholder": false,
       "download_attempts": [
         {
-          "clip": "pixabay:202134",
+          "clip": "pixabay:22139",
           "outcome": "ok",
           "reason": "downloaded and validated"
         }
       ],
       "used_alternate": false,
-      "selection_reason": "needs review: score 0.43 is below the match threshold 0.45",
-      "match_status": "fallback_low_confidence",
+      "selection_reason": "highest-scoring unused candidate (0.64 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
       "provider_selection": {
         "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
         "providers_in_priority_order": [
@@ -1004,31 +872,7 @@
         ],
         "queries": [
           {
-            "query": "rescuing teams through night to find survivors",
-            "returned_by_provider": {
-              "pixabay": 12
-            },
-            "provider_errors": {},
-            "fallback_provider_queried": false
-          },
-          {
-            "query": "rescuing through night to find survivors",
-            "returned_by_provider": {
-              "pixabay": 12
-            },
-            "provider_errors": {},
-            "fallback_provider_queried": false
-          },
-          {
-            "query": "teams through night to find survivors",
-            "returned_by_provider": {
-              "pixabay": 12
-            },
-            "provider_errors": {},
-            "fallback_provider_queried": false
-          },
-          {
-            "query": "teams night find",
+            "query": "rescue team emergency responders",
             "returned_by_provider": {
               "pixabay": 12
             },
@@ -1041,127 +885,134 @@
       },
       "alternatives": [
         {
-          "clip": "pixabay:2340",
-          "title": "meeting, planning, marketing, business, team, people, office, teamwork, group, discussion, business meeting, group meeting, office meeting, team meeting, communication, corporate, talking, plan",
-          "text_score": 0.357,
+          "clip": "pixabay:4211",
+          "title": "bradycardia, tachycardia, medical, heartbeat, heart, medicine, cardiac, cardiology, ventricular, health, fibrillation, rhythm, pulse, attack, arrhythmia, hospital, monitor, rescue, disease, urgent, paramedics, tachyarrythmia, life, supraventricular, save, equipment, emergency, electrodes, electrical, dying, defibrillator, defibrillate, cardioverter, revive, resuscitation, artificial",
+          "text_score": 0.6,
           "visual_score": null,
           "technical_score": 1.0,
-          "final_score": 0.429,
+          "final_score": 0.644,
           "method": "metadata_text_fallback",
-          "passed": false,
+          "passed": true,
           "visual_verified": false,
           "reasons": [
-            "evidence - object: teams"
+            "evidence - subject: rescue, action: rescue"
           ],
           "penalties": [],
-          "label": "Low",
+          "label": "Medium",
           "gated": null,
           "evidence": {
             "elements": {
-              "action": 0.0,
-              "object": 1.0,
-              "setting": 0.0
-            },
-            "matched_terms": {
-              "object": "teams"
-            },
-            "weights": {
-              "action": 0.3,
-              "object": 0.25,
-              "setting": 0.15
-            },
-            "foil_hits": [],
-            "negative_hits": [],
-            "action_evidenced": false,
-            "object_evidenced": false
-          },
-          "visual_detail": {}
-        },
-        {
-          "clip": "pixabay:286879",
-          "title": "team, people, podcast",
-          "text_score": 0.357,
-          "visual_score": null,
-          "technical_score": 1.0,
-          "final_score": 0.429,
-          "method": "metadata_text_fallback",
-          "passed": false,
-          "visual_verified": false,
-          "reasons": [
-            "evidence - object: teams"
-          ],
-          "penalties": [],
-          "label": "Low",
-          "gated": null,
-          "evidence": {
-            "elements": {
-              "action": 0.0,
-              "object": 1.0,
-              "setting": 0.0
-            },
-            "matched_terms": {
-              "object": "teams"
-            },
-            "weights": {
-              "action": 0.3,
-              "object": 0.25,
-              "setting": 0.15
-            },
-            "foil_hits": [],
-            "negative_hits": [],
-            "action_evidenced": false,
-            "object_evidenced": false
-          },
-          "visual_detail": {}
-        },
-        {
-          "clip": "pixabay:132932",
-          "title": "sunset, sea, boat, sun, evening, nature, night",
-          "text_score": 0.036,
-          "visual_score": null,
-          "technical_score": 1.0,
-          "final_score": 0.143,
-          "method": "metadata_text_fallback",
-          "passed": false,
-          "visual_verified": false,
-          "reasons": [
-            "evidence - setting: night to find survivors"
-          ],
-          "penalties": [],
-          "label": "Low",
-          "gated": null,
-          "evidence": {
-            "elements": {
-              "action": 0.0,
+              "subject": 1.0,
+              "action": 1.0,
               "object": 0.0,
-              "setting": 0.167
+              "setting": 0.0
             },
             "matched_terms": {
-              "setting": "night to find survivors"
+              "subject": "rescue",
+              "action": "rescue"
             },
             "weights": {
+              "subject": 0.3,
               "action": 0.3,
               "object": 0.25,
               "setting": 0.15
             },
             "foil_hits": [],
             "negative_hits": [],
-            "action_evidenced": false,
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:47889",
+          "title": "firefighter, fire, burning, fireman, safety, helmet, rescue, equipment, danger, hose, protection, service, job, flames, emergency, heat, live, risk",
+          "text_score": 0.6,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.644,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: rescue, action: rescue"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 1.0,
+              "object": 0.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "rescue",
+              "action": "rescue"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:7012",
+          "title": "blue light, fire fighters, mission, rescue operation, accident, rescue, ambulance, fire truck",
+          "text_score": 0.6,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.644,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: rescue, action: rescue"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 1.0,
+              "object": 0.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "rescue",
+              "action": "rescue"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
             "object_evidenced": false
           },
           "visual_detail": {}
         }
       ],
       "warnings": [
-        "Scene scene-003: footage may NOT accurately depict the narration (score 0.43 is below the match threshold 0.45)."
+        "Relevance based on clip title/tags only (no visual verification of frames)."
       ],
       "visual_hint": null
     }
   ],
   "warnings": [
-    "Scene scene-001: footage may NOT accurately depict the narration (score 0.38 is below the match threshold 0.45).",
     "Relevance based on clip title/tags only (no visual verification of frames).",
-    "Scene scene-003: footage may NOT accurately depict the narration (score 0.43 is below the match threshold 0.45).",
     "Footage relevance was estimated from provider titles/tags and scene analysis only. No vision-language model inspected the video frames."
   ],
   "avoid": [],
@@ -1173,8 +1024,8 @@
     "colour_normalisation": {
       "enabled": true,
       "target": {
-        "luma": 0.511,
-        "saturation": 0.3147
+        "luma": 0.2672,
+        "saturation": 0.1627
       },
       "method": "per-clip mean luma/saturation vs job median; bounded eq filter"
     },

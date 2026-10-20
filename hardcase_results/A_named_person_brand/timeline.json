@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "job_id": "6995f6141729",
+  "job_id": "ebc1542afeb5",
   "aspect_ratio": "16:9",
   "width": 1920,
   "height": 1080,
@@ -37,7 +37,8 @@
         ],
         "method": "rule_based_v1",
         "notes": [
-          "No action verb recognised; scene treated as a noun phrase."
+          "No action verb recognised; scene treated as a noun phrase.",
+          "Named brand/product shown through a generic stand-in (no logos or real people): electric car charging."
         ],
         "frames": [],
         "scene_type": "object",
@@ -46,6 +47,7 @@
         "foil_terms": []
       },
       "search_queries": [
+        "electric car charging",
         "elon musk announced new tesla update",
         "elon musk",
         "announced new tesla update",
@@ -53,11 +55,19 @@
       ],
       "queries_detail": [
         {
-          "query": "elon musk announced new tesla update",
+          "query": "electric car charging",
           "returned": 12,
           "kept": 12,
           "rejected": [],
           "best_score": 0.596,
+          "error": null
+        },
+        {
+          "query": "elon musk announced new tesla update",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.29,
           "error": null
         },
         {
@@ -72,7 +82,7 @@
             "pixabay:119250: duplicate candidate",
             "pixabay:48188: duplicate candidate"
           ],
-          "best_score": 0.596,
+          "best_score": 0.29,
           "error": null
         },
         {
@@ -108,44 +118,49 @@
           "error": null
         }
       ],
-      "candidate_count": 26,
-      "retry_attempts": 3,
+      "candidate_count": 38,
+      "retry_attempts": 4,
       "clip": {
         "provider": "pixabay",
-        "clip_id": "102266",
-        "title": "christmas, merry christmas, fabric background, animated background, red, christmas background, deer background, moving background, musk background, christmas trees background",
+        "clip_id": "154950",
+        "title": "employee, entrepreneur, cement, loader, man, uniform, driver, cargo, warehouse, pallets, electric car, building, industry, repair, accounting",
         "tags": [
-          "christmas",
-          "merry christmas",
-          "fabric background",
-          "animated background",
-          "red",
-          "christmas background",
-          "deer background",
-          "moving background",
-          "musk background",
-          "christmas trees background"
+          "employee",
+          "entrepreneur",
+          "cement",
+          "loader",
+          "man",
+          "uniform",
+          "driver",
+          "cargo",
+          "warehouse",
+          "pallets",
+          "electric car",
+          "building",
+          "industry",
+          "repair",
+          "accounting"
         ],
-        "source_page_url": "https://pixabay.com/videos/id-102266/",
-        "download_url": "https://cdn.pixabay.com/video/2021/12/23/102266-659832385_large.mp4",
-        "local_file": "clips/pixabay_102266.mp4",
-        "duration_seconds": 32.0,
-        "width": 1920,
-        "height": 1080,
-        "creator": "GreenScreenFX",
-        "creator_url": "https://pixabay.com/users/GreenScreenFX-22748071/",
+        "source_page_url": "https://pixabay.com/videos/id-154950/",
+        "download_url": "https://cdn.pixabay.com/video/2023/03/16/154950-809834548_large.mp4",
+        "local_file": "clips/pixabay_154950.mp4",
+        "duration_seconds": 12.0,
+        "width": 3840,
+        "height": 2160,
+        "creator": "AlexKopeykin",
+        "creator_url": "https://pixabay.com/users/AlexKopeykin-6178059/",
         "ai_generated": null,
-        "retrieved_at": "2026-10-20T07:46:43+00:00",
+        "retrieved_at": "2026-10-20T08:44:51+00:00",
         "looped": false,
         "framing_method": "center_default(no_crop_needed)",
         "color_normalisation": {
           "measured": {
-            "luma": 0.8924,
-            "saturation": 0.1017,
+            "luma": 0.4264,
+            "saturation": 0.1744,
             "frames": 12
           },
-          "brightness": -0.12,
-          "saturation": 1.25,
+          "brightness": 0.0623,
+          "saturation": 1.0,
           "applied": true
         },
         "reused_from_earlier_scene": false,
@@ -167,7 +182,7 @@
       },
       "attribution": {
         "required": false,
-        "text": "Video by GreenScreenFX via Pixabay"
+        "text": "Video by AlexKopeykin via Pixabay"
       },
       "relevance": {
         "score": 0.596,
@@ -184,7 +199,7 @@
             "object": 0.0
           },
           "matched_terms": {
-            "subject": "musk"
+            "subject": "electric"
           },
           "weights": {
             "subject": 0.3,
@@ -202,7 +217,7 @@
       "placeholder": false,
       "download_attempts": [
         {
-          "clip": "pixabay:102266",
+          "clip": "pixabay:154950",
           "outcome": "ok",
           "reason": "downloaded and validated"
         }
@@ -216,6 +231,14 @@
           "pixabay"
         ],
         "queries": [
+          {
+            "query": "electric car charging",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
           {
             "query": "elon musk announced new tesla update",
             "returned_by_provider": {
@@ -254,8 +277,8 @@
       },
       "alternatives": [
         {
-          "clip": "pixabay:102267",
-          "title": "christmas, merry christmas, fabric background, animated background, red, christmas background, deer background, moving background, musk background, christmas trees background",
+          "clip": "pixabay:200682",
+          "title": "charging plug, e auto, electric car, charging station, e mobility, electric mobility, automobile, electricity, gas station, e-mobile, charging cable",
           "text_score": 0.545,
           "visual_score": null,
           "technical_score": 1.0,
@@ -264,7 +287,7 @@
           "passed": true,
           "visual_verified": false,
           "reasons": [
-            "evidence - subject: musk"
+            "evidence - subject: electric"
           ],
           "penalties": [],
           "label": "Medium",
@@ -275,7 +298,7 @@
               "object": 0.0
             },
             "matched_terms": {
-              "subject": "musk"
+              "subject": "electric"
             },
             "weights": {
               "subject": 0.3,
@@ -289,8 +312,8 @@
           "visual_detail": {}
         },
         {
-          "clip": "pixabay:103057",
-          "title": "dogecoin, doge, cryptocurrency, elon, musk, to the moon",
+          "clip": "pixabay:344225",
+          "title": "electric vehicle charging, sustainable urban lifestyle, business woman professional, green energy technology, mobile app connectivity, eco-friendly transport, automotive clean energy, smart city commuting, modern business success, renewable power source, charging station interface, tech integrated living, female executive portrait, digital lifestyle mobility, future of transportation, zero emission vehicle, electric car owner, battery power refill, sustainable business practice, close up, daylight, white, orange, horizontal composition, ai generated",
           "text_score": 0.545,
           "visual_score": null,
           "technical_score": 1.0,
@@ -299,7 +322,7 @@
           "passed": true,
           "visual_verified": false,
           "reasons": [
-            "evidence - subject: elon"
+            "evidence - subject: electric"
           ],
           "penalties": [],
           "label": "Medium",
@@ -310,7 +333,7 @@
               "object": 0.0
             },
             "matched_terms": {
-              "subject": "elon"
+              "subject": "electric"
             },
             "weights": {
               "subject": 0.3,
@@ -324,8 +347,8 @@
           "visual_detail": {}
         },
         {
-          "clip": "pixabay:119193",
-          "title": "spacex, rocket, launch, nasa, elon musk, future, technology, space travel",
+          "clip": "pixabay:344231",
+          "title": "electric vehicle charging, green energy technology, sustainable transportation, clean energy future, ev power station, future mobility, eco-friendly transport, automotive innovation, no people, renewable energy, electric car socket, charging port, power supply, environmental conservation, high tech lifestyle, battery power, urban infrastructure, modern automotive, close up, blue glow, silver, metallic texture, selective focus, dark background, horizontal composition, ai generated",
           "text_score": 0.545,
           "visual_score": null,
           "technical_score": 1.0,
@@ -334,7 +357,7 @@
           "passed": true,
           "visual_verified": false,
           "reasons": [
-            "evidence - subject: elon"
+            "evidence - subject: electric"
           ],
           "penalties": [],
           "label": "Medium",
@@ -345,7 +368,7 @@
               "object": 0.0
             },
             "matched_terms": {
-              "subject": "elon"
+              "subject": "electric"
             },
             "weights": {
               "subject": 0.3,
@@ -391,7 +414,8 @@
         "method": "rule_based_v1",
         "notes": [
           "No action verb recognised; scene treated as a noun phrase.",
-          "Word 'apple' is ambiguous and no disambiguating context was found."
+          "Word 'apple' is ambiguous and no disambiguating context was found.",
+          "Named brand/product shown through a generic stand-in (no logos or real people): person using smartphone."
         ],
         "frames": [],
         "scene_type": "object",
@@ -400,11 +424,11 @@
         "foil_terms": []
       },
       "search_queries": [
-        "apple released iphone in event"
+        "person using smartphone"
       ],
       "queries_detail": [
         {
-          "query": "apple released iphone in event",
+          "query": "person using smartphone",
           "returned": 12,
           "kept": 12,
           "rejected": [],
@@ -416,46 +440,55 @@
       "retry_attempts": 0,
       "clip": {
         "provider": "pixabay",
-        "clip_id": "103",
-        "title": "apple iphone 6, smartphone, scroll, touchscreen, touch, navigation, communication, read, phone, device, electronics, modern, communicate, display, reading, browsing",
+        "clip_id": "3168",
+        "title": "smartphone, iphone, black and white, ios, app, mobile, device, modern, communication, internet, wireless, touchscreen, technology, digital, cellphone, gadget, telephone, using, equipment, hand, cellular, multimedia, smart phone, communicator, screen",
         "tags": [
-          "apple iphone 6",
           "smartphone",
-          "scroll",
-          "touchscreen",
-          "touch",
-          "navigation",
-          "communication",
-          "read",
-          "phone",
+          "iphone",
+          "black and white",
+          "ios",
+          "app",
+          "mobile",
           "device",
-          "electronics",
           "modern",
-          "communicate",
-          "display",
-          "reading",
-          "browsing"
+          "communication",
+          "internet",
+          "wireless",
+          "touchscreen",
+          "technology",
+          "digital",
+          "cellphone",
+          "gadget",
+          "telephone",
+          "using",
+          "equipment",
+          "hand",
+          "cellular",
+          "multimedia",
+          "smart phone",
+          "communicator",
+          "screen"
         ],
-        "source_page_url": "https://pixabay.com/videos/id-103/",
-        "download_url": "https://cdn.pixabay.com/video/2015/08/08/103-135735608_large.mp4",
-        "local_file": "clips/pixabay_103.mp4",
+        "source_page_url": "https://pixabay.com/videos/id-3168/",
+        "download_url": "https://cdn.pixabay.com/video/2016/05/12/3168-166338945_large.mp4",
+        "local_file": "clips/pixabay_3168.mp4",
         "duration_seconds": 14.0,
         "width": 1920,
         "height": 1080,
         "creator": "Coverr-Free-Footage",
         "creator_url": "https://pixabay.com/users/Coverr-Free-Footage-1281706/",
         "ai_generated": null,
-        "retrieved_at": "2026-10-20T07:46:44+00:00",
+        "retrieved_at": "2026-10-20T08:44:52+00:00",
         "looped": false,
         "framing_method": "center_default(no_crop_needed)",
         "color_normalisation": {
           "measured": {
-            "luma": 0.5152,
-            "saturation": 0.3022,
+            "luma": 0.5871,
+            "saturation": 0.0193,
             "frames": 12
           },
-          "brightness": 0.0,
-          "saturation": 0.8,
+          "brightness": -0.0984,
+          "saturation": 1.25,
           "applied": true
         },
         "reused_from_earlier_scene": false,
@@ -495,7 +528,7 @@
             "setting": 0.0
           },
           "matched_terms": {
-            "subject": "apple",
+            "subject": "smartphone",
             "object": "iphone"
           },
           "weights": {
@@ -515,7 +548,7 @@
       "placeholder": false,
       "download_attempts": [
         {
-          "clip": "pixabay:103",
+          "clip": "pixabay:3168",
           "outcome": "ok",
           "reason": "downloaded and validated"
         }
@@ -530,7 +563,7 @@
         ],
         "queries": [
           {
-            "query": "apple released iphone in event",
+            "query": "person using smartphone",
             "returned_by_provider": {
               "pixabay": 12
             },
@@ -543,8 +576,8 @@
       },
       "alternatives": [
         {
-          "clip": "pixabay:197",
-          "title": "notebook, ultrabook, typing, writing, laptop, home office, office, electronic device, letters, program, mobile, hands, man, work, business, luxury, apple macbook, smartphone, iphone 6, display, screen, monitor",
+          "clip": "pixabay:3176",
+          "title": "smartphone, iphone, typing, writing, ios, app, mobile, device, modern, communication, internet, wireless, touchscreen, technology, digital, cellphone, gadget, telephone, using, equipment, hand, cellular, multimedia, smart phone, communicator, screen",
           "text_score": 0.786,
           "visual_score": null,
           "technical_score": 1.0,
@@ -553,7 +586,7 @@
           "passed": true,
           "visual_verified": false,
           "reasons": [
-            "evidence - subject: apple, object: iphone"
+            "evidence - subject: smartphone, object: iphone"
           ],
           "penalties": [],
           "label": "Medium",
@@ -565,7 +598,7 @@
               "setting": 0.0
             },
             "matched_terms": {
-              "subject": "apple",
+              "subject": "smartphone",
               "object": "iphone"
             },
             "weights": {
@@ -581,8 +614,8 @@
           "visual_detail": {}
         },
         {
-          "clip": "pixabay:8396",
-          "title": "apple, mac os, ios, ipod, iphone",
+          "clip": "pixabay:736",
+          "title": "iphone, smartphone, scrolling, mobile, device, technology, cellphone, smart phone, mobile device, mobile phones, digital technology, screen",
           "text_score": 0.786,
           "visual_score": null,
           "technical_score": 1.0,
@@ -591,7 +624,7 @@
           "passed": true,
           "visual_verified": false,
           "reasons": [
-            "evidence - subject: apple, object: iphone"
+            "evidence - subject: smartphone, object: iphone"
           ],
           "penalties": [],
           "label": "Medium",
@@ -603,7 +636,7 @@
               "setting": 0.0
             },
             "matched_terms": {
-              "subject": "apple",
+              "subject": "smartphone",
               "object": "iphone"
             },
             "weights": {
@@ -619,17 +652,17 @@
           "visual_detail": {}
         },
         {
-          "clip": "pixabay:26533",
-          "title": "video production, camera, macbook, computer, laptop, technology, apple, screen, event, equipments, professional, focus, photo, lens, image, man, transmission, live, recording",
-          "text_score": 0.643,
+          "clip": "pixabay:142641",
+          "title": "man, phone, smartphone, mobile",
+          "text_score": 0.429,
           "visual_score": null,
           "technical_score": 1.0,
-          "final_score": 0.683,
+          "final_score": 0.492,
           "method": "metadata_text_fallback",
           "passed": true,
           "visual_verified": false,
           "reasons": [
-            "evidence - subject: apple, setting: event"
+            "evidence - subject: smartphone"
           ],
           "penalties": [],
           "label": "Medium",
@@ -638,11 +671,10 @@
             "elements": {
               "subject": 1.0,
               "object": 0.0,
-              "setting": 1.0
+              "setting": 0.0
             },
             "matched_terms": {
-              "subject": "apple",
-              "setting": "event"
+              "subject": "smartphone"
             },
             "weights": {
               "subject": 0.3,
@@ -688,7 +720,8 @@
         ],
         "method": "rule_based_v1",
         "notes": [
-          "No action verb recognised; scene treated as a noun phrase."
+          "No action verb recognised; scene treated as a noun phrase.",
+          "Named brand/product shown through a generic stand-in (no logos or real people): athlete running shoes."
         ],
         "frames": [],
         "scene_type": "object",
@@ -697,6 +730,7 @@
         "foil_terms": []
       },
       "search_queries": [
+        "athlete running shoes",
         "nike sponsors athletes around world",
         "nike sponsors around world",
         "athletes around world",
@@ -705,10 +739,21 @@
       ],
       "queries_detail": [
         {
-          "query": "nike sponsors athletes around world",
+          "query": "athlete running shoes",
           "returned": 12,
           "kept": 12,
           "rejected": [],
+          "best_score": 0.492,
+          "error": null
+        },
+        {
+          "query": "nike sponsors athletes around world",
+          "returned": 12,
+          "kept": 10,
+          "rejected": [
+            "pixabay:120450: duplicate candidate",
+            "pixabay:120679: duplicate candidate"
+          ],
           "best_score": 0.492,
           "error": null
         },
@@ -720,23 +765,25 @@
             "pixabay:3171: duplicate candidate",
             "pixabay:4788: duplicate candidate"
           ],
-          "best_score": 0.302,
+          "best_score": 0.29,
           "error": null
         },
         {
           "query": "athletes around world",
           "returned": 12,
-          "kept": 3,
+          "kept": 1,
           "rejected": [
             "pixabay:50109: duplicate candidate",
             "pixabay:4788: duplicate candidate",
+            "pixabay:10809: duplicate candidate",
             "pixabay:5194: duplicate candidate",
-            "pixabay:2118: duplicate candidate",
             "pixabay:1236: duplicate candidate",
+            "pixabay:2118: duplicate candidate",
             "pixabay:7063: duplicate candidate",
             "pixabay:359930: duplicate candidate",
             "pixabay:7267: duplicate candidate",
-            "pixabay:4553: duplicate candidate"
+            "pixabay:4553: duplicate candidate",
+            "pixabay:18244: duplicate candidate"
           ],
           "best_score": 0.111,
           "error": null
@@ -770,11 +817,11 @@
             "pixabay:120679: duplicate candidate",
             "pixabay:120448: duplicate candidate",
             "pixabay:50109: duplicate candidate",
-            "pixabay:120683: duplicate candidate",
             "pixabay:120682: duplicate candidate",
+            "pixabay:120683: duplicate candidate",
             "pixabay:120684: duplicate candidate",
-            "pixabay:120680: duplicate candidate",
             "pixabay:120449: duplicate candidate",
+            "pixabay:120680: duplicate candidate",
             "pixabay:120446: duplicate candidate",
             "pixabay:215946: duplicate candidate"
           ],
@@ -782,8 +829,8 @@
           "error": null
         }
       ],
-      "candidate_count": 27,
-      "retry_attempts": 4,
+      "candidate_count": 35,
+      "retry_attempts": 5,
       "clip": {
         "provider": "pixabay",
         "clip_id": "120445",
@@ -824,7 +871,7 @@
         "creator": "Matthias_Groeneveld",
         "creator_url": "https://pixabay.com/users/Matthias_Groeneveld-4535957/",
         "ai_generated": null,
-        "retrieved_at": "2026-10-20T07:46:45+00:00",
+        "retrieved_at": "2026-10-20T08:44:54+00:00",
         "looped": false,
         "framing_method": "center_default(no_crop_needed)",
         "color_normalisation": {
@@ -833,9 +880,9 @@
             "saturation": 0.1993,
             "frames": 12
           },
-          "brightness": 0.0265,
+          "brightness": 0.0,
           "saturation": 1.0,
-          "applied": true
+          "applied": false
         },
         "reused_from_earlier_scene": false,
         "thumbnail": "thumb_scene-003.jpg"
@@ -907,6 +954,14 @@
           "pixabay"
         ],
         "queries": [
+          {
+            "query": "athlete running shoes",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
           {
             "query": "nike sponsors athletes around world",
             "returned_by_provider": {
@@ -1083,8 +1138,8 @@
     "colour_normalisation": {
       "enabled": true,
       "target": {
-        "luma": 0.5152,
-        "saturation": 0.1993
+        "luma": 0.4887,
+        "saturation": 0.1744
       },
       "method": "per-clip mean luma/saturation vs job median; bounded eq filter"
     },

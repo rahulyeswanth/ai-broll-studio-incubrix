@@ -1,0 +1,33 @@
+1
+00:00:00,100 --> 00:00:03,212
+Kyoto is a city where old
+traditions meet modern life.
+
+2
+00:00:04,180 --> 00:00:07,992
+Walk through the red gates of Fushimi
+Inari as the morning mist lifts from
+
+3
+00:00:08,005 --> 00:00:08,617
+the hills.
+
+4
+00:00:09,580 --> 00:00:13,543
+Visit a quiet bamboo forest where
+tall green stalks sway in the wind.
+
+5
+00:00:14,524 --> 00:00:17,686
+Watch a tea master prepare
+matcha in a wooden teahouse.
+
+6
+00:00:18,676 --> 00:00:22,288
+In the evening, lanterns glow
+along the narrow streets of Gion.
+
+7
+00:00:23,260 --> 00:00:27,235
+Take the train to Osaka for street
+food, or stay and enjoy the calm.

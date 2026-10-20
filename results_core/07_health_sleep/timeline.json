@@ -1,0 +1,2168 @@
+{
+  "schema_version": "1.0",
+  "job_id": "e0c2456e71b6",
+  "aspect_ratio": "16:9",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": {
+    "file": "narration.mp3",
+    "source": "generated:edge-tts"
+  },
+  "total_duration": 29.362,
+  "scenes": [
+    {
+      "scene_id": "scene-001",
+      "index": 1,
+      "start": 0.0,
+      "end": 3.984,
+      "duration": 3.984,
+      "narration_text": "Good sleep is one of the best things you can do for your health.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Sleep one.",
+      "visual_analysis": {
+        "subject": "sleep",
+        "action": null,
+        "setting": null,
+        "objects": [
+          "one"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase.",
+          "Abstract concept mapped to concrete visual stand-in: 'doctor with patient'."
+        ],
+        "frames": [],
+        "scene_type": "abstract",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "sleep one"
+      ],
+      "queries_detail": [
+        {
+          "query": "sleep one",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 1.0,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "19044",
+        "title": "alarm clock, wake up, awakening, watch, hours, morning, alarm, minute, sleep, retro, old one, vintage, time",
+        "tags": [
+          "alarm clock",
+          "wake up",
+          "awakening",
+          "watch",
+          "hours",
+          "morning",
+          "alarm",
+          "minute",
+          "sleep",
+          "retro",
+          "old one",
+          "vintage",
+          "time"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-19044/",
+        "download_url": "https://cdn.pixabay.com/video/2018/11/01/19044-298313350_large.mp4",
+        "local_file": "clips/pixabay_19044.mp4",
+        "duration_seconds": 7.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "MarcusValleCriar",
+        "creator_url": "https://pixabay.com/users/MarcusValleCriar-9674860/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T09:11:44+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.0674,
+            "saturation": 0.0254,
+            "frames": 12
+          },
+          "brightness": 0.12,
+          "saturation": 1.25,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-001.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by MarcusValleCriar via Pixabay"
+      },
+      "relevance": {
+        "score": 1.0,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 1.0,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "object": 1.0
+          },
+          "matched_terms": {
+            "subject": "sleep",
+            "object": "one"
+          },
+          "weights": {
+            "subject": 0.3,
+            "object": 0.25
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:19044",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (1.00 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "sleep one",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:324976",
+          "title": "cozy cabin, rain sounds, fireplace sounds, cozy ambience, sleep sounds, relaxation, study sounds, asmr, asmr rain, asmr fireplace, crackling fireplace, cozy ambient, sounds for sleeping, relaxing sounds, winter cabin, snowy cabin, 24 7 live, live stream, rain on window, deep sleep, meditation sounds, anxiety relief, ambient sounds",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.596,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: sleep"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "sleep"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:325314",
+          "title": "cozy cabin, rain sounds, fireplace sounds, cozy ambience, sleep sounds, relaxation, study sounds, asmr, asmr rain, asmr fireplace, crackling fireplace, cozy ambient, sounds for sleeping, relaxing sounds, winter cabin, snowy cabin, rain on window, deep sleep, meditation sounds, anxiety relief, ambient sounds",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.596,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: sleep"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "sleep"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:326437",
+          "title": "rain sounds, fireplace sounds, rain and fireplace, live rain sounds, cozy ambience, rainy night ambience, sleep sounds, study ambience, relaxing sounds, background noise, crackling fireplace, rainstorm sounds, rain on window, ambient sounds, calm ambience",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.596,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: sleep"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "sleep"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-002",
+      "index": 2,
+      "start": 3.984,
+      "end": 7.464,
+      "duration": 3.48,
+      "narration_text": "Keep your bedroom dark, cool and quiet.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Keep bedroom dark cool quiet.",
+      "visual_analysis": {
+        "subject": "keep bedroom",
+        "action": null,
+        "setting": null,
+        "objects": [
+          "dark cool quiet"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase."
+        ],
+        "frames": [],
+        "scene_type": "object",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "keep bedroom dark cool quiet"
+      ],
+      "queries_detail": [
+        {
+          "query": "keep bedroom dark cool quiet",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.663,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "39292",
+        "title": "curtain, inside, house, room, weekend, bathrobe, windows, home, bedroom, quarantine, covid, lockdown, rest, calm, quiet, silence",
+        "tags": [
+          "curtain",
+          "inside",
+          "house",
+          "room",
+          "weekend",
+          "bathrobe",
+          "windows",
+          "home",
+          "bedroom",
+          "quarantine",
+          "covid",
+          "lockdown",
+          "rest",
+          "calm",
+          "quiet",
+          "silence"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-39292/",
+        "download_url": "https://cdn.pixabay.com/video/2020/05/17/39292-422630811_large.mp4",
+        "local_file": "clips/pixabay_39292.mp4",
+        "duration_seconds": 13.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "CycleZyklusCiclo",
+        "creator_url": "https://pixabay.com/users/CycleZyklusCiclo-16343232/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T09:11:44+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.1465,
+            "saturation": 0.1828,
+            "frames": 12
+          },
+          "brightness": 0.12,
+          "saturation": 1.0,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-002.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by CycleZyklusCiclo via Pixabay"
+      },
+      "relevance": {
+        "score": 0.663,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.621,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "object": 0.167
+          },
+          "matched_terms": {
+            "subject": "bedroom",
+            "object": "dark cool quiet"
+          },
+          "weights": {
+            "subject": 0.3,
+            "object": 0.25
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:39292",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.66 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "keep bedroom dark cool quiet",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:172144",
+          "title": "room, bedroom, bed, rain, wind, storm",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: bedroom",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "bedroom"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:205921",
+          "title": "ai generated, bedroom, rain, cozy, ambiance, cabin, wooden house, wooden cabin, loop",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: bedroom",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "bedroom"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:91998",
+          "title": "motivation, success, growth, future, time, keep, great, decide, now",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: keep",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "keep"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-003",
+      "index": 3,
+      "start": 7.464,
+      "end": 11.736,
+      "duration": 4.272,
+      "narration_text": "Put your phone away an hour before bed and read a book instead.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Put phone away hour.",
+      "visual_analysis": {
+        "subject": "put phone",
+        "action": null,
+        "setting": null,
+        "objects": [
+          "away hour"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase.",
+          "Alternative search phrasings added from activity frame(s): studying_reading."
+        ],
+        "frames": [
+          "studying_reading"
+        ],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "studying",
+          "reading",
+          "learning",
+          "homework",
+          "revising"
+        ],
+        "object_evidence_terms": [
+          "book",
+          "books",
+          "notes",
+          "library",
+          "textbook",
+          "desk"
+        ],
+        "foil_terms": [
+          "exam hall"
+        ]
+      },
+      "search_queries": [
+        "put phone away hour",
+        "student studying with books at desk"
+      ],
+      "queries_detail": [
+        {
+          "query": "put phone away hour",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "student studying with books at desk",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.733,
+          "error": null
+        }
+      ],
+      "candidate_count": 24,
+      "retry_attempts": 1,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "122229",
+        "title": "reading list at library, library, book, man, young, literary, read the book, read, learn, the student",
+        "tags": [
+          "reading list at library",
+          "library",
+          "book",
+          "man",
+          "young",
+          "literary",
+          "read the book",
+          "read",
+          "learn",
+          "the student"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-122229/",
+        "download_url": "https://cdn.pixabay.com/video/2022/06/27/122229-724743685_large.mp4",
+        "local_file": "clips/pixabay_122229.mp4",
+        "duration_seconds": 7.0,
+        "width": 3840,
+        "height": 2160,
+        "creator": "Sang_Soi",
+        "creator_url": "https://pixabay.com/users/Sang_Soi-27735871/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T09:11:45+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.3998,
+            "saturation": 0.1697,
+            "frames": 12
+          },
+          "brightness": 0.0,
+          "saturation": 1.0,
+          "applied": false
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-003.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by Sang_Soi via Pixabay"
+      },
+      "relevance": {
+        "score": 0.733,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.7,
+        "visual_score": null,
+        "label": "High",
+        "evidence": {
+          "elements": {
+            "subject": 0.0,
+            "action": 1.0,
+            "object": 1.0,
+            "setting": 1.0
+          },
+          "matched_terms": {
+            "action": "reading",
+            "object": "book",
+            "setting": "library"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "object": 0.25,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": true,
+          "object_evidenced": true
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:122229",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.73 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "put phone away hour",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "student studying with books at desk",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:122232",
+          "title": "reading list at library, library, book, man, young, literary, read the book, read, learn, the student",
+          "text_score": 0.7,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.733,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: reading, object: book, setting: library"
+          ],
+          "penalties": [],
+          "label": "High",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "object": 1.0,
+              "setting": 1.0
+            },
+            "matched_terms": {
+              "action": "reading",
+              "object": "book",
+              "setting": "library"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": true
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:122233",
+          "title": "reading list at library, read a book, read, thư viện, study, student, prep, hard - working, learn, write, asia",
+          "text_score": 0.7,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.733,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: studying, object: book, setting: library"
+          ],
+          "penalties": [],
+          "label": "High",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "object": 1.0,
+              "setting": 1.0
+            },
+            "matched_terms": {
+              "action": "studying",
+              "object": "book",
+              "setting": "library"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": true
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:12897",
+          "title": "school, student, studies, to read, book, young woman, cabinet, think",
+          "text_score": 0.7,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.733,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: reading, object: book, setting: school"
+          ],
+          "penalties": [],
+          "label": "High",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "object": 1.0,
+              "setting": 1.0
+            },
+            "matched_terms": {
+              "action": "reading",
+              "object": "book",
+              "setting": "school"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": true
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-004",
+      "index": 4,
+      "start": 11.736,
+      "end": 15.768,
+      "duration": 4.032,
+      "narration_text": "Try to go to bed and wake up at the same time every day.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Try in same time day.",
+      "visual_analysis": {
+        "subject": "try",
+        "action": null,
+        "setting": "same time day",
+        "objects": [
+          "go to bed and wake up"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase."
+        ],
+        "frames": [],
+        "scene_type": "place",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "try in same time day",
+        "try",
+        "try time day"
+      ],
+      "queries_detail": [
+        {
+          "query": "try in same time day",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.175,
+          "error": null
+        },
+        {
+          "query": "try",
+          "returned": 5,
+          "kept": 5,
+          "rejected": [],
+          "best_score": 0.492,
+          "error": null
+        },
+        {
+          "query": "try time day",
+          "returned": 12,
+          "kept": 2,
+          "rejected": [
+            "pixabay:22555: duplicate candidate",
+            "pixabay:9825: duplicate candidate",
+            "pixabay:64759: duplicate candidate",
+            "pixabay:64767: duplicate candidate",
+            "pixabay:2142: duplicate candidate",
+            "pixabay:6358: duplicate candidate",
+            "pixabay:7549: duplicate candidate",
+            "pixabay:190332: duplicate candidate",
+            "pixabay:34855: duplicate candidate",
+            "pixabay:15604: duplicate candidate"
+          ],
+          "best_score": 0.175,
+          "error": null
+        }
+      ],
+      "candidate_count": 19,
+      "retry_attempts": 2,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "11289",
+        "title": "jewelry, ring, trying, finger, put on, gold, gem, blue, sapphire, engagement, wedding, present, luxury, expensive, gift, gemstone, precious, shiny, stone, crystal, romance, rich, marriage",
+        "tags": [
+          "jewelry",
+          "ring",
+          "trying",
+          "finger",
+          "put on",
+          "gold",
+          "gem",
+          "blue",
+          "sapphire",
+          "engagement",
+          "wedding",
+          "present",
+          "luxury",
+          "expensive",
+          "gift",
+          "gemstone",
+          "precious",
+          "shiny",
+          "stone",
+          "crystal",
+          "romance",
+          "rich",
+          "marriage"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-11289/",
+        "download_url": "https://cdn.pixabay.com/video/2017/08/10/11289-229221023_large.mp4",
+        "local_file": "clips/pixabay_11289.mp4",
+        "duration_seconds": 8.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "GreenCardShow",
+        "creator_url": "https://pixabay.com/users/GreenCardShow-3867243/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T09:11:46+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.5494,
+            "saturation": 0.333,
+            "frames": 12
+          },
+          "brightness": -0.12,
+          "saturation": 0.8,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-004.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by GreenCardShow via Pixabay"
+      },
+      "relevance": {
+        "score": 0.492,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.429,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "object": 0.0,
+            "setting": 0.0
+          },
+          "matched_terms": {
+            "subject": "try"
+          },
+          "weights": {
+            "subject": 0.3,
+            "object": 0.25,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:11289",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.49 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "try in same time day",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "try",
+            "returned_by_provider": {
+              "pixabay": 5
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "try time day",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:124257",
+          "title": "woman, mirror, young, caucasian, dress, room, home, adult, reflection, trying, person, indoors, fashion, hair, portrait, fitting, clothing, lifestyle, choosing, beauty",
+          "text_score": 0.429,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.492,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: try"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "try"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:45100",
+          "title": "park, try, travel, new york, summer, vacations, vibes, familia, beach, recreation, people, decline, holiday, adventure, tree, sand",
+          "text_score": 0.429,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.492,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: try"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "try"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:51757",
+          "title": "halloween, trick or treating, traditional, flashlight, festival, lamp, bright, light, autumn, illuminated, october, funny, nice, trick, try, scary, tradition, fire, pumpkin",
+          "text_score": 0.429,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.492,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: try"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "try"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-005",
+      "index": 5,
+      "start": 15.768,
+      "end": 20.016,
+      "duration": 4.248,
+      "narration_text": "Avoid coffee in the afternoon and heavy meals late at night.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Avoid coffee in afternoon and heavy meals late.",
+      "visual_analysis": {
+        "subject": "avoid coffee",
+        "action": null,
+        "setting": "afternoon and heavy meals late",
+        "objects": [],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase."
+        ],
+        "frames": [],
+        "scene_type": "place",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "avoid coffee in afternoon and heavy meals late",
+        "avoid coffee",
+        "avoid coffee afternoon"
+      ],
+      "queries_detail": [
+        {
+          "query": "avoid coffee in afternoon and heavy meals late",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "avoid coffee",
+          "returned": 12,
+          "kept": 8,
+          "rejected": [
+            "pixabay:46989: duplicate candidate",
+            "pixabay:209424: duplicate candidate",
+            "pixabay:45358: duplicate candidate",
+            "pixabay:4948: duplicate candidate"
+          ],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "avoid coffee afternoon",
+          "returned": 12,
+          "kept": 0,
+          "rejected": [
+            "pixabay:152740: duplicate candidate",
+            "pixabay:46989: duplicate candidate",
+            "pixabay:209424: duplicate candidate",
+            "pixabay:230248: duplicate candidate",
+            "pixabay:45358: duplicate candidate",
+            "pixabay:4948: duplicate candidate",
+            "pixabay:233024: duplicate candidate",
+            "pixabay:180: duplicate candidate",
+            "pixabay:22728: duplicate candidate",
+            "pixabay:126805: duplicate candidate",
+            "pixabay:1046: duplicate candidate",
+            "pixabay:126804: duplicate candidate"
+          ],
+          "best_score": null,
+          "error": null
+        }
+      ],
+      "candidate_count": 20,
+      "retry_attempts": 2,
+      "clip": null,
+      "license": {},
+      "attribution": null,
+      "relevance": {
+        "score": null,
+        "scoring_method": null,
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": false,
+        "text_score": null,
+        "visual_score": null,
+        "label": null,
+        "evidence": null,
+        "gated": null,
+        "visual_detail": null
+      },
+      "needs_review": false,
+      "placeholder": true,
+      "download_attempts": [],
+      "used_alternate": false,
+      "selection_reason": "no candidate reached the minimum relevance floor 0.30 (best was 0.29: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust)",
+      "match_status": "unmatched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "avoid coffee in afternoon and heavy meals late",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "avoid coffee",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "avoid coffee afternoon",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": null,
+        "chosen_because": null
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:126804",
+          "title": "coffee, coffee beans, coffee shop, coffee table, coffee break, coffee maker, coffee making, smoke, macro of coffee",
+          "text_score": 0.667,
+          "visual_score": null,
+          "technical_score": 0.83,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: coffee",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+            "orientation 4096x1720 differs from 16:9; will be cropped"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "coffee"
+            },
+            "weights": {
+              "subject": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:126805",
+          "title": "coffee, coffee beans, coffee shop, coffee table, coffee break, coffee maker, coffee making, smoke, macro",
+          "text_score": 0.667,
+          "visual_score": null,
+          "technical_score": 0.83,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: coffee",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+            "orientation 4096x1720 differs from 16:9; will be cropped"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "coffee"
+            },
+            "weights": {
+              "subject": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:180",
+          "title": "conversation, talk, dialogue, coffee, colleagues, discussion, discuss",
+          "text_score": 0.667,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: coffee",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "coffee"
+            },
+            "weights": {
+              "subject": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Scene scene-005 has no matching footage: no candidate reached the minimum relevance floor 0.30 (best was 0.29: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-006",
+      "index": 6,
+      "start": 20.016,
+      "end": 24.336,
+      "duration": 4.32,
+      "narration_text": "A short walk in the morning sunlight helps your body clock too.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Short walking in morning sunlight helps body clock too.",
+      "visual_analysis": {
+        "subject": "short",
+        "action": "walking",
+        "setting": "morning sunlight helps body clock too",
+        "objects": [],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [],
+        "frames": [],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "walking",
+          "walk"
+        ],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "short walking in morning sunlight helps body clock",
+        "short in morning sunlight helps body clock too",
+        "short walking"
+      ],
+      "queries_detail": [
+        {
+          "query": "short walking in morning sunlight helps body clock",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.496,
+          "error": null
+        },
+        {
+          "query": "short in morning sunlight helps body clock too",
+          "returned": 12,
+          "kept": 1,
+          "rejected": [
+            "pixabay:27539: duplicate candidate",
+            "pixabay:66810: duplicate candidate",
+            "pixabay:18390: duplicate candidate",
+            "pixabay:313145: duplicate candidate",
+            "pixabay:49981: duplicate candidate",
+            "pixabay:2119: duplicate candidate",
+            "pixabay:382582: duplicate candidate",
+            "pixabay:260397: duplicate candidate",
+            "pixabay:7549: duplicate candidate",
+            "pixabay:203449: duplicate candidate",
+            "pixabay:34855: duplicate candidate"
+          ],
+          "best_score": 0.122,
+          "error": null
+        },
+        {
+          "query": "short walking",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.76,
+          "error": null
+        }
+      ],
+      "candidate_count": 25,
+      "retry_attempts": 2,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "340924",
+        "title": "anime, walking, boots, shoes, leather, trekking, footwear, hike, outdoor, shorts, dusty, ai generated",
+        "tags": [
+          "anime",
+          "walking",
+          "boots",
+          "shoes",
+          "leather",
+          "trekking",
+          "footwear",
+          "hike",
+          "outdoor",
+          "shorts",
+          "dusty",
+          "ai generated"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-340924/",
+        "download_url": "https://cdn.pixabay.com/video/2026/03/18/340924_large.mp4",
+        "local_file": "clips/pixabay_340924.mp4",
+        "duration_seconds": 6.0,
+        "width": 1080,
+        "height": 1600,
+        "creator": "Sapphire_Luna",
+        "creator_url": "https://pixabay.com/users/Sapphire_Luna-55081364/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T09:11:49+00:00",
+        "looped": false,
+        "framing_method": "edge_energy_centroid",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.54,
+            "saturation": 0.3093,
+            "frames": 12
+          },
+          "brightness": -0.12,
+          "saturation": 0.8,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-006.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by Sapphire_Luna via Pixabay"
+      },
+      "relevance": {
+        "score": 0.76,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.8,
+        "visual_score": null,
+        "label": "High",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "action": 1.0,
+            "setting": 0.0
+          },
+          "matched_terms": {
+            "subject": "short",
+            "action": "walking"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": true,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:340924",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.76 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "short walking in morning sunlight helps body clock",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "short in morning sunlight helps body clock too",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "short walking",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:249447",
+          "title": "trees, morning, nature, sunrise, fog, forest, dawn, meadow, field, shadow, grass, walking, sunlight, pasture, haze, landscape",
+          "text_score": 0.433,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.496,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: walking, setting: morning sunlight helps body clock too"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "setting": 0.167
+            },
+            "matched_terms": {
+              "action": "walking",
+              "setting": "morning sunlight helps body clock too"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:1383",
+          "title": "airport, slide, slider, passengers, plane, gate, waiting, sitting, glass, reflection, walking, people, route, journey, trip, vacation, i waiting area",
+          "text_score": 0.4,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: walking",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "action": "walking"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:152798",
+          "title": "couple, lovers, hands, love, street, walking",
+          "text_score": 0.4,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: walking",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "action": "walking"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-007",
+      "index": 7,
+      "start": 24.336,
+      "end": 29.362,
+      "duration": 5.026,
+      "narration_text": "After a week of good habits you will wake up feeling fresh and ready for the day.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Week of habits wake feeling fresh ready day.",
+      "visual_analysis": {
+        "subject": "week of habits",
+        "action": null,
+        "setting": null,
+        "objects": [
+          "wake feeling fresh ready day"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase."
+        ],
+        "frames": [],
+        "scene_type": "object",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "week of habits wake feeling fresh ready day",
+        "week of habits",
+        "wake feeling fresh ready day",
+        "week habits wake"
+      ],
+      "queries_detail": [
+        {
+          "query": "week of habits wake feeling fresh ready day",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "week of habits",
+          "returned": 12,
+          "kept": 7,
+          "rejected": [
+            "pixabay:149986: duplicate candidate",
+            "pixabay:23879: duplicate candidate",
+            "pixabay:14306: duplicate candidate",
+            "pixabay:151705: duplicate candidate",
+            "pixabay:9085: duplicate candidate"
+          ],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "wake feeling fresh ready day",
+          "returned": 12,
+          "kept": 5,
+          "rejected": [
+            "pixabay:32021: duplicate candidate",
+            "pixabay:151295: duplicate candidate",
+            "pixabay:151297: duplicate candidate",
+            "pixabay:37918: duplicate candidate",
+            "pixabay:90877: duplicate candidate",
+            "pixabay:31377: duplicate candidate",
+            "pixabay:158229: duplicate candidate"
+          ],
+          "best_score": 0.152,
+          "error": null
+        },
+        {
+          "query": "week habits wake",
+          "returned": 12,
+          "kept": 3,
+          "rejected": [
+            "pixabay:151295: duplicate candidate",
+            "pixabay:151297: duplicate candidate",
+            "pixabay:37918: duplicate candidate",
+            "pixabay:149986: duplicate candidate",
+            "pixabay:23879: duplicate candidate",
+            "pixabay:14306: duplicate candidate",
+            "pixabay:151705: duplicate candidate",
+            "pixabay:34829: duplicate candidate",
+            "pixabay:9085: duplicate candidate"
+          ],
+          "best_score": 0.152,
+          "error": null
+        }
+      ],
+      "candidate_count": 27,
+      "retry_attempts": 3,
+      "clip": null,
+      "license": {},
+      "attribution": null,
+      "relevance": {
+        "score": null,
+        "scoring_method": null,
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": false,
+        "text_score": null,
+        "visual_score": null,
+        "label": null,
+        "evidence": null,
+        "gated": null,
+        "visual_detail": null
+      },
+      "needs_review": false,
+      "placeholder": true,
+      "download_attempts": [],
+      "used_alternate": false,
+      "selection_reason": "no candidate reached the minimum relevance floor 0.30 (best was 0.29: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust)",
+      "match_status": "unmatched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "week of habits wake feeling fresh ready day",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "week of habits",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "wake feeling fresh ready day",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "week habits wake",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": null,
+        "chosen_because": null
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:149710",
+          "title": "woman, superhero, diet, female health, hormonal balance, eating habits, macronutrients, macronutrient balance, calorie restriction, weight management, healthy eating, fasting benefits, women's intermittent fasting, women's hormonal balance, women's macronutrients, women's weight management, women's eating habits, women's calorie restriction, women's healthy eating, 3d",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: habits",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "habits"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:149986",
+          "title": "days, week, every day, calendar, planner",
+          "text_score": 0.591,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: week, object: wake feeling fresh ready day",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.1
+            },
+            "matched_terms": {
+              "subject": "week",
+              "object": "wake feeling fresh ready day"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:151705",
+          "title": "man, soda, addiction, beverage, consumption, habit, sugar, cravings, drinking, health, energy, caffeine, soda-drinking, withdrawal, dependence, soft-drink, health-risks, lifestyle, diet, soda-habit, urge, compulsive-behavior, 3d, obesity",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: habits",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "habits"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Scene scene-007 has no matching footage: no candidate reached the minimum relevance floor 0.30 (best was 0.29: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust)."
+      ],
+      "visual_hint": null
+    }
+  ],
+  "warnings": [
+    "Relevance based on clip title/tags only (no visual verification of frames).",
+    "Scene scene-005 has no matching footage: no candidate reached the minimum relevance floor 0.30 (best was 0.29: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust).",
+    "Scene scene-007 has no matching footage: no candidate reached the minimum relevance floor 0.30 (best was 0.29: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust).",
+    "frozen video detected for 2.3s",
+    "Footage relevance was estimated from provider titles/tags and scene analysis only. No vision-language model inspected the video frames."
+  ],
+  "avoid": [],
+  "footage_provider": "pixabay",
+  "render": {
+    "engine": "per-scene segments + stream-copy concat",
+    "fps": 30,
+    "total_frames": 881,
+    "colour_normalisation": {
+      "enabled": true,
+      "target": {
+        "luma": 0.3998,
+        "saturation": 0.1828
+      },
+      "method": "per-clip mean luma/saturation vs job median; bounded eq filter"
+    },
+    "min_scene_seconds": 2.0
+  }
+}

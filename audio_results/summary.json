@@ -1,0 +1,23 @@
+[
+  {
+    "case": "speech_clear_m4a",
+    "job_id": "39cfa86d4e49",
+    "result": "succeeded",
+    "seconds": 52.3,
+    "error": null
+  },
+  {
+    "case": "speech_clear_mp3",
+    "job_id": "7a1ec62070d2",
+    "result": "succeeded",
+    "seconds": 52.4,
+    "error": null
+  },
+  {
+    "case": "speech_clear_wav",
+    "job_id": "c8f89892c26b",
+    "result": "succeeded",
+    "seconds": 49.4,
+    "error": null
+  }
+]

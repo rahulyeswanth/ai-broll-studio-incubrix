@@ -1,0 +1,28 @@
+1
+00:00:00,100 --> 00:00:02,925
+A wildfire swept through
+the mountain town overnight.
+
+2
+00:00:03,916 --> 00:00:07,604
+Hundreds of families lost their homes
+and many people are still missing.
+
+3
+00:00:08,596 --> 00:00:11,421
+Firefighters are battling
+the flames in thick smoke.
+
+4
+00:00:12,388 --> 00:00:15,675
+Rescue teams are searching the
+burned streets for survivors.
+
+5
+00:00:16,660 --> 00:00:19,910
+The town is mourning, and neighbours
+are gathering to share food and
+
+6
+00:00:19,922 --> 00:00:20,522
+shelter.

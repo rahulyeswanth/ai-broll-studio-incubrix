@@ -1,6 +1,6 @@
 {
-  "job_id": "80bd09019e2e",
-  "created_at": "2026-10-20T07:48:53+00:00",
+  "job_id": "38aeae99adcb",
+  "created_at": "2026-10-20T08:47:48+00:00",
   "status": "failed",
   "progress": 8.0,
   "step": "Failed",
@@ -15,7 +15,7 @@
   },
   "request_fingerprint": "372c44160a7b5606d4966159e56e581d97dd9d1f75cf4652f1e2623cafcda15c",
   "footage_provider": null,
-  "updated_at": "2026-10-20T07:49:04+00:00",
+  "updated_at": "2026-10-20T08:47:59+00:00",
   "outputs": {},
   "state": "failed",
   "files": {}

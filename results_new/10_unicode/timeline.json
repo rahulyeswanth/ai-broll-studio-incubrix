@@ -1,0 +1,658 @@
+{
+  "schema_version": "1.0",
+  "job_id": "14a0bf25be31",
+  "aspect_ratio": "16:9",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": {
+    "file": "narration.mp3",
+    "source": "generated:edge-tts"
+  },
+  "total_duration": 7.445,
+  "scenes": [
+    {
+      "scene_id": "scene-001",
+      "index": 1,
+      "start": 0.0,
+      "end": 3.504,
+      "duration": 3.504,
+      "narration_text": "Café culture in São Paulo starts early.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Caf culture in s o paulo starts early.",
+      "visual_analysis": {
+        "subject": "caf culture",
+        "action": null,
+        "setting": "s o paulo starts early",
+        "objects": [],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase."
+        ],
+        "frames": [],
+        "scene_type": "place",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "caf culture in s o paulo starts early"
+      ],
+      "queries_detail": [
+        {
+          "query": "caf culture in s o paulo starts early",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.704,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "282086",
+        "title": "tulips, flowers, wind turbine, pink color, agricultural field, agriculture, sustainable energy, farm worker, rural scene, nature, springtime, in bloom, blossom, environment, power in nature, environmental conservation, dutch culture",
+        "tags": [
+          "tulips",
+          "flowers",
+          "wind turbine",
+          "pink color",
+          "agricultural field",
+          "agriculture",
+          "sustainable energy",
+          "farm worker",
+          "rural scene",
+          "nature",
+          "springtime",
+          "in bloom",
+          "blossom",
+          "environment",
+          "power in nature",
+          "environmental conservation",
+          "dutch culture"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-282086/",
+        "download_url": "https://cdn.pixabay.com/video/2025/05/27/282086_large.mp4",
+        "local_file": "clips/pixabay_282086.mp4",
+        "duration_seconds": 20.0,
+        "width": 3840,
+        "height": 2160,
+        "creator": "Matthias_Groeneveld",
+        "creator_url": "https://pixabay.com/users/Matthias_Groeneveld-4535957/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T07:34:09+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.5257,
+            "saturation": 0.4285,
+            "frames": 12
+          },
+          "brightness": -0.0517,
+          "saturation": 1.0,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-001.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by Matthias_Groeneveld via Pixabay"
+      },
+      "relevance": {
+        "score": 0.704,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.667,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "setting": 0.0
+          },
+          "matched_terms": {
+            "subject": "culture"
+          },
+          "weights": {
+            "subject": 0.3,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:282086",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.70 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "caf culture in s o paulo starts early",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:84973",
+          "title": "people, sunset, stroll, moscow, glare, sky, culture park, evening, walk, park of culture, live wallpaper",
+          "text_score": 0.667,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.704,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: culture"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "culture"
+            },
+            "weights": {
+              "subject": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:111101",
+          "title": "forest, nature, fog, mist, morning, early, daylight, netherlands, drenthe, trees, road, path, live wallpaper",
+          "text_score": 0.056,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.16,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - setting: s o paulo starts early"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "setting": 0.167
+            },
+            "matched_terms": {
+              "setting": "s o paulo starts early"
+            },
+            "weights": {
+              "subject": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:134515",
+          "title": "central plaza, brazil, são paulo, potato city, state of são paulo, canon joaquim alves square",
+          "text_score": 0.056,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.16,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - setting: s o paulo starts early"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "setting": 0.167
+            },
+            "matched_terms": {
+              "setting": "s o paulo starts early"
+            },
+            "weights": {
+              "subject": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-002",
+      "index": 2,
+      "start": 3.504,
+      "end": 7.445,
+      "duration": 3.941,
+      "narration_text": "Naïve tourists order a “cortado” — and love it.",
+      "timing_method": "tts_word_boundaries_partial",
+      "visual_description": "Na ve tourists order cortado love.",
+      "visual_analysis": {
+        "subject": "na ve",
+        "action": null,
+        "setting": null,
+        "objects": [
+          "tourists order cortado love"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase.",
+          "Alternative search phrasings added from activity frame(s): sightseeing."
+        ],
+        "frames": [
+          "sightseeing"
+        ],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "sightseeing",
+          "tourist",
+          "tourists",
+          "traveling",
+          "travelling",
+          "walking",
+          "exploring",
+          "visiting"
+        ],
+        "object_evidence_terms": [
+          "landmark",
+          "luggage",
+          "map",
+          "backpack"
+        ],
+        "foil_terms": [
+          "airport"
+        ]
+      },
+      "search_queries": [
+        "na ve tourists order cortado love",
+        "tourists sightseeing in city"
+      ],
+      "queries_detail": [
+        {
+          "query": "na ve tourists order cortado love",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.539,
+          "error": null
+        },
+        {
+          "query": "tourists sightseeing in city",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.733,
+          "error": null
+        }
+      ],
+      "candidate_count": 24,
+      "retry_attempts": 1,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "8133",
+        "title": "eiffel tower, paris, france, landmark, sightseeing, tower, europe, capital city, attraction",
+        "tags": [
+          "eiffel tower",
+          "paris",
+          "france",
+          "landmark",
+          "sightseeing",
+          "tower",
+          "europe",
+          "capital city",
+          "attraction"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-8133/",
+        "download_url": "https://cdn.pixabay.com/video/2017/03/03/8133-207209046_large.mp4",
+        "local_file": "clips/pixabay_8133.mp4",
+        "duration_seconds": 23.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "glorydays2012pro",
+        "creator_url": "https://pixabay.com/users/glorydays2012pro-3791746/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T07:34:10+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.4224,
+            "saturation": 0.342,
+            "frames": 12
+          },
+          "brightness": 0.0516,
+          "saturation": 1.0,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-002.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by glorydays2012pro via Pixabay"
+      },
+      "relevance": {
+        "score": 0.733,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.7,
+        "visual_score": null,
+        "label": "High",
+        "evidence": {
+          "elements": {
+            "subject": 0.0,
+            "action": 1.0,
+            "object": 1.0,
+            "setting": 1.0
+          },
+          "matched_terms": {
+            "action": "sightseeing",
+            "object": "landmark",
+            "setting": "city"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "object": 0.25,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": true,
+          "object_evidenced": true
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:8133",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.73 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "na ve tourists order cortado love",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "tourists sightseeing in city",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:296958",
+          "title": "travel, burjkalifa, dubai, uae, emirate, arab, burj-al-arab, burj khalifa, tourists, architecture, building, modern, skyscraper, city, landmark, historical, sunrise, skyline, landscape, urban, cityscape",
+          "text_score": 0.7,
+          "visual_score": null,
+          "technical_score": 0.658,
+          "final_score": 0.669,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: tourist, object: landmark, setting: city",
+            "orientation 1440x2560 differs from 16:9; will be cropped"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "object": 1.0,
+              "setting": 1.0
+            },
+            "matched_terms": {
+              "action": "tourist",
+              "object": "landmark",
+              "setting": "city"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": true
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:202368",
+          "title": "london eye, london, england, landmark, tourism, attraction, architecture, sky, river, thames, uk, sightseeing, famous, cityscape, urban, night",
+          "text_score": 0.55,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.6,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: sightseeing, object: landmark"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "object": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "action": "sightseeing",
+              "object": "landmark"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": true
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:152798",
+          "title": "couple, lovers, hands, love, street, walking",
+          "text_score": 0.481,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.539,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: walking, object: tourists order cortado love, setting: street"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "object": 0.125,
+              "setting": 1.0
+            },
+            "matched_terms": {
+              "action": "walking",
+              "object": "tourists order cortado love",
+              "setting": "street"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    }
+  ],
+  "warnings": [
+    "Caption word timing method is 'mixed:tts_word_boundaries+tts_word_boundaries_partial' (scene boundaries are exact; timing inside scenes is approximate).",
+    "Relevance based on clip title/tags only (no visual verification of frames).",
+    "Footage relevance was estimated from provider titles/tags and scene analysis only. No vision-language model inspected the video frames."
+  ],
+  "avoid": [],
+  "footage_provider": "pixabay",
+  "render": {
+    "engine": "per-scene segments + stream-copy concat",
+    "fps": 30,
+    "total_frames": 223,
+    "colour_normalisation": {
+      "enabled": true,
+      "target": {
+        "luma": 0.474,
+        "saturation": 0.3852
+      },
+      "method": "per-clip mean luma/saturation vs job median; bounded eq filter"
+    },
+    "min_scene_seconds": 2.0
+  }
+}

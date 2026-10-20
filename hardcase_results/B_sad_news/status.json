@@ -1,6 +1,6 @@
 {
-  "job_id": "965b428e3116",
-  "created_at": "2026-10-20T07:47:44+00:00",
+  "job_id": "e7ce0533d3d1",
+  "created_at": "2026-10-20T08:46:04+00:00",
   "status": "completed",
   "progress": 100,
   "step": "Done",
@@ -9,7 +9,7 @@
   "error": null,
   "request_fingerprint": null,
   "footage_provider": null,
-  "updated_at": "2026-10-20T07:48:36+00:00",
+  "updated_at": "2026-10-20T08:47:42+00:00",
   "aspect_ratios": [
     "16:9"
   ],
@@ -30,7 +30,7 @@
       "height": 1080,
       "fps": 30,
       "duration_seconds": 12.0,
-      "size_bytes": 10261062
+      "size_bytes": 9126292
     },
     "audio": {
       "file": "narration.mp3",
@@ -42,17 +42,15 @@
     "manifest": "manifest.json"
   },
   "warnings": [
-    "Scene scene-001: footage may NOT accurately depict the narration (score 0.38 is below the match threshold 0.45).",
     "Relevance based on clip title/tags only (no visual verification of frames).",
-    "Scene scene-003: footage may NOT accurately depict the narration (score 0.43 is below the match threshold 0.45).",
     "Footage relevance was estimated from provider titles/tags and scene analysis only. No vision-language model inspected the video frames.",
     "Commercial-use status is based on the provider's published licence policy only; per-clip rights (identifiable people, trademarks) are not verified."
   ],
   "manifest_status": "completed",
   "summary": [
     {
-      "level": "warning",
-      "text": "2 scenes need review."
+      "level": "success",
+      "text": "Video generated successfully."
     },
     {
       "level": "info",
@@ -60,19 +58,19 @@
     }
   ],
   "counts": {
-    "needs_review": 2,
+    "needs_review": 0,
     "unmatched": 0,
     "alternate_clips": 0
   },
   "state": "succeeded",
   "files": {
-    "narration.mp3": "/jobs/965b428e3116/files/narration.mp3",
-    "captions.srt": "/jobs/965b428e3116/files/captions.srt",
-    "video.mp4": "/jobs/965b428e3116/files/video.mp4",
-    "thumb_scene-001.jpg": "/jobs/965b428e3116/files/thumb_scene-001.jpg",
-    "thumb_scene-002.jpg": "/jobs/965b428e3116/files/thumb_scene-002.jpg",
-    "thumb_scene-003.jpg": "/jobs/965b428e3116/files/thumb_scene-003.jpg",
-    "timeline.json": "/jobs/965b428e3116/files/timeline.json",
-    "manifest.json": "/jobs/965b428e3116/files/manifest.json"
+    "narration.mp3": "/jobs/e7ce0533d3d1/files/narration.mp3",
+    "captions.srt": "/jobs/e7ce0533d3d1/files/captions.srt",
+    "video.mp4": "/jobs/e7ce0533d3d1/files/video.mp4",
+    "thumb_scene-001.jpg": "/jobs/e7ce0533d3d1/files/thumb_scene-001.jpg",
+    "thumb_scene-002.jpg": "/jobs/e7ce0533d3d1/files/thumb_scene-002.jpg",
+    "thumb_scene-003.jpg": "/jobs/e7ce0533d3d1/files/thumb_scene-003.jpg",
+    "timeline.json": "/jobs/e7ce0533d3d1/files/timeline.json",
+    "manifest.json": "/jobs/e7ce0533d3d1/files/manifest.json"
   }
 }

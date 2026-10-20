@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "job_id": "965b428e3116",
+  "job_id": "e7ce0533d3d1",
   "status": "completed",
-  "created_at": "2026-10-20T07:47:44+00:00",
+  "created_at": "2026-10-20T08:46:04+00:00",
   "input_type": "script_only",
   "input": {
     "script_characters": 175,
@@ -20,7 +20,7 @@
       "height": 1080,
       "fps": 30,
       "duration_seconds": 12.0,
-      "size_bytes": 10261062
+      "size_bytes": 9126292
     },
     "audio": {
       "file": "narration.mp3",
@@ -74,9 +74,9 @@
     },
     "visual_ai_verification_performed": false,
     "scenes_total": 3,
-    "scenes_matched": 1,
-    "scenes_low_confidence_fallback": 2,
-    "scenes_needs_review": 2,
+    "scenes_matched": 3,
+    "scenes_low_confidence_fallback": 0,
+    "scenes_needs_review": 0,
     "scenes_unmatched": 0,
     "review_floor": 0.3,
     "high_confidence": 0.7,
@@ -131,6 +131,7 @@
     "fallback_policy": "review",
     "review_floor": 0.3,
     "high_confidence": 0.7,
+    "min_grounded_terms": 2,
     "early_stop_score": 0.62,
     "evidence_weight_subject": 0.3,
     "evidence_weight_action": 0.3,
@@ -164,14 +165,14 @@
     "caption_min_seconds": 0.6
   },
   "processing_durations_seconds": {
-    "narration": 4.911,
+    "narration": 3.803,
     "validate_input": 0.0,
-    "matching": 5.468,
-    "download": 16.986,
+    "matching": 2.766,
+    "download": 49.243,
     "captions": 0.0,
-    "render": 20.227,
-    "validation": 2.504,
-    "total": 50.096
+    "render": 33.522,
+    "validation": 2.681,
+    "total": 92.015
   },
   "cost_estimate": {
     "amount_usd": 0.0,
@@ -183,7 +184,7 @@
       {
         "scene_id": "scene-001",
         "provider": "pixabay",
-        "clip_id": "109032",
+        "clip_id": "18702",
         "license": {
           "license_name": "Pixabay Content License",
           "license_url": "https://pixabay.com/service/license-summary/",
@@ -198,15 +199,15 @@
           "verified_per_clip": false,
           "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
         },
-        "creator": "nazharul",
-        "source_page_url": "https://pixabay.com/videos/id-109032/",
+        "creator": "Gam-Ol",
+        "source_page_url": "https://pixabay.com/videos/id-18702/",
         "ai_generated": null,
-        "retrieved_at": "2026-10-20T07:47:52+00:00"
+        "retrieved_at": "2026-10-20T08:46:08+00:00"
       },
       {
         "scene_id": "scene-002",
         "provider": "pixabay",
-        "clip_id": "129289",
+        "clip_id": "108595",
         "license": {
           "license_name": "Pixabay Content License",
           "license_url": "https://pixabay.com/service/license-summary/",
@@ -221,15 +222,15 @@
           "verified_per_clip": false,
           "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
         },
-        "creator": "Amorn_mimi",
-        "source_page_url": "https://pixabay.com/videos/id-129289/",
+        "creator": "dahahutabarat60",
+        "source_page_url": "https://pixabay.com/videos/id-108595/",
         "ai_generated": null,
-        "retrieved_at": "2026-10-20T07:47:53+00:00"
+        "retrieved_at": "2026-10-20T08:46:10+00:00"
       },
       {
         "scene_id": "scene-003",
         "provider": "pixabay",
-        "clip_id": "202134",
+        "clip_id": "22139",
         "license": {
           "license_name": "Pixabay Content License",
           "license_url": "https://pixabay.com/service/license-summary/",
@@ -244,10 +245,10 @@
           "verified_per_clip": false,
           "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
         },
-        "creator": "Samidurrakzai",
-        "source_page_url": "https://pixabay.com/videos/id-202134/",
+        "creator": "conolan",
+        "source_page_url": "https://pixabay.com/videos/id-22139/",
         "ai_generated": null,
-        "retrieved_at": "2026-10-20T07:47:55+00:00"
+        "retrieved_at": "2026-10-20T08:46:11+00:00"
       }
     ],
     "all_commercial_use_per_provider_policy": true,
@@ -255,23 +256,11 @@
     "disclaimer": "Licence data reflects provider-level published policy; per-clip rights are not verified."
   },
   "warnings": [
-    "Scene scene-001: footage may NOT accurately depict the narration (score 0.38 is below the match threshold 0.45).",
     "Relevance based on clip title/tags only (no visual verification of frames).",
-    "Scene scene-003: footage may NOT accurately depict the narration (score 0.43 is below the match threshold 0.45).",
     "Footage relevance was estimated from provider titles/tags and scene analysis only. No vision-language model inspected the video frames.",
     "Commercial-use status is based on the provider's published licence policy only; per-clip rights (identifiable people, trademarks) are not verified."
   ],
   "fallback_events": [
-    {
-      "type": "low_confidence_fallback",
-      "scene_id": "scene-001",
-      "message": "needs review: score 0.38 is below the match threshold 0.45"
-    },
-    {
-      "type": "low_confidence_fallback",
-      "scene_id": "scene-003",
-      "message": "needs review: score 0.43 is below the match threshold 0.45"
-    },
     {
       "type": "metadata_only_matching",
       "message": "Footage relevance was estimated from provider titles/tags and scene analysis only. No vision-language model inspected the video frames."
@@ -283,7 +272,7 @@
       "errors": [],
       "warnings": [],
       "checks": {
-        "file_size_bytes": 10261062,
+        "file_size_bytes": 9126292,
         "duration_seconds": 12.0,
         "video_codec": "h264",
         "pix_fmt": "yuv420p",
@@ -309,8 +298,8 @@
   "diagnostics": {
     "summary": [
       {
-        "level": "warning",
-        "text": "2 scenes need review."
+        "level": "success",
+        "text": "Video generated successfully."
       },
       {
         "level": "info",
@@ -318,30 +307,6 @@
       }
     ],
     "items": [
-      {
-        "code": "needs_review",
-        "severity": "warning",
-        "scene_id": "scene-001",
-        "title": "Scene needs review",
-        "message": "needs review: score 0.38 is below the match threshold 0.45",
-        "details": {
-          "score": 0.378,
-          "threshold": 0.45,
-          "label": "Low"
-        }
-      },
-      {
-        "code": "needs_review",
-        "severity": "warning",
-        "scene_id": "scene-003",
-        "title": "Scene needs review",
-        "message": "needs review: score 0.43 is below the match threshold 0.45",
-        "details": {
-          "score": 0.429,
-          "threshold": 0.45,
-          "label": "Low"
-        }
-      },
       {
         "code": "metadata_only",
         "severity": "info",
@@ -360,7 +325,7 @@
       }
     ],
     "counts": {
-      "needs_review": 2,
+      "needs_review": 0,
       "unmatched": 0,
       "alternate_clips": 0
     }

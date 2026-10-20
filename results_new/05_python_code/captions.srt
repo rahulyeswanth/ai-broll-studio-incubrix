@@ -1,0 +1,9 @@
+1
+00:00:00,100 --> 00:00:02,562
+Python is a popular
+programming language.
+
+2
+00:00:03,532 --> 00:00:06,232
+Developers write scripts
+to automate tasks.
