@@ -1,0 +1,3464 @@
+{
+  "schema_version": "1.0",
+  "job_id": "f256296d9102",
+  "aspect_ratio": "16:9",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": {
+    "file": "narration.mp3",
+    "source": "generated:edge-tts"
+  },
+  "total_duration": 55.562,
+  "scenes": [
+    {
+      "scene_id": "scene-001",
+      "index": 1,
+      "start": 0.0,
+      "end": 4.728,
+      "duration": 4.728,
+      "narration_text": "Every morning, millions of people start their day with a cup of coffee.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Morning millions people start day cup coffee.",
+      "visual_analysis": {
+        "subject": "morning millions",
+        "action": null,
+        "setting": null,
+        "objects": [
+          "people start day cup coffee"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase."
+        ],
+        "frames": [],
+        "scene_type": "object",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "morning millions people start day cup coffee"
+      ],
+      "queries_detail": [
+        {
+          "query": "morning millions people start day cup coffee",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.717,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "91261",
+        "title": "coffee, hot, drink, foam, fresh coffee, fresher, coffee shop, cofe, caffeine, cup, sugar, jump start, yummy, good morning, brewed, sugary, macro",
+        "tags": [
+          "coffee",
+          "hot",
+          "drink",
+          "foam",
+          "fresh coffee",
+          "fresher",
+          "coffee shop",
+          "cofe",
+          "caffeine",
+          "cup",
+          "sugar",
+          "jump start",
+          "yummy",
+          "good morning",
+          "brewed",
+          "sugary",
+          "macro"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-91261/",
+        "download_url": "https://cdn.pixabay.com/video/2021/10/07/91261-629546510_large.mp4",
+        "local_file": "clips/pixabay_91261.mp4",
+        "duration_seconds": 9.0,
+        "width": 3840,
+        "height": 2160,
+        "creator": "Kaffeesüchtig",
+        "creator_url": "https://pixabay.com/users/Kaffeesüchtig-19168820/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T07:54:35+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.5414,
+            "saturation": 0.3238,
+            "frames": 12
+          },
+          "brightness": -0.12,
+          "saturation": 1.0,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-001.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by Kaffeesüchtig via Pixabay"
+      },
+      "relevance": {
+        "score": 0.717,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.682,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "object": 0.3
+          },
+          "matched_terms": {
+            "subject": "morning",
+            "object": "people start day cup coffee"
+          },
+          "weights": {
+            "subject": 0.3,
+            "object": 0.25
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:91261",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.72 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "morning millions people start day cup coffee",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:27230",
+          "title": "coffee, cup, morning, breakfast, reading, book, bible, cafe, caffeine, food, espresso, table, relax, study, mug, drink, relaxing",
+          "text_score": 0.636,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.677,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: morning, object: people start day cup coffee"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.2
+            },
+            "matched_terms": {
+              "subject": "morning",
+              "object": "people start day cup coffee"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:3158",
+          "title": "cup of coffee, hot, steaming, coffee, cup, drink, espresso, coffee cup, beverage, caffeine, mug, morning, fresh, cafe, breakfast, warm, aroma, brewed, liquid, cappuccino, table",
+          "text_score": 0.636,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.677,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: morning, object: people start day cup coffee"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.2
+            },
+            "matched_terms": {
+              "subject": "morning",
+              "object": "people start day cup coffee"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:32641",
+          "title": "coffee, cup, flowers, still life, morning, breakfast, drink, porcelain, scent, caffeine, hot",
+          "text_score": 0.636,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.677,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: morning, object: people start day cup coffee"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.2
+            },
+            "matched_terms": {
+              "subject": "morning",
+              "object": "people start day cup coffee"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-002",
+      "index": 2,
+      "start": 4.728,
+      "end": 9.96,
+      "duration": 5.232,
+      "narration_text": "It begins on a farm, where coffee cherries ripen on green hillside plants.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Planting in farm where coffee cherries ripen on green hillside.",
+      "visual_analysis": {
+        "subject": null,
+        "action": "planting",
+        "setting": "farm where coffee cherries ripen on green hillside",
+        "objects": [],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [],
+        "frames": [],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "planting",
+          "plant"
+        ],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "planting in farm where coffee cherries ripen"
+      ],
+      "queries_detail": [
+        {
+          "query": "planting in farm where coffee cherries ripen",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.704,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "340838",
+        "title": "cherry blossom, ornamental cherry, cherry, plant, nature, to flourish, bloom, early bloomer, spring, blossoms, petals",
+        "tags": [
+          "cherry blossom",
+          "ornamental cherry",
+          "cherry",
+          "plant",
+          "nature",
+          "to flourish",
+          "bloom",
+          "early bloomer",
+          "spring",
+          "blossoms",
+          "petals"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-340838/",
+        "download_url": "https://cdn.pixabay.com/video/2026/03/18/340838_large.mp4",
+        "local_file": "clips/pixabay_340838.mp4",
+        "duration_seconds": 30.0,
+        "width": 3840,
+        "height": 2160,
+        "creator": "adege",
+        "creator_url": "https://pixabay.com/users/adege-4994132/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T07:54:35+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.0738,
+            "saturation": 0.5066,
+            "frames": 12
+          },
+          "brightness": 0.12,
+          "saturation": 0.8,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-002.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by adege via Pixabay"
+      },
+      "relevance": {
+        "score": 0.704,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.667,
+        "visual_score": null,
+        "label": "High",
+        "evidence": {
+          "elements": {
+            "action": 1.0,
+            "setting": 0.0
+          },
+          "matched_terms": {
+            "action": "planting"
+          },
+          "weights": {
+            "action": 0.3,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": true,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:340838",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.70 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "planting in farm where coffee cherries ripen",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:66823",
+          "title": "flowers, cherry flower, petals, bloom, sunshine, blossom, nature, sunny, spring, garden, bright, flora, plant, floral, summer, springtime, live wallpaper",
+          "text_score": 0.667,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.704,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: planting"
+          ],
+          "penalties": [],
+          "label": "High",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "action": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "action": "planting"
+            },
+            "weights": {
+              "action": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:1098",
+          "title": "agriculture, tractor, planting, field, farm, machine, industry, machinery, equipment, work, countryside, vehicle, farm field, aerial view, drone, 133680158",
+          "text_score": 0.69,
+          "visual_score": null,
+          "technical_score": 0.65,
+          "final_score": 0.659,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: planting, setting: farm where coffee cherries ripen on green hillside"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "action": 1.0,
+              "setting": 0.071
+            },
+            "matched_terms": {
+              "action": "planting",
+              "setting": "farm where coffee cherries ripen on green hillside"
+            },
+            "weights": {
+              "action": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:209424",
+          "title": "coffee, cappuccino, caffeine, coffee funnel, processing, brew",
+          "text_score": 0.024,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.132,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - setting: farm where coffee cherries ripen on green hillside"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "action": 0.0,
+              "setting": 0.071
+            },
+            "matched_terms": {
+              "setting": "farm where coffee cherries ripen on green hillside"
+            },
+            "weights": {
+              "action": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-003",
+      "index": 3,
+      "start": 9.96,
+      "end": 14.976,
+      "duration": 5.016,
+      "narration_text": "Farmers pick the cherries by hand and spread the beans out to dry in the sun.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Farmers picking cherries by hand in agricultural field.",
+      "visual_analysis": {
+        "subject": "farmers",
+        "action": "picking",
+        "setting": "agricultural field",
+        "objects": [
+          "cherries by hand"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "Setting 'agricultural field' is inferred from the subject, not stated in the narration."
+        ],
+        "frames": [],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "picking",
+          "pick"
+        ],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "farmers picking cherries by hand in agricultural field",
+        "farmers picking in agricultural field",
+        "cherries by hand in agricultural field",
+        "farmers in agricultural field",
+        "farmers picking"
+      ],
+      "queries_detail": [
+        {
+          "query": "farmers picking cherries by hand in agricultural field",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.453,
+          "error": null
+        },
+        {
+          "query": "farmers picking in agricultural field",
+          "returned": 12,
+          "kept": 2,
+          "rejected": [
+            "pixabay:282086: duplicate candidate",
+            "pixabay:84624: duplicate candidate",
+            "pixabay:43044: duplicate candidate",
+            "pixabay:37663: duplicate candidate",
+            "pixabay:4329: duplicate candidate",
+            "pixabay:85897: duplicate candidate",
+            "pixabay:85895: duplicate candidate",
+            "pixabay:85898: duplicate candidate",
+            "pixabay:46140: duplicate candidate",
+            "pixabay:46139: duplicate candidate"
+          ],
+          "best_score": 0.417,
+          "error": null
+        },
+        {
+          "query": "cherries by hand in agricultural field",
+          "returned": 12,
+          "kept": 8,
+          "rejected": [
+            "pixabay:282086: duplicate candidate",
+            "pixabay:340838: duplicate candidate",
+            "pixabay:268528: duplicate candidate",
+            "pixabay:84624: duplicate candidate"
+          ],
+          "best_score": 0.183,
+          "error": null
+        },
+        {
+          "query": "farmers in agricultural field",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.477,
+          "error": null
+        },
+        {
+          "query": "farmers picking",
+          "returned": 12,
+          "kept": 7,
+          "rejected": [
+            "pixabay:85897: duplicate candidate",
+            "pixabay:85898: duplicate candidate",
+            "pixabay:85895: duplicate candidate",
+            "pixabay:84624: duplicate candidate",
+            "pixabay:46140: duplicate candidate"
+          ],
+          "best_score": 0.748,
+          "error": null
+        }
+      ],
+      "candidate_count": 41,
+      "retry_attempts": 4,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "303459",
+        "title": "grape picking, hand, arm, harvesting, vineyard, close up, medium shot, person, agriculture, fruit, fresh, ripe, nature, farming, rural, outdoors, summer, sun, green leaves, vine, crop, harvest season, farmer, work, food, ai generated",
+        "tags": [
+          "grape picking",
+          "hand",
+          "arm",
+          "harvesting",
+          "vineyard",
+          "close up",
+          "medium shot",
+          "person",
+          "agriculture",
+          "fruit",
+          "fresh",
+          "ripe",
+          "nature",
+          "farming",
+          "rural",
+          "outdoors",
+          "summer",
+          "sun",
+          "green leaves",
+          "vine",
+          "crop",
+          "harvest season",
+          "farmer",
+          "work",
+          "food",
+          "ai generated"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-303459/",
+        "download_url": "https://cdn.pixabay.com/video/2025/09/12/303459_large.mp4",
+        "local_file": "clips/pixabay_303459.mp4",
+        "duration_seconds": 5.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "JetalProduções",
+        "creator_url": "https://pixabay.com/users/JetalProduções-40420301/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T07:54:37+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.5298,
+            "saturation": 0.4041,
+            "frames": 10
+          },
+          "brightness": -0.1084,
+          "saturation": 0.8062,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-003.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by JetalProduções via Pixabay"
+      },
+      "relevance": {
+        "score": 0.748,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.716,
+        "visual_score": null,
+        "label": "High",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "action": 1.0,
+            "object": 0.25,
+            "setting": 0.0
+          },
+          "matched_terms": {
+            "subject": "farmers",
+            "action": "picking",
+            "object": "cherries by hand"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "object": 0.25,
+            "setting": 0.075
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": true,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:303459",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.75 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "farmers picking cherries by hand in agricultural field",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "farmers picking in agricultural field",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "cherries by hand in agricultural field",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "farmers in agricultural field",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "farmers picking",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:45657",
+          "title": "wheat grains, hands, rye field, oats, barley, farmer, agriculture, in the field, green, ear, crop",
+          "text_score": 0.412,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.477,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: farmers, object: cherries by hand, setting: agricultural field"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0,
+              "object": 0.25,
+              "setting": 0.25
+            },
+            "matched_terms": {
+              "subject": "farmers",
+              "object": "cherries by hand",
+              "setting": "agricultural field"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.075
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:10176",
+          "title": "tractor in field spraying fertilizer, tractor, bulldozer, machine, car, field, meadow, fertilizer, manure, agricultural, motor, farm, fazenda, work, spray, atomization, the soil, land, harvest, furrow, sowing, agriculture, agronomy, landscape, rural, rustic, village, mechanism, farmer, the forest",
+          "text_score": 0.385,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.453,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: farmers, setting: agricultural field"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0,
+              "object": 0.0,
+              "setting": 0.75
+            },
+            "matched_terms": {
+              "subject": "farmers",
+              "setting": "agricultural field"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.075
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:10177",
+          "title": "tractor in field spraying fertilizer, tractor, bulldozer, machine, car, field, meadow, fertilizer, manure, agricultural, motor, farm, fazenda, work, spray, atomization, the soil, land, harvest, furrow, sowing, agriculture, agronomy, landscape, rural, rustic, village, mechanism, farmer, the forest",
+          "text_score": 0.385,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.453,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: farmers, setting: agricultural field"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0,
+              "object": 0.0,
+              "setting": 0.75
+            },
+            "matched_terms": {
+              "subject": "farmers",
+              "setting": "agricultural field"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.075
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-004",
+      "index": 4,
+      "start": 14.976,
+      "end": 19.464,
+      "duration": 4.488,
+      "narration_text": "Then the beans travel by truck and ship to roasters around the world.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Beans traveling by truck, shipping to roasters.",
+      "visual_analysis": {
+        "subject": "beans",
+        "action": "traveling",
+        "setting": null,
+        "objects": [
+          "by truck",
+          "to roasters"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "Second coordinated action recognised: shipping to roasters.",
+          "Alternative search phrasings added from activity frame(s): sightseeing, driving_vehicle."
+        ],
+        "frames": [
+          "sightseeing",
+          "driving_vehicle"
+        ],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "sightseeing",
+          "tourist",
+          "tourists",
+          "traveling",
+          "travelling",
+          "walking",
+          "exploring",
+          "visiting"
+        ],
+        "object_evidence_terms": [
+          "landmark",
+          "luggage",
+          "map",
+          "backpack"
+        ],
+        "foil_terms": [
+          "airport"
+        ]
+      },
+      "search_queries": [
+        "beans traveling by truck",
+        "tourists sightseeing in city"
+      ],
+      "queries_detail": [
+        {
+          "query": "beans traveling by truck",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.6,
+          "error": null
+        },
+        {
+          "query": "tourists sightseeing in city",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.733,
+          "error": null
+        }
+      ],
+      "candidate_count": 24,
+      "retry_attempts": 1,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "8133",
+        "title": "eiffel tower, paris, france, landmark, sightseeing, tower, europe, capital city, attraction",
+        "tags": [
+          "eiffel tower",
+          "paris",
+          "france",
+          "landmark",
+          "sightseeing",
+          "tower",
+          "europe",
+          "capital city",
+          "attraction"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-8133/",
+        "download_url": "https://cdn.pixabay.com/video/2017/03/03/8133-207209046_large.mp4",
+        "local_file": "clips/pixabay_8133.mp4",
+        "duration_seconds": 23.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "glorydays2012pro",
+        "creator_url": "https://pixabay.com/users/glorydays2012pro-3791746/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T07:54:38+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.4224,
+            "saturation": 0.342,
+            "frames": 12
+          },
+          "brightness": 0.0,
+          "saturation": 1.0,
+          "applied": false
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-004.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by glorydays2012pro via Pixabay"
+      },
+      "relevance": {
+        "score": 0.733,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.7,
+        "visual_score": null,
+        "label": "High",
+        "evidence": {
+          "elements": {
+            "subject": 0.0,
+            "action": 1.0,
+            "object": 1.0,
+            "setting": 1.0
+          },
+          "matched_terms": {
+            "action": "sightseeing",
+            "object": "landmark",
+            "setting": "city"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "object": 0.25,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": true,
+          "object_evidenced": true
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:8133",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.73 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "beans traveling by truck",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "tourists sightseeing in city",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:296958",
+          "title": "travel, burjkalifa, dubai, uae, emirate, arab, burj-al-arab, burj khalifa, tourists, architecture, building, modern, skyscraper, city, landmark, historical, sunrise, skyline, landscape, urban, cityscape",
+          "text_score": 0.7,
+          "visual_score": null,
+          "technical_score": 0.658,
+          "final_score": 0.669,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: tourist, object: landmark, setting: city",
+            "orientation 1440x2560 differs from 16:9; will be cropped"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "object": 1.0,
+              "setting": 1.0
+            },
+            "matched_terms": {
+              "action": "tourist",
+              "object": "landmark",
+              "setting": "city"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": true
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:202368",
+          "title": "london eye, london, england, landmark, tourism, attraction, architecture, sky, river, thames, uk, sightseeing, famous, cityscape, urban, night",
+          "text_score": 0.55,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.6,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: sightseeing, object: landmark"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "object": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "action": "sightseeing",
+              "object": "landmark"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": true
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:282082",
+          "title": "tractor, farmer, urban, highway, transport, driving, road, transportation, truck, fuel truck, semi-truck, traffic, travel, cargo container, freight transportation, supply chain, delivering",
+          "text_score": 0.55,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.6,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: traveling, object: by truck"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "object": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "action": "traveling",
+              "object": "by truck"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-005",
+      "index": 5,
+      "start": 19.464,
+      "end": 25.056,
+      "duration": 5.592,
+      "narration_text": "In the roastery, hot drums turn the green beans brown and fill the air with aroma.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "In roastery hot drums turn green beans brown and fill air with aroma.",
+      "visual_analysis": {
+        "subject": null,
+        "action": null,
+        "setting": "roastery hot drums turn green beans brown and fill air with aroma",
+        "objects": [],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase."
+        ],
+        "frames": [],
+        "scene_type": "place",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "in roastery hot drums turn green beans brown",
+        "roastery hot drums"
+      ],
+      "queries_detail": [
+        {
+          "query": "in roastery hot drums turn green beans brown",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.244,
+          "error": null
+        },
+        {
+          "query": "roastery hot drums",
+          "returned": 12,
+          "kept": 6,
+          "rejected": [
+            "pixabay:8897: duplicate candidate",
+            "pixabay:192687: duplicate candidate",
+            "pixabay:21531: duplicate candidate",
+            "pixabay:240531: duplicate candidate",
+            "pixabay:3742: duplicate candidate",
+            "pixabay:236256: duplicate candidate"
+          ],
+          "best_score": 0.156,
+          "error": null
+        }
+      ],
+      "candidate_count": 18,
+      "retry_attempts": 1,
+      "clip": null,
+      "license": {},
+      "attribution": null,
+      "relevance": {
+        "score": null,
+        "scoring_method": null,
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": false,
+        "text_score": null,
+        "visual_score": null,
+        "label": null,
+        "evidence": null,
+        "gated": null,
+        "visual_detail": null
+      },
+      "needs_review": false,
+      "placeholder": true,
+      "download_attempts": [],
+      "used_alternate": false,
+      "selection_reason": "no candidate reached the minimum relevance floor 0.30 (best was 0.24: weak title/tag match)",
+      "match_status": "unmatched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "in roastery hot drums turn green beans brown",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "roastery hot drums",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": null,
+        "chosen_because": null
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:40166",
+          "title": "coffee, coffee beans, aroma, caffeine, seeds, cafe, minimalism, fresh, brown, in the morning, taste",
+          "text_score": 0.15,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.244,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - setting: roastery hot drums turn green beans brown and fill air with aroma"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "setting": 0.15
+            },
+            "matched_terms": {
+              "setting": "roastery hot drums turn green beans brown and fill air with aroma"
+            },
+            "weights": {
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:103066",
+          "title": "kiwi, fruit, food, yellow, green, slices, nutrition, turn",
+          "text_score": 0.1,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.2,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - setting: roastery hot drums turn green beans brown and fill air with aroma"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "setting": 0.1
+            },
+            "matched_terms": {
+              "setting": "roastery hot drums turn green beans brown and fill air with aroma"
+            },
+            "weights": {
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:4882",
+          "title": "coffee, cup, tea, hot, pour, drink, porcelain, espresso, brown, breakfast",
+          "text_score": 0.1,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.2,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - setting: roastery hot drums turn green beans brown and fill air with aroma"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "setting": 0.1
+            },
+            "matched_terms": {
+              "setting": "roastery hot drums turn green beans brown and fill air with aroma"
+            },
+            "weights": {
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Scene scene-005 has no matching footage: no candidate reached the minimum relevance floor 0.30 (best was 0.24: weak title/tag match)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-006",
+      "index": 6,
+      "start": 25.056,
+      "end": 29.976,
+      "duration": 4.92,
+      "narration_text": "Baristas grind the roasted beans fresh and pour hot water over them.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Beans fresh and pouring hot water over them.",
+      "visual_analysis": {
+        "subject": "beans fresh and",
+        "action": "pouring",
+        "setting": "them",
+        "objects": [
+          "hot water"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [],
+        "frames": [],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "pouring",
+          "pour"
+        ],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "beans fresh and pouring hot water over them"
+      ],
+      "queries_detail": [
+        {
+          "query": "beans fresh and pouring hot water over them",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.7,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "8253",
+        "title": "water, pouring, glass, liquid, thirst, thirsty, clean, blue, clear, drink, fresh, pour, wet, transparent, purity, flow",
+        "tags": [
+          "water",
+          "pouring",
+          "glass",
+          "liquid",
+          "thirst",
+          "thirsty",
+          "clean",
+          "blue",
+          "clear",
+          "drink",
+          "fresh",
+          "pour",
+          "wet",
+          "transparent",
+          "purity",
+          "flow"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-8253/",
+        "download_url": "https://cdn.pixabay.com/video/2017/03/08/8253-207598596_large.mp4",
+        "local_file": "clips/pixabay_8253.mp4",
+        "duration_seconds": 14.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "Coverr-Free-Footage",
+        "creator_url": "https://pixabay.com/users/Coverr-Free-Footage-1281706/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T07:54:39+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.4204,
+            "saturation": 0.3279,
+            "frames": 12
+          },
+          "brightness": 0.0,
+          "saturation": 1.0,
+          "applied": false
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-006.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by Coverr-Free-Footage via Pixabay"
+      },
+      "relevance": {
+        "score": 0.7,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.662,
+        "visual_score": null,
+        "label": "High",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "action": 1.0,
+            "object": 0.25,
+            "setting": 0.0
+          },
+          "matched_terms": {
+            "subject": "fresh",
+            "action": "pouring",
+            "object": "hot water"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "object": 0.25,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": true,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:8253",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.70 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "beans fresh and pouring hot water over them",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:95",
+          "title": "drink, water, glass, pouring, refreshment, refreshing, reflection, liquid, full, drinking, thirst, table, dishes, transparent, clear, fresh",
+          "text_score": 0.662,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.7,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: fresh, action: pouring, object: hot water"
+          ],
+          "penalties": [],
+          "label": "High",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 1.0,
+              "object": 0.25,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "fresh",
+              "action": "pouring",
+              "object": "hot water"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:4315",
+          "title": "milk, bottle, pouring, organic milk, almond milk, drink, white, glass, dairy, calcium, product, fresh, liquid, natural, indoors, ingredient, breakfast",
+          "text_score": 0.6,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.644,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: fresh, action: pouring"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 1.0,
+              "object": 0.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "fresh",
+              "action": "pouring"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:23955",
+          "title": "tea, kettle, hot, pour, glass, drink, liquid, pouring, water, natural",
+          "text_score": 0.487,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.544,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: pouring, object: hot water"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "object": 0.75,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "action": "pouring",
+              "object": "hot water"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-007",
+      "index": 7,
+      "start": 29.976,
+      "end": 34.488,
+      "duration": 4.512,
+      "narration_text": "Steam rises from the cup as the first sip warms a cold morning.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Steam rising from cup.",
+      "visual_analysis": {
+        "subject": "steam",
+        "action": "rising",
+        "setting": null,
+        "objects": [
+          "from cup"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [],
+        "frames": [],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "rising",
+          "rise"
+        ],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "steam rising from cup"
+      ],
+      "queries_detail": [
+        {
+          "query": "steam rising from cup",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.686,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "106363",
+        "title": "bible, cup, steam, religion, faith, christian, black, screen, texture, book, beautiful wallpaper, light, effects, shadows, background",
+        "tags": [
+          "bible",
+          "cup",
+          "steam",
+          "religion",
+          "faith",
+          "christian",
+          "black",
+          "screen",
+          "texture",
+          "book",
+          "beautiful wallpaper",
+          "light",
+          "effects",
+          "shadows",
+          "background"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-106363/",
+        "download_url": "https://cdn.pixabay.com/video/2022/02/01/106363-673007935_large.mp4",
+        "local_file": "clips/pixabay_106363.mp4",
+        "duration_seconds": 60.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "Joe_hackney",
+        "creator_url": "https://pixabay.com/users/Joe_hackney-15024843/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T07:54:39+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.1448,
+            "saturation": 0.2893,
+            "frames": 12
+          },
+          "brightness": 0.12,
+          "saturation": 1.0,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-007.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by Joe_hackney via Pixabay"
+      },
+      "relevance": {
+        "score": 0.686,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.647,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "action": 0.0,
+            "object": 1.0
+          },
+          "matched_terms": {
+            "subject": "steam",
+            "object": "from cup"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "object": 0.25
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:106363",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.69 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "steam rising from cup",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:126997",
+          "title": "rain, window, lamp, flame, beautiful wallpaper, cup, steam, book, diner, umbrella, water, droplets, table, background",
+          "text_score": 0.647,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.686,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: steam, object: from cup"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0,
+              "object": 1.0
+            },
+            "matched_terms": {
+              "subject": "steam",
+              "object": "from cup"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:130876",
+          "title": "fog, rain, mist, beautiful wallpaper, candles, book, cup, steam, chair, windchime, pavilion, tree, field, landscape, background, nature",
+          "text_score": 0.647,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.686,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: steam, object: from cup"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0,
+              "object": 1.0
+            },
+            "matched_terms": {
+              "subject": "steam",
+              "object": "from cup"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:3158",
+          "title": "cup of coffee, hot, steaming, coffee, cup, drink, espresso, coffee cup, beverage, caffeine, mug, morning, fresh, cafe, breakfast, warm, aroma, brewed, liquid, cappuccino, table",
+          "text_score": 0.647,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.686,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: steam, object: from cup"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0,
+              "object": 1.0
+            },
+            "matched_terms": {
+              "subject": "steam",
+              "object": "from cup"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-008",
+      "index": 8,
+      "start": 34.488,
+      "end": 39.864,
+      "duration": 5.376,
+      "narration_text": "Friends meet in busy cafes to talk, laugh and share their plans for the day.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Friends meeting in busy cafes to talk laugh.",
+      "visual_analysis": {
+        "subject": "friends",
+        "action": "meeting",
+        "setting": "busy cafes to talk laugh",
+        "objects": [],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [],
+        "frames": [],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "meeting",
+          "meet"
+        ],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "friends meeting in busy cafes to talk laugh",
+        "friends in busy cafes to talk laugh",
+        "friends meeting"
+      ],
+      "queries_detail": [
+        {
+          "query": "friends meeting in busy cafes to talk laugh",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.489,
+          "error": null
+        },
+        {
+          "query": "friends in busy cafes to talk laugh",
+          "returned": 12,
+          "kept": 6,
+          "rejected": [
+            "pixabay:1623: duplicate candidate",
+            "pixabay:180: duplicate candidate",
+            "pixabay:6387: duplicate candidate",
+            "pixabay:22728: duplicate candidate",
+            "pixabay:36510: duplicate candidate",
+            "pixabay:6409: duplicate candidate"
+          ],
+          "best_score": 0.489,
+          "error": null
+        },
+        {
+          "query": "friends meeting",
+          "returned": 12,
+          "kept": 10,
+          "rejected": [
+            "pixabay:2340: duplicate candidate",
+            "pixabay:1035: duplicate candidate"
+          ],
+          "best_score": 0.822,
+          "error": null
+        }
+      ],
+      "candidate_count": 28,
+      "retry_attempts": 2,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "381731",
+        "title": "ai generated, lonely women walk beach, women, friends, people, meeting, nature, romantic, outdoors",
+        "tags": [
+          "ai generated",
+          "lonely women walk beach",
+          "women",
+          "friends",
+          "people",
+          "meeting",
+          "nature",
+          "romantic",
+          "outdoors"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-381731/",
+        "download_url": "https://cdn.pixabay.com/video/2026/10/09/381731_large.mp4",
+        "local_file": "clips/pixabay_381731.mp4",
+        "duration_seconds": 7.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "SMitra",
+        "creator_url": "https://pixabay.com/users/SMitra-57717156/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T07:54:40+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.4571,
+            "saturation": 0.3172,
+            "frames": 12
+          },
+          "brightness": -0.0357,
+          "saturation": 1.0,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-008.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by SMitra via Pixabay"
+      },
+      "relevance": {
+        "score": 0.822,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.8,
+        "visual_score": null,
+        "label": "High",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "action": 1.0,
+            "setting": 0.0
+          },
+          "matched_terms": {
+            "subject": "friends",
+            "action": "meeting"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": true,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:381731",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.82 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "friends meeting in busy cafes to talk laugh",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "friends in busy cafes to talk laugh",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "friends meeting",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:41820",
+          "title": "diversity, meeting, communication, people, against racism, black, connection, ethnicities, friends, fun, group, happy, human, mixed race, multiracial, person, race racism, sharing, smiling, together, woman, young, summer",
+          "text_score": 0.8,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.822,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: friends, action: meeting"
+          ],
+          "penalties": [],
+          "label": "High",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "friends",
+              "action": "meeting"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:42855",
+          "title": "bully, communication, people, racism, black, connection, discrimination, diversity, ethnicities, friends, human, hurt, man, meeting, mixed, person, race, sad, woman, young, unhappy, stress",
+          "text_score": 0.8,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.822,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: friends, action: meeting"
+          ],
+          "penalties": [],
+          "label": "High",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "friends",
+              "action": "meeting"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:48991",
+          "title": "diversity, teamwork, unity, hands, friends, together, business, work, team, friendship, collaboration, hello, handshake, corporate, community, partnership, communication, support, cooperation, meeting, storiesofdiversity, success, goal, trust, agreement, union",
+          "text_score": 0.8,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.822,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: friends, action: meeting"
+          ],
+          "penalties": [],
+          "label": "High",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "friends",
+              "action": "meeting"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-009",
+      "index": 9,
+      "start": 39.864,
+      "end": 44.616,
+      "duration": 4.752,
+      "narration_text": "Students open laptops at quiet tables and focus on their work.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Students open laptops in quiet tables and focus.",
+      "visual_analysis": {
+        "subject": "students open",
+        "action": null,
+        "setting": "quiet tables and focus",
+        "objects": [
+          "laptops"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase."
+        ],
+        "frames": [],
+        "scene_type": "object",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "students open laptops in quiet tables and focus"
+      ],
+      "queries_detail": [
+        {
+          "query": "students open laptops in quiet tables and focus",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.81,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "1028",
+        "title": "homework, girl, student, laptop, study, studying, notebook, work, fan, chair, desk, concentrated, concentrating, education, school, learning, reading, female, people, college",
+        "tags": [
+          "homework",
+          "girl",
+          "student",
+          "laptop",
+          "study",
+          "studying",
+          "notebook",
+          "work",
+          "fan",
+          "chair",
+          "desk",
+          "concentrated",
+          "concentrating",
+          "education",
+          "school",
+          "learning",
+          "reading",
+          "female",
+          "people",
+          "college"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-1028/",
+        "download_url": "https://cdn.pixabay.com/video/2015/10/16/1028-142624363_large.mp4",
+        "local_file": "clips/pixabay_1028.mp4",
+        "duration_seconds": 12.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "Coverr-Free-Footage",
+        "creator_url": "https://pixabay.com/users/Coverr-Free-Footage-1281706/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T07:54:40+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.4104,
+            "saturation": 0.386,
+            "frames": 12
+          },
+          "brightness": 0.0,
+          "saturation": 0.844,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-009.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by Coverr-Free-Footage via Pixabay"
+      },
+      "relevance": {
+        "score": 0.81,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.786,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "object": 1.0,
+            "setting": 0.0
+          },
+          "matched_terms": {
+            "subject": "students",
+            "object": "laptops"
+          },
+          "weights": {
+            "subject": 0.3,
+            "object": 0.25,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:1028",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.81 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "students open laptops in quiet tables and focus",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:130645",
+          "title": "woman, model, notebook, book, creator, desk, businesswoman, young, writing, working, paper, lifestyle, laptop, computer, adult, work, student, pen, business, typing, table, sitting, creative, casual",
+          "text_score": 0.786,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.81,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: students, object: laptops"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "students",
+              "object": "laptops"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:39892",
+          "title": "office, laptop, business, computer, notebook, work, the internet, table, technology, company, launch, student, team, corporate, plan",
+          "text_score": 0.786,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.81,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: students, object: laptops"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "students",
+              "object": "laptops"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:4731",
+          "title": "laptop, computer, keyboard, typing, opening, lid, technology, business, internet, work, keypad, pc, button, online, notebook, modern, office, education, screen, communication, hand, student, information, learning, digital, portable",
+          "text_score": 0.786,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.81,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: students, object: laptops"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "students",
+              "object": "laptops"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-010",
+      "index": 10,
+      "start": 44.616,
+      "end": 50.544,
+      "duration": 5.928,
+      "narration_text": "From a small seed to a warm cup, coffee connects farmers, workers and neighbours.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Small seed.",
+      "visual_analysis": {
+        "subject": "small seed",
+        "action": null,
+        "setting": null,
+        "objects": [
+          "warm cup coffee connects farmers workers and neighbours"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase."
+        ],
+        "frames": [],
+        "scene_type": "object",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "small seed"
+      ],
+      "queries_detail": [
+        {
+          "query": "small seed",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.596,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 0,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "119285",
+        "title": "dandelion, faded, flying seeds, pointed flower, wildflower, unfold, seed formation, seed stand",
+        "tags": [
+          "dandelion",
+          "faded",
+          "flying seeds",
+          "pointed flower",
+          "wildflower",
+          "unfold",
+          "seed formation",
+          "seed stand"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-119285/",
+        "download_url": "https://cdn.pixabay.com/video/2022/06/04/119285-717336861_large.mp4",
+        "local_file": "clips/pixabay_119285.mp4",
+        "duration_seconds": 21.0,
+        "width": 3840,
+        "height": 2160,
+        "creator": "adege",
+        "creator_url": "https://pixabay.com/users/adege-4994132/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T07:54:41+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.1631,
+            "saturation": 0.2751,
+            "frames": 12
+          },
+          "brightness": 0.12,
+          "saturation": 1.1843,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-010.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by adege via Pixabay"
+      },
+      "relevance": {
+        "score": 0.596,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.545,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "object": 0.0
+          },
+          "matched_terms": {
+            "subject": "seed"
+          },
+          "weights": {
+            "subject": 0.3,
+            "object": 0.25
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:119015",
+          "outcome": "download_failed",
+          "reason": "Clip is 118 MB; limit is 100 MB."
+        },
+        {
+          "clip": "pixabay:119285",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": true,
+      "selection_reason": "highest-scoring unused candidate (0.60 >= threshold 0.45; metadata_text_fallback) | original choice unusable; replaced by next-best acceptable candidate (pixabay:119285)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "small seed",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:119285",
+          "title": "dandelion, faded, flying seeds, pointed flower, wildflower, unfold, seed formation, seed stand",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.596,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: seed"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "seed"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:132765",
+          "title": "poppy, poppy seeds, seed pod, flower seeds, seeds",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.596,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: seed"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "seed"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:14869",
+          "title": "dog, pet, animal, small, furry, cute, fur, outdoors, brown, looking, look, posing",
+          "text_score": 0.545,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.596,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: small"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "small"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-011",
+      "index": 11,
+      "start": 50.544,
+      "end": 55.562,
+      "duration": 5.018,
+      "narration_text": "Next time you drink a cup, remember the long journey behind every sip.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Next time drinking cup remember long journey behind sip.",
+      "visual_analysis": {
+        "subject": "next time",
+        "action": "drinking",
+        "setting": null,
+        "objects": [
+          "cup remember long journey behind sip"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [],
+        "frames": [],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "drinking",
+          "drink"
+        ],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "next time drinking behind sip",
+        "next time drinking",
+        "cup remember long journey behind sip",
+        "time cup remember"
+      ],
+      "queries_detail": [
+        {
+          "query": "next time drinking behind sip",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.436,
+          "error": null
+        },
+        {
+          "query": "next time drinking",
+          "returned": 12,
+          "kept": 1,
+          "rejected": [
+            "pixabay:5631: duplicate candidate",
+            "pixabay:6358: duplicate candidate",
+            "pixabay:7549: duplicate candidate",
+            "pixabay:190332: duplicate candidate",
+            "pixabay:34855: duplicate candidate",
+            "pixabay:15629: duplicate candidate",
+            "pixabay:2213: duplicate candidate",
+            "pixabay:22555: duplicate candidate",
+            "pixabay:24105: duplicate candidate",
+            "pixabay:71457: duplicate candidate",
+            "pixabay:9825: duplicate candidate"
+          ],
+          "best_score": 0.425,
+          "error": null
+        },
+        {
+          "query": "cup remember long journey behind sip",
+          "returned": 12,
+          "kept": 11,
+          "rejected": [
+            "pixabay:118768: duplicate candidate"
+          ],
+          "best_score": 0.447,
+          "error": null
+        },
+        {
+          "query": "time cup remember",
+          "returned": 12,
+          "kept": 0,
+          "rejected": [
+            "pixabay:6358: duplicate candidate",
+            "pixabay:7549: duplicate candidate",
+            "pixabay:233024: duplicate candidate",
+            "pixabay:190332: duplicate candidate",
+            "pixabay:34855: duplicate candidate",
+            "pixabay:22728: duplicate candidate",
+            "pixabay:15629: duplicate candidate",
+            "pixabay:2213: duplicate candidate",
+            "pixabay:22555: duplicate candidate",
+            "pixabay:2339: duplicate candidate",
+            "pixabay:236256: duplicate candidate",
+            "pixabay:27230: duplicate candidate"
+          ],
+          "best_score": null,
+          "error": null
+        }
+      ],
+      "candidate_count": 24,
+      "retry_attempts": 3,
+      "clip": {
+        "provider": "pixabay",
+        "clip_id": "22728",
+        "title": "café, coffee, drink, porcelain, cafe, smoke, caffeine, cup, ceramic",
+        "tags": [
+          "café",
+          "coffee",
+          "drink",
+          "porcelain",
+          "cafe",
+          "smoke",
+          "caffeine",
+          "cup",
+          "ceramic"
+        ],
+        "source_page_url": "https://pixabay.com/videos/id-22728/",
+        "download_url": "https://cdn.pixabay.com/video/2019/04/10/22728-329691509_large.mp4",
+        "local_file": "clips/pixabay_22728.mp4",
+        "duration_seconds": 30.0,
+        "width": 1920,
+        "height": 1080,
+        "creator": "Alanchevereau",
+        "creator_url": "https://pixabay.com/users/Alanchevereau-12037755/",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T07:54:42+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.4767,
+            "saturation": 0.2196,
+            "frames": 12
+          },
+          "brightness": -0.0553,
+          "saturation": 1.25,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-011.jpg"
+      },
+      "license": {
+        "license_name": "Pixabay Content License",
+        "license_url": "https://pixabay.com/service/license-summary/",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Content must not be sold or distributed unaltered as stand-alone content.",
+          "Identifiable people, brands or trademarks in a clip may carry separate rights.",
+          "No implication of endorsement by depicted people or brands."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by Alanchevereau via Pixabay"
+      },
+      "relevance": {
+        "score": 0.447,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": false,
+        "text_score": 0.377,
+        "visual_score": null,
+        "label": "Low",
+        "evidence": {
+          "elements": {
+            "subject": 0.0,
+            "action": 1.0,
+            "object": 0.083
+          },
+          "matched_terms": {
+            "action": "drinking",
+            "object": "cup remember long journey behind sip"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "object": 0.25
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": true,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": true,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "pixabay:22728",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "needs review: score 0.45 is below the match threshold 0.45",
+      "match_status": "fallback_low_confidence",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay"
+        ],
+        "queries": [
+          {
+            "query": "next time drinking behind sip",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "next time drinking",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "cup remember long journey behind sip",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          },
+          {
+            "query": "time cup remember",
+            "returned_by_provider": {
+              "pixabay": 12
+            },
+            "provider_errors": {},
+            "fallback_provider_queried": false
+          }
+        ],
+        "chosen_provider": "pixabay",
+        "chosen_because": "'pixabay' supplied the highest-scoring acceptable clip among the merged results of pixabay."
+      },
+      "alternatives": [
+        {
+          "clip": "pixabay:27230",
+          "title": "coffee, cup, morning, breakfast, reading, book, bible, cafe, caffeine, food, espresso, table, relax, study, mug, drink, relaxing",
+          "text_score": 0.377,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.447,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: drinking, object: cup remember long journey behind sip"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "object": 0.083
+            },
+            "matched_terms": {
+              "action": "drinking",
+              "object": "cup remember long journey behind sip"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:3158",
+          "title": "cup of coffee, hot, steaming, coffee, cup, drink, espresso, coffee cup, beverage, caffeine, mug, morning, fresh, cafe, breakfast, warm, aroma, brewed, liquid, cappuccino, table",
+          "text_score": 0.377,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.447,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: drinking, object: cup remember long journey behind sip"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "object": 0.083
+            },
+            "matched_terms": {
+              "action": "drinking",
+              "object": "cup remember long journey behind sip"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "pixabay:4854",
+          "title": "coffee, cup, breakfast, lemon, drink, espresso, a cup of coffee, caffeine, scent, coffee cup, café, close-up",
+          "text_score": 0.377,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.447,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: drinking, object: cup remember long journey behind sip"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "object": 0.083
+            },
+            "matched_terms": {
+              "action": "drinking",
+              "object": "cup remember long journey behind sip"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Scene scene-011: footage may NOT accurately depict the narration (score 0.45 is below the match threshold 0.45)."
+      ],
+      "visual_hint": null
+    }
+  ],
+  "warnings": [
+    "Relevance based on clip title/tags only (no visual verification of frames).",
+    "Scene scene-005 has no matching footage: no candidate reached the minimum relevance floor 0.30 (best was 0.24: weak title/tag match).",
+    "Scene scene-011: footage may NOT accurately depict the narration (score 0.45 is below the match threshold 0.45).",
+    "scene-010: top clip could not be used; used next-best candidate.",
+    "Footage relevance was estimated from provider titles/tags and scene analysis only. No vision-language model inspected the video frames."
+  ],
+  "avoid": [],
+  "footage_provider": "pixabay",
+  "render": {
+    "engine": "per-scene segments + stream-copy concat",
+    "fps": 30,
+    "total_frames": 1667,
+    "colour_normalisation": {
+      "enabled": true,
+      "target": {
+        "luma": 0.4214,
+        "saturation": 0.3258
+      },
+      "method": "per-clip mean luma/saturation vs job median; bounded eq filter"
+    },
+    "min_scene_seconds": 2.0
+  }
+}
