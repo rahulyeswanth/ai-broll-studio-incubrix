@@ -6,20 +6,22 @@ services:
     container_name: ai_broll_backend
     restart: unless-stopped
     ports:
-      - "8000:8000"
+      - "8000:8080"
     environment:
       - APP_ENV=development
       - DEBUG=true
       - STORAGE_TYPE=minio
       - MINIO_ENDPOINT=minio:9000
-      - MINIO_ACCESS_KEY=${MINIO_ACCESS_KEY:?set in .env}
-      - MINIO_SECRET_KEY=${MINIO_SECRET_KEY:?set in .env}
+      - MINIO_ACCESS_KEY=${MINIO_ACCESS_KEY:-minioadmin}
+      - MINIO_SECRET_KEY=${MINIO_SECRET_KEY:-minioadmin123}
       - MINIO_BUCKET_NAME=broll-assets
       - REDIS_URL=redis://redis:6379/0
       - TTS_PROVIDER=edge
       - TRANSCRIPTION_PROVIDER=whisper
       - FOOTAGE_PROVIDER=pixabay
       - PIXABAY_API_KEY=${PIXABAY_API_KEY:-}
+      - COVERR_API_KEY=${COVERR_API_KEY:-}
+      - FOOTAGE_FALLBACK_PROVIDERS=${FOOTAGE_FALLBACK_PROVIDERS:-}
       - PEXELS_API_KEY=${PEXELS_API_KEY:-}
       - API_KEYS=${API_KEYS:-}
       - CALLBACK_SECRET=${CALLBACK_SECRET:-}
@@ -45,19 +47,18 @@ services:
       retries: 5
 
   minio:
-    image: minio/minio:RELEASE.2024-05-10T01-41-38Z
+    image: bitnamilegacy/minio:latest
     container_name: ai_broll_minio
     ports:
       - "9000:9000"
       - "9001:9001"
     environment:
-      MINIO_ROOT_USER: ${MINIO_ACCESS_KEY:?set in .env}
-      MINIO_ROOT_PASSWORD: ${MINIO_SECRET_KEY:?set in .env}
-    command: server /data --console-address ":9001"
+      MINIO_ROOT_USER: ${MINIO_ACCESS_KEY:-minioadmin}
+      MINIO_ROOT_PASSWORD: ${MINIO_SECRET_KEY:-minioadmin123}
     volumes:
-      - minio_data:/data
+      - minio_data:/bitnami/minio/data
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      test: ["CMD-SHELL", "bash -c '</dev/tcp/127.0.0.1/9000'"]
       interval: 5s
       timeout: 3s
       retries: 5

@@ -1,0 +1,725 @@
+{
+  "schema_version": "1.0",
+  "job_id": "fe4fd2ce40b3",
+  "aspect_ratio": "1:1",
+  "width": 1080,
+  "height": 1080,
+  "fps": 30,
+  "audio": {
+    "file": "narration.mp3",
+    "source": "generated:edge-tts"
+  },
+  "total_duration": 9.639,
+  "scenes": [
+    {
+      "scene_id": "scene-001",
+      "index": 1,
+      "start": 0.0,
+      "end": 3.096,
+      "duration": 3.096,
+      "narration_text": "The ocean covers most of our planet.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Ocean covers planet.",
+      "visual_analysis": {
+        "subject": "ocean covers",
+        "action": null,
+        "setting": null,
+        "objects": [
+          "planet"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase."
+        ],
+        "frames": [],
+        "scene_type": "object",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "ocean covers planet",
+        "ocean covers",
+        "planet"
+      ],
+      "queries_detail": [
+        {
+          "query": "ocean covers planet",
+          "returned": 0,
+          "kept": 0,
+          "rejected": [],
+          "best_score": null,
+          "error": null
+        },
+        {
+          "query": "ocean covers",
+          "returned": 4,
+          "kept": 0,
+          "rejected": [
+            "coverr:bWGWaGy8JV: matches avoid rule (people)",
+            "coverr:zQLlf7IAvj: matches avoid rule (girl, people)",
+            "coverr:QpSBHZG0MJ: matches avoid rule (people)",
+            "coverr:CWkWxe6PCw: matches avoid rule (people)"
+          ],
+          "best_score": null,
+          "error": null
+        },
+        {
+          "query": "planet",
+          "returned": 12,
+          "kept": 10,
+          "rejected": [
+            "coverr:FM7MYiT2eT: matches avoid rule (people)",
+            "coverr:wi3NxYdoxf: matches avoid rule (man, people)"
+          ],
+          "best_score": 0.48,
+          "error": null
+        }
+      ],
+      "candidate_count": 10,
+      "retry_attempts": 2,
+      "clip": {
+        "provider": "coverr",
+        "clip_id": "CWkZgzY1zj",
+        "title": "Brave Astronaut Exploring Mars' Dusty Red Surface",
+        "tags": [
+          "astronaut",
+          "mars",
+          "space exploration",
+          "space suit",
+          "rocky terrain",
+          "red planet",
+          "adventure",
+          "exploration",
+          "sci-fi",
+          "extraterrestrial",
+          "otherworldly",
+          "digital art",
+          "concept art",
+          "ai generated"
+        ],
+        "source_page_url": null,
+        "download_url": "https://cdn.coverr.co/videos/coverr-temp-92jpbegin-with-a-tracking-shot-following-a-man-in-a-full-astronaut-suit-walking-slowly-and-deliberately-across-the-dusty-reddish-surface-of-mars-the-camera-smoothly-moves-alongside-him-maintaining-a-constant-distan-mp4-7752/1080p.mp4",
+        "local_file": "clips/coverr_CWkZgzY1zj.mp4",
+        "duration_seconds": 5.041667,
+        "width": 1168,
+        "height": 864,
+        "creator": "Coverr",
+        "creator_url": "https://coverr.co",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T10:23:05+00:00",
+        "looped": false,
+        "framing_method": "edge_energy_centroid",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.3523,
+            "saturation": 0.4229,
+            "frames": 10
+          },
+          "brightness": -0.0495,
+          "saturation": 0.8,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-001.jpg"
+      },
+      "license": {
+        "license_name": "Coverr License",
+        "license_url": "https://coverr.co/license",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Clips must not be resold or bundled into a service that relies on providing videos.",
+          "Clips must not be used to train AI models.",
+          "Logos, trademarks and identifiable people in a clip may carry separate rights.",
+          "Coverr's API terms ask apps to show a Coverr link/logo; some Coverr videos come from Shutterstock and may carry different terms."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by Coverr via Coverr"
+      },
+      "relevance": {
+        "score": 0.48,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.455,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 0.0,
+            "object": 1.0
+          },
+          "matched_terms": {
+            "object": "planet"
+          },
+          "weights": {
+            "subject": 0.3,
+            "object": 0.25
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "coverr:CWkZgzY1zj",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.48 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay",
+          "coverr"
+        ],
+        "queries": [
+          {
+            "query": "ocean covers planet",
+            "returned_by_provider": {
+              "coverr": 0
+            },
+            "provider_errors": {
+              "pixabay": "RuntimeError"
+            },
+            "fallback_provider_queried": true
+          },
+          {
+            "query": "ocean covers",
+            "returned_by_provider": {
+              "coverr": 4
+            },
+            "provider_errors": {
+              "pixabay": "RuntimeError"
+            },
+            "fallback_provider_queried": true
+          },
+          {
+            "query": "planet",
+            "returned_by_provider": {
+              "coverr": 12
+            },
+            "provider_errors": {
+              "pixabay": "RuntimeError"
+            },
+            "fallback_provider_queried": true
+          }
+        ],
+        "chosen_provider": "coverr",
+        "chosen_because": "'coverr' supplied the highest-scoring acceptable clip among the merged results of pixabay, coverr."
+      },
+      "alternatives": [
+        {
+          "clip": "coverr:9olgFtopUS",
+          "title": "Plant swaying in the wind",
+          "text_score": 0.0,
+          "visual_score": null,
+          "technical_score": 0.611,
+          "final_score": 0.068,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "no scene terms found in clip title/tags",
+            "orientation 3840x2160 differs from 1:1; will be cropped"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "object": 0.0
+            },
+            "matched_terms": {},
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "coverr:DW4o1UNUH2",
+          "title": "Cacti near a building",
+          "text_score": 0.0,
+          "visual_score": null,
+          "technical_score": 0.611,
+          "final_score": 0.068,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "no scene terms found in clip title/tags",
+            "orientation 3840x2160 differs from 1:1; will be cropped"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "object": 0.0
+            },
+            "matched_terms": {},
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "coverr:NlochG7Zml",
+          "title": "Green plants being watered",
+          "text_score": 0.0,
+          "visual_score": null,
+          "technical_score": 0.611,
+          "final_score": 0.068,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "no scene terms found in clip title/tags",
+            "orientation 1920x1080 differs from 1:1; will be cropped"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "object": 0.0
+            },
+            "matched_terms": {},
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-002",
+      "index": 2,
+      "start": 3.096,
+      "end": 6.216,
+      "duration": 3.12,
+      "narration_text": "Plastic waste threatens marine life.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Plastic waste threatens marine life.",
+      "visual_analysis": {
+        "subject": "plastic waste",
+        "action": null,
+        "setting": null,
+        "objects": [
+          "threatens marine life"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase."
+        ],
+        "frames": [],
+        "scene_type": "object",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "plastic waste threatens marine life",
+        "plastic waste"
+      ],
+      "queries_detail": [
+        {
+          "query": "plastic waste threatens marine life",
+          "returned": 0,
+          "kept": 0,
+          "rejected": [],
+          "best_score": null,
+          "error": null
+        },
+        {
+          "query": "plastic waste",
+          "returned": 3,
+          "kept": 1,
+          "rejected": [
+            "coverr:jmoVpz8UL7: matches avoid rule (girl, people)",
+            "coverr:5YB587l5L3: matches avoid rule (girl)"
+          ],
+          "best_score": 0.645,
+          "error": null
+        }
+      ],
+      "candidate_count": 1,
+      "retry_attempts": 1,
+      "clip": {
+        "provider": "coverr",
+        "clip_id": "5ZJTZ5f4Z7",
+        "title": "Turtle Struggling Amidst Ocean Pollution",
+        "tags": [
+          "ocean pollution",
+          "marine life",
+          "turtle",
+          "environmental awareness",
+          "plastic waste",
+          "sea",
+          "wildlife",
+          "nature",
+          "conservation",
+          "pollution",
+          "adverse impact"
+        ],
+        "source_page_url": null,
+        "download_url": "https://cdn.coverr.co/videos/user-ai-generation-BjYHPIbbAA0c/1080p.mp4",
+        "local_file": "clips/coverr_5ZJTZ5f4Z7.mp4",
+        "duration_seconds": 8.0,
+        "width": 1280,
+        "height": 720,
+        "creator": "Coverr",
+        "creator_url": "https://coverr.co",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T10:23:07+00:00",
+        "looped": false,
+        "framing_method": "edge_energy_centroid",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.2533,
+            "saturation": 0.1897,
+            "frames": 12
+          },
+          "brightness": 0.0495,
+          "saturation": 1.25,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-002.jpg"
+      },
+      "license": {
+        "license_name": "Coverr License",
+        "license_url": "https://coverr.co/license",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Clips must not be resold or bundled into a service that relies on providing videos.",
+          "Clips must not be used to train AI models.",
+          "Logos, trademarks and identifiable people in a clip may carry separate rights.",
+          "Coverr's API terms ask apps to show a Coverr link/logo; some Coverr videos come from Shutterstock and may carry different terms."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by Coverr via Coverr"
+      },
+      "relevance": {
+        "score": 0.645,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.697,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "object": 0.333
+          },
+          "matched_terms": {
+            "subject": "plastic",
+            "object": "threatens marine life"
+          },
+          "weights": {
+            "subject": 0.3,
+            "object": 0.25
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "coverr:5ZJTZ5f4Z7",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.64 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay",
+          "coverr"
+        ],
+        "queries": [
+          {
+            "query": "plastic waste threatens marine life",
+            "returned_by_provider": {
+              "coverr": 0
+            },
+            "provider_errors": {
+              "pixabay": "RuntimeError"
+            },
+            "fallback_provider_queried": true
+          },
+          {
+            "query": "plastic waste",
+            "returned_by_provider": {
+              "coverr": 3
+            },
+            "provider_errors": {
+              "pixabay": "RuntimeError"
+            },
+            "fallback_provider_queried": true
+          }
+        ],
+        "chosen_provider": "coverr",
+        "chosen_because": "'coverr' supplied the highest-scoring acceptable clip among the merged results of pixabay, coverr."
+      },
+      "alternatives": [],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-003",
+      "index": 3,
+      "start": 6.216,
+      "end": 9.639,
+      "duration": 3.423,
+      "narration_text": "Volunteers clean beaches every weekend.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Volunteers cleaning beaches weekend.",
+      "visual_analysis": {
+        "subject": "volunteers",
+        "action": "cleaning",
+        "setting": null,
+        "objects": [
+          "beaches weekend"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [],
+        "frames": [],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "cleaning",
+          "clean"
+        ],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "volunteers cleaning beaches weekend",
+        "volunteers cleaning",
+        "beaches weekend",
+        "volunteers beaches weekend"
+      ],
+      "queries_detail": [
+        {
+          "query": "volunteers cleaning beaches weekend",
+          "returned": 0,
+          "kept": 0,
+          "rejected": [],
+          "best_score": null,
+          "error": null
+        },
+        {
+          "query": "volunteers cleaning",
+          "returned": 0,
+          "kept": 0,
+          "rejected": [],
+          "best_score": null,
+          "error": null
+        },
+        {
+          "query": "beaches weekend",
+          "returned": 0,
+          "kept": 0,
+          "rejected": [],
+          "best_score": null,
+          "error": null
+        },
+        {
+          "query": "volunteers beaches weekend",
+          "returned": 0,
+          "kept": 0,
+          "rejected": [],
+          "best_score": null,
+          "error": null
+        }
+      ],
+      "candidate_count": 0,
+      "retry_attempts": 3,
+      "clip": null,
+      "license": {},
+      "attribution": null,
+      "relevance": {
+        "score": null,
+        "scoring_method": null,
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": false,
+        "text_score": null,
+        "visual_score": null,
+        "label": null,
+        "evidence": null,
+        "gated": null,
+        "visual_detail": null
+      },
+      "needs_review": false,
+      "placeholder": true,
+      "download_attempts": [],
+      "used_alternate": false,
+      "selection_reason": "no usable candidates returned for any query",
+      "match_status": "no_candidates",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay",
+          "coverr"
+        ],
+        "queries": [
+          {
+            "query": "volunteers cleaning beaches weekend",
+            "returned_by_provider": {
+              "coverr": 0
+            },
+            "provider_errors": {
+              "pixabay": "RuntimeError"
+            },
+            "fallback_provider_queried": true
+          },
+          {
+            "query": "volunteers cleaning",
+            "returned_by_provider": {
+              "coverr": 0
+            },
+            "provider_errors": {
+              "pixabay": "RuntimeError"
+            },
+            "fallback_provider_queried": true
+          },
+          {
+            "query": "beaches weekend",
+            "returned_by_provider": {
+              "coverr": 0
+            },
+            "provider_errors": {
+              "pixabay": "RuntimeError"
+            },
+            "fallback_provider_queried": true
+          },
+          {
+            "query": "volunteers beaches weekend",
+            "returned_by_provider": {
+              "coverr": 0
+            },
+            "provider_errors": {
+              "pixabay": "RuntimeError"
+            },
+            "fallback_provider_queried": true
+          }
+        ],
+        "chosen_provider": null,
+        "chosen_because": null
+      },
+      "alternatives": [],
+      "warnings": [
+        "No footage for scene scene-003: no usable candidates returned for any query."
+      ],
+      "visual_hint": null
+    }
+  ],
+  "warnings": [
+    "Relevance based on clip title/tags only (no visual verification of frames).",
+    "No footage for scene scene-003: no usable candidates returned for any query.",
+    "Footage relevance was estimated from provider titles/tags and scene analysis only. No vision-language model inspected the video frames."
+  ],
+  "avoid": [
+    "people"
+  ],
+  "footage_provider": "pixabay",
+  "render": {
+    "engine": "per-scene segments + stream-copy concat",
+    "fps": 30,
+    "total_frames": 289,
+    "colour_normalisation": {
+      "enabled": true,
+      "target": {
+        "luma": 0.3028,
+        "saturation": 0.3063
+      },
+      "method": "per-clip mean luma/saturation vs job median; bounded eq filter"
+    },
+    "min_scene_seconds": 2.0
+  }
+}

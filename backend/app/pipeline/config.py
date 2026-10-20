@@ -103,6 +103,7 @@ class PipelineSettings:
     download_timeout_seconds: float = 60.0
     allowed_download_hosts: Tuple[str, ...] = (
         "cdn.pixabay.com", "videos.pexels.com", "player.vimeo.com",
+        "storage.coverr.co", "cdn.coverr.co", "api.coverr.co", "coverr.co",
     )
     require_https: bool = True
 
@@ -120,6 +121,7 @@ class PipelineSettings:
     # --- secrets (never serialised) ---------------------------------------------
     pixabay_api_key: Optional[str] = field(default=None, repr=False)
     pexels_api_key: Optional[str] = field(default=None, repr=False)
+    coverr_api_key: Optional[str] = field(default=None, repr=False)
 
     @property
     def jobs_dir(self) -> Path:
@@ -127,7 +129,7 @@ class PipelineSettings:
 
     def public_dict(self) -> Dict[str, object]:
         """Settings safe to embed in manifests (no secrets, no absolute paths)."""
-        skip = {"pixabay_api_key", "pexels_api_key", "storage_root"}
+        skip = {"pixabay_api_key", "pexels_api_key", "coverr_api_key", "storage_root"}
         out: Dict[str, object] = {}
         for f in fields(self):
             if f.name in skip:
@@ -182,4 +184,5 @@ def load_settings(env: Optional[Dict[str, str]] = None, dotenv_path: Optional[Pa
     s.normalize_color = _bool(g("NORMALIZE_COLOR"), s.normalize_color)
     s.pixabay_api_key = g("PIXABAY_API_KEY") or None
     s.pexels_api_key = g("PEXELS_API_KEY") or None
+    s.coverr_api_key = g("COVERR_API_KEY") or None
     return s

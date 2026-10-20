@@ -103,7 +103,7 @@ def validate_timeline(tl: Dict[str, Any], audio_duration: Optional[float] = None
 def cost_estimate(tts_name: Optional[str], asr_name: Optional[str], footage_names: List[str]) -> Dict[str, Any]:
     free_tts = {None, "edge-tts", "mock"}
     free_asr = {None, "faster-whisper", "mock"}
-    free_footage = {"pixabay", "pexels", "mock"}
+    free_footage = {"pixabay", "pexels", "coverr", "mock"}
     if tts_name in free_tts and asr_name in free_asr and all(f in free_footage for f in footage_names):
         return {"amount_usd": 0.0, "currency": "USD",
                 "basis": "All configured providers are free to call (Edge TTS endpoint, local Whisper, free-tier footage APIs). "

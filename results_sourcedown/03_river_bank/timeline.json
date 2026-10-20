@@ -1,0 +1,749 @@
+{
+  "schema_version": "1.0",
+  "job_id": "babc79d860a1",
+  "aspect_ratio": "16:9",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": {
+    "file": "narration.mp3",
+    "source": "generated:edge-tts"
+  },
+  "total_duration": 6.557,
+  "scenes": [
+    {
+      "scene_id": "scene-001",
+      "index": 1,
+      "start": 0.0,
+      "end": 2.928,
+      "duration": 2.928,
+      "narration_text": "The river bank was quiet at dawn.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "River bank quiet in dawn.",
+      "visual_analysis": {
+        "subject": "river bank",
+        "action": null,
+        "setting": "dawn",
+        "objects": [
+          "quiet"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase.",
+          "Word 'bank' disambiguated as 'river bank' using context 'river'."
+        ],
+        "frames": [],
+        "scene_type": "object",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "river bank quiet in dawn",
+        "river bank in dawn",
+        "quiet in dawn",
+        "river bank"
+      ],
+      "queries_detail": [
+        {
+          "query": "river bank quiet in dawn",
+          "returned": 0,
+          "kept": 0,
+          "rejected": [],
+          "best_score": null,
+          "error": null
+        },
+        {
+          "query": "river bank in dawn",
+          "returned": 3,
+          "kept": 3,
+          "rejected": [],
+          "best_score": 0.111,
+          "error": null
+        },
+        {
+          "query": "quiet in dawn",
+          "returned": 11,
+          "kept": 11,
+          "rejected": [],
+          "best_score": 0.429,
+          "error": null
+        },
+        {
+          "query": "river bank",
+          "returned": 12,
+          "kept": 11,
+          "rejected": [
+            "coverr:axd6AAxOLk: duplicate candidate"
+          ],
+          "best_score": 0.67,
+          "error": null
+        }
+      ],
+      "candidate_count": 25,
+      "retry_attempts": 3,
+      "clip": {
+        "provider": "coverr",
+        "clip_id": "1iNLGleZC7",
+        "title": "Boats floating on a river shore in Panama City",
+        "tags": [
+          "sky",
+          "river",
+          "cityscape",
+          "river bank",
+          "birds",
+          "palm tree",
+          "outdoors",
+          "outside",
+          "fresh air",
+          "skyscrapers",
+          "real estate",
+          "building",
+          "landscape",
+          "cloudy weather",
+          "panama city",
+          "city",
+          "urban"
+        ],
+        "source_page_url": null,
+        "download_url": "https://cdn.coverr.co/videos/coverr-boats-floating-on-a-river-shore-in-panama-city-121/1080p.mp4",
+        "local_file": "clips/coverr_1iNLGleZC7.mp4",
+        "duration_seconds": 12.5125,
+        "width": 3840,
+        "height": 2160,
+        "creator": "Coverr",
+        "creator_url": "https://coverr.co",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T10:23:59+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.5035,
+            "saturation": 0.1334,
+            "frames": 12
+          },
+          "brightness": -0.083,
+          "saturation": 1.0,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-001.jpg"
+      },
+      "license": {
+        "license_name": "Coverr License",
+        "license_url": "https://coverr.co/license",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Clips must not be resold or bundled into a service that relies on providing videos.",
+          "Clips must not be used to train AI models.",
+          "Logos, trademarks and identifiable people in a clip may carry separate rights.",
+          "Coverr's API terms ask apps to show a Coverr link/logo; some Coverr videos come from Shutterstock and may carry different terms."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by Coverr via Coverr"
+      },
+      "relevance": {
+        "score": 0.67,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.629,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "object": 0.0,
+            "setting": 0.0
+          },
+          "matched_terms": {
+            "subject": "river"
+          },
+          "weights": {
+            "subject": 0.3,
+            "object": 0.25,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "coverr:1iNLGleZC7",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.67 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay",
+          "coverr"
+        ],
+        "queries": [
+          {
+            "query": "river bank quiet in dawn",
+            "returned_by_provider": {
+              "coverr": 0
+            },
+            "provider_errors": {
+              "pixabay": "RuntimeError"
+            },
+            "fallback_provider_queried": true
+          },
+          {
+            "query": "river bank in dawn",
+            "returned_by_provider": {
+              "coverr": 3
+            },
+            "provider_errors": {
+              "pixabay": "RuntimeError"
+            },
+            "fallback_provider_queried": true
+          },
+          {
+            "query": "quiet in dawn",
+            "returned_by_provider": {
+              "coverr": 11
+            },
+            "provider_errors": {
+              "pixabay": "RuntimeError"
+            },
+            "fallback_provider_queried": true
+          },
+          {
+            "query": "river bank",
+            "returned_by_provider": {
+              "coverr": 12
+            },
+            "provider_errors": {
+              "pixabay": "RuntimeError"
+            },
+            "fallback_provider_queried": true
+          }
+        ],
+        "chosen_provider": "coverr",
+        "chosen_because": "'coverr' supplied the highest-scoring acceptable clip among the merged results of pixabay, coverr."
+      },
+      "alternatives": [
+        {
+          "clip": "coverr:8uhRvZWM18",
+          "title": "A sad girl standing by the riverside",
+          "text_score": 0.629,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.67,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: river, word-sense confirmed: river, water"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "river"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "coverr:DGYkSBc3Dj",
+          "title": "Woman walks with an umbrella",
+          "text_score": 0.629,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.67,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: river, word-sense confirmed: nature, river"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "river"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "coverr:E3fr5tH8ha",
+          "title": "A man walks along the river in London",
+          "text_score": 0.629,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.67,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: river, word-sense confirmed: river"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "object": 0.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "river"
+            },
+            "weights": {
+              "subject": 0.3,
+              "object": 0.25,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-002",
+      "index": 2,
+      "start": 2.928,
+      "end": 6.557,
+      "duration": 3.629,
+      "narration_text": "Fishermen cast their lines into the slow water.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Fishermen cast lines watering in slow.",
+      "visual_analysis": {
+        "subject": "fishermen cast lines",
+        "action": "watering",
+        "setting": "slow",
+        "objects": [],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [],
+        "frames": [],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "watering",
+          "water"
+        ],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "fishermen cast lines watering in slow",
+        "fishermen cast lines in slow",
+        "fishermen cast lines watering",
+        "fishermen cast lines"
+      ],
+      "queries_detail": [
+        {
+          "query": "fishermen cast lines watering in slow",
+          "returned": 0,
+          "kept": 0,
+          "rejected": [],
+          "best_score": null,
+          "error": null
+        },
+        {
+          "query": "fishermen cast lines in slow",
+          "returned": 0,
+          "kept": 0,
+          "rejected": [],
+          "best_score": null,
+          "error": null
+        },
+        {
+          "query": "fishermen cast lines watering",
+          "returned": 0,
+          "kept": 0,
+          "rejected": [],
+          "best_score": null,
+          "error": null
+        },
+        {
+          "query": "fishermen cast lines",
+          "returned": 12,
+          "kept": 12,
+          "rejected": [],
+          "best_score": 0.467,
+          "error": null
+        }
+      ],
+      "candidate_count": 12,
+      "retry_attempts": 3,
+      "clip": {
+        "provider": "coverr",
+        "clip_id": "0lHAzgys5R",
+        "title": "A fisherman getting ready to cast his hook into the sea",
+        "tags": [
+          "fishing rod",
+          "seashore",
+          "coast",
+          "coastline",
+          "guy",
+          "man",
+          "rocks",
+          "fishing",
+          "seaside",
+          "hobby",
+          "leisure",
+          "lifestyle",
+          "people",
+          "outside",
+          "outdoors",
+          "fresh air",
+          "sunny day",
+          "sunglasses",
+          "blue sky"
+        ],
+        "source_page_url": null,
+        "download_url": "https://cdn.coverr.co/videos/coverr-a-fisherman-getting-ready-to-cast-his-hook-into-the-sea-9094/1080p.mp4",
+        "local_file": "clips/coverr_0lHAzgys5R.mp4",
+        "duration_seconds": 11.76175,
+        "width": 3840,
+        "height": 2160,
+        "creator": "Coverr",
+        "creator_url": "https://coverr.co",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T10:24:04+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.3376,
+            "saturation": 0.2118,
+            "frames": 12
+          },
+          "brightness": 0.0829,
+          "saturation": 1.0,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-002.jpg"
+      },
+      "license": {
+        "license_name": "Coverr License",
+        "license_url": "https://coverr.co/license",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Clips must not be resold or bundled into a service that relies on providing videos.",
+          "Clips must not be used to train AI models.",
+          "Logos, trademarks and identifiable people in a clip may carry separate rights.",
+          "Coverr's API terms ask apps to show a Coverr link/logo; some Coverr videos come from Shutterstock and may carry different terms."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by Coverr via Coverr"
+      },
+      "relevance": {
+        "score": 0.467,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.4,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "action": 0.0,
+            "setting": 0.0
+          },
+          "matched_terms": {
+            "subject": "cast"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "setting": 0.15
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "coverr:0lHAzgys5R",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.47 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay",
+          "coverr"
+        ],
+        "queries": [
+          {
+            "query": "fishermen cast lines watering in slow",
+            "returned_by_provider": {
+              "coverr": 0
+            },
+            "provider_errors": {
+              "pixabay": "RuntimeError"
+            },
+            "fallback_provider_queried": true
+          },
+          {
+            "query": "fishermen cast lines in slow",
+            "returned_by_provider": {
+              "coverr": 0
+            },
+            "provider_errors": {
+              "pixabay": "RuntimeError"
+            },
+            "fallback_provider_queried": true
+          },
+          {
+            "query": "fishermen cast lines watering",
+            "returned_by_provider": {
+              "coverr": 0
+            },
+            "provider_errors": {
+              "pixabay": "RuntimeError"
+            },
+            "fallback_provider_queried": true
+          },
+          {
+            "query": "fishermen cast lines",
+            "returned_by_provider": {
+              "coverr": 12
+            },
+            "provider_errors": {
+              "pixabay": "RuntimeError"
+            },
+            "fallback_provider_queried": true
+          }
+        ],
+        "chosen_provider": "coverr",
+        "chosen_because": "'coverr' supplied the highest-scoring acceptable clip among the merged results of pixabay, coverr."
+      },
+      "alternatives": [
+        {
+          "clip": "coverr:t1iwyAWAXt",
+          "title": "A fisherman casting his hook into the sea",
+          "text_score": 0.4,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.467,
+          "method": "metadata_text_fallback",
+          "passed": true,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: cast"
+          ],
+          "penalties": [],
+          "label": "Medium",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "subject": "cast"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "coverr:4niYJ0hk0z",
+          "title": "Waves crashing on the rocks at sea",
+          "text_score": 0.4,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: watering",
+            "NOT accepted automatically: clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 1 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "action": "watering"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "coverr:0wZg2Y7Xn8",
+          "title": "A guy searching for a place to fish on a rocky coast",
+          "text_score": 0.0,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.111,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "no scene terms found in clip title/tags",
+            "NOT accepted automatically: clip metadata covers only 0 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 0 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 0.0,
+              "setting": 0.0
+            },
+            "matched_terms": {},
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "setting": 0.15
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    }
+  ],
+  "warnings": [
+    "Relevance based on clip title/tags only (no visual verification of frames).",
+    "Footage relevance was estimated from provider titles/tags and scene analysis only. No vision-language model inspected the video frames."
+  ],
+  "avoid": [],
+  "footage_provider": "pixabay",
+  "render": {
+    "engine": "per-scene segments + stream-copy concat",
+    "fps": 30,
+    "total_frames": 197,
+    "colour_normalisation": {
+      "enabled": true,
+      "target": {
+        "luma": 0.4205,
+        "saturation": 0.1726
+      },
+      "method": "per-clip mean luma/saturation vs job median; bounded eq filter"
+    },
+    "min_scene_seconds": 2.0
+  }
+}

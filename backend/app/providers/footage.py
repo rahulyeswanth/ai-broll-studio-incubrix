@@ -1,6 +1,7 @@
 
 from app.core.config import get_settings
 from app.providers.base import FootageProvider
+from app.providers.coverr import CoverrFootageProvider
 from app.providers.mocks import MockFootageProvider
 from app.providers.pexels import PexelsFootageProvider
 from app.providers.pixabay import PixabayFootageProvider
@@ -33,7 +34,12 @@ def get_footage_provider(
             strict_orientation=strict_orientation,
         )
 
+    if name == "coverr":
+        if not settings.COVERR_API_KEY:
+            raise ValueError("Coverr API key is not configured. Set COVERR_API_KEY.")
+        return CoverrFootageProvider(api_key=settings.COVERR_API_KEY)
+
     raise ValueError(
         f"Unsupported footage provider: {name}. "
-        "Choose mock, pexels, or pixabay."
+        "Choose mock, pexels, pixabay, or coverr."
     )

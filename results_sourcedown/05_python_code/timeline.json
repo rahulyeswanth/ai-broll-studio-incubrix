@@ -1,0 +1,625 @@
+{
+  "schema_version": "1.0",
+  "job_id": "9e0c086e9704",
+  "aspect_ratio": "16:9",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": {
+    "file": "narration.mp3",
+    "source": "generated:edge-tts"
+  },
+  "total_duration": 7.131,
+  "scenes": [
+    {
+      "scene_id": "scene-001",
+      "index": 1,
+      "start": 0.0,
+      "end": 3.432,
+      "duration": 3.432,
+      "narration_text": "Python is a popular programming language.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Programming code popular programing language.",
+      "visual_analysis": {
+        "subject": "programming code popular",
+        "action": "programing",
+        "setting": null,
+        "objects": [
+          "language"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "Word 'python' disambiguated as 'programming code' using context 'programming'."
+        ],
+        "frames": [],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "programing",
+          "program"
+        ],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "programming code popular programing language",
+        "programming code popular programing",
+        "language",
+        "programming code popular"
+      ],
+      "queries_detail": [
+        {
+          "query": "programming code popular programing language",
+          "returned": 0,
+          "kept": 0,
+          "rejected": [],
+          "best_score": null,
+          "error": null
+        },
+        {
+          "query": "programming code popular programing",
+          "returned": 0,
+          "kept": 0,
+          "rejected": [],
+          "best_score": null,
+          "error": null
+        },
+        {
+          "query": "language",
+          "returned": 1,
+          "kept": 1,
+          "rejected": [],
+          "best_score": 0.368,
+          "error": null
+        },
+        {
+          "query": "programming code popular",
+          "returned": 0,
+          "kept": 0,
+          "rejected": [],
+          "best_score": null,
+          "error": null
+        }
+      ],
+      "candidate_count": 1,
+      "retry_attempts": 3,
+      "clip": {
+        "provider": "coverr",
+        "clip_id": "zEXbppHE2l",
+        "title": "Thumbs up",
+        "tags": [
+          "thumb up",
+          "affirmation",
+          "positive",
+          "hands",
+          "blue sky",
+          "sunny day",
+          "gesture",
+          "symbol",
+          "attitude",
+          "body language",
+          "wrist",
+          "outside",
+          "outdoors",
+          "fresh air",
+          "mood"
+        ],
+        "source_page_url": null,
+        "download_url": "https://cdn.coverr.co/videos/coverr-thumbs-up-2196/1080p.mp4",
+        "local_file": "clips/coverr_zEXbppHE2l.mp4",
+        "duration_seconds": 9.801458,
+        "width": 4096,
+        "height": 2160,
+        "creator": "Coverr",
+        "creator_url": "https://coverr.co",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T10:24:45+00:00",
+        "looped": false,
+        "framing_method": "edge_energy_centroid",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.47,
+            "saturation": 0.378,
+            "frames": 12
+          },
+          "brightness": -0.0389,
+          "saturation": 0.8,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-001.jpg"
+      },
+      "license": {
+        "license_name": "Coverr License",
+        "license_url": "https://coverr.co/license",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Clips must not be resold or bundled into a service that relies on providing videos.",
+          "Clips must not be used to train AI models.",
+          "Logos, trademarks and identifiable people in a clip may carry separate rights.",
+          "Coverr's API terms ask apps to show a Coverr link/logo; some Coverr videos come from Shutterstock and may carry different terms."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by Coverr via Coverr"
+      },
+      "relevance": {
+        "score": 0.368,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": false,
+        "text_score": 0.294,
+        "visual_score": null,
+        "label": "Low",
+        "evidence": {
+          "elements": {
+            "subject": 0.0,
+            "action": 0.0,
+            "object": 1.0
+          },
+          "matched_terms": {
+            "object": "language"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "object": 0.25
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": true,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "coverr:zEXbppHE2l",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "needs review: score 0.37 is below the match threshold 0.45",
+      "match_status": "fallback_low_confidence",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay",
+          "coverr"
+        ],
+        "queries": [
+          {
+            "query": "programming code popular programing language",
+            "returned_by_provider": {
+              "coverr": 0
+            },
+            "provider_errors": {
+              "pixabay": "RuntimeError"
+            },
+            "fallback_provider_queried": true
+          },
+          {
+            "query": "programming code popular programing",
+            "returned_by_provider": {
+              "coverr": 0
+            },
+            "provider_errors": {
+              "pixabay": "RuntimeError"
+            },
+            "fallback_provider_queried": true
+          },
+          {
+            "query": "language",
+            "returned_by_provider": {
+              "coverr": 1
+            },
+            "provider_errors": {
+              "pixabay": "RuntimeError"
+            },
+            "fallback_provider_queried": true
+          },
+          {
+            "query": "programming code popular",
+            "returned_by_provider": {
+              "coverr": 0
+            },
+            "provider_errors": {
+              "pixabay": "RuntimeError"
+            },
+            "fallback_provider_queried": true
+          }
+        ],
+        "chosen_provider": "coverr",
+        "chosen_because": "'coverr' supplied the highest-scoring acceptable clip among the merged results of pixabay, coverr."
+      },
+      "alternatives": [],
+      "warnings": [
+        "Scene scene-001: footage may NOT accurately depict the narration (score 0.37 is below the match threshold 0.45)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-002",
+      "index": 2,
+      "start": 3.432,
+      "end": 7.131,
+      "duration": 3.699,
+      "narration_text": "Developers write scripts to automate tasks.",
+      "timing_method": "tts_word_boundaries",
+      "visual_description": "Developers writing scripts in office.",
+      "visual_analysis": {
+        "subject": "developers",
+        "action": "writing",
+        "setting": "office",
+        "objects": [
+          "scripts",
+          "automate tasks"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "Setting 'office' is inferred from the subject, not stated in the narration.",
+          "Alternative search phrasings added from activity frame(s): typing_writing."
+        ],
+        "frames": [
+          "typing_writing"
+        ],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "writing",
+          "handwriting",
+          "notebook",
+          "journaling",
+          "pen"
+        ],
+        "object_evidence_terms": [
+          "pen",
+          "notebook",
+          "paper",
+          "desk"
+        ],
+        "foil_terms": [
+          "typing",
+          "keyboard"
+        ]
+      },
+      "search_queries": [
+        "developers writing scripts in office",
+        "person writing in notebook with pen",
+        "developers writing in office",
+        "scripts in office",
+        "developers in office",
+        "developers writing"
+      ],
+      "queries_detail": [
+        {
+          "query": "developers writing scripts in office",
+          "returned": 0,
+          "kept": 0,
+          "rejected": [],
+          "best_score": null,
+          "error": null
+        },
+        {
+          "query": "person writing in notebook with pen",
+          "returned": 1,
+          "kept": 1,
+          "rejected": [],
+          "best_score": 0.29,
+          "error": null
+        },
+        {
+          "query": "developers writing in office",
+          "returned": 0,
+          "kept": 0,
+          "rejected": [],
+          "best_score": null,
+          "error": null
+        },
+        {
+          "query": "scripts in office",
+          "returned": 0,
+          "kept": 0,
+          "rejected": [],
+          "best_score": null,
+          "error": null
+        },
+        {
+          "query": "developers in office",
+          "returned": 1,
+          "kept": 1,
+          "rejected": [],
+          "best_score": 0.471,
+          "error": null
+        },
+        {
+          "query": "developers writing",
+          "returned": 0,
+          "kept": 0,
+          "rejected": [],
+          "best_score": null,
+          "error": null
+        }
+      ],
+      "candidate_count": 2,
+      "retry_attempts": 5,
+      "clip": {
+        "provider": "coverr",
+        "clip_id": "rXf1Hyrfkk",
+        "title": "Coding on a laptop",
+        "tags": [
+          "technology",
+          "coder",
+          "developer",
+          "coding",
+          "computer",
+          "sequences",
+          "laptop",
+          "screen",
+          "programming",
+          "data",
+          "tech",
+          "sequencing",
+          "working",
+          "business",
+          "office",
+          "busy",
+          "background",
+          "loop"
+        ],
+        "source_page_url": null,
+        "download_url": "https://cdn.coverr.co/videos/coverr-coding-on-a-laptop-2116/1080p.mp4",
+        "local_file": "clips/coverr_rXf1Hyrfkk.mp4",
+        "duration_seconds": 15.08,
+        "width": 1920,
+        "height": 1080,
+        "creator": "Coverr",
+        "creator_url": "https://coverr.co",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T10:24:55+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.3922,
+            "saturation": 0.1033,
+            "frames": 12
+          },
+          "brightness": 0.0389,
+          "saturation": 1.25,
+          "applied": true
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-002.jpg"
+      },
+      "license": {
+        "license_name": "Coverr License",
+        "license_url": "https://coverr.co/license",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Clips must not be resold or bundled into a service that relies on providing videos.",
+          "Clips must not be used to train AI models.",
+          "Logos, trademarks and identifiable people in a clip may carry separate rights.",
+          "Coverr's API terms ask apps to show a Coverr link/logo; some Coverr videos come from Shutterstock and may carry different terms."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by Coverr via Coverr"
+      },
+      "relevance": {
+        "score": 0.471,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": true,
+        "text_score": 0.405,
+        "visual_score": null,
+        "label": "Medium",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "action": 0.0,
+            "object": 0.0,
+            "setting": 1.0
+          },
+          "matched_terms": {
+            "subject": "developers",
+            "setting": "office"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "object": 0.25,
+            "setting": 0.075
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": false,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "coverr:rXf1Hyrfkk",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "highest-scoring unused candidate (0.47 >= threshold 0.45; metadata_text_fallback)",
+      "match_status": "matched",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay",
+          "coverr"
+        ],
+        "queries": [
+          {
+            "query": "developers writing scripts in office",
+            "returned_by_provider": {
+              "coverr": 0
+            },
+            "provider_errors": {
+              "pixabay": "RuntimeError"
+            },
+            "fallback_provider_queried": true
+          },
+          {
+            "query": "person writing in notebook with pen",
+            "returned_by_provider": {
+              "coverr": 1
+            },
+            "provider_errors": {
+              "pixabay": "RuntimeError"
+            },
+            "fallback_provider_queried": true
+          },
+          {
+            "query": "developers writing in office",
+            "returned_by_provider": {
+              "coverr": 0
+            },
+            "provider_errors": {
+              "pixabay": "RuntimeError"
+            },
+            "fallback_provider_queried": true
+          },
+          {
+            "query": "scripts in office",
+            "returned_by_provider": {
+              "coverr": 0
+            },
+            "provider_errors": {
+              "pixabay": "RuntimeError"
+            },
+            "fallback_provider_queried": true
+          },
+          {
+            "query": "developers in office",
+            "returned_by_provider": {
+              "coverr": 1
+            },
+            "provider_errors": {
+              "pixabay": "RuntimeError"
+            },
+            "fallback_provider_queried": true
+          },
+          {
+            "query": "developers writing",
+            "returned_by_provider": {
+              "coverr": 0
+            },
+            "provider_errors": {
+              "pixabay": "RuntimeError"
+            },
+            "fallback_provider_queried": true
+          }
+        ],
+        "chosen_provider": "coverr",
+        "chosen_because": "'coverr' supplied the highest-scoring acceptable clip among the merged results of pixabay, coverr."
+      },
+      "alternatives": [
+        {
+          "clip": "coverr:9SmRnIxLxV",
+          "title": "Close-Up of a Woman Journaling in a Peaceful Forest Clearing",
+          "text_score": 0.595,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.29,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - action: writing, object: pen",
+            "NOT accepted automatically: clip metadata covers only 0 of the scene's key words (needs 2); too weak to trust"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": "clip metadata covers only 0 of the scene's key words (needs 2); too weak to trust",
+          "evidence": {
+            "elements": {
+              "subject": 0.0,
+              "action": 1.0,
+              "object": 1.0,
+              "setting": 0.0
+            },
+            "matched_terms": {
+              "action": "writing",
+              "object": "pen"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25,
+              "setting": 0.075
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": true,
+            "object_evidenced": true
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Relevance based on clip title/tags only (no visual verification of frames)."
+      ],
+      "visual_hint": null
+    }
+  ],
+  "warnings": [
+    "Scene scene-001: footage may NOT accurately depict the narration (score 0.37 is below the match threshold 0.45).",
+    "Relevance based on clip title/tags only (no visual verification of frames).",
+    "Footage relevance was estimated from provider titles/tags and scene analysis only. No vision-language model inspected the video frames."
+  ],
+  "avoid": [],
+  "footage_provider": "pixabay",
+  "render": {
+    "engine": "per-scene segments + stream-copy concat",
+    "fps": 30,
+    "total_frames": 214,
+    "colour_normalisation": {
+      "enabled": true,
+      "target": {
+        "luma": 0.4311,
+        "saturation": 0.2407
+      },
+      "method": "per-clip mean luma/saturation vs job median; bounded eq filter"
+    },
+    "min_scene_seconds": 2.0
+  }
+}

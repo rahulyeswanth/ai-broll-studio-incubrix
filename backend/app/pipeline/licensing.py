@@ -19,6 +19,18 @@ PROVIDER_POLICIES: Dict[str, Dict[str, Any]] = {
             "No implication of endorsement by depicted people or brands.",
         ],
     },
+    "coverr": {
+        "license_name": "Coverr License",
+        "license_url": "https://coverr.co/license",
+        "commercial_use": True,
+        "attribution_required": False,
+        "restrictions": [
+            "Clips must not be resold or bundled into a service that relies on providing videos.",
+            "Clips must not be used to train AI models.",
+            "Logos, trademarks and identifiable people in a clip may carry separate rights.",
+            "Coverr's API terms ask apps to show a Coverr link/logo; some Coverr videos come from Shutterstock and may carry different terms.",
+        ],
+    },
     "pexels": {
         "license_name": "Pexels License",
         "license_url": "https://www.pexels.com/license/",

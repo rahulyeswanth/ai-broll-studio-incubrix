@@ -1,0 +1,540 @@
+{
+  "schema_version": "1.0",
+  "job_id": "7a4e719d14d3",
+  "aspect_ratio": "16:9",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": {
+    "file": "narration.mp3",
+    "source": "generated:edge-tts"
+  },
+  "total_duration": 9.169,
+  "scenes": [
+    {
+      "scene_id": "scene-001",
+      "index": 1,
+      "start": 0.0,
+      "end": 5.952,
+      "duration": 5.952,
+      "narration_text": "In 2024 the company grew 45% to 3.2 million users.",
+      "timing_method": "tts_word_boundaries_partial",
+      "visual_description": "In 2024 company growing 45.",
+      "visual_analysis": {
+        "subject": "in 2024 company",
+        "action": "growing",
+        "setting": null,
+        "objects": [
+          "45",
+          "3 2 million users"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [],
+        "frames": [],
+        "scene_type": "activity",
+        "action_evidence_terms": [
+          "growing",
+          "grow"
+        ],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "in 2024 company growing 45",
+        "in 2024 company growing",
+        "45",
+        "company"
+      ],
+      "queries_detail": [
+        {
+          "query": "in 2024 company growing 45",
+          "returned": 0,
+          "kept": 0,
+          "rejected": [],
+          "best_score": null,
+          "error": null
+        },
+        {
+          "query": "in 2024 company growing",
+          "returned": 0,
+          "kept": 0,
+          "rejected": [],
+          "best_score": null,
+          "error": null
+        },
+        {
+          "query": "45",
+          "returned": 0,
+          "kept": 0,
+          "rejected": [],
+          "best_score": null,
+          "error": null
+        },
+        {
+          "query": "company",
+          "returned": 6,
+          "kept": 6,
+          "rejected": [],
+          "best_score": 0.425,
+          "error": null
+        }
+      ],
+      "candidate_count": 6,
+      "retry_attempts": 3,
+      "clip": {
+        "provider": "coverr",
+        "clip_id": "IdTcPK2ovM",
+        "title": "Pipe fittings company building",
+        "tags": [
+          "pipe fittings",
+          "pipe",
+          "urban",
+          "fittings",
+          "city",
+          "manufacture",
+          "building",
+          "headquarter",
+          "street",
+          "trees",
+          "place",
+          "fixing",
+          "windows",
+          "front"
+        ],
+        "source_page_url": null,
+        "download_url": "https://cdn.coverr.co/videos/coverr-pipe-fittings-company-building-8317/1080p.mp4",
+        "local_file": "clips/coverr_IdTcPK2ovM.mp4",
+        "duration_seconds": 11.328,
+        "width": 1920,
+        "height": 1080,
+        "creator": "Coverr",
+        "creator_url": "https://coverr.co",
+        "ai_generated": null,
+        "retrieved_at": "2026-10-20T10:25:30+00:00",
+        "looped": false,
+        "framing_method": "center_default(no_crop_needed)",
+        "color_normalisation": {
+          "measured": {
+            "luma": 0.4555,
+            "saturation": 0.2652,
+            "frames": 12
+          },
+          "brightness": 0.0,
+          "saturation": 1.0,
+          "applied": false
+        },
+        "reused_from_earlier_scene": false,
+        "thumbnail": "thumb_scene-001.jpg"
+      },
+      "license": {
+        "license_name": "Coverr License",
+        "license_url": "https://coverr.co/license",
+        "commercial_use": true,
+        "commercial_use_basis": "provider_policy_documented",
+        "attribution_required": false,
+        "restrictions": [
+          "Clips must not be resold or bundled into a service that relies on providing videos.",
+          "Clips must not be used to train AI models.",
+          "Logos, trademarks and identifiable people in a clip may carry separate rights.",
+          "Coverr's API terms ask apps to show a Coverr link/logo; some Coverr videos come from Shutterstock and may carry different terms."
+        ],
+        "verified_per_clip": false,
+        "note": "Summarised from the provider's published licence page when this code was written; not re-verified at runtime and not a legal opinion. Check the current terms before publishing."
+      },
+      "attribution": {
+        "required": false,
+        "text": "Video by Coverr via Coverr"
+      },
+      "relevance": {
+        "score": 0.425,
+        "scoring_method": "metadata_text_fallback",
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": false,
+        "text_score": 0.353,
+        "visual_score": null,
+        "label": "Low",
+        "evidence": {
+          "elements": {
+            "subject": 1.0,
+            "action": 0.0,
+            "object": 0.0
+          },
+          "matched_terms": {
+            "subject": "company"
+          },
+          "weights": {
+            "subject": 0.3,
+            "action": 0.3,
+            "object": 0.25
+          },
+          "foil_hits": [],
+          "negative_hits": [],
+          "action_evidenced": false,
+          "object_evidenced": false
+        },
+        "gated": null,
+        "visual_detail": {}
+      },
+      "needs_review": true,
+      "placeholder": false,
+      "download_attempts": [
+        {
+          "clip": "coverr:IdTcPK2ovM",
+          "outcome": "ok",
+          "reason": "downloaded and validated"
+        }
+      ],
+      "used_alternate": false,
+      "selection_reason": "needs review: score 0.42 is below the match threshold 0.45",
+      "match_status": "fallback_low_confidence",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay",
+          "coverr"
+        ],
+        "queries": [
+          {
+            "query": "in 2024 company growing 45",
+            "returned_by_provider": {
+              "coverr": 0
+            },
+            "provider_errors": {
+              "pixabay": "RuntimeError"
+            },
+            "fallback_provider_queried": true
+          },
+          {
+            "query": "in 2024 company growing",
+            "returned_by_provider": {
+              "coverr": 0
+            },
+            "provider_errors": {
+              "pixabay": "RuntimeError"
+            },
+            "fallback_provider_queried": true
+          },
+          {
+            "query": "45",
+            "returned_by_provider": {
+              "coverr": 0
+            },
+            "provider_errors": {
+              "pixabay": "RuntimeError"
+            },
+            "fallback_provider_queried": true
+          },
+          {
+            "query": "company",
+            "returned_by_provider": {
+              "coverr": 6
+            },
+            "provider_errors": {
+              "pixabay": "RuntimeError"
+            },
+            "fallback_provider_queried": true
+          }
+        ],
+        "chosen_provider": "coverr",
+        "chosen_because": "'coverr' supplied the highest-scoring acceptable clip among the merged results of pixabay, coverr."
+      },
+      "alternatives": [
+        {
+          "clip": "coverr:S3rXHOHnGX",
+          "title": "Taking calls at the office",
+          "text_score": 0.353,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.425,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: company"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "company"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "coverr:WP5rzmwI20",
+          "title": "A skyscraper in Panama City",
+          "text_score": 0.353,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.425,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: company"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "company"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        },
+        {
+          "clip": "coverr:fizD2gjAlJ",
+          "title": "Office building",
+          "text_score": 0.353,
+          "visual_score": null,
+          "technical_score": 1.0,
+          "final_score": 0.425,
+          "method": "metadata_text_fallback",
+          "passed": false,
+          "visual_verified": false,
+          "reasons": [
+            "evidence - subject: company"
+          ],
+          "penalties": [],
+          "label": "Low",
+          "gated": null,
+          "evidence": {
+            "elements": {
+              "subject": 1.0,
+              "action": 0.0,
+              "object": 0.0
+            },
+            "matched_terms": {
+              "subject": "company"
+            },
+            "weights": {
+              "subject": 0.3,
+              "action": 0.3,
+              "object": 0.25
+            },
+            "foil_hits": [],
+            "negative_hits": [],
+            "action_evidenced": false,
+            "object_evidenced": false
+          },
+          "visual_detail": {}
+        }
+      ],
+      "warnings": [
+        "Scene scene-001: footage may NOT accurately depict the narration (score 0.42 is below the match threshold 0.45)."
+      ],
+      "visual_hint": null
+    },
+    {
+      "scene_id": "scene-002",
+      "index": 2,
+      "start": 5.952,
+      "end": 9.169,
+      "duration": 3.217,
+      "narration_text": "Revenue reached 12 million dollars.",
+      "timing_method": "tts_word_boundaries_partial",
+      "visual_description": "Revenue reached 12 million dollars.",
+      "visual_analysis": {
+        "subject": "revenue reached",
+        "action": null,
+        "setting": null,
+        "objects": [
+          "12 million dollars"
+        ],
+        "avoid_terms": [
+          "cartoon",
+          "animation",
+          "3d render",
+          "illustration",
+          "logo",
+          "title card"
+        ],
+        "method": "rule_based_v1",
+        "notes": [
+          "No action verb recognised; scene treated as a noun phrase."
+        ],
+        "frames": [],
+        "scene_type": "object",
+        "action_evidence_terms": [],
+        "object_evidence_terms": [],
+        "foil_terms": []
+      },
+      "search_queries": [
+        "revenue reached 12 million dollars",
+        "revenue reached",
+        "12 million dollars",
+        "revenue reached million"
+      ],
+      "queries_detail": [
+        {
+          "query": "revenue reached 12 million dollars",
+          "returned": 0,
+          "kept": 0,
+          "rejected": [],
+          "best_score": null,
+          "error": null
+        },
+        {
+          "query": "revenue reached",
+          "returned": 0,
+          "kept": 0,
+          "rejected": [],
+          "best_score": null,
+          "error": "PermissionError: Coverr API authentication failed (status 403). Verify COVERR_API_KEY."
+        },
+        {
+          "query": "12 million dollars",
+          "returned": 0,
+          "kept": 0,
+          "rejected": [],
+          "best_score": null,
+          "error": "PermissionError: Coverr API authentication failed (status 403). Verify COVERR_API_KEY."
+        },
+        {
+          "query": "revenue reached million",
+          "returned": 0,
+          "kept": 0,
+          "rejected": [],
+          "best_score": null,
+          "error": "PermissionError: Coverr API authentication failed (status 403). Verify COVERR_API_KEY."
+        }
+      ],
+      "candidate_count": 0,
+      "retry_attempts": 3,
+      "clip": null,
+      "license": {},
+      "attribution": null,
+      "relevance": {
+        "score": null,
+        "scoring_method": null,
+        "visual_verified": false,
+        "threshold": 0.45,
+        "passed_threshold": false,
+        "text_score": null,
+        "visual_score": null,
+        "label": null,
+        "evidence": null,
+        "gated": null,
+        "visual_detail": null
+      },
+      "needs_review": false,
+      "placeholder": true,
+      "download_attempts": [],
+      "used_alternate": false,
+      "selection_reason": "no usable candidates returned for any query",
+      "match_status": "no_candidates",
+      "provider_selection": {
+        "rule": "Query providers in priority order; query the next provider for the same search when the previous one returned fewer than 3 assets or failed; merge all assets and keep the highest relevance score (ties go to the earlier provider).",
+        "providers_in_priority_order": [
+          "pixabay",
+          "coverr"
+        ],
+        "queries": [
+          {
+            "query": "revenue reached 12 million dollars",
+            "returned_by_provider": {
+              "coverr": 0
+            },
+            "provider_errors": {
+              "pixabay": "RuntimeError"
+            },
+            "fallback_provider_queried": true
+          },
+          {
+            "query": "revenue reached",
+            "returned_by_provider": {},
+            "provider_errors": {
+              "pixabay": "RuntimeError",
+              "coverr": "PermissionError"
+            },
+            "fallback_provider_queried": true
+          },
+          {
+            "query": "12 million dollars",
+            "returned_by_provider": {},
+            "provider_errors": {
+              "pixabay": "RuntimeError",
+              "coverr": "PermissionError"
+            },
+            "fallback_provider_queried": true
+          },
+          {
+            "query": "revenue reached million",
+            "returned_by_provider": {},
+            "provider_errors": {
+              "pixabay": "RuntimeError",
+              "coverr": "PermissionError"
+            },
+            "fallback_provider_queried": true
+          }
+        ],
+        "chosen_provider": null,
+        "chosen_because": null
+      },
+      "alternatives": [],
+      "warnings": [
+        "No footage for scene scene-002: no usable candidates returned for any query."
+      ],
+      "visual_hint": null
+    }
+  ],
+  "warnings": [
+    "Caption word timing method is 'tts_word_boundaries_partial' (scene boundaries are exact; timing inside scenes is approximate).",
+    "Scene scene-001: footage may NOT accurately depict the narration (score 0.42 is below the match threshold 0.45).",
+    "No footage for scene scene-002: no usable candidates returned for any query.",
+    "Footage relevance was estimated from provider titles/tags and scene analysis only. No vision-language model inspected the video frames."
+  ],
+  "avoid": [],
+  "footage_provider": "pixabay",
+  "render": {
+    "engine": "per-scene segments + stream-copy concat",
+    "fps": 30,
+    "total_frames": 275,
+    "colour_normalisation": {
+      "enabled": true,
+      "target": null,
+      "method": "per-clip mean luma/saturation vs job median; bounded eq filter"
+    },
+    "min_scene_seconds": 2.0
+  }
+}

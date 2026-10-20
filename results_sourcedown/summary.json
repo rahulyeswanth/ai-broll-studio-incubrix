@@ -1,0 +1,265 @@
+[
+  {
+    "input": "01_ocean.json",
+    "job_id": "fe4fd2ce40b3",
+    "state": "succeeded",
+    "error": null,
+    "seconds": 106.0
+  },
+  {
+    "input": "02_cloud_computing.json",
+    "job_id": "63ebbc1df4f3",
+    "state": "failed",
+    "error": {
+      "code": "FOOTAGE_UNAVAILABLE",
+      "message": "No suitable footage could be found for: scene-001, scene-002",
+      "retryable": false,
+      "details": {
+        "scenes": [
+          {
+            "scene_id": "scene-001",
+            "narration": "Cloud computing lets teams store data on remote servers.",
+            "status": "no_candidates",
+            "reason": "no usable candidates returned for any query",
+            "queries": [
+              "cloud computing store data in remote servers",
+              "cloud computing in remote servers",
+              "cloud computing lets teams store data in remote",
+              "lets teams store data in remote servers",
+              "cloud computing",
+              "cloud computing lets"
+            ],
+            "errors": []
+          },
+          {
+            "scene_id": "scene-002",
+            "narration": "Engineers scale applications in minutes.",
+            "status": "no_candidates",
+            "reason": "no usable candidates returned for any query",
+            "queries": [
+              "engineers scale applications in minutes",
+              "engineers scale in minutes",
+              "applications in minutes",
+              "engineers scale",
+              "engineers scale applications"
+            ],
+            "errors": []
+          }
+        ]
+      },
+      "user_message": "No suitable footage could be found for any scene. Try a more concrete script or another provider."
+    },
+    "seconds": 24.2
+  },
+  {
+    "input": "03_river_bank.json",
+    "job_id": "babc79d860a1",
+    "state": "succeeded",
+    "error": null,
+    "seconds": 33.4
+  },
+  {
+    "input": "04_finance.json",
+    "job_id": "5d5ba40da1e9",
+    "state": "failed",
+    "error": {
+      "code": "INTERNAL_ERROR",
+      "user_message": "An unexpected error occurred. Details are in the server log.",
+      "message": "Unexpected error: UnicodeEncodeError. See server logs.",
+      "details": {}
+    },
+    "seconds": 15.1
+  },
+  {
+    "input": "05_python_code.json",
+    "job_id": "9e0c086e9704",
+    "state": "succeeded",
+    "error": null,
+    "seconds": 42.4
+  },
+  {
+    "input": "06_numbers.json",
+    "job_id": "7a4e719d14d3",
+    "state": "succeeded",
+    "error": null,
+    "seconds": 30.4
+  },
+  {
+    "input": "07_abstract.json",
+    "job_id": "583448de5547",
+    "state": "failed",
+    "error": {
+      "code": "FOOTAGE_UNAVAILABLE",
+      "message": "No suitable footage could be found for: scene-001, scene-002",
+      "retryable": false,
+      "details": {
+        "scenes": [
+          {
+            "scene_id": "scene-001",
+            "narration": "Real value comes from trust.",
+            "status": "provider_error",
+            "reason": "all footage searches failed",
+            "queries": [
+              "real value comes trust",
+              "real value",
+              "comes trust",
+              "real value comes"
+            ],
+            "errors": [
+              "PermissionError: Coverr API authentication failed (status 403). Verify COVERR_API_KEY.",
+              "PermissionError: Coverr API authentication failed (status 403). Verify COVERR_API_KEY.",
+              "PermissionError: Coverr API authentication failed (status 403). Verify COVERR_API_KEY.",
+              "PermissionError: Coverr API authentication failed (status 403). Verify COVERR_API_KEY."
+            ]
+          },
+          {
+            "scene_id": "scene-002",
+            "narration": "Great teams build it slowly, one decision at a time.",
+            "status": "provider_error",
+            "reason": "all footage searches failed",
+            "queries": [
+              "teams building it one decision in time",
+              "construction workers building on site",
+              "welder welding metal sparks",
+              "teams building in time",
+              "it one decision in time",
+              "crane lifting building site"
+            ],
+            "errors": [
+              "PermissionError: Coverr API authentication failed (status 403). Verify COVERR_API_KEY.",
+              "PermissionError: Coverr API authentication failed (status 403). Verify COVERR_API_KEY.",
+              "PermissionError: Coverr API authentication failed (status 403). Verify COVERR_API_KEY.",
+              "PermissionError: Coverr API authentication failed (status 403). Verify COVERR_API_KEY.",
+              "PermissionError: Coverr API authentication failed (status 403). Verify COVERR_API_KEY.",
+              "PermissionError: Coverr API authentication failed (status 403). Verify COVERR_API_KEY."
+            ]
+          }
+        ]
+      },
+      "user_message": "No suitable footage could be found for any scene. Try a more concrete script or another provider."
+    },
+    "seconds": 21.2
+  },
+  {
+    "input": "08_no_footage.json",
+    "job_id": "c35f156edb69",
+    "state": "failed",
+    "error": {
+      "code": "FOOTAGE_UNAVAILABLE",
+      "message": "No suitable footage could be found for: scene-001",
+      "retryable": false,
+      "details": {
+        "scenes": [
+          {
+            "scene_id": "scene-001",
+            "narration": "Zorblax quantum flibbertigibbet snorfs wibbly.",
+            "status": "provider_error",
+            "reason": "all footage searches failed",
+            "queries": [
+              "zorblax quantum flibbertigibbet snorfs wibbly",
+              "zorblax quantum",
+              "flibbertigibbet snorfs wibbly",
+              "zorblax quantum flibbertigibbet"
+            ],
+            "errors": [
+              "PermissionError: Coverr API authentication failed (status 403). Verify COVERR_API_KEY.",
+              "PermissionError: Coverr API authentication failed (status 403). Verify COVERR_API_KEY.",
+              "PermissionError: Coverr API authentication failed (status 403). Verify COVERR_API_KEY.",
+              "PermissionError: Coverr API authentication failed (status 403). Verify COVERR_API_KEY."
+            ]
+          }
+        ]
+      },
+      "user_message": "No suitable footage could be found for any scene. Try a more concrete script or another provider."
+    },
+    "seconds": 9.1
+  },
+  {
+    "input": "09_long_words.json",
+    "job_id": "a0a47ba13705",
+    "state": "failed",
+    "error": {
+      "code": "FOOTAGE_UNAVAILABLE",
+      "message": "No suitable footage could be found for: scene-001",
+      "retryable": false,
+      "details": {
+        "scenes": [
+          {
+            "scene_id": "scene-001",
+            "narration": "Internationalization and electroencephalography require extraordinarily comprehensive documentation.",
+            "status": "provider_error",
+            "reason": "all footage searches failed",
+            "queries": [
+              "internationalization electroencephalography require extraordinarily comprehensive documentation",
+              "internationalization electroencephalography",
+              "require extraordinarily comprehensive documentation",
+              "internationalization electroencephalography require"
+            ],
+            "errors": [
+              "PermissionError: Coverr API authentication failed (status 403). Verify COVERR_API_KEY.",
+              "PermissionError: Coverr API authentication failed (status 403). Verify COVERR_API_KEY.",
+              "PermissionError: Coverr API authentication failed (status 403). Verify COVERR_API_KEY.",
+              "PermissionError: Coverr API authentication failed (status 403). Verify COVERR_API_KEY."
+            ]
+          }
+        ]
+      },
+      "user_message": "No suitable footage could be found for any scene. Try a more concrete script or another provider."
+    },
+    "seconds": 9.1
+  },
+  {
+    "input": "10_unicode.json",
+    "job_id": "4014f85318b0",
+    "state": "failed",
+    "error": {
+      "code": "FOOTAGE_UNAVAILABLE",
+      "message": "No suitable footage could be found for: scene-001, scene-002",
+      "retryable": false,
+      "details": {
+        "scenes": [
+          {
+            "scene_id": "scene-001",
+            "narration": "Caf\u00e9 culture in S\u00e3o Paulo starts early.",
+            "status": "provider_error",
+            "reason": "all footage searches failed",
+            "queries": [
+              "caf culture in s o paulo starts early",
+              "caf culture",
+              "caf culture paulo"
+            ],
+            "errors": [
+              "PermissionError: Coverr API authentication failed (status 403). Verify COVERR_API_KEY.",
+              "PermissionError: Coverr API authentication failed (status 403). Verify COVERR_API_KEY.",
+              "PermissionError: Coverr API authentication failed (status 403). Verify COVERR_API_KEY."
+            ]
+          },
+          {
+            "scene_id": "scene-002",
+            "narration": "Na\u00efve tourists order a \u201ccortado\u201d \u2014 and love it.",
+            "status": "provider_error",
+            "reason": "all footage searches failed",
+            "queries": [
+              "na ve tourists order cortado love",
+              "tourists sightseeing in city",
+              "traveler exploring old town",
+              "na ve",
+              "tourists order cortado love",
+              "tourists order cortado"
+            ],
+            "errors": [
+              "PermissionError: Coverr API authentication failed (status 403). Verify COVERR_API_KEY.",
+              "PermissionError: Coverr API authentication failed (status 403). Verify COVERR_API_KEY.",
+              "PermissionError: Coverr API authentication failed (status 403). Verify COVERR_API_KEY.",
+              "PermissionError: Coverr API authentication failed (status 403). Verify COVERR_API_KEY.",
+              "PermissionError: Coverr API authentication failed (status 403). Verify COVERR_API_KEY.",
+              "PermissionError: Coverr API authentication failed (status 403). Verify COVERR_API_KEY."
+            ]
+          }
+        ]
+      },
+      "user_message": "No suitable footage could be found for any scene. Try a more concrete script or another provider."
+    },
+    "seconds": 18.2
+  }
+]

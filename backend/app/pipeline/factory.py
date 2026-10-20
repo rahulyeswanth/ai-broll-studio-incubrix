@@ -27,9 +27,9 @@ def build_deps(settings: PipelineSettings, req: JobRequest) -> Deps:
     providers = [(name, provider)]
     fb = settings.footage_fallback_providers
     if fb != ("none",):
-        candidates = list(fb) if fb else [p for p in ("pixabay", "pexels") if p != name]
+        candidates = list(fb) if fb else [p for p in ("pixabay", "pexels", "coverr") if p != name]
         for other in candidates:
-            if other == name or other not in ("pixabay", "pexels"):
+            if other == name or other not in ("pixabay", "pexels", "coverr"):
                 continue
             try:
                 providers.append((other, get_footage_provider(other, strict_orientation=False)))

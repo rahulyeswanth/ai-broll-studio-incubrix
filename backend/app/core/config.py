@@ -52,6 +52,8 @@ class Settings(BaseSettings):
     
     PIXABAY_API_KEY: str | None = None
 
+    COVERR_API_KEY: str | None = None
+
     # End-to-end pipeline (see app/pipeline/config.py, which reads the same .env). Declared here so they are
     # documented and validated; the pipeline re-reads them from the environment.
     STORAGE_ROOT: str = "./storage"

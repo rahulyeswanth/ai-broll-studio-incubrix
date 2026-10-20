@@ -1,0 +1,8 @@
+1
+00:00:00,000 --> 00:00:05,075
+In 2024 the company grew
+45% to 3.2 million users.
+
+2
+00:00:06,052 --> 00:00:09,169
+Revenue reached 12 million dollars.
