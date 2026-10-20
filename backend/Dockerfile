@@ -3,7 +3,7 @@ FROM python:3.12-slim
 WORKDIR /app
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    curl ffmpeg fonts-dejavu-core build-essential \
+    curl ffmpeg fonts-dejavu-core fonts-liberation build-essential \
     && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt requirements-dev.txt ./

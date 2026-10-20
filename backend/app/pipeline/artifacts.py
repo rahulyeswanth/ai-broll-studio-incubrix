@@ -18,7 +18,8 @@ MANIFEST_REQUIRED = ["schema_version", "job_id", "input_type", "input", "outputs
 def build_timeline(job_id: str, aspect: str, width: int, height: int, fps: int, audio_file: Optional[str],
                    audio_source: str, total_duration: float, scenes, decisions, clip_files: Dict[str, str],
                    segment_info: Dict[str, Dict[str, Any]], warnings: List[str], *, thumbnails: Optional[Dict[str, str]] = None,
-                   slate_ids: Optional[List[str]] = None, settings: Any = None) -> Dict[str, Any]:
+                   slate_ids: Optional[List[str]] = None, settings: Any = None,
+                   provider_search: Any = None) -> Dict[str, Any]:
     out_scenes: List[Dict[str, Any]] = []
     thumbnails, slate_ids = thumbnails or {}, slate_ids or []
     for sc, dec in zip(scenes, decisions):
@@ -35,6 +36,7 @@ def build_timeline(job_id: str, aspect: str, width: int, height: int, fps: int, 
                 "width": cand.width, "height": cand.height, "creator": cand.creator, "creator_url": cand.creator_url,
                 "ai_generated": cand.ai_generated, "retrieved_at": cand.retrieved_at,
                 "looped": seg.get("looped"), "framing_method": seg.get("framing_method"),
+                "color_normalisation": seg.get("color_normalisation"),
                 "reused_from_earlier_scene": dec.reused_clip, "thumbnail": thumbnails.get(sc.scene_id),
             }
         out_scenes.append({
@@ -64,6 +66,8 @@ def build_timeline(job_id: str, aspect: str, width: int, height: int, fps: int, 
             "needs_review": dec.status == "fallback_low_confidence", "placeholder": sc.scene_id in slate_ids,
             "download_attempts": dec.download_log, "used_alternate": dec.used_alternate,
             "selection_reason": dec.reason, "match_status": dec.status,
+            "provider_selection": (provider_search.scene_summary([a.query for a in dec.attempts], cand.provider if cand else None)
+                                   if provider_search is not None else None),
             "alternatives": [s.to_dict() for s in dec.ranked[1:4]],
             "warnings": list(dec.warnings),
         })

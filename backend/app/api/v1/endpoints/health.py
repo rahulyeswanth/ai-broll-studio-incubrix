@@ -1,4 +1,8 @@
 import logging
+import os
+import shutil
+import subprocess
+import uuid
 from datetime import datetime, timezone
 from fastapi import APIRouter, Depends, status, Response
 import redis.asyncio as redis
@@ -39,19 +43,46 @@ async def get_readiness(
     dependencies: dict[str, DependencyStatus] = {}
     is_ready = True
 
-    # 1. Check Redis
+    # 1. Redis: the job queue is file-based, so Redis is optional unless READINESS_REQUIRE_REDIS=true
+    redis_required = os.environ.get("READINESS_REQUIRE_REDIS", "").lower() in ("1", "true", "yes")
     try:
         r = redis.from_url(settings.REDIS_URL, socket_timeout=1.5)
         ping_ok = await r.ping()
         await r.aclose()
-        if ping_ok:
-            dependencies["redis"] = DependencyStatus(status="up", details="Connected and ping succeeded")
-        else:
-            dependencies["redis"] = DependencyStatus(status="down", details="Ping failed")
+        dependencies["redis"] = DependencyStatus(status="up" if ping_ok else "down", required=redis_required,
+                                                 details="Connected and ping succeeded" if ping_ok else "Ping failed")
+        if not ping_ok and redis_required:
             is_ready = False
     except Exception as exc:
         logger.warning(f"Readiness check failed for Redis: {str(exc)}")
-        dependencies["redis"] = DependencyStatus(status="down", details=str(exc))
+        dependencies["redis"] = DependencyStatus(status="down", required=redis_required, details=type(exc).__name__)
+        if redis_required:
+            is_ready = False
+
+    # 1b. FFmpeg / FFprobe (rendering and audio validation cannot work without them)
+    for tool in ("ffmpeg", "ffprobe"):
+        path = shutil.which(os.environ.get(tool.upper() + "_BINARY", tool))
+        ok = False
+        if path:
+            try:
+                ok = subprocess.run([path, "-version"], capture_output=True, timeout=5).returncode == 0
+            except (OSError, subprocess.SubprocessError):
+                ok = False
+        dependencies[tool] = DependencyStatus(status="up" if ok else "down", details="runs" if ok else "not found or not executable")
+        is_ready = is_ready and ok
+
+    # 1c. The jobs directory must be writable
+    try:
+        from app.pipeline.config import load_settings
+        jd = load_settings().jobs_dir
+        jd.mkdir(parents=True, exist_ok=True)
+        probe = jd / f".ready_{uuid.uuid4().hex}"
+        probe.write_text("ok")
+        probe.unlink()
+        dependencies["jobs_dir"] = DependencyStatus(status="up", details="writable")
+    except Exception as exc:
+        logger.warning(f"Readiness check failed for jobs dir: {type(exc).__name__}")
+        dependencies["jobs_dir"] = DependencyStatus(status="down", details=type(exc).__name__)
         is_ready = False
 
     # 2. Check Storage

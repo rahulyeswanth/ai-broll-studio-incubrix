@@ -63,7 +63,7 @@ def test_words_are_not_cut_except_last_resort(ratio):
 
 def test_portrait_splits_instead_of_shrinking():
     layout = layout_for(1080, 1920)
-    fitted, report = fit_cues(_cues(TEXTS["long"]), layout)
+    fitted, report = fit_cues(_cues(TEXTS["long"] + " " + TEXTS["long"]), layout)
     assert len(fitted) >= 2 and all(c.font_px == layout.font_px for c in fitted)
     assert report.split_cues == 1
 

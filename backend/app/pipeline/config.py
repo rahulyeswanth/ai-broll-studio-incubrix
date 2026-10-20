@@ -93,6 +93,10 @@ class PipelineSettings:
     allow_clip_reuse: bool = True            # reuse only if nothing else passes; always disclosed
     min_clip_seconds: float = 1.5
 
+    # --- footage providers ---------------------------------------------------------
+    footage_fallback_providers: Tuple[str, ...] = ()      # empty = every other provider that has an API key; ("none",) = off
+    footage_min_primary_results: int = 3
+
     # --- download ----------------------------------------------------------------
     max_download_mb: int = 100
     download_timeout_seconds: float = 60.0
@@ -106,6 +110,7 @@ class PipelineSettings:
     crf: int = 21
     preset: str = "veryfast"
     render_timeout_seconds: int = 1800
+    normalize_color: bool = True
     caption_max_chars_per_line: int = 38
     caption_max_lines: int = 2
     caption_max_seconds: float = 6.0
@@ -169,6 +174,10 @@ def load_settings(env: Optional[Dict[str, str]] = None, dotenv_path: Optional[Pa
     s.min_scene_seconds = float(g("MIN_SCENE_DURATION_SECONDS") or s.min_scene_seconds)
     s.max_scene_seconds = float(g("MAX_SCENE_DURATION_SECONDS") or s.max_scene_seconds)
     s.max_download_mb = int(g("MAX_VIDEO_DOWNLOAD_MB") or s.max_download_mb)
+    fb = (g("FOOTAGE_FALLBACK_PROVIDERS") or "").strip().lower()
+    s.footage_fallback_providers = tuple(x.strip() for x in fb.split(",") if x.strip())
+    s.footage_min_primary_results = int(g("FOOTAGE_MIN_PRIMARY_RESULTS") or s.footage_min_primary_results)
+    s.normalize_color = _bool(g("NORMALIZE_COLOR"), s.normalize_color)
     s.pixabay_api_key = g("PIXABAY_API_KEY") or None
     s.pexels_api_key = g("PEXELS_API_KEY") or None
     return s

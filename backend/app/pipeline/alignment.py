@@ -170,3 +170,26 @@ def scenes_from_words(words: Sequence[WordTiming], audio_duration: float, settin
         ws = [WordTiming(w.word, w.start, w.end) for w in words[a:b]]
         scenes.append(Scene(f"scene-{i + 1:03d}", i + 1, " ".join(w.word for w in ws), start, end, ws, timing_method))
     return scenes
+
+
+def merge_short_scenes(scenes: Sequence[Scene], min_seconds: float, return_groups: bool = False):
+    """Merge any scene shorter than ``min_seconds`` into its neighbour so no clip flashes on screen.
+    Contiguity is preserved (scene i ends where scene i+1 starts); ids are renumbered. With ``return_groups`` the
+    original 0-based indexes folded into each output scene are returned as well (used to carry visual hints)."""
+    sc = list(scenes)
+    groups = [[i] for i in range(len(sc))]
+    changed = True
+    while changed and len(sc) > 1:
+        changed = False
+        for i, s in enumerate(sc):
+            if s.duration < min_seconds:
+                a, b = (i, i + 1) if i + 1 < len(sc) else (i - 1, i)
+                x, y = sc[a], sc[b]
+                merged = Scene(x.scene_id, x.index, f"{x.text} {y.text}".strip(), x.start, y.end,
+                               list(x.words) + list(y.words), x.timing_method)
+                sc[a:b + 1] = [merged]
+                groups[a:b + 1] = [groups[a] + groups[b]]
+                changed = True
+                break
+    out = [Scene(f"scene-{i + 1:03d}", i + 1, s.text, s.start, s.end, s.words, s.timing_method) for i, s in enumerate(sc)]
+    return (out, groups) if return_groups else out

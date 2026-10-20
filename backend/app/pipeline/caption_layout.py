@@ -20,12 +20,23 @@ from typing import Dict, List, Optional, Sequence, Tuple
 
 from .captions import Cue
 
+# (file, ASS family name, bold). Times New Roman first; Liberation Serif / Tinos are its metric-compatible stand-ins on Linux.
 FONT_CANDIDATES = (
-    "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
-    "/usr/share/fonts/dejavu/DejaVuSans-Bold.ttf",
-    "/usr/share/fonts/TTF/DejaVuSans-Bold.ttf",
-    "/Library/Fonts/Arial Bold.ttf",
-    "C:/Windows/Fonts/arialbd.ttf",
+    ("C:/Windows/Fonts/times.ttf", "Times New Roman", False),
+    ("/Library/Fonts/Times New Roman.ttf", "Times New Roman", False),
+    ("/System/Library/Fonts/Supplemental/Times New Roman.ttf", "Times New Roman", False),
+    ("/usr/share/fonts/truetype/msttcorefonts/Times_New_Roman.ttf", "Times New Roman", False),
+    ("/usr/share/fonts/truetype/liberation/LiberationSerif-Regular.ttf", "Liberation Serif", False),
+    ("/usr/share/fonts/liberation/LiberationSerif-Regular.ttf", "Liberation Serif", False),
+    ("/usr/share/fonts/truetype/liberation2/LiberationSerif-Regular.ttf", "Liberation Serif", False),
+    ("/usr/share/fonts/truetype/crosextra/Tinos-Regular.ttf", "Tinos", False),
+    ("/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf", "DejaVu Serif", False),
+    ("/usr/share/fonts/dejavu/DejaVuSerif.ttf", "DejaVu Serif", False),
+    ("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", "DejaVu Sans", True),
+    ("/usr/share/fonts/dejavu/DejaVuSans-Bold.ttf", "DejaVu Sans", True),
+    ("/usr/share/fonts/TTF/DejaVuSans-Bold.ttf", "DejaVu Sans", True),
+    ("/Library/Fonts/Arial Bold.ttf", "Arial", True),
+    ("C:/Windows/Fonts/arialbd.ttf", "Arial", True),
 )
 SAFETY = 0.97              # measured width may be at most 97% of the usable width (rounding, kerning, hinting)
 MIN_SHRINK = 0.78          # a single over-wide token may shrink to this fraction of the base size before it is hyphenated
@@ -44,6 +55,7 @@ class CaptionLayout:
     shadow_px: int
     max_lines: int
     font_name: str = "DejaVu Sans"
+    bold: bool = True
 
     @property
     def text_width(self) -> int:
@@ -53,37 +65,47 @@ class CaptionLayout:
         return {"width": self.width, "height": self.height, "orientation": self.orientation, "font_px": self.font_px,
                 "margin_x": self.margin_x, "margin_bottom": self.margin_bottom, "outline_px": self.outline_px,
                 "shadow_px": self.shadow_px, "max_lines": self.max_lines, "text_width": self.text_width,
-                "font_name": self.font_name}
+                "font_name": self.font_name, "bold": self.bold}
 
 
 # font_px is a fraction of the short side; margins are fractions of width/height. Tuned from rendered frames
 # (see tests/test_caption_layout.py and docs/evidence/captions/).
 _PROFILES = {
     #              font/min(W,H)  margin_x/W  margin_bottom/H  max_lines
-    "landscape": (0.052, 0.08, 0.075, 2),
-    "square": (0.052, 0.08, 0.085, 2),
-    "portrait": (0.056, 0.075, 0.130, 2),     # larger bottom margin keeps clear of platform UI overlays
+    "landscape": (0.030, 0.08, 0.07, 2),
+    "square": (0.030, 0.08, 0.08, 2),
+    "portrait": (0.032, 0.075, 0.110, 2),     # larger bottom margin keeps clear of platform UI overlays
 }
 
 
-def layout_for(width: int, height: int, font_name: str = "DejaVu Sans") -> CaptionLayout:
+def layout_for(width: int, height: int, font_name: Optional[str] = None) -> CaptionLayout:
     if width <= 0 or height <= 0:
         raise ValueError("Frame size must be positive.")
     ratio = width / height
     orientation = "landscape" if ratio > 1.15 else ("portrait" if ratio < 0.87 else "square")
     f, mx, mb, lines = _PROFILES[orientation]
-    font_px = max(16, round(min(width, height) * f))
+    font_px = max(12, round(min(width, height) * f))
+    override = os.environ.get("CAPTION_FONT_PX")       # exact size at 1080-class output; scaled for other sizes
+    if override and override.isdigit() and int(override) > 0:
+        font_px = max(8, round(int(override) * min(width, height) / 1080))
+    _, family, bold = find_font()
     outline = max(2, round(font_px * 0.085))
     return CaptionLayout(width, height, orientation, font_px, round(width * mx), round(height * mb), outline,
-                         max(1, round(outline / 2)), lines, font_name)
+                         max(1, round(outline / 2)), lines, font_name or family, bold)
+
+
+def find_font() -> Tuple[Optional[Path], str, bool]:
+    env = os.environ.get("CAPTION_FONT_FILE")
+    if env and Path(env).is_file():
+        return Path(env), os.environ.get("CAPTION_FONT_NAME", "Times New Roman"), "bold" in Path(env).name.lower()
+    for path, family, bold in FONT_CANDIDATES:
+        if Path(path).is_file():
+            return Path(path), family, bold
+    return None, "serif", False
 
 
 def find_font_file() -> Optional[Path]:
-    env = os.environ.get("CAPTION_FONT_FILE")
-    for cand in ([env] if env else []) + list(FONT_CANDIDATES):
-        if cand and Path(cand).is_file():
-            return Path(cand)
-    return None
+    return find_font()[0]
 
 
 class TextMeter:
@@ -312,7 +334,7 @@ def to_ass(fitted: Sequence[FittedCue], layout: CaptionLayout) -> str:
         f"PlayResX: {L.width}\nPlayResY: {L.height}\nWrapStyle: 2\nScaledBorderAndShadow: yes\nYCbCr Matrix: None\n\n"
         "[V4+ Styles]\nFormat: Name,Fontname,Fontsize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,"
         "Underline,StrikeOut,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding\n"
-        f"Style: Caption,{L.font_name},{L.font_px},&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,"
+        f"Style: Caption,{L.font_name},{L.font_px},&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,{-1 if L.bold else 0},0,0,0,100,100,0,0,1,"
         f"{L.outline_px},{L.shadow_px},2,{L.margin_x},{L.margin_x},{L.margin_bottom},1\n\n"
         "[Events]\nFormat: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text\n")
     rows = []

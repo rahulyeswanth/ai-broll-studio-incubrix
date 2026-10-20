@@ -71,15 +71,15 @@ async def test_audio_upload_job(async_client, services):
 @pytest.mark.asyncio
 async def test_validation_errors_are_structured(async_client, services):
     r = await async_client.post("/api/v1/jobs", data={"script": "   "})
-    assert r.status_code == 422 and r.json()["detail"]["code"] == "invalid_input"
+    assert r.status_code == 422 and r.json()["detail"]["code"] == "INVALID_INPUT"
     r = await async_client.post("/api/v1/jobs", data={})
     assert r.status_code == 422
     r = await async_client.post("/api/v1/jobs", data={"script": "Hello world there.", "aspect_ratio": "4:3"})
     assert r.status_code == 422
     r = await async_client.post("/api/v1/jobs", files={"audio": ("x.exe", b"abc", "application/octet-stream")})
-    assert r.status_code == 422 and r.json()["detail"]["code"] == "invalid_audio"
+    assert r.status_code == 422 and r.json()["detail"]["code"] == "INVALID_AUDIO"
     r = await async_client.post("/api/v1/jobs", files={"audio": ("bad.mp3", b"not audio" * 100, "audio/mpeg")})
-    assert r.status_code == 422 and r.json()["detail"]["code"] == "invalid_audio"
+    assert r.status_code == 422 and r.json()["detail"]["code"] == "INVALID_AUDIO"
 
 
 @pytest.mark.asyncio

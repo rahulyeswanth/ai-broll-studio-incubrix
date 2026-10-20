@@ -22,6 +22,7 @@ from pathlib import Path
 from typing import Any, Callable, Dict, Optional
 
 from .config import PipelineSettings
+from app.core.errors import public_error
 from .diagnostics import friendly_error
 from .errors import PipelineError
 from .multi import run_multi_ratio
@@ -436,7 +437,7 @@ class JobRunner:
             from app.core.security import assert_public_url, sign_body
             assert_public_url(url)
             body = json.dumps({"job_id": job_id, "status": st.get("status"), "state": "succeeded" if st.get("status") == "completed" else "failed",
-                               "progress": st.get("progress"), "outputs": st.get("outputs"), "error": st.get("error")},
+                               "progress": st.get("progress"), "outputs": st.get("outputs"), "error": public_error(st.get("error"))},
                               sort_keys=True).encode()
             headers = {"Content-Type": "application/json", "X-IncuBrix-Job-Id": job_id}
             if secret:

@@ -1,0 +1,6 @@
+AI B-roll Studio — Phase 3 merge notes
+
+This ZIP merges Phase 1/2 files from the previously assembled Phase 2 ZIP with source blocks from the user's Gemini Phase 3 output.
+The project has not been executed or tested during ZIP assembly.
+A Python regex in segmentation.py was adjusted because the supplied variable-width lookbehind would fail to compile with Python's re engine.
+Run the full test suite locally before proceeding to Phase 4.

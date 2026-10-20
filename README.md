@@ -390,48 +390,109 @@ The output response includes the path, dimensions, duration, and file size. `inc
 ---
 # Assessment 3 update (audit, fixes, API contract)
 
-## Run
-```bash
-cp .env.example .env            # fill PIXABAY_API_KEY, MINIO_ACCESS_KEY/SECRET_KEY, optional API_KEYS
-docker compose up --build       # backend :8000, MinIO :9000/:9001, Redis   (Docker path UNTESTED in authoring env)
-docker compose --profile test run --rm test   # one-command test run   (UNTESTED via Docker)
+## Architecture diagram
+
+```mermaid
+flowchart LR
+  UI[Streamlit frontend.py] -->|HTTP + Idempotency-Key| API[FastAPI /api/v1]
+  API --> MW[Middleware: correlation-id, rate limit, idempotency]
+  MW --> JOBS[JobRunner + file job store]
+  JOBS --> PIPE[Pipeline orchestrator]
+  PIPE --> ASR[Audio: ffprobe + faster-whisper]
+  PIPE --> TTS[Narration: Edge TTS]
+  PIPE --> SCN[Scenes: segmentation + min scene length]
+  SCN --> MATCH[Matcher: query build, score, threshold]
+  MATCH --> MPS[MultiProviderSearch]
+  MPS --> PX[Pixabay]
+  MPS --> PE[Pexels fallback]
+  MATCH --> DL[Download + validate clip]
+  DL --> NORM[Colour measure + eq normalisation]
+  NORM --> REND[FFmpeg: per-scene segments, concat, AAC mux]
+  REND --> OUT[(video_*.mp4, captions.srt, timeline.json, manifest.json)]
+  API -->|POST .../scenes/id/swap| SWAP[Swap: re-match, re-encode one segment, re-stitch]
+  SWAP --> REND
+  API --> HEALTH[/health and /ready/]
 ```
-Local (verified): Python 3.12, `pip install -r backend/requirements.txt -r backend/requirements-dev.txt`, ffmpeg on PATH,
-`cd backend && python -m pytest -q` (349 passed, 4 skipped in the authoring run; skips = Whisper model-dependent tests when the model is unavailable).
-Frontend: `pip install -r requirements-frontend.txt && streamlit run frontend.py`.
+
+## Quick start (6 commands)
+```bash
+cp .env.example .env                 # then set PIXABAY_API_KEY (optional: PEXELS_API_KEY for the second source)
+python -m venv .venv && source .venv/bin/activate        # Windows: .venv\Scripts\Activate.ps1
+pip install -r backend/requirements.txt                  # ffmpeg + ffprobe must be on PATH
+cd backend && uvicorn app.main:app --port 8000           # API + docs at http://localhost:8000/docs
+# second terminal (separate venv: the frontend pins different dependencies)
+pip install -r requirements-frontend.txt && streamlit run frontend.py
+```
+Docker alternative: `docker compose up --build` (backend :8000, MinIO, Redis). The Docker path has **not been run** by the author of this change set.
+Tests: `cd backend && python -m pytest -q --ignore=tests/frontend`.
 
 ## API
 `POST /api/v1/broll/jobs` (JSON or multipart) -> `202 {job_id, state, status_url}`; poll `GET /api/v1/jobs/{id}`
 (`state`: queued|running|succeeded|failed); files at `GET /api/v1/jobs/{id}/files/{name}`
-(`video_16x9.mp4`, `video_9x16.mp4`, `video_1x1.mp4`, `captions.srt`, `timeline.json`, `manifest.json`).
-Full schema: `openapi.yaml` (OpenAPI 3.1, generated from the running app). Optional `Idempotency-Key`, `X-API-Key`, `callback_url` (HMAC-SHA256 `X-IncuBrix-Signature`).
+(`video.mp4` or `video_16x9.mp4`, `video_9x16.mp4`, `video_1x1.mp4`, `captions.srt`, `timeline.json`, `manifest.json`).
+Full schema: `openapi.yaml`. Optional `X-API-Key`, `callback_url` (HMAC-SHA256 `X-IncuBrix-Signature`).
+
+### Idempotency-Key on every POST
+Every `POST` accepts `Idempotency-Key` (1-128 characters), handled by one middleware (`app/core/idempotency.py`), not per endpoint.
+* Same key + same body: the stored 2xx response is replayed with `Idempotent-Replay: true` (JSON bodies also get `"idempotent_replay": true`); no second job is created.
+* Same key + different body, or same key while the first request is still running: `409 IDEMPOTENCY_CONFLICT`.
+* The key is scoped per `X-API-Key` and path. Only 2xx responses are stored (24 h), so a failed request can be retried with the same key. Records live in `<jobs dir>/_idempotency/`.
+
+### Swap a clip, re-render only that scene
+`POST /api/v1/broll/jobs/{job_id}/scenes/{scene_id}/swap` with body `{"query": "optional hint", "aspect_ratio": "9:16"}` (both optional; `scene_id` looks like `scene-002`).
+It re-matches that one scene (excluding the current clip and clips used by other scenes), re-encodes only that scene's segment, re-stitches with stream copy,
+validates the file, and rewrites the scene in `timeline.json` with a `swap_history` entry. The response has `rendering.frames_reencoded` / `frames_total` and measured
+seconds next to `original_full_render_seconds` (taken from the job manifest). Only completed jobs can be edited (`409` otherwise); concurrent edits of one job get `409`.
+Measured in the automated test (4-scene job, 1280x720 test clips, local file server, so no real download time): swap 1.25 s vs 2.46 s full render, 80 of 308 frames re-encoded.
+Those numbers come from a tiny synthetic test, not from real footage; expect the ratio, not the absolute times, to carry over.
+
+### Health, readiness, logs
+* `GET /api/v1/health`: liveness. `GET /api/v1/ready`: runs real checks for `ffmpeg`, `ffprobe`, jobs directory writable, storage (local or MinIO) and Redis. Redis is reported but only required when `READINESS_REQUIRE_REDIS=true`. Returns `503` when a required dependency is down.
+* Logs are one JSON object per line with `timestamp, level, message, logger, correlation_id, job_id`. Send `X-Correlation-Id` (or one is generated); it is echoed in the response. The access log (`app.access`) is written for every request except health/ready, and `job_id` is bound for `/jobs/{id}` paths.
+
+### Footage sources and the selection rule
+Pixabay is the primary source. If a Pexels key is set it is queried as a fallback (override with `FOOTAGE_FALLBACK_PROVIDERS=pexels,pixabay` or `none`). Rule: for each search query, query the next provider when the previous returned fewer than `FOOTAGE_MIN_PRIMARY_RESULTS` (default 3) assets or failed; merge all assets, keep the highest relevance score, ties go to the earlier provider.
+Every scene in `timeline.json` has `provider_selection` (the rule, per-query counts and errors per provider, chosen provider and why). Without a Pexels key only Pixabay is used; the Pexels adapter was tested with test doubles, not against the live Pexels API.
+
+### Scene length and colour consistency
+* Scenes shorter than `MIN_SCENE_DURATION_SECONDS` (default 2.0) are merged into a neighbour on both the audio and the script-only paths; a warning is recorded and visual hints are carried over.
+* With `NORMALIZE_COLOR=true` (default) each clip's mean luma and saturation are measured and nudged towards the job median with ffmpeg `eq` (brightness at most +/-0.12, saturation gain 0.8-1.25, small differences left alone). The measured values and applied adjustment are stored per clip in `timeline.json` (`color_normalisation`). This evens out exposure; it is not a colour grade or white-balance correction.
+* The renderer encodes each scene to its own segment on a cumulative frame grid (no drift), then concatenates and muxes AAC audio.
 
 ## Error envelope and codes
-`{"error":{"code","message","retryable","details","request_id"}}` (plus legacy `detail`). Codes are lower_snake_case:
+`{"error":{"code","message","retryable","details","request_id"}}` (plus legacy `detail`). Public codes are UPPER_SNAKE_CASE. Job errors in `job.json` use internal lowercase names and are upper-cased by the API.
 
-| code | HTTP | meaning |
-|---|---|---|
-| invalid_request | 422 | body fails validation |
-| invalid_input | 400 | conflicting/empty inputs |
-| invalid_audio | 400/415 | unsupported, corrupt, empty, silent, or too-long audio |
-| invalid_audio_url | 400 | URL blocked (SSRF guard) or fetch failed |
-| payload_too_large | 413 | upload over size limit |
-| unauthorized | 401 | missing/invalid API key |
-| not_found | 404 | unknown job/file (also for other users' jobs) |
-| idempotency_conflict | 409 | same key, different body |
-| rate_limited | 429 | `Retry-After` header set |
-| transcription_failed / transcription_timeout | job error | ASR failure / timeout |
-| tts_failed | job error | narration synthesis failed (retryable) |
-| provider_unavailable | job error | footage provider missing key/unreachable (retryable) |
-| footage_unavailable | job error | no acceptable footage |
-| download_failed | job error | clip download failed (retryable) |
-| render_failed / output_validation_failed | job error | FFmpeg or ffprobe check failed |
-| internal_error | 500 | unexpected; only request_id is exposed |
+| code | HTTP | retryable | meaning |
+|---|---|---|---|
+| `INVALID_REQUEST` | 422 | no | Body or parameters failed validation. |
+| `INVALID_INPUT` | 422 | no | Script, scenes or options are not acceptable. |
+| `INVALID_AUDIO` | 422 | no | Audio is unsupported, empty, corrupt, too long or too large. |
+| `INVALID_AUDIO_URL` | 422 | no | audio_url is not a public http(s) URL or could not be fetched. |
+| `PAYLOAD_TOO_LARGE` | 413 | no | Upload exceeds the size limit. |
+| `UNAUTHORIZED` | 401 | no | API key missing or invalid (only when API_KEYS is configured). |
+| `NOT_FOUND` | 404 | no | Unknown job or file (also returned for jobs owned by another key). |
+| `IDEMPOTENCY_CONFLICT` | 409 | no | Idempotency-Key reused with a different request body. |
+| `RATE_LIMITED` | 429 | yes | Too many requests; honour Retry-After. |
+| `TRANSCRIPTION_FAILED` | 502 | yes | Speech-to-text failed. |
+| `TRANSCRIPTION_TIMEOUT` | 504 | yes | Speech-to-text exceeded TRANSCRIPTION_TIMEOUT_SECONDS. |
+| `TTS_FAILED` | 502 | yes | Narration could not be synthesised. |
+| `PROVIDER_UNAVAILABLE` | 503 | yes | A required provider is unreachable or not configured. |
+| `FOOTAGE_UNAVAILABLE` | 422 | no | No acceptable footage and no fallback allowed. |
+| `DOWNLOAD_FAILED` | 502 | yes | A footage download failed. |
+| `RENDER_FAILED` | 500 | no | FFmpeg could not render the video. |
+| `OUTPUT_VALIDATION_FAILED` | 500 | no | Rendered output failed automated checks. |
+| `INTERNAL_ERROR` | 500 | no | Unexpected server error; quote the request ID. |
+
+Job-level codes (`TRANSCRIPTION_*`, `TTS_FAILED`, `PROVIDER_UNAVAILABLE`, `FOOTAGE_UNAVAILABLE`, `DOWNLOAD_FAILED`, `RENDER_FAILED`, `OUTPUT_VALIDATION_FAILED`) appear in `GET /jobs/{id}` under `error.code`; the HTTP column applies when they are returned directly.
+
+## New environment variables
+`FOOTAGE_FALLBACK_PROVIDERS`, `FOOTAGE_MIN_PRIMARY_RESULTS`, `NORMALIZE_COLOR`, `MIN_SCENE_DURATION_SECONDS`, `READINESS_REQUIRE_REDIS` (see `.env.example`; no secrets belong there).
 
 ## Known deviations and limitations (honest)
-- **Caption sizes** deviate from the brief's starting ranges: 56 px (16:9, 1:1) and 60 px (9:16), chosen after rendering because the ranges were hard to read; long text is split into cues, not shrunk.
-- **Multi-ratio**: one pipeline run per ratio; TTS/matching run per ratio, so scene timing can differ slightly between ratios (not one shared timeline).
-- **Visual check is metadata-only** (`scoring_method=metadata_text_fallback`, `visual_verifier=none`). No VLM inspects frames. `avoid` rules match title/tags only.
+- **Captions**: serif font (Times New Roman if installed, else Liberation Serif, else DejaVu Serif), about 32 px at 1080p (9:16: 35 px), bottom-centred, inside safe margins, long text split into several cues. Set `CAPTION_FONT_PX=16` for a literal 12 pt size (very small on a phone).
+- **Multi-ratio**: one pipeline run per ratio; TTS/matching run per ratio, so scene timing can differ slightly between ratios. Swap targets one ratio per call (`aspect_ratio`).
+- **Visual check is metadata-only** (`scoring_method=metadata_text_fallback`, `visual_verifier=none`). No VLM inspects frames.
 - SSRF check does not pin the resolved IP (TOCTOU). Rate limiting is in-memory, single process.
-- MinIO upload is implemented but was not tested against a real MinIO. Auth is open when `API_KEYS` is empty.
-- Not implemented: swap-a-clip, colour normalisation, Hindi/Tamil, VLM verification.
+- Docker, MinIO and the live Pexels API were not exercised by the author; the idempotency store is file-based (single node).
+- Jobs created before this version have no `render_plan.json` and cannot be swapped.
+- Not implemented: Hindi/Tamil, VLM verification.

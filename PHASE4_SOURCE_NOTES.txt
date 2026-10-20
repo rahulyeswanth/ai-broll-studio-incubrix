@@ -1,0 +1,1 @@
+Phase 4 B-roll matching was assembled from the provided Gemini response and adjusted for the existing Phase 3 codebase. Run the test suite locally; no claim is made that external Pexels footage was tested. Mock URLs are placeholders.

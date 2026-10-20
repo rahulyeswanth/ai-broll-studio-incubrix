@@ -216,7 +216,7 @@ def render_input_workspace() -> None:
         with c2:
             st.segmented_control("Aspect ratio", ["16:9", "9:16", "1:1"], key="cfg_aspect", disabled=busy)
         with c3:
-            st.selectbox("Footage provider", ["pixabay"], key="cfg_provider", disabled=busy)
+            st.selectbox("Footage provider", ["pixabay", "pexels"], key="cfg_provider", disabled=busy)
         o1, o2, _ = st.columns([1.2, 1.4, 2])
         with o1:
             wf_caps = st.toggle("Generate captions", value=True, key="wf_caps", disabled=busy)

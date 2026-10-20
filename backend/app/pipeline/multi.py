@@ -49,7 +49,8 @@ async def run_multi_ratio(req: JobRequest, deps: Deps, job_dir: Path, job_id: st
             for p in sub.glob("narration.*"):
                 shutil.copy2(p, job_dir / p.name)
         warnings += [f"[{ratio}] {w}" for w in m.get("warnings", [])]
-        shutil.rmtree(sub, ignore_errors=True)
+        # the per-ratio folder (clips, segments, render plan) is kept so a single scene can be swapped later
+        shutil.rmtree(sub / "tmp", ignore_errors=True)
     first = manifests[ratios[0]]
     merged = {
         "job_id": job_id, "kind": "multi_ratio", "aspect_ratios": ratios, "status": "completed",

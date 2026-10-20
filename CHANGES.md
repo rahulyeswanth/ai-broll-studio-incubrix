@@ -79,3 +79,15 @@ and the sample clips/audio in `backend/storage/source_*`. Previously rendered de
 
 ## Assessment 3
 See IMPLEMENTATION_AUDIT.md for the file-by-file list. Added: `app/core/{errors,security}.py`, `pipeline/{caption_layout,multi}.py`, `app/storage/*`, `/api/v1/broll/jobs`, `tools/batch_run.py`, `examples/test_pack/`, `openapi.yaml`, `.env.example`.
+
+
+# Part A completion
+* Public error codes are UPPER_SNAKE_CASE (internal job codes unchanged, converted at the API boundary).
+* Idempotency-Key handled by one middleware for every POST; replay header, 409 on conflict or in-flight duplicate.
+* `/ready` checks ffmpeg, ffprobe, jobs dir, storage and (optionally) Redis; access log lines carry correlation_id and job_id.
+* Scenes shorter than the minimum are merged on the script-only path; per-clip brightness/saturation normalisation.
+* Renderer now encodes per-scene segments and concatenates them (frame-exact; segments kept in `segments/` for editing). Multi-ratio jobs keep `r_<ratio>/` folders.
+* `MultiProviderSearch` with a measurable fallback rule; `provider_selection` in timeline.json.
+* `POST /api/v1/broll/jobs/{job_id}/scenes/{scene_id}/swap`.
+* New env vars: FOOTAGE_FALLBACK_PROVIDERS, FOOTAGE_MIN_PRIMARY_RESULTS, NORMALIZE_COLOR, READINESS_REQUIRE_REDIS. CORS now allows PATCH.
+* `.env` and `backend/.env` untouched.

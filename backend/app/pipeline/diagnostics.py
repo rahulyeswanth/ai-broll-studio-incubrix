@@ -21,7 +21,7 @@ ERROR_MESSAGES = {
 
 
 def friendly_error(code: Optional[str], message: Optional[str] = None) -> str:
-    return ERROR_MESSAGES.get(code or "", message or "The job failed.")
+    return ERROR_MESSAGES.get((code or "").lower(), message or "The job failed.")
 
 
 def _item(code: str, severity: str, title: str, message: str, scene_id: Optional[str] = None, **details: Any) -> Dict[str, Any]:

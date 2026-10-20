@@ -49,7 +49,14 @@ class FasterWhisperTranscriptionProvider(TranscriptionProvider):
         self._load_model()
 
         def _sync_transcribe():
-            segments_raw, info = self._model.transcribe(audio_file_path, beam_size=5, word_timestamps=True)
+            # Decode with FFmpeg ourselves: faster-whisper's decoder breaks on PyAV >= 19 (metadata_errors).
+            import tempfile
+            from pathlib import Path
+            from app.pipeline.media import load_pcm_float32, prepare_audio_for_asr
+            tmp = tempfile.mkdtemp(prefix="asr_")
+            wav = Path(tmp) / "audio.wav"
+            prepare_audio_for_asr(Path(audio_file_path), wav)
+            segments_raw, info = self._model.transcribe(load_pcm_float32(wav), beam_size=5, word_timestamps=True)
             segments = []
             full_texts = []
             for seg in segments_raw:

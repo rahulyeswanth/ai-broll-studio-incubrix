@@ -116,6 +116,56 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/broll/jobs/{job_id}/scenes/{scene_id}/swap:
+    post:
+      tags:
+      - B-roll Asset Matching
+      summary: Swap the footage of one scene and re-render only that scene
+      description: Finds a different acceptable clip for the scene (excluding the
+        current clip and clips used by other scenes), re-encodes only that scene's
+        segment, re-stitches the video with stream copy and rewrites that scene in
+        timeline.json. The response includes measured timings and the original full-render
+        time.
+      operationId: swap_scene_clip_api_v1_broll_jobs__job_id__scenes__scene_id__swap_post
+      parameters:
+      - name: job_id
+        in: path
+        required: true
+        schema:
+          type: string
+          title: Job Id
+      - name: scene_id
+        in: path
+        required: true
+        schema:
+          type: string
+          title: Scene Id
+      - name: x-api-key
+        in: header
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: X-Api-Key
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SwapIn'
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
   /api/v1/audio/narrate:
     post:
       tags:
@@ -736,6 +786,10 @@ components:
           - type: string
           - type: 'null'
           title: Details
+        required:
+          type: boolean
+          title: Required
+          default: true
       type: object
       required:
       - status
@@ -1170,6 +1224,29 @@ components:
       required:
       - text
       title: ScriptInput
+    SwapIn:
+      properties:
+        query:
+          anyOf:
+          - type: string
+            maxLength: 200
+          - type: 'null'
+          title: Query
+          description: Optional visual hint steering the new clip, e.g. 'rainforest
+            canopy'.
+        aspect_ratio:
+          anyOf:
+          - type: string
+            enum:
+            - '16:9'
+            - '9:16'
+            - '1:1'
+          - type: 'null'
+          title: Aspect Ratio
+          description: 'Ratio to edit (default: the first ratio of the job).'
+      additionalProperties: false
+      type: object
+      title: SwapIn
     ValidationError:
       properties:
         loc:

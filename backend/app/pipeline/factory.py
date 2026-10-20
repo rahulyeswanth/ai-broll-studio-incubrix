@@ -5,6 +5,7 @@ from typing import Any, Optional, Sequence
 
 from .config import PipelineSettings
 from .errors import ProviderUnavailableError
+from .multi_provider import MultiProviderSearch
 from .narration import get_pipeline_tts
 from .orchestrator import Deps, JobRequest
 from .transcription import get_pipeline_transcriber
@@ -23,8 +24,18 @@ def build_deps(settings: PipelineSettings, req: JobRequest) -> Deps:
     except (ValueError, NotImplementedError) as exc:
         raise ProviderUnavailableError(str(exc)) from exc
 
-    async def search(query: str, aspect: str, n: int) -> Sequence[Any]:
-        return await provider.search_footage(query=query, aspect_ratio=aspect, max_results=n)
+    providers = [(name, provider)]
+    fb = settings.footage_fallback_providers
+    if fb != ("none",):
+        candidates = list(fb) if fb else [p for p in ("pixabay", "pexels") if p != name]
+        for other in candidates:
+            if other == name or other not in ("pixabay", "pexels"):
+                continue
+            try:
+                providers.append((other, get_footage_provider(other, strict_orientation=False)))
+            except (ValueError, NotImplementedError):
+                continue            # no API key for this one: simply not available
+    search = MultiProviderSearch(providers, settings.footage_min_primary_results)
 
     try:
         verifier = get_visual_verifier(settings.visual_verifier, settings)

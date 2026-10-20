@@ -32,11 +32,3 @@ backend/storage/jobs/
 backend/storage/audio/
 backend/test_storage_data/
 test_storage_data/
-.env
-**/.env
-.venv/
-**/.venv/
-__pycache__/
-**/__pycache__/
-storage_data/
-**/storage_data/

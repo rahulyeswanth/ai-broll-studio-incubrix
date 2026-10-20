@@ -1,0 +1,6 @@
+AI B-roll Studio — Phase 1
+This ZIP was assembled from the Gemini output text supplied by the user.
+The code is included as provided in that output; it has not been executed in this environment.
+Please run the tests locally before proceeding to Phase 2.
+Important: Gemini's report claims 7 tests passed, but the shown test files define 8 test functions.
+Some files listed in the proposed tree had no source block; package __init__.py files were created empty.

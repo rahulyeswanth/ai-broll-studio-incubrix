@@ -292,6 +292,76 @@ async def create_broll_job(request: Request, owner: Optional[str] = Depends(curr
                         headers={"Location": f"/api/v1/jobs/{job_id}"})
 
 
+class SwapIn(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    query: Optional[str] = Field(default=None, max_length=200, description="Optional visual hint steering the new clip, e.g. 'rainforest canopy'.")
+    aspect_ratio: Optional[Literal["16:9", "9:16", "1:1"]] = Field(default=None, description="Ratio to edit (default: the first ratio of the job).")
+
+
+@router.post("/jobs/{job_id}/scenes/{scene_id}/swap", status_code=200,
+             summary="Swap the footage of one scene and re-render only that scene",
+             description="Finds a different acceptable clip for the scene (excluding the current clip and clips used by other scenes), "
+                         "re-encodes only that scene's segment, re-stitches the video with stream copy and rewrites that scene in "
+                         "timeline.json. The response includes measured timings and the original full-render time.")
+async def swap_scene_clip(job_id: str, scene_id: str, body: SwapIn, owner: Optional[str] = Depends(current_owner)):
+    import re
+    from app.pipeline.swap import job_lock, swap_scene
+    from app.pipeline.orchestrator import JobRequest as _JR
+    _, store, runner = _services_tuple()
+    st = store.read(job_id) if re.fullmatch(r"[a-f0-9]{12}", job_id) else None
+    if st is None or (owner is not None and st.get("owner") not in (None, owner)):
+        raise HTTPException(404, detail={"code": "not_found", "message": "Unknown job id.", "details": {}})
+    if st.get("status") != "completed":
+        raise HTTPException(409, detail={"code": "invalid_request", "details": {},
+                                         "message": "Only a completed job can be edited."})
+    if not re.fullmatch(r"scene-\d{1,4}", scene_id):
+        raise HTTPException(404, detail={"code": "not_found", "message": "Unknown scene.", "details": {}})
+    job_dir = store.job_dir(job_id)
+    ratios = st.get("aspect_ratios") or [None]
+    ratio = body.aspect_ratio or ratios[0]
+    if ratio is None:
+        rd = job_dir
+    else:
+        rd = job_dir / f"r_{ratio.replace(':', 'x')}"
+        if not rd.is_dir():
+            rd = job_dir
+            if ratio not in ([None] + list(ratios)) or len(ratios) > 1:
+                raise HTTPException(422, detail={"code": "invalid_request", "details": {},
+                                                 "message": f"This job has no editable {ratio} render."})
+    if not (rd / "render_plan.json").is_file():
+        raise HTTPException(409, detail={"code": "invalid_request", "details": {},
+                                         "message": "This job was created before per-scene editing existed and cannot be swapped."})
+    lock = job_lock(f"{job_id}:{rd.name}")
+    if not lock.acquire(blocking=False):
+        raise HTTPException(409, detail={"code": "invalid_request", "details": {}, "retryable": True,
+                                         "message": "Another edit of this job is in progress."})
+    try:
+        tl = json.loads((rd / "timeline.json").read_text(encoding="utf-8"))
+        deps = runner.deps_factory(_JR(footage_provider=tl.get("footage_provider")))
+        try:
+            full = json.loads((rd / "manifest.json").read_text(encoding="utf-8")).get("processing_durations_seconds", {}).get("render")
+        except (OSError, ValueError):
+            full = None
+        try:
+            result = await swap_scene(rd, scene_id, deps, job_id, query=body.query, full_render_seconds=full)
+        except PipelineError as exc:
+            raise HTTPException(exc.http_status, detail=exc.to_dict())
+        if rd != job_dir:                     # multi-ratio: refresh the public copies of this ratio
+            slug = rd.name[2:]
+            shutil.copy2(rd / "video.mp4", job_dir / f"video_{slug}.mp4")
+            shutil.copy2(rd / "timeline.json", job_dir / f"timeline_{slug}.json")
+            if (ratios[0] or "").replace(":", "x") == slug:
+                shutil.copy2(rd / "timeline.json", job_dir / "timeline.json")
+        return result
+    finally:
+        lock.release()
+
+
+def _services_tuple():
+    from app.api.v1.endpoints.jobs import _services
+    return _services()
+
+
 def _state(st: Dict[str, Any]) -> str:
     return {"queued": "queued", "processing": "running", "completed": "succeeded", "failed": "failed"}.get(
         st.get("status", ""), "running" if st.get("status") else "queued")

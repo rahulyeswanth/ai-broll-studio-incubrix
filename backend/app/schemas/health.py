@@ -11,6 +11,7 @@ class HealthResponse(BaseSchema):
 class DependencyStatus(BaseSchema):
     status: Literal["up", "down", "not_configured"]
     details: str | None = None
+    required: bool = True
 
 
 class ReadinessResponse(BaseSchema):

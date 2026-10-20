@@ -13,6 +13,7 @@ from fastapi.concurrency import run_in_threadpool
 from fastapi.responses import FileResponse, JSONResponse
 
 from app.pipeline.config import PipelineSettings, load_settings
+from app.core.errors import public_error
 from app.pipeline.errors import InputValidationError, PipelineError
 from app.pipeline.factory import build_deps
 from app.pipeline.jobs import JobRunner, JobStore, downloadable_name
@@ -145,6 +146,8 @@ def get_job(job_id: str, owner: Optional[str] = Depends(current_owner)):
         raise HTTPException(404, detail={"code": "not_found", "message": "Unknown job id.", "details": {}})
     state.pop("owner", None)
     state.pop("callback_url", None)
+    if state.get("error"):
+        state["error"] = public_error(state["error"])
     state["state"] = {"queued": "queued", "processing": "running", "completed": "succeeded", "failed": "failed"}.get(
         state.get("status", ""), "running")
     d = store.job_dir(job_id)

@@ -89,7 +89,7 @@ async def test_invalid_requests_use_error_envelope(async_client, services, paylo
 async def test_unsupported_content_type_and_bad_json(async_client, services):
     assert (await async_client.post(URL, content=b"hi", headers={"content-type": "text/plain"})).status_code == 415
     r = await async_client.post(URL, content=b"{not json", headers={"content-type": "application/json"})
-    assert r.status_code == 422 and r.json()["error"]["code"] == "invalid_request"
+    assert r.status_code == 422 and r.json()["error"]["code"] == "INVALID_REQUEST"
 
 
 @pytest.mark.asyncio
@@ -101,7 +101,7 @@ async def test_audio_and_audio_url_together_rejected(async_client, services):
 @pytest.mark.asyncio
 async def test_corrupt_upload_gives_documented_error(async_client, services):
     r = await async_client.post(URL, files={"audio": ("a.mp3", b"definitely not audio" * 100, "audio/mpeg")})
-    assert r.status_code == 422 and r.json()["error"]["code"] == "invalid_audio"
+    assert r.status_code == 422 and r.json()["error"]["code"] == "INVALID_AUDIO"
 
 
 @pytest.mark.asyncio
@@ -112,14 +112,14 @@ async def test_idempotency_key_replays_and_detects_conflict(async_client, servic
     assert a.status_code == b.status_code == 202
     assert a.json()["job_id"] == b.json()["job_id"] and b.json()["idempotent_replay"] is True
     c = await async_client.post(URL, json={"script": "A different script about birds."}, headers=h)
-    assert c.status_code == 409 and c.json()["error"]["code"] == "idempotency_conflict"
+    assert c.status_code == 409 and c.json()["error"]["code"] == "IDEMPOTENCY_CONFLICT"
     await _wait(async_client, a.json()["job_id"])
 
 
 @pytest.mark.asyncio
 async def test_unknown_job_is_404_envelope(async_client, services):
     r = await async_client.get("/api/v1/jobs/abcdefabcdef")
-    assert r.status_code == 404 and r.json()["error"]["code"] == "not_found"
+    assert r.status_code == 404 and r.json()["error"]["code"] == "NOT_FOUND"
 
 
 @pytest.mark.asyncio
@@ -149,7 +149,7 @@ def test_rate_limit_returns_429_with_retry_after():
     c = TestClient(app)
     assert [c.post("/x/jobs").status_code for _ in range(3)] == [200, 200, 429]
     r = c.post("/x/jobs")
-    assert r.json()["error"]["code"] == "rate_limited" and r.json()["error"]["retryable"] is True and "retry-after" in r.headers
+    assert r.json()["error"]["code"] == "RATE_LIMITED" and r.json()["error"]["retryable"] is True and "retry-after" in r.headers
     assert c.get("/x/jobs").status_code in (404, 405)       # only POST job creation is limited
 
 

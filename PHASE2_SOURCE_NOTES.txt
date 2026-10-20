@@ -1,0 +1,6 @@
+AI B-roll Studio — Phase 2 merged project
+
+This is a flattened project folder: Phase 1 files are at the project root, and Phase 2 code from the provided Gemini output is overlaid into backend/.
+The code has not been executed or tested during ZIP assembly. Run tests locally.
+Use mock providers for offline tests. Real Pexels searches require your own PEXELS_API_KEY.
+The optional faster-whisper provider requires installing faster-whisper separately.

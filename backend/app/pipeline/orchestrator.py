@@ -16,7 +16,7 @@ from typing import Any, Awaitable, Callable, Dict, List, Optional, Sequence
 from . import artifacts
 from .diagnostics import build_diagnostics
 from .footage_tools import clip_fingerprint, fingerprint_distance, make_slate, make_thumbnail
-from .alignment import map_script_to_timed_words, scenes_from_words, similarity, tokenize
+from .alignment import map_script_to_timed_words, merge_short_scenes, scenes_from_words, similarity, tokenize
 from .captions import build_cues, to_srt, validate_srt
 from .config import PipelineSettings
 from .downloader import download_clip
@@ -202,7 +202,12 @@ async def run_pipeline(req: JobRequest, deps: Deps, job_dir: Path, job_id: str, 
                 events.append({"type": "timing_fallback", "message": f"word timing method: {nar.timing_method}"})
                 warnings.append(f"Caption word timing method is '{nar.timing_method}' (scene boundaries are exact; "
                                 "timing inside scenes is approximate).")
-            scenes = nar.scenes
+            scenes, groups = merge_short_scenes(nar.scenes, s.min_scene_seconds, return_groups=True)
+            if len(scenes) != len(nar.scenes):
+                if req.scene_hints and len(req.scene_hints) == len(nar.scenes):
+                    req.scene_hints = [next((req.scene_hints[j] for j in g if req.scene_hints[j]), None) for g in groups]
+                warnings.append(f"{len(nar.scenes) - len(scenes)} scene(s) shorter than {s.min_scene_seconds:g}s were merged "
+                                "into their neighbours so no clip flashes on screen.")
             audio_duration = nar.duration_seconds
             audio_out = job_dir / "narration.mp3"
             shutil.copyfile(nar.audio_path, audio_out)
@@ -291,7 +296,7 @@ async def run_pipeline(req: JobRequest, deps: Deps, job_dir: Path, job_id: str, 
                 else:
                     slate = await asyncio.to_thread(make_slate, clips_dir / f"slate_{sc.scene_id}.mp4", seg_len, width, height, s.fps)
                     slate_ids.append(sc.scene_id)
-                    segs.append(RenderSegment(sc.scene_id, slate, seg_len))
+                    segs.append(RenderSegment(sc.scene_id, slate, seg_len, normalise=False))
                 P(60 + 15 * i / len(scenes), f"Prepared footage for scene {i}/{len(scenes)}")
         if len(slate_ids) == len(decisions):
             unmatched = [d for d in decisions if d.selected is None]
@@ -322,7 +327,8 @@ async def run_pipeline(req: JobRequest, deps: Deps, job_dir: Path, job_id: str, 
         with Stage("render"):
             outcome = await asyncio.to_thread(
                 render_video, segs, audio_out, out_path, req.aspect_ratio, s,
-                srt_path=srt_path if (srt_path and req.burn_captions) else None)
+                srt_path=srt_path if (srt_path and req.burn_captions) else None, segment_dir=job_dir / "segments")
+        (job_dir / "render_plan.json").write_text(json.dumps(outcome.plan, indent=2), encoding="utf-8")
         warnings += outcome.warnings
         thumbs: Dict[str, str] = {}
         for sg in segs:
@@ -347,7 +353,18 @@ async def run_pipeline(req: JobRequest, deps: Deps, job_dir: Path, job_id: str, 
         dupes = [k for k in set(sel_keys) if sel_keys.count(k) > 1]
         timeline = artifacts.build_timeline(job_id, req.aspect_ratio, width, height, s.fps, audio_out.name, audio_source,
                                             audio_duration, scenes, decisions, clip_files, seg_by_id, [],
-                                            thumbnails=thumbs, slate_ids=slate_ids, settings=s)
+                                            thumbnails=thumbs, slate_ids=slate_ids, settings=s,
+                                            provider_search=deps.search if hasattr(deps.search, "scene_summary") else None)
+        hints = list(req.scene_hints or [])
+        for i, tsc in enumerate(timeline["scenes"]):
+            tsc["visual_hint"] = hints[i] if i < len(hints) else None
+        timeline["avoid"] = list(req.avoid or [])
+        timeline["footage_provider"] = deps.footage_provider_name
+        timeline["render"] = {"engine": "per-scene segments + stream-copy concat", "fps": s.fps,
+                              "total_frames": (outcome.plan or {}).get("total_frames"),
+                              "colour_normalisation": {"enabled": s.normalize_color, "target": outcome.norm_target,
+                                                       "method": "per-clip mean luma/saturation vs job median; bounded eq filter"},
+                              "min_scene_seconds": s.min_scene_seconds}
         tl_problems = artifacts.validate_timeline(timeline, audio_duration)
         validation = {"video": vres, "srt_problems": srt_problems, "srt_valid": not srt_problems if srt_path else None,
                       "timeline_problems": tl_problems, "timeline_valid": not tl_problems,
@@ -355,7 +372,9 @@ async def run_pipeline(req: JobRequest, deps: Deps, job_dir: Path, job_id: str, 
                       "narration_covers_video": abs(audio_duration - vres["checks"].get("duration_seconds", 0)) <= 0.3}
         providers = {
             "tts": tts_meta, "transcription": asr_meta,
-            "footage": {"name": deps.footage_provider_name},
+            "footage": {"name": deps.footage_provider_name,
+                        "providers_in_priority_order": getattr(deps.search, "names", [deps.footage_provider_name]),
+                        "selection_rule": getattr(deps.search, "rule", None)},
             "visual_verifier": {"name": deps.verifier.name, "version": deps.verifier.version,
                                 "performs_visual_analysis": deps.verifier.performs_visual_analysis,
                                 "requested": s.visual_verifier,
